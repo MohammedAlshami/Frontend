@@ -30,7 +30,6 @@ const YieldedBlocks = () => {
                 <YieldItem number={1} ammount="MYR 45,000" />
                 <YieldItem number={2} ammount="MYR 30,000" />
                 <YieldItem number={3} ammount="MYR 25,000" />
-                <YieldItem number={4} ammount="MYR 20,000" />
             </div>
         </div>
     );

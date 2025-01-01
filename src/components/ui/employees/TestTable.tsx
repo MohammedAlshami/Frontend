@@ -2,6 +2,17 @@
 
 import { useState, useEffect } from "react";
 import { FaEdit, FaTrashAlt, FaUserPlus } from "react-icons/fa";
+import BreadCrumbs from "../BreadCrumbs";
+import {
+  ArrowLeftCircle,
+  ArrowRightCircle,
+  Ellipsis,
+  EllipsisVertical,
+  FilterIcon,
+  LayoutDashboard,
+  SearchIcon,
+  Users,
+} from "lucide-react";
 
 const EmployeesTable = () => {
   const [clients, setClients] = useState([]);
@@ -114,27 +125,11 @@ const EmployeesTable = () => {
   );
 
   return (
-    <div className=" p-4">
-      {/* <div className="flex justify-between items-center bg-teal-500 text-white p-4 rounded-md mb-4">
-        <h1 className="text-xl font-bold">Employees Management</h1>
-        <button
-          onClick={() => {
-            setEditing(false);
-            setFormData({ _id: null, name: "", email: "" });
-            setIsModalOpen(true);
-          }}
-          className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center gap-2"
-        >
-          <FaUserPlus /> Add Employee
-        </button>
-      </div> */}
-      <div className="flex justify-between items-center mb-4">
-        <input
-          type="text"
-          placeholder="Search by name or email..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full border rounded-lg p-2 mr-4"
+    <div className=" px-6 sm:px-12 flex flex-col  gap-12 ">
+      <div className="flex justify-between">
+        <BreadCrumbs
+          title="Employees"
+          icon={<Users className="text-[#60646C] w-8 h-8" />}
         />
         <button
           onClick={() => {
@@ -144,84 +139,111 @@ const EmployeesTable = () => {
           }}
           className="bg-teal-500 text-white px-4 py-2 rounded-lg flex items-center gap-2"
         >
-          <FaUserPlus />  
-        </button>
-      </div>
-      {/* Header Row */}
-      <div className="grid grid-cols-3 gap-4 bg-white p-4 rounded-lg font-semibold border border-black/10 py-4 mb-4">
-        <div>Name</div>
-        <div>Status</div>
-        <div>Actions</div>
-      </div>
-      {/* Client Rows */}
-      <div className="grid gap-4">
-        {displayedClients.map((client) => (
-          <div
-            key={client._id}
-            className="grid grid-cols-3 gap-4 items-center bg-white p-4 rounded-lg shadow-md border"
-          >
-            <div className="flex items-center gap-4">
-              <img
-                src={client.avatar}
-                alt={`${client.name}'s avatar`}
-                className="w-12 h-12 rounded-full object-cover"
-              />
-              <div>
-                <p className="font-bold">{client.name}</p>
-                <p className="text-sm text-gray-500">{client.email}</p>
-              </div>
-            </div>
-            <span
-              className={`px-2 py-1 w-fit text-sm rounded ${
-                client.status === "Active"
-                  ? "bg-green-100 text-green-600"
-                  : "bg-red-100 text-red-600"
-              }`}
-            >
-              {client.status}
-            </span>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => handleEditClient(client)}
-                className="text-blue-500 hover:text-blue-700"
-              >
-                <FaEdit />
-              </button>
-              <button
-                onClick={() => handleDeleteClient(client._id)}
-                className="text-red-500 hover:text-red-700"
-              >
-                <FaTrashAlt />
-              </button>
-            </div>
-          </div>
-        ))}
-      </div>
-      {/* Pagination */}
-      <div className="flex justify-center items-center mt-4 space-x-2">
-        <button
-          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-          className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
-          disabled={currentPage === 1}
-        >
-          Prev
-        </button>
-        <span className="font-semibold">
-          Page {currentPage} of {totalPages}
-        </span>
-        <button
-          onClick={() =>
-            setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-          }
-          className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
-          disabled={currentPage === totalPages}
-        >
-          Next
+          <FaUserPlus />
+          Add An Employee
         </button>
       </div>
 
+      <div className="flex flex-col gap-4">
+        <div className="pr-5 space-x-4 w-full bg-white cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-3 rounded-lg shadow-sm">
+          <SearchIcon className="w-5 h-5 text-gray-500" />
+          <input
+            type="text"
+            placeholder="Search by name or email..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full  p-2 pl-3"
+          />
+          <FilterIcon className="w-5 h-5 text-gray-500 mr-4" />
+        </div>
+
+        {/* Header Row */}
+        <div className="w-full bg-white rounded-xl border border-[#E0E1E6] overflow-hidden">
+          <table className="w-full text-[#606475] border-separate  border-spacing-0 ">
+            <thead>
+              <tr>
+                <th className="text-sm font-semibold p-4 text-left border-b border-[#E0E1E6]">
+                  Name
+                </th>
+                <th className="text-sm font-semibold p-4 text-left border-b border-[#E0E1E6]">
+                  Status
+                </th>
+                <th className="text-sm font-semibold p-4 text-left border-b border-[#E0E1E6]">
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody className=" ">
+              {displayedClients.map((client) => (
+                <tr key={client._id}>
+                  <td className="flex items-center gap-4 p-4">
+                    <img
+                      src={client.avatar}
+                      alt={`${client.name}'s avatar`}
+                      className="w-10 h-10 rounded-xl object-cover"
+                    />
+                    <div>
+                      <p className="font-bold text-sm truncate text-[#1C2024]">
+                        {client.name}
+                      </p>
+                      <p className="text-sm text-gray-500 truncate text-[#1C2024]/80">
+                        {client.email}
+                      </p>
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      className={` w-fit px-2 py-1 text-sm rounded text-center ${
+                        client.status === "Active"
+                          ? "bg-green-100 text-green-600"
+                          : "bg-red-100 text-red-600"
+                      }`}
+                    >
+                      {client.status}
+                    </div>
+                  </td>
+                  <td className="flex items-center gap-2 p-4">
+                    <button
+                      onClick={() => handleEditClient(client)}
+                      className="text-gray-500 hover:text-teal-600"
+                    >
+                      <EllipsisVertical />
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Pagination */}
+        <div className="flex justify-center items-center mt-4 space-x-2 gap-4 text-[#1C2024]">
+          <button
+            onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+            className="w-full sm:w-auto flex items-center justify-center gap-4 px-4 py-2  bg-white border border-[#E0E1E6] rounded-lg p-2 pl-3 focus:border-green-200 focus:ring-green-200 shadow-sm rounded disabled:opacity-50"
+            disabled={currentPage === 1}
+          >
+            <ArrowLeftCircle />
+            Prev
+          </button>
+          <span className="w-full sm:w-auto">
+            Page {currentPage} of {totalPages}
+          </span>
+          <button
+            onClick={() =>
+              setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+            }
+            className="w-full sm:w-auto flex items-center justify-center gap-4 px-4 py-2 bg-white border border-[#E0E1E6] rounded-lg p-2 pl-3 focus:border-green-200 focus:ring-green-200 shadow-sm rounded disabled:opacity-50"
+            disabled={currentPage === totalPages}
+          >
+            Next
+            <ArrowRightCircle />
+          </button>
+        </div>
+      </div>
+
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[100000000]">
           <div className="bg-white p-6 rounded-lg shadow-lg w-96">
             <h2 className="text-xl font-bold mb-4">
               {editing ? "Edit Employee" : "Add Employee"}

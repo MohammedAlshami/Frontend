@@ -27,7 +27,7 @@ export default async function LocaleLayout({
       suppressHydrationWarning={true}
       className="bg-white light"
     >
-      <body className={` antialiased bg-white light`}>
+      <body className={` antialiased  light`}>
         <NextIntlClientProvider messages={messages}>
           <div className="relative h-svh	">
             {/* Content */}
