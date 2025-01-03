@@ -5,7 +5,17 @@ import L from "leaflet";
 
 const DEFAULT_BASEMAP = "http://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}";
 
-const GeneralMap = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
+const GeneralMap: React.FC = ({
+  basemap = DEFAULT_BASEMAP,
+  layers,
+  center,
+  zones,
+  showPopup,
+  setShowPopup,
+}) => {
+  const handleMapClick = (e) => {
+    setShowPopup(true);
+  };
   const mapRef = useRef(null);
   const MAXZOOM = 22;
 
@@ -190,7 +200,21 @@ const GeneralMap = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
       // Zoom to the clicked zone
       const bounds = clickedZone.getBounds(); // Get bounds of the clicked zone
       if (mapRef.current) {
-        mapRef.current.fitBounds(bounds); // Zoom to the bounds of the selected zone
+        const map = mapRef.current;
+        map.fitBounds(bounds);
+
+        // Get the center of the bounds
+        const zoneCenter = bounds.getCenter();
+
+        // Offset the center to move the zone to the left side
+        const mapSize = map.getSize();
+        const offsetX = mapSize.x * -0.3; // Adjust offset percentage
+        const offsetPoint = map
+          .latLngToContainerPoint(zoneCenter)
+          .subtract([offsetX, 0]);
+        const newCenter = map.containerPointToLatLng(offsetPoint);
+
+        map.setView(newCenter, map.getZoom());
       }
 
       // Set overlay cutout position and size
@@ -232,7 +256,10 @@ const GeneralMap = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
           data={zones}
           onEachFeature={(feature, layer) => {
             layer.on({
-              click: handleZoneClick, // Add click event listener to each zone
+              click: (e) => {
+                handleZoneClick(e);
+                handleMapClick(e);
+              }, // Add click event listener to each zone
             });
 
             layer.setStyle({
@@ -274,7 +301,7 @@ const GeneralMap = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
 
   function CustomZoomControl() {
     return (
-      <div className="absolute top-4 right-4 bg-[#F9FAFB] rounded shadow-lg z-[10000000000000] flex flex-col rounded-xl">
+      <div className={`absolute ${!showPopup ? "top-4 right-4 ": "top-4 left-4 "} bg-[#F9FAFB] rounded shadow-lg z-[10000000000000] flex flex-col rounded-xl`}>
         <button
           onClick={zoomIn}
           className="text-3xl p-2 px-4 bg-[#F9FAFB] text-black hover:cursor-pointer hover:bg-purple-600 rounded-t-xl"

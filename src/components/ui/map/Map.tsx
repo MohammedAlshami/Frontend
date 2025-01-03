@@ -9,6 +9,7 @@ import { TileLayer } from "react-leaflet";
 import WeatherCard from "./WeatherCard";
 import { MapOptions } from "./Mapoptions";
 import { FaMap, FaSatellite } from "react-icons/fa";
+import MapPopup from "../MapPopup";
 
 const MapPage = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
   const [showDateRangePicker, setShowDateRangePicker] = useState(true);
@@ -22,8 +23,11 @@ const MapPage = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
   };
 
   const [selectedLayer, setSelectedLayer] = useState<string>("");
+  const [showPopup, setShowPopup] = useState<boolean>(false);
   const [selectedBasemap, setSelectedBasemap] = useState<string>("Satellite");
-  const [currentBasemap, setCurrentBasemap] = useState<string>("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png");
+  const [currentBasemap, setCurrentBasemap] = useState<string>(
+    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+  );
 
   const basemaps = [
     {
@@ -71,11 +75,16 @@ const MapPage = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
         layers={<TileLayer url={basemapUrls[selectedLayer]} />}
         center={[1.632294, 103.771028]}
         zones={zones}
+        showPopup={showPopup}
+        setShowPopup={setShowPopup}
       />
 
       {/* Overlay Controls */}
       <div className="absolute top-0 right-0 z-10 p-4">
         <div className="flex flex-col gap-12">{/* <WeatherCard /> */}</div>
+        {showPopup && (
+          <MapPopup showPopup={showPopup} setShowPopup={setShowPopup} />
+        )}
       </div>
 
       {/* MapOptions positioned at bottom middle */}

@@ -266,11 +266,18 @@ const ImagesTab = () => {
     </div>
   );
 };
-const MapPopup = ({ ripeness_level, closePopup }) => {
+const MapPopup = ({
+  setShowPopup,
+  showPopup,
+  ripeness_level = "unripe",
+  closePopup = () => {
+    setShowPopup(!showPopup);
+  },
+}) => {
   const router = useRouter();
   return (
     <div>
-      <div className="h-full bg-white pb-8 w-[20rem] lg:w-[27rem] border-4 border-teal-500 rounded-xl px-4 py-2 flex flex-col gap-4 relative">
+      <div className="h-[40rem] bg-white pb-8 w-[20rem] lg:w-[27rem] border-4 border-teal-500 rounded-xl px-4 py-2 flex flex-col gap-4 relative">
         <button
           onClick={closePopup}
           className="absolute top-1 right-1 bg-teal-500 text-sm text-white rounded-lg w-6 h-6 hover:bg-teal-600"
