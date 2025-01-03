@@ -55,6 +55,19 @@ export function MapOptions({
       ),
       href: "#",
     },
+    {
+      title: "Date",
+      icon: (
+        <Icon
+          icon="lets-icons:date-range-fill"
+          width={20}
+          height={20}
+          className="text-neutral-900
+        "
+        />
+      ),
+      href: "#",
+    },
   ];
   return (
     <div className="flex items-center justify-center w-full">

@@ -5,7 +5,6 @@ const MapWithLayers: React.FC<{
   selectedLayer: string;
   setSelectedLayer: React.Dispatch<React.SetStateAction<string>>;
 }> = ({ selectedLayer, setSelectedLayer }) => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const layers = [
     { name: "NDVI", value: "ndvi", icon: <FaMap className="text-xl" /> },
@@ -22,14 +21,13 @@ const MapWithLayers: React.FC<{
   ];
 
   return (
-    <div className="relative z-50 bg-neutral-800  rounded-3xl shadow-2xl border border-white/30 text-white">
+    <div className="relative z-50 bg-neutral-800 p-4 rounded-3xl shadow-2xl border border-white/30 text-white">
       <div className="rounded-md border border-neutral-800  flex items-center  justify-center gap-8">
         {layers.map((layer, index) => (
           <button
             key={index}
             onClick={() => {
               setSelectedLayer(layer.value); // Update selected layer in parent
-              setIsDropdownOpen(false); // Close dropdown after selection
             }}
             className={`flex items-center w-full p-3 rounded-md ${
               selectedLayer === layer.value

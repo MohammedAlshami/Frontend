@@ -23,12 +23,12 @@ const MapPage = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
 
   const [selectedLayer, setSelectedLayer] = useState<string>("");
   const [selectedBasemap, setSelectedBasemap] = useState<string>("Satellite");
-  const [currentBasemap, setCurrentBasemap] = useState<string>("");
+  const [currentBasemap, setCurrentBasemap] = useState<string>("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png");
 
   const basemaps = [
     {
       name: "Satellite",
-      url: "http://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+      url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
       icon: <FaMap className="text-xl" />, // Placeholder icon
     },
     {
@@ -60,14 +60,14 @@ const MapPage = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
   };
 
   return (
-    <div className="relative h-screen w-full">
+    <div className="relative h-screen w-full ">
       {showDateRangePicker && (
         <DateRangePicker onClose={handleCloseDateRangePicker} />
       )}
 
       {/* GeneralMap Component */}
       <GeneralMap
-        basemap={currentBasemap || DEFAULT_BASEMAP} // Ensure the basemap is set
+        basemap={DEFAULT_BASEMAP} // Ensure the basemap is set
         layers={<TileLayer url={basemapUrls[selectedLayer]} />}
         center={[1.632294, 103.771028]}
         zones={zones}
