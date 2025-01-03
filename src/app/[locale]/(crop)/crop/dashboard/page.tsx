@@ -23,7 +23,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col  md:flex-row justify-between gap-24 ">
+        <div className="flex flex-col  md:flex-row justify-between gap-6 ">
           <div className="w-full">
             <div className="border-2 border-black-600/60 p-4 rounded-lg space-x-4 w-full bg-white cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-3 rounded-lg shadow-sm pl-8 pr-8 pt-8 pb-8">
               <YieldedBlocks />

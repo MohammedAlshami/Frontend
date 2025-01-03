@@ -1,3 +1,4 @@
+import {nextui} from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -7,6 +8,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@tailus/themer/dist/components/**/*.{js,ts}",
     "node_modules/preline/dist/*.js",
+    "./node_modules/@nextui-org/theme/dist/components/popover.js"
   ],
   theme: {
     extend: {
@@ -21,6 +23,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("preline/plugin"), require("daisyui")],
+  plugins: [require("preline/plugin"),require("daisyui"),nextui()],
 };
 export default config;

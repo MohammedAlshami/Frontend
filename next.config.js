@@ -58,6 +58,9 @@ const nextConfig = {
       }
     })(),
   },
+  images: {
+    domains: ["assets.aceternity.com"],
+  },
 };
 
 module.exports = withNextIntl(nextConfig);

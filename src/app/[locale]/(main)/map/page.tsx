@@ -4,18 +4,13 @@ import dynamic from "next/dynamic";
 import React from "react";
 import { useEffect, useState } from "react";
 import MiniSideBar from "@/components/prototyping/MiniSideBar";
-
 const layers = {
   Imagery:
     "https://zappa-drangue-deployments-test.s3.ap-southeast-1.amazonaws.com/MyHackathonMaps/myhackatho/{z}/{x}/{y}.png",
 };
-const DynamicMap = dynamic(
-  () => import("../../../../components/ui/MapComponent"),
-  {
-    ssr: false, // Disable SSR for this component
-  }
-);
-
+const DynamicMap = dynamic(() => import("../../../../components/ui/map/Map"), {
+  ssr: false, // Disable SSR for this component
+});
 
 const MapPage = () => {
   // const [geoJsonData, setGeoJsonData] = useState(null);

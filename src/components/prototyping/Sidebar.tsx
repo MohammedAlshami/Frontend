@@ -5,11 +5,14 @@ import {
   Calendar,
   ChevronDown,
   ChevronRight,
+  CreditCard,
   EllipsisVertical,
   LayoutDashboard,
   List,
+  ListCollapse,
   ListTodo,
   MapPinPlusInside,
+  ScrollTextIcon,
   SearchIcon,
   Tractor,
   TreeDeciduous,
@@ -18,14 +21,33 @@ import {
   WalletMinimal,
 } from "lucide-react";
 import { FaPeopleCarry } from "react-icons/fa";
-import { RiNotification3Line } from "@remixicon/react";
+import { RiExportLine, RiNotification3Line } from "@remixicon/react";
 import Link from "next/link";
+import { Tooltip } from "@nextui-org/tooltip";
 
 const links = [
   {
     href: "/en/crop/dashboard",
     label: "Dashboard",
     icon: <LayoutDashboard className="w-5 h-5 text-gray-500 " />,
+  },
+  {
+    href: "",
+    label: "Crop",
+    icon: <Tractor className="w-5 h-5 text-gray-500 " />,
+
+    children: [
+      {
+        href: "/en/crop/fields",
+        label: "Farms",
+        icon: <TreeDeciduous className="w-5 h-5 text-gray-500 " />,
+      },
+      {
+        href: "/en/crop/fields",
+        label: "Fields",
+        icon: <TreeDeciduous className="w-5 h-5 text-gray-500 " />,
+      },
+    ],
   },
   {
     href: "/en/crop/employees",
@@ -47,29 +69,22 @@ const links = [
     label: "Map",
     icon: <MapPinPlusInside className="w-5 h-5 text-gray-500 " />,
   },
+  {
+    href: "/en/crop/billing",
+    label: "Billing",
+    icon: <CreditCard className="w-5 h-5 text-gray-500 " />,
+  },
 
   {
-    href: "/en/crop/dashboard",
-    label: "Crop",
-    icon: <Tractor className="w-5 h-5 text-gray-500 " />,
-
-    children: [
-      {
-        href: "/en/crop/fields",
-        label: "Fields",
-        icon: <TreeDeciduous className="w-5 h-5 text-gray-500 " />,
-      },
-      {
-        href: "/en/crop/dashboard/analytics",
-        label: "Analytics",
-        icon: <WalletCards className="w-5 h-5 text-gray-500" />,
-      },
-    ],
+    href: "/en/crop/reports",
+    label: "Reports",
+    icon: <ScrollTextIcon className="w-5 h-5 text-gray-500 " />,
   },
 ];
 
-const Sidebar = ({ children }) => {
+const Sidebar = ({ children, Minimize }) => {
   const [expandedMenus, setExpandedMenus] = useState({});
+  var [isMinimized, setIsMinimized] = useState(Minimize);
 
   const toggleMenu = (index) => {
     setExpandedMenus((prev) => ({
@@ -79,65 +94,119 @@ const Sidebar = ({ children }) => {
   };
 
   return (
-    <div className=" bg-gray-50 transition-all duration-300 lg:hs-overlay-layout-open:ps-[260px] dark:bg-neutral-900">
+    <div className=" bg-gray-50 transition ease-in-out delay-150 ">
       <div id="content">
-        <div className="hidden sm:block hs-overlay-open hs-overlay w-[260px] h-full fixed inset-y-0 start-0 z-[60] bg-white dark:bg-neutral-800 border-r-2 ">
+        <div
+          className={`hidden sm:block hs-overlay-open hs-overlay ${
+            !isMinimized ? "w-[260px]" : "w-16"
+          } h-full fixed inset-y-0 start-0 z-[60] bg-white border-r-2 transition-all duration-600 ease-in-out`}
+        >
           <div className="relative flex   flex-col h-full">
-            <div className="px-6 pt-4  flex flex-row justify-between items-center gap-4 py-2">
+            <div
+              className={`px-3 pt-4  flex ${
+                isMinimized ? "flex-col" : "flex-row flex-row-reverse"
+              } justify-between items-center gap-4 py-2`}
+            >
+              <div
+                className="cursor-pointer hover:bg-black hover:text-white text-gray-500  rounded-full p-2"
+                onClick={() => setIsMinimized(!isMinimized)}
+              >
+                <ListCollapse
+                  className={`w-5 h-5  ${isMinimized ? "rotate-180" : ""}`}
+                />
+              </div>
               <a
                 className="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
                 href="#"
                 aria-label="Preline"
               >
-                <img src="/DRANGUE_Logo.png" alt="" className="w-28 h-auto" />
+                {!isMinimized ? (
+                  <img
+                    src="/DRANGUE_Logo.png"
+                    alt="Drangue Logo"
+                    className="w-28 h-auto"
+                  />
+                ) : (
+                  <img
+                    src="/DrangueMiniLogo.svg"
+                    alt="Drangue Mini Logo"
+                    className="w-10 h-auto"
+                  />
+                )}
               </a>
-              <RiNotification3Line className="w-5 h-5 text-gray-500" />
             </div>
             <div className="h-full overflow-y-auto  flex flex-col justify-between gap-4">
               <div className="flex flex-col gap-4 p-3">
-                <div className=" hover:bg-[#E0E1E6] cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-3 rounded-lg shadow-sm">
+                <div className=" hover:bg-[#E0E1E6] cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-2 rounded-lg shadow-sm">
                   <SearchIcon className="w-5 h-5 text-gray-500" />
-                  <h2 className="text-gray-500">Search</h2>
+                  {!isMinimized && <h2 className="text-gray-500">Search</h2>}
                 </div>
                 <div className="w-full h-[1px] bg-[#E0E1E6]"></div>
                 <ul className="space-y-1 ">
                   {links.map((link, index) => (
                     <li key={index}>
                       {!link.children ? (
-                        <Link
-                          locale="en"
-                          href={link.href}
-                          className="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900"
+                        <Tooltip
+                          content={link.label}
+                          showArrow={true}
+                          placement="right"
                         >
-                          {link.icon}
-                          <span className="flex-1">{link.label}</span>
-                        </Link>
+                          <Link
+                            locale="en"
+                            href={link.href}
+                            className="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900"
+                          >
+                            {link.icon}
+                            {!isMinimized && (
+                              <span className="flex-1">{link.label}</span>
+                            )}
+                          </Link>
+                        </Tooltip>
                       ) : (
-                        <div
-                          className="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 cursor-pointer"
-                          onClick={() => toggleMenu(index)}
+                        <Tooltip
+                          content={link.label}
+                          showArrow={true}
+                          placement="right"
                         >
-                          {link.icon}
-                          <span className="flex-1">{link.label}</span>
-                          {expandedMenus[index] ? (
-                            <ChevronDown className="w-5 h-5" />
-                          ) : (
-                            <ChevronRight className="w-5 h-5" />
-                          )}
-                        </div>
+                          <div
+                            className="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 cursor-pointer"
+                            onClick={() => toggleMenu(index)}
+                          >
+                            {link.icon}
+                            {!isMinimized && (
+                              <>
+                                <span className="flex-1">{link.label}</span>
+                                {expandedMenus[index] ? (
+                                  <ChevronDown className="w-5 h-5" />
+                                ) : (
+                                  <ChevronRight className="w-5 h-5" />
+                                )}
+                              </>
+                            )}
+                          </div>
+                        </Tooltip>
                       )}
                       {link.children && expandedMenus[index] && (
-                        <ul className="ml-6 space-y-1">
+                        <ul
+                          className={` ${!isMinimized ? "ml-6" : ""} space-y-1`}
+                        >
                           {link.children.map((child, childIndex) => (
-                            <li key={childIndex}>
-                              <a
-                                href={child.href}
-                                className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900"
-                              >
-                                {child.icon}
-                                {child.label}
-                              </a>
-                            </li>
+                            <Tooltip
+                              content={child.label}
+                              showArrow={true}
+                              placement="right"
+                              key={childIndex}
+                            >
+                              <li>
+                                <a
+                                  href={child.href}
+                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900"
+                                >
+                                  {child.icon}
+                                  {!isMinimized && child.label}
+                                </a>
+                              </li>
+                            </Tooltip>
                           ))}
                         </ul>
                       )}
@@ -152,18 +221,30 @@ const Sidebar = ({ children }) => {
                     <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#F0F1F5] text-[#60646C]">
                       S
                     </div>
-                    <div className="flex flex-col gap-1 w-9/12">
-                      <h2 className="text-sm truncate">Shami1</h2>
-                      <h2 className="text-sm truncate">mshami2021@gmail.com</h2>
-                    </div>
+                    {!isMinimized && (
+                      <div className="flex flex-col gap-1 w-9/12">
+                        <h2 className="text-sm truncate">Shami1</h2>
+                        <h2 className="text-sm truncate">
+                          mshami2021@gmail.com
+                        </h2>
+                      </div>
+                    )}
                   </div>
-                  <EllipsisVertical className="text-[#60646C] h-12 " />
+                  {!isMinimized && (
+                    <EllipsisVertical className="text-[#60646C] h-12 " />
+                  )}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="sm:pl-[240px] py-8 h-screen">{children}</div>
+        <div
+          className={`${
+            !isMinimized ? "sm:pl-[240px]" : "sm:pl-12"
+          } h-screen transition-all duration-600 ease-in-out`}
+        >
+          {children}
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import Calendar from "./CalendarComponent";
 
 const EventCard = ({ event }: { event: Event }) => (
-  <div className="p-6 rounded-xl bg-white">
+  <div className="p-6 rounded-xl border-2 border-black/5 shadow-sm">
     <div className="flex items-center justify-between mb-3">
       <div className="flex items-center gap-2.5">
         <span className={`w-2.5 h-2.5 rounded-full ${event.color}`}></span>
@@ -98,7 +98,7 @@ const CalendarUI = () => {
     <div className="flex flex-col gap-8">
       {" "}
       <Calendar />
-      <section className="bg-white flex flex-col bg-stone-50 border-2 border-black-600/60 p-8 rounded-lg w-full border border-[#E0E1E6] shadow-sm">
+      <section className="bg-white flex flex-col border-2 border-black-600/60 p-8 rounded-lg w-full border border-[#E0E1E6] shadow-sm">
         <h2 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5">
           Upcoming Events
         </h2>
