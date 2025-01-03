@@ -22,7 +22,7 @@ const MapWithLayers: React.FC<{
 
   return (
     <div className="relative z-50 bg-neutral-800 p-4 rounded-3xl shadow-2xl border border-white/30 text-white">
-      <div className="rounded-md border border-neutral-800  flex items-center  justify-center gap-8">
+      <div className="rounded-md border border-neutral-800  flex flex-col sm:flex-row items-center  justify-center gap-8">
         {layers.map((layer, index) => (
           <button
             key={index}

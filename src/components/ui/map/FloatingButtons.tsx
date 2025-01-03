@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const FloatingButtons = () => {
   return (
-    <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 flex gap-4 z-50">
+    <div className="fixed  sm:bottom-6 left-1/2 transform -translate-x-1/2 flex gap-4 z-50">
       <motion.button
         whileHover={{ scale: 1.1 }}
         className="bg-teal-500 p-4 rounded-full shadow-lg text-white"

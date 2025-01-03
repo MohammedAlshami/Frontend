@@ -70,7 +70,7 @@ export function MapOptions({
     },
   ];
   return (
-    <div className="flex items-center justify-center w-full">
+    <div className="flex items-center justify-center w-full mb-20 sm:mb-0">
       <FloatingDock
         mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}

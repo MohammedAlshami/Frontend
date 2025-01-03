@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { FaMap, FaSatellite } from "react-icons/fa";
 
-const BasemapSelector = ({selectedBasemap, setSelectedBasemap, basemaps}) => {
+const BasemapSelector = ({ selectedBasemap, setSelectedBasemap, basemaps }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
 
   return (
     <div className="relative z-50">
       <div className="relative bg-neutral-800 p-4 rounded-3xl shadow-2xl border border-white/30 text-white tooltip-container">
-        <div className="flex items-center justify-center rounded-md border border-neutral-800 gap-6">
+        <div className="flex flex-col sm:flex-row items-center justify-center rounded-md border border-neutral-800 gap-6">
           {basemaps.map((basemap, index) => (
             <button
               key={index}

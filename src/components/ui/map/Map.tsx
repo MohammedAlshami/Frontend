@@ -88,8 +88,8 @@ const MapPage = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
       </div>
 
       {/* MapOptions positioned at bottom middle */}
-      <div className="absolute bottom-0 left-0 right-0 flex justify-center items-center mb-8 z-10">
-        <div className="flex flex-col gap-8">
+      <div className="absolute bottom-0 left-6 sm:left-0 sm:right-0 flex justify-center items-center mb-8 z-10">
+        <div className="flex flex-row-reverse sm:flex-col gap-8">
           {selectedLayer == "Layers" && (
             <MapLayerSelector
               setSelectedLayer={setSelectedLayer}
