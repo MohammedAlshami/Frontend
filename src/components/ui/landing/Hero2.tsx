@@ -31,7 +31,7 @@ const CTA3 = () => {
         placeholder="Enter your email"
         className="w-full px-3 py-2.5 text-black bg-white focus:bg-blue-50 duration-150 outline-none rounded-lg shadow sm:max-w-sm sm:w-auto"
       />
-      <button className="flex items-center justify-center gap-x-2 py-2.5 px-4 mt-3 w-full text-sm text-white font-medium bg-sky-500 hover:bg-sky-400 active:bg-sky-600 duration-150 rounded-lg sm:mt-0 sm:w-auto">
+      <button className="flex items-center justify-center gap-x-2 py-2.5 px-4 mt-3 w-full text-sm text-white font-medium bg-violet-700 hover:bg-violet-800 active:bg-sky-600 duration-150 rounded-lg sm:mt-0 sm:w-auto">
         Get started
         <svg
           xmlns="http://www.w3.org/2000/svg"

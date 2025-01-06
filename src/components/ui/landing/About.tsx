@@ -18,7 +18,7 @@ const Feature1 = ({ features }) => {
       >
         <div className="max-w-xl space-y-3">
           <motion.h3
-            className="text-white font-semibold"
+            className="text-violet-700 font-semibold"
             initial={{ opacity: 0, y: -20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2 }}
@@ -59,7 +59,7 @@ const Feature1 = ({ features }) => {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.2 * idx }}
               >
-                <div className="flex-none w-12 h-12 bg-green-50 text-green-600 rounded-lg flex items-center justify-center">
+                <div className="flex-none w-12 h-12 bg-green-50 text-violet-700 rounded-lg flex items-center justify-center">
                   {item.icon}
                 </div>
                 <div>
@@ -132,7 +132,7 @@ const Feature2 = ({ features }) => {
       <div>
         <div className="max-w-xl space-y-3 bg-teal-500 h-fit p-4">
           <motion.h3
-            className="text-white font-semibold"
+            className="text-violet-700 font-semibold"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
@@ -166,7 +166,7 @@ const Feature2 = ({ features }) => {
           <ul className="space-y-8">
             {features.map((item, idx) => (
               <li key={idx} className="flex gap-x-4">
-                <div className="flex-none w-12 h-12 bg-green-50 text-green-600 rounded-lg flex items-center justify-center">
+                <div className="flex-none w-12 h-12 bg-green-50 text-violet-700 rounded-lg flex items-center justify-center">
                   {item.icon}
                 </div>
                 <div>
