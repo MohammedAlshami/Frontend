@@ -32,6 +32,7 @@ import {
   DropdownItem,
   Button,
 } from "@nextui-org/react";
+import { Icon } from "@iconify/react";
 const links = [
   {
     href: "/en/crop/dashboard",
@@ -39,22 +40,9 @@ const links = [
     icon: <LayoutDashboard className="w-5 h-5 text-gray-500 " />,
   },
   {
-    href: "",
-    label: "Crop",
-    icon: <Tractor className="w-5 h-5 text-gray-500 " />,
-
-    children: [
-      {
-        href: "/en/crop/fields",
-        label: "Farms",
-        icon: <TreeDeciduous className="w-5 h-5 text-gray-500 " />,
-      },
-      {
-        href: "/en/crop/fields",
-        label: "Fields",
-        icon: <TreeDeciduous className="w-5 h-5 text-gray-500 " />,
-      },
-    ],
+    href: "/en/crop/farms",
+    label: "Farm",
+    icon: <TreeDeciduous className="w-5 h-5 text-gray-500 " />,
   },
   {
     href: "/en/crop/employees",
@@ -64,7 +52,12 @@ const links = [
   {
     href: "/en/crop/detect",
     label: "Detect",
-    icon: <Camera className="w-5 h-5 text-gray-500 " />,
+    icon: (
+      <Icon
+        icon="fluent:scan-camera-16-filled"
+        className="w-5 h-5 text-gray-500 "
+      />
+    ),
   },
   {
     href: "/en/crop/tasks",
@@ -109,14 +102,16 @@ const Sidebar = ({ children, Minimize }) => {
     <div className=" bg-gray-50 transition ease-in-out delay-150 ">
       <div id="content">
         <div
-          className={`hidden sm:block hs-overlay-open hs-overlay ${
-            !isMinimized ? "w-[260px]" : "w-16"
-          } h-full fixed inset-y-0 start-0 z-[60] bg-white border-r-2 transition-all duration-600 ease-in-out`}
+          className={`w-full sm:block hs-overlay-open hs-overlay ${
+            !isMinimized ? "sm:w-[260px]  h-fit " : "sm:w-16"
+          } sm:h-full fixed inset-y-0 start-0 z-[60] bg-white border-r-2 transition-all duration-600 ease-in-out`}
         >
           <div className="relative flex   flex-col h-full">
             <div
               className={`px-3 pt-4  flex ${
-                isMinimized ? "flex-col" : "flex-row flex-row-reverse"
+                isMinimized
+                  ? "flex-row-reverse sm:flex-col"
+                  : "flex-row flex-row-reverse"
               } justify-between items-center gap-4 py-2`}
             >
               <div
@@ -147,7 +142,11 @@ const Sidebar = ({ children, Minimize }) => {
                 )}
               </a>
             </div>
-            <div className="h-full overflow-y-auto flex flex-col justify-between gap-4">
+            <div
+              className={`${
+                !isMinimized ? "hidden" : ""
+              }  sm:flex h-full overflow-y-auto  flex-col justify-between gap-4`}
+            >
               <div className="flex flex-col gap-4 p-3">
                 <div className="hover:bg-[#E0E1E6] cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-2 rounded-lg shadow-sm">
                   <SearchIcon className="w-5 h-5 text-gray-500" />
@@ -295,7 +294,7 @@ const Sidebar = ({ children, Minimize }) => {
         </div>
         <div
           className={`${
-            !isMinimized ? "sm:pl-[240px]" : "sm:pl-12"
+            !isMinimized ? "pt-12 sm:pl-[240px]" : "sm:pl-12"
           } h-screen transition-all duration-600 ease-in-out`}
         >
           {children}

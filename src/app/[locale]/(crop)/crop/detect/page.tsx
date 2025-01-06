@@ -289,8 +289,7 @@ const Page = () => {
   return (
     <div
       ref={containerRef}
-      className="relative bg-teal-700 w-full h-screen flex items-center justify-center overflow-hidden"
-      style={{ backgroundImage: "url('/loginbg.svg')" }}
+      className="relative  w-full h-screen flex items-center justify-center overflow-hidden"
     >
       {modalVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -356,12 +355,6 @@ const Page = () => {
 
       {/* Render the image generated from the canvas */}
 
-      <div
-        className="absolute top-4 left-4 z-50 bg-teal-500 p-2 rounded-full flex items-center justify-center cursor-pointer"
-        onClick={() => router.back()}
-      >
-        <ArrowLeft size={24} className="text-white" />
-      </div>
     </div>
   );
 };
