@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import {
   AlertCircle,
   Calendar,
+  Camera,
   ChevronDown,
   ChevronRight,
   CreditCard,
@@ -59,6 +60,11 @@ const links = [
     href: "/en/crop/employees",
     label: "Employees",
     icon: <Users className="w-5 h-5 text-gray-500 " />,
+  },
+  {
+    href: "/en/crop/detect",
+    label: "Detect",
+    icon: <Camera className="w-5 h-5 text-gray-500 " />,
   },
   {
     href: "/en/crop/tasks",
