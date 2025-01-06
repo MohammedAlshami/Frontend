@@ -5,7 +5,7 @@ import L from "leaflet";
 
 const DEFAULT_BASEMAP = "http://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}";
 
-const GeneralMap: React.FC = ({
+const GeneralMap = ({
   basemap = DEFAULT_BASEMAP,
   layers,
   center,
@@ -13,20 +13,21 @@ const GeneralMap: React.FC = ({
   showPopup,
   setShowPopup,
 }) => {
-  const handleMapClick = (e) => {
-    setShowPopup(true);
-  };
   const mapRef = useRef(null);
   const MAXZOOM = 22;
-
-  const [selectedZone, setSelectedZone] = useState(null); // State to track selected zone
-  const [cutoutStyle, setCutoutStyle] = useState({ display: "none" }); // State for overlay cutout
+  const [selectedZone, setSelectedZone] = useState(null);
+  const [cutoutStyle, setCutoutStyle] = useState({ display: "none" });
   const [cutoutPosition, setCutoutPosition] = useState({
     top: 0,
     left: 0,
     width: 0,
     height: 0,
   });
+
+  const handleMapClick = (e) => {
+    setShowPopup(true);
+  };
+
   // Custom TileLayer with caching
   const CachedTileLayer = ({ urlTemplate, ...props }) => {
     const getTileKey = (x, y, z) => `tile_${z}_${x}_${y}`;
@@ -36,16 +37,13 @@ const GeneralMap: React.FC = ({
         const cachedData = localStorage.getItem(key);
         if (!cachedData) return null;
 
-        // Try to parse the cached data
         const { timestamp, dataUrl } = JSON.parse(cachedData);
 
-        // Check if cache is older than 24 hours
         if (Date.now() - timestamp > 24 * 60 * 60 * 1000) {
           localStorage.removeItem(key);
           return null;
         }
 
-        // Verify the data URL is valid
         const response = await fetch(dataUrl);
         if (!response.ok) {
           localStorage.removeItem(key);
@@ -62,7 +60,6 @@ const GeneralMap: React.FC = ({
 
     const saveTileToCache = async (key, blob) => {
       try {
-        // Convert blob to data URL
         return new Promise((resolve) => {
           const reader = new FileReader();
           reader.onloadend = () => {
@@ -76,9 +73,9 @@ const GeneralMap: React.FC = ({
             } catch (error) {
               if (error.name === "QuotaExceededError") {
                 console.error("LocalStorage quota exceeded. Clearing cache.");
-                localStorage.clear(); // Clear the local storage cache if quota is exceeded
+                localStorage.clear();
               }
-              resolve(null); // If saving fails, resolve with null
+              resolve(null);
             }
           };
           reader.readAsDataURL(blob);
@@ -114,7 +111,6 @@ const GeneralMap: React.FC = ({
 
         const loadTile = async () => {
           try {
-            // First try to load from cache
             const cachedTile = await loadTileFromCache(key);
             if (cachedTile) {
               tile.src = cachedTile;
@@ -122,7 +118,6 @@ const GeneralMap: React.FC = ({
               return;
             }
 
-            // If not in cache, fetch from server
             const url = urlTemplate
               .replace("{x}", coords.x)
               .replace("{y}", coords.y)
@@ -134,7 +129,6 @@ const GeneralMap: React.FC = ({
               return;
             }
 
-            // Save to cache and set tile src
             const dataUrl = await saveTileToCache(key, tileBlob);
             if (dataUrl) {
               tile.src = dataUrl;
@@ -171,69 +165,104 @@ const GeneralMap: React.FC = ({
     }
   };
 
+  const defaultStyle = {
+    color: "yellow",
+    weight: 2,
+    fillColor: "yellow",
+    fillOpacity: 0.5,
+  };
+
   const handleZoneClick = (e) => {
+    if (!e.target || !e.target.setStyle) {
+      console.error('Invalid layer clicked');
+      return;
+    }
+
     const clickedZone = e.target;
 
-    // If the clicked zone is the same as the selected one, deselect it
-    if (selectedZone === clickedZone) {
-      setSelectedZone(null);
-      clickedZone.setStyle({
-        fillColor: "yellow", // Default color
-      });
-      setCutoutStyle({ display: "none" }); // Hide overlay
-    } else {
-      // Set the color of the previously selected zone back to yellow
-      if (selectedZone) {
-        selectedZone.setStyle({
-          fillColor: "yellow", // Default color
+    try {
+      if (selectedZone === clickedZone) {
+        setSelectedZone(null);
+        clickedZone.setStyle(defaultStyle);
+        setCutoutStyle({ display: "none" });
+      } else {
+        if (selectedZone && selectedZone.setStyle) {
+          selectedZone.setStyle(defaultStyle);
+        }
+
+        clickedZone.setStyle({
+          ...defaultStyle,
+          fillColor: "green",
+        });
+
+        setSelectedZone(clickedZone);
+
+        const bounds = clickedZone.getBounds();
+        if (mapRef.current) {
+          const map = mapRef.current;
+          map.fitBounds(bounds);
+
+          const zoneCenter = bounds.getCenter();
+          const mapSize = map.getSize();
+          const offsetX = mapSize.x * -0.3;
+          const offsetPoint = map
+            .latLngToContainerPoint(zoneCenter)
+            .subtract([offsetX, 0]);
+          const newCenter = map.containerPointToLatLng(offsetPoint);
+
+          map.setView(newCenter, map.getZoom());
+        }
+
+        const zoneBounds = clickedZone.getBounds();
+        const cutout = {
+          top: zoneBounds.getNorthWest().lat + "%",
+          left: zoneBounds.getNorthWest().lng + "%",
+          width: (zoneBounds.getSouthEast().lng - zoneBounds.getNorthWest().lng) + "%",
+          height: (zoneBounds.getSouthEast().lat - zoneBounds.getNorthWest().lat) + "%",
+        };
+        
+        setCutoutPosition(cutout);
+        setCutoutStyle({
+          display: "block",
+          ...cutout,
         });
       }
+    } catch (error) {
+      console.error('Error handling zone click:', error);
+    }
+  };
 
-      // Set the color of the clicked zone to green
-      clickedZone.setStyle({
-        fillColor: "green",
-      });
-
-      // Update the selected zone state
-      setSelectedZone(clickedZone);
-
-      // Zoom to the clicked zone
-      const bounds = clickedZone.getBounds(); // Get bounds of the clicked zone
-      if (mapRef.current) {
-        const map = mapRef.current;
-        map.fitBounds(bounds);
-
-        // Get the center of the bounds
-        const zoneCenter = bounds.getCenter();
-
-        // Offset the center to move the zone to the left side
-        const mapSize = map.getSize();
-        const offsetX = mapSize.x * -0.3; // Adjust offset percentage
-        const offsetPoint = map
-          .latLngToContainerPoint(zoneCenter)
-          .subtract([offsetX, 0]);
-        const newCenter = map.containerPointToLatLng(offsetPoint);
-
-        map.setView(newCenter, map.getZoom());
-      }
-
-      // Set overlay cutout position and size
-      const zoneBounds = clickedZone.getBounds();
-      const cutout = {
-        top: zoneBounds.getNorthWest().lat + "%", // Adjust position
-        left: zoneBounds.getNorthWest().lng + "%",
-        width:
-          zoneBounds.getSouthEast().lng - zoneBounds.getNorthWest().lng + "%",
-        height:
-          zoneBounds.getSouthEast().lat - zoneBounds.getNorthWest().lat + "%",
-      };
-      setCutoutPosition(cutout);
-      setCutoutStyle({
-        display: "block", // Show overlay
-        ...cutout,
+  const onEachFeature = (feature, layer) => {
+    if (layer) {
+      layer.on({
+        click: (e) => {
+          handleZoneClick(e);
+          handleMapClick(e);
+        },
       });
     }
   };
+
+  const CustomZoomControl = () => {
+    return (
+      <div className={`absolute ${!showPopup ? "top-4 right-4" : "top-4 left-4"} bg-[#F9FAFB] rounded shadow-lg z-[10000000000000] flex flex-col rounded-xl`}>
+        <button
+          onClick={zoomIn}
+          className="text-3xl p-2 px-4 bg-[#F9FAFB] text-black hover:cursor-pointer hover:bg-purple-600 rounded-t-xl"
+        >
+          +
+        </button>
+        <hr className="border-t border-gray-500" />
+        <button
+          onClick={zoomOut}
+          className="text-3xl p-2 px-2 bg-[#F9FAFB] text-black hover:cursor-pointer hover:bg-purple-600 rounded-b-xl"
+        >
+          -
+        </button>
+      </div>
+    );
+  };
+
   return (
     <div style={{ position: "relative", height: "100vh" }}>
       <MapContainer
@@ -252,28 +281,16 @@ const GeneralMap: React.FC = ({
         />
         {layers}
 
-        <GeoJSON
-          data={zones}
-          onEachFeature={(feature, layer) => {
-            layer.on({
-              click: (e) => {
-                handleZoneClick(e);
-                handleMapClick(e);
-              }, // Add click event listener to each zone
-            });
-
-            layer.setStyle({
-              color: "yellow",
-              weight: 2,
-              fillColor: "yellow", // Default fill color
-              fillOpacity: 0.5,
-            });
-          }}
-        />
+        {zones && (
+          <GeoJSON
+            data={zones}
+            style={defaultStyle}
+            onEachFeature={onEachFeature}
+          />
+        )}
         <CustomZoomControl />
       </MapContainer>
 
-      {/* Overlay cutout */}
       <div
         style={{
           ...cutoutStyle,
@@ -282,42 +299,22 @@ const GeneralMap: React.FC = ({
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundColor: "rgba(0, 0, 0, 0.7)", // Dark overlay
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
           zIndex: 1000,
-          pointerEvents: "none", // Prevent overlay from blocking clicks
+          pointerEvents: "none",
         }}
       >
         <div
           style={{
             position: "absolute",
-            backgroundColor: "transparent", // Cutout effect
-            border: "2px solid white", // Optional: Add a border around the selected zone
+            backgroundColor: "transparent",
+            border: "2px solid white",
             ...cutoutPosition,
           }}
         />
       </div>
     </div>
   );
-
-  function CustomZoomControl() {
-    return (
-      <div className={`absolute ${!showPopup ? "top-4 right-4 ": "top-4 left-4 "} bg-[#F9FAFB] rounded shadow-lg z-[10000000000000] flex flex-col rounded-xl`}>
-        <button
-          onClick={zoomIn}
-          className="text-3xl p-2 px-4 bg-[#F9FAFB] text-black hover:cursor-pointer hover:bg-purple-600 rounded-t-xl"
-        >
-          +
-        </button>
-        <hr className="border-t border-gray-500" />
-        <button
-          onClick={zoomOut}
-          className="text-3xl p-2 px-2 bg-[#F9FAFB] text-black hover:cursor-pointer hover:bg-purple-600 rounded-b-xl "
-        >
-          -
-        </button>
-      </div>
-    );
-  }
 };
 
 export default GeneralMap;

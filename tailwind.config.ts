@@ -8,7 +8,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@tailus/themer/dist/components/**/*.{js,ts}",
     "node_modules/preline/dist/*.js",
-    "./node_modules/@nextui-org/theme/dist/components/popover.js"
+    "./node_modules/@nextui-org/theme/dist/components/(dropdown|popover|menu|divider|button|ripple|spinner).js"
   ],
   theme: {
     extend: {

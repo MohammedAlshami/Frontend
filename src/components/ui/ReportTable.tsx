@@ -10,10 +10,9 @@ const ReportTable = () => {
       id: 1,
       date: "2025-01-01",
       orderNumber: "482521350-857",
-      status: "PAID",
-      paymentMethod: "Card",
-      product: "Subscription: Annual Plan",
-      total: "US$198.00",
+      product: "Crops Collected 2024",
+      description:
+        "Detailed report on the crops harvested in 2024, including yield and quality analysis.",
       file: "https://raw.githubusercontent.com/py-pdf/sample-files/refs/heads/main/025-attachment/with-attachment.pdf",
     },
     {
@@ -21,14 +20,17 @@ const ReportTable = () => {
       date: "2025-02-01",
       orderNumber: "482475520-431",
       product: "1 product",
+      description:
+        "Summary of the single crop harvested in early 2025, including yield and quality analysis.",
       file: "https://raw.githubusercontent.com/py-pdf/sample-files/refs/heads/main/025-attachment/with-attachment.pdf",
     },
     {
       id: 3,
       date: "2025-03-31",
       orderNumber: "482475527-936",
-
       product: "1 product",
+      description:
+        "Report on the crop harvested at the end of the first quarter of 2025, including yield and quality analysis.",
       file: "https://raw.githubusercontent.com/py-pdf/sample-files/refs/heads/main/025-attachment/with-attachment.pdf",
     },
   ]);
@@ -86,7 +88,9 @@ const ReportTable = () => {
               <tr key={report.id}>
                 <td className="p-4">{report.date}</td>
                 <td className="p-4">{report.orderNumber}</td>
-                <td className="p-4">{report.product}</td>
+                <td className="p-4 overflow-hidden text-ellipsis whitespace-nowrap max-w-xs">
+                  {report.description}
+                </td>
                 <td className="p-4">
                   <a
                     href={report.file}

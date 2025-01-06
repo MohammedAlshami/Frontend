@@ -19,6 +19,7 @@ const MapWithLayers: React.FC<{
       icon: <FaCloudRain className="text-xl" />,
     },
   ];
+  
 
   return (
     <div className="relative z-50 bg-neutral-800 p-4 rounded-3xl shadow-2xl border border-white/30 text-white">

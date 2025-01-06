@@ -66,7 +66,7 @@ const BillingTable = () => {
       />
     </div> */}
 
-      <div className="w-full bg-white rounded-xl border border-[#E0E1E6] overflow-auto">
+      <div className="bg-white w-full bg-white rounded-xl border border-[#E0E1E6] overflow-auto">
         <table className="w-full text-[#606475] border-separate border-spacing-0">
           <thead>
             <tr>

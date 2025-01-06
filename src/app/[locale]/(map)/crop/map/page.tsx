@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import MiniSideBar from "@/components/prototyping/MiniSideBar";
 import BreadCrumbs from "@/components/ui/BreadCrumbs";
 import { LayoutDashboard, MapIcon } from "lucide-react";
+import { useSearchParams } from "next/navigation";
 const layers = {
   Imagery:
     "https://zappa-drangue-deployments-test.s3.ap-southeast-1.amazonaws.com/MyHackathonMaps/myhackatho/{z}/{x}/{y}.png",
@@ -19,6 +20,10 @@ const DynamicMap = dynamic(
 
 const MapPage = () => {
   // const [geoJsonData, setGeoJsonData] = useState(null);
+
+  const searchParams = useSearchParams();
+  const map_id = searchParams.get("map_id")?.replace(/"/g, ""); // Remove quotes if present
+
   const zonesData = {
     type: "FeatureCollection",
     name: "Zones",
@@ -4698,6 +4703,17 @@ const MapPage = () => {
   //     .catch((error) => console.error("Error fetching geojson data:", error));
   //   console.log(zonesData);
   // }, []);
+  const mapConfigs = {
+    palm: {
+      center: [-21.098761, -175.342867],
+      layers: layers,
+    },
+    pineapple: {
+      center: [-21.098761, -175.342867],
+      layers: layers,
+    },
+  };
+  const selectedConfig = mapConfigs[map_id];
   return (
     <div className=" flex flex-col  gap-12 pl-2 bg-[#FCFCFD]">
       {/* <BreadCrumbs
@@ -4705,11 +4721,17 @@ const MapPage = () => {
         icon={<MapIcon className="text-[#60646C] w-8 h-8" />}
       /> */}
 
-      <DynamicMap
-        center={[1.632294, 103.771028]}
-        layers={layers}
-        zones={zonesData}
-      />
+      {selectedConfig ? (
+        <DynamicMap
+          center={selectedConfig.center}
+          layers={selectedConfig.layers}
+          zones={zonesData}
+        />
+      ) : (
+        <div className="h-full flex items-center justify-center">
+          <p>Map not found for ID: {map_id}</p>
+        </div>
+      )}
     </div>
   );
 };

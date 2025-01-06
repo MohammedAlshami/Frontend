@@ -24,7 +24,13 @@ import { FaPeopleCarry } from "react-icons/fa";
 import { RiExportLine, RiNotification3Line } from "@remixicon/react";
 import Link from "next/link";
 import { Tooltip } from "@nextui-org/tooltip";
-
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  Button,
+} from "@nextui-org/react";
 const links = [
   {
     href: "/en/crop/dashboard",
@@ -135,106 +141,149 @@ const Sidebar = ({ children, Minimize }) => {
                 )}
               </a>
             </div>
-            <div className="h-full overflow-y-auto  flex flex-col justify-between gap-4">
+            <div className="h-full overflow-y-auto flex flex-col justify-between gap-4">
               <div className="flex flex-col gap-4 p-3">
-                <div className=" hover:bg-[#E0E1E6] cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-2 rounded-lg shadow-sm">
+                <div className="hover:bg-[#E0E1E6] cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-2 rounded-lg shadow-sm">
                   <SearchIcon className="w-5 h-5 text-gray-500" />
                   {!isMinimized && <h2 className="text-gray-500">Search</h2>}
                 </div>
                 <div className="w-full h-[1px] bg-[#E0E1E6]"></div>
-                <ul className="space-y-1 ">
+                <ul className="space-y-1">
                   {links.map((link, index) => (
                     <li key={index}>
                       {!link.children ? (
-                        <Tooltip
-                          content={link.label}
-                          showArrow={true}
-                          placement="right"
-                        >
+                        isMinimized ? (
+                          <Tooltip
+                            content={link.label}
+                            showArrow={true}
+                            placement="right"
+                            delay={10}
+                          >
+                            <Link
+                              locale="en"
+                              href={link.href}
+                              className="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900"
+                            >
+                              {link.icon}
+                              {!isMinimized && (
+                                <span className="flex-1">{link.label}</span>
+                              )}
+                            </Link>
+                          </Tooltip>
+                        ) : (
                           <Link
                             locale="en"
                             href={link.href}
                             className="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900"
                           >
                             {link.icon}
-                            {!isMinimized && (
-                              <span className="flex-1">{link.label}</span>
-                            )}
+                            <span className="flex-1">{link.label}</span>
                           </Link>
-                        </Tooltip>
+                        )
                       ) : (
-                        <Tooltip
-                          content={link.label}
-                          showArrow={true}
-                          placement="right"
-                        >
-                          <div
-                            className="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 cursor-pointer"
-                            onClick={() => toggleMenu(index)}
-                          >
-                            {link.icon}
-                            {!isMinimized && (
-                              <>
-                                <span className="flex-1">{link.label}</span>
-                                {expandedMenus[index] ? (
-                                  <ChevronDown className="w-5 h-5" />
-                                ) : (
-                                  <ChevronRight className="w-5 h-5" />
-                                )}
-                              </>
-                            )}
-                          </div>
-                        </Tooltip>
-                      )}
-                      {link.children && expandedMenus[index] && (
-                        <ul
-                          className={` ${!isMinimized ? "ml-6" : ""} space-y-1`}
-                        >
-                          {link.children.map((child, childIndex) => (
+                        <>
+                          {isMinimized ? (
                             <Tooltip
-                              content={child.label}
+                              content={link.label}
                               showArrow={true}
                               placement="right"
-                              key={childIndex}
+                              delay={10}
                             >
-                              <li>
-                                <a
-                                  href={child.href}
-                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900"
-                                >
-                                  {child.icon}
-                                  {!isMinimized && child.label}
-                                </a>
-                              </li>
+                              <div
+                                className="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 cursor-pointer"
+                                onClick={() => toggleMenu(index)}
+                              >
+                                {link.icon}
+                              </div>
                             </Tooltip>
-                          ))}
-                        </ul>
+                          ) : (
+                            <div
+                              className="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 cursor-pointer"
+                              onClick={() => toggleMenu(index)}
+                            >
+                              {link.icon}
+                              <span className="flex-1">{link.label}</span>
+                              {expandedMenus[index] ? (
+                                <ChevronDown className="w-5 h-5" />
+                              ) : (
+                                <ChevronRight className="w-5 h-5" />
+                              )}
+                            </div>
+                          )}
+                          {link.children && expandedMenus[index] && (
+                            <ul
+                              className={`${
+                                !isMinimized ? "ml-6" : ""
+                              } space-y-1`}
+                            >
+                              {link.children.map((child, childIndex) =>
+                                isMinimized ? (
+                                  <Tooltip
+                                    key={childIndex}
+                                    content={child.label}
+                                    showArrow={true}
+                                    placement="right"
+                                    delay={10}
+                                  >
+                                    <li>
+                                      <a
+                                        href={child.href}
+                                        className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900"
+                                      >
+                                        {child.icon}
+                                      </a>
+                                    </li>
+                                  </Tooltip>
+                                ) : (
+                                  <li key={childIndex}>
+                                    <a
+                                      href={child.href}
+                                      className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900"
+                                    >
+                                      {child.icon}
+                                      {child.label}
+                                    </a>
+                                  </li>
+                                )
+                              )}
+                            </ul>
+                          )}
+                        </>
                       )}
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="p-1 border-t-2 border-[#E0E1E6]">
-                <div className="flex justify-between items-center rounded-lg p-2 hover:bg-[#E0E1E6] cursor-pointer">
-                  <div className="flex  justify-center items-center gap-4 w-11/12">
-                    <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#F0F1F5] text-[#60646C]">
-                      S
-                    </div>
-                    {!isMinimized && (
-                      <div className="flex flex-col gap-1 w-9/12">
-                        <h2 className="text-sm truncate">Shami1</h2>
-                        <h2 className="text-sm truncate">
-                          mshami2021@gmail.com
-                        </h2>
+              <Dropdown className="border-2 border-black/5">
+                <DropdownTrigger>
+                  <div className="p-1 border-t-2 border-[#E0E1E6]">
+                    <div className="flex justify-between items-center rounded-lg p-2 hover:bg-[#E0E1E6] cursor-pointer">
+                      <div className="flex justify-center items-center gap-4 w-11/12">
+                        <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#F0F1F5] text-[#60646C]">
+                          S
+                        </div>
+                        {!isMinimized && (
+                          <div className="flex flex-col gap-1 w-9/12">
+                            <h2 className="text-sm truncate">Shami1</h2>
+                            <h2 className="text-sm truncate">
+                              mshami2021@gmail.com
+                            </h2>
+                          </div>
+                        )}
                       </div>
-                    )}
+                      {!isMinimized && (
+                        <EllipsisVertical className="text-[#60646C] h-12" />
+                      )}
+                    </div>
                   </div>
-                  {!isMinimized && (
-                    <EllipsisVertical className="text-[#60646C] h-12 " />
-                  )}
-                </div>
-              </div>
+                </DropdownTrigger>
+                <DropdownMenu aria-label="Link Actions">
+                  <DropdownItem key="home" href="/en/logout">
+                    Logout
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
             </div>
           </div>
         </div>
