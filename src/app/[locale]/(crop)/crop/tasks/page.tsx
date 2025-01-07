@@ -6,6 +6,8 @@ import BreadCrumbs from "@/components/ui/BreadCrumbs";
 import { ClipboardList, SearchIcon, FilterIcon, EllipsisVertical } from "lucide-react";
 import DataTable from "@/components/ui/DataTable";
 
+import {Card, Skeleton} from "@nextui-org/react";
+
 const TasksPage = () => {
   const [tasks, setTasks] = useState([]);
   const [employees, setEmployees] = useState([]);
@@ -233,7 +235,9 @@ const TasksPage = () => {
         </button>
       </div>
 
+
       <DataTable
+      isLoading={tasks.length === 0}
         data={tasks}
         columns={columns}
         searchKeys={["name", "priority"]}

@@ -11,6 +11,7 @@ import { MapOptions } from "./Mapoptions";
 import { FaMap, FaSatellite } from "react-icons/fa";
 import MapPopup from "../MapPopup";
 import { Expand } from "lucide-react";
+import { Skeleton } from "@nextui-org/react";
 
 const MapPage = ({
   basemap = DEFAULT_BASEMAP,
@@ -19,7 +20,9 @@ const MapPage = ({
   zones,
   height,
   setExpandMap,
-  expandedMap
+  expandedMap,
+  setLoading,
+  loading
 }) => {
   const [showDateRangePicker, setShowDateRangePicker] = useState(true);
 
@@ -78,7 +81,7 @@ const MapPage = ({
         <DateRangePicker onClose={handleCloseDateRangePicker} />
       )} */}
 
-      {/* GeneralMap Component */}
+   
       <GeneralMap
         basemap={DEFAULT_BASEMAP} // Ensure the basemap is set
         layers={<TileLayer url={basemapUrls[selectedLayer]} />}
@@ -86,6 +89,8 @@ const MapPage = ({
         zones={zones}
         showPopup={showPopup}
         setShowPopup={setShowPopup}
+        setLoading={setLoading}
+        loading={loading}
       />
 
       {/* Overlay Controls */}

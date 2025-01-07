@@ -5,6 +5,8 @@ import { EllipsisVertical, Users } from "lucide-react";
 import { FaUserPlus } from "react-icons/fa";
 import BreadCrumbs from "@/components/ui/BreadCrumbs";
 import Image from "next/image";
+import { Card, Skeleton } from "@nextui-org/react";
+
 const EmployeesPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editing, setEditing] = useState(false);
@@ -147,6 +149,7 @@ const EmployeesPage = () => {
       </div>
 
       <DataTable
+        isLoading={clients.length === 0}
         data={clients}
         columns={columns}
         searchKeys={["name", "email"]}

@@ -3,10 +3,10 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import { useEffect, useState } from "react";
-import MiniSideBar from "@/components/prototyping/MiniSideBar";
 import BreadCrumbs from "@/components/ui/BreadCrumbs";
 import { LayoutDashboard, MapIcon } from "lucide-react";
 import { useSearchParams } from "next/navigation";
+import { Skeleton } from "@nextui-org/react";
 const layers = {
   Imagery:
     "https://zappa-drangue-deployments-test.s3.ap-southeast-1.amazonaws.com/MyHackathonMaps/myhackatho/{z}/{x}/{y}.png",
@@ -24,6 +24,7 @@ const MapPage = () => {
 
   const searchParams = useSearchParams();
   const map_id = searchParams.get("map_id")?.replace(/"/g, ""); // Remove quotes if present
+  const [loading, setLoading] = useState(true);
 
   const pineapple_data = {
     type: "FeatureCollection",
@@ -4944,13 +4945,13 @@ const MapPage = () => {
   // }, []);
 
   const columns = [
-    { key: 'id', header: 'Field ID' },
-    { key: 'field1', header: 'Field 1' },
-    { key: 'field2', header: 'Field 2' },
-    { key: 'numberOfTrees', header: 'Trees' },
-    { 
-      key: 'harvestProgress',
-      header: 'Harvest Progress',
+    { key: "id", header: "Field ID" },
+    { key: "field1", header: "Field 1" },
+    { key: "field2", header: "Field 2" },
+    { key: "numberOfTrees", header: "Trees" },
+    {
+      key: "harvestProgress",
+      header: "Harvest Progress",
       render: (_, row) => (
         <div className="flex items-center gap-3">
           <div className="w-32 bg-gray-200 rounded-full h-2">
@@ -4965,13 +4966,13 @@ const MapPage = () => {
             {row.harvestedFruits}/{row.totalFruits}
           </span>
         </div>
-      )
-    }
+      ),
+    },
   ];
   const [expandMap, setExpandMap] = useState(false);
   const mapConfigs = {
     palm: {
-      center: [-175.34461286299586, -21.09871681897323, ],
+      center: [-175.34461286299586, -21.09871681897323],
       layers: layers,
       data: palm_data,
     },
@@ -4985,65 +4986,65 @@ const MapPage = () => {
 
   const [fields, setFields] = useState([
     {
-      id: 'F001',
-      field1: 'North Field',
-      field2: 'Apple Orchard',
+      id: "F001",
+      field1: "North Field",
+      field2: "Apple Orchard",
       numberOfTrees: 150,
       totalFruits: 3000,
       harvestedFruits: 1500,
     },
     {
-      id: 'F002',
-      field1: 'South Field',
-      field2: 'Orange Grove',
+      id: "F002",
+      field1: "South Field",
+      field2: "Orange Grove",
       numberOfTrees: 200,
       totalFruits: 4000,
       harvestedFruits: 2800,
     },
     {
-      id: 'F003',
-      field1: 'East Field',
-      field2: 'Mango Plantation',
+      id: "F003",
+      field1: "East Field",
+      field2: "Mango Plantation",
       numberOfTrees: 100,
       totalFruits: 2000,
       harvestedFruits: 800,
     },
     {
-      id: 'F004',
-      field1: 'West Field',
-      field2: 'Pear Orchard',
+      id: "F004",
+      field1: "West Field",
+      field2: "Pear Orchard",
       numberOfTrees: 175,
       totalFruits: 3500,
       harvestedFruits: 2100,
     },
     {
-      id: 'F005',
-      field1: 'Central Field',
-      field2: 'Peach Grove',
+      id: "F005",
+      field1: "Central Field",
+      field2: "Peach Grove",
       numberOfTrees: 225,
       totalFruits: 4500,
       harvestedFruits: 3200,
     },
     {
-      id: 'F006',
-      field1: 'Northwest Field',
-      field2: 'Plum Orchard',
+      id: "F006",
+      field1: "Northwest Field",
+      field2: "Plum Orchard",
       numberOfTrees: 125,
       totalFruits: 2500,
       harvestedFruits: 1200,
     },
     {
-      id: 'F007',
-      field1: 'Southeast Field',
-      field2: 'Cherry Orchard',
+      id: "F007",
+      field1: "Southeast Field",
+      field2: "Cherry Orchard",
       numberOfTrees: 160,
       totalFruits: 3200,
       harvestedFruits: 1600,
     },
     {
-      id: 'F008',
-      field1: 'Northeast Field',
-      field2: 'Apricot Grove',
+      id: "F008",
+      field1: "Northeast Field",
+      field2: "Apricot Grove",
       numberOfTrees: 180,
       totalFruits: 3600,
       harvestedFruits: 2400,
@@ -5062,6 +5063,12 @@ const MapPage = () => {
         />
       )}
 
+      {/* GeneralMap Component */}
+      {loading && (
+        <Skeleton className="rounded-lg">
+          <div className="h-[30rem] w-full rounded-lg bg-black" />
+        </Skeleton>
+      )}
       <div className="">
         {selectedConfig ? (
           <DynamicMap
@@ -5071,6 +5078,8 @@ const MapPage = () => {
             height={expandMap ? "h-[100vh]" : "h-[60vh]"}
             setExpandMap={setExpandMap}
             expandedMap={expandMap}
+            setLoading={setLoading}
+            loading={loading}
           />
         ) : (
           <div className="h-full flex items-center justify-center">
@@ -5083,6 +5092,7 @@ const MapPage = () => {
         <>
           <h2 className="text-3xl font-semibold">Fields</h2>
           <DataTable
+            isLoading={fields.length == 0}
             data={fields}
             columns={columns}
             enableExport

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { SearchIcon, Download, ChevronLeft, ChevronRight } from "lucide-react";
 import * as XLSX from "xlsx";
+import { Skeleton } from "@nextui-org/react"; // Import Skeleton from NextUI
 
 interface Column {
   key: string;
@@ -17,6 +18,7 @@ interface TableProps {
   enableExport?: boolean;
   exportFileName?: string;
   className?: string;
+  isLoading: boolean; // Add isLoading prop to handle loading state
 }
 
 const DataTable = ({
@@ -28,6 +30,7 @@ const DataTable = ({
   enableExport = false,
   exportFileName = "export",
   className = "",
+  isLoading, // Destructure the loading state
 }: TableProps) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -97,33 +100,63 @@ const DataTable = ({
       <div
         className={`w-full bg-accent rounded-xl border border-[#E0E1E6] overflow-auto ${className}`}
       >
-        <table className="w-full text-[#606475] border-separate border-spacing-0">
-          <thead>
-            <tr>
-              {columns.map((column, index) => (
-                <th
-                  key={index}
-                  className="text-sm font-semibold p-4 text-left border-b border-[#E0E1E6]"
-                >
-                  {column.header}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {displayedData.map((row, rowIndex) => (
-              <tr key={rowIndex}>
-                {columns.map((column, colIndex) => (
-                  <td key={colIndex} className="p-4">
-                    {column.render
-                      ? column.render(row[column.key], row)
-                      : row[column.key]}
-                  </td>
+        {isLoading ? (
+          // Show skeleton while loading
+          <table className="w-full text-[#606475] border-separate border-spacing-0">
+            <thead>
+              <tr>
+                {columns.map((column, index) => (
+                  <th
+                    key={index}
+                    className="text-sm font-semibold p-4 text-left border-b border-[#E0E1E6]"
+                  >
+                    <Skeleton className="w-24" />
+                  </th>
                 ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {Array.from({ length: itemsPerPage }, (_, i) => i).map((_, rowIndex) => (
+                <tr key={rowIndex}>
+                  {columns.map((_, colIndex) => (
+                    <td key={colIndex} className="p-4">
+                      <Skeleton className="w-20 h-6" />
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          // Show table when data is loaded
+          <table className="w-full text-[#606475] border-separate border-spacing-0">
+            <thead>
+              <tr>
+                {columns.map((column, index) => (
+                  <th
+                    key={index}
+                    className="text-sm font-semibold p-4 text-left border-b border-[#E0E1E6]"
+                  >
+                    {column.header}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {displayedData.map((row, rowIndex) => (
+                <tr key={rowIndex}>
+                  {columns.map((column, colIndex) => (
+                    <td key={colIndex} className="p-4">
+                      {column.render
+                        ? column.render(row[column.key], row)
+                        : row[column.key]}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </div>
 
       {totalPages > 1 && (
