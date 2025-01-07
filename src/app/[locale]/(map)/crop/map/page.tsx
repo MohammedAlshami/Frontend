@@ -4701,7 +4701,7 @@ const MapPage = () => {
     features: [
       {
         type: "Feature",
-        properties: { id: null },
+        properties: { zoneId: "zone-1" },
         geometry: {
           type: "MultiPolygon",
           coordinates: [
