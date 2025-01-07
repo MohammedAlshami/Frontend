@@ -89,8 +89,8 @@ const MapPage = ({
         zones={zones}
         showPopup={showPopup}
         setShowPopup={setShowPopup}
-        setLoading={setLoading}
-        loading={loading}
+        // setLoading={setLoading}
+        // loading={loading}
       />
 
       {/* Overlay Controls */}

@@ -5064,11 +5064,11 @@ const MapPage = () => {
       )}
 
       {/* GeneralMap Component */}
-      {loading && (
+      {/* {loading && (
         <Skeleton className="rounded-lg">
           <div className="h-[30rem] w-full rounded-lg bg-black" />
         </Skeleton>
-      )}
+      )} */}
       <div className="">
         {selectedConfig ? (
           <DynamicMap
@@ -5078,8 +5078,8 @@ const MapPage = () => {
             height={expandMap ? "h-[100vh]" : "h-[60vh]"}
             setExpandMap={setExpandMap}
             expandedMap={expandMap}
-            setLoading={setLoading}
-            loading={loading}
+            // setLoading={setLoading}
+            // loading={loading}
           />
         ) : (
           <div className="h-full flex items-center justify-center">

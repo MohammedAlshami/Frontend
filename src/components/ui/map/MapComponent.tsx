@@ -14,8 +14,8 @@ const GeneralMap = ({
   zones,
   showPopup,
   setShowPopup,
-  setLoading,
-  loading
+  // setLoading,
+  // loading
 }) => {
   const mapRef = useRef(null);
   const mapContainerRef = useRef(null);
@@ -56,7 +56,7 @@ const GeneralMap = ({
     );
 
     map.on("load", () => {
-      setLoading(false);
+      // setLoading(false);
       setMapInstance(map);
     });
 
@@ -169,7 +169,7 @@ const GeneralMap = ({
     <div style={{ position: "relative", height: "100%" }}>
       <div
         ref={mapContainerRef}
-        style={{ height: "100%", width: "100%", position: "relative", visibility: loading ? "hidden" : "visible" }}
+        style={{ height: "100%", width: "100%", position: "relative" }}
       />
       <CustomZoomControl />
     </div>
