@@ -85,7 +85,9 @@ const links = [
 
 const Sidebar = ({ children, Minimize }) => {
   const [expandedMenus, setExpandedMenus] = useState({});
-  var [isMinimized, setIsMinimized] = useState(Minimize);
+  var [isMinimized, setIsMinimized] = useState(
+    typeof window !== "undefined" && window.innerWidth < 640 ? true : Minimize
+  );
 
   const toggleMenu = (index) => {
     setExpandedMenus((prev) => ({
@@ -167,7 +169,9 @@ const Sidebar = ({ children, Minimize }) => {
                             >
                               {link.icon}
                               {!isMinimized && (
-                                <span className="flex-1 text-textDark">{link.label}</span>
+                                <span className="flex-1 text-textDark">
+                                  {link.label}
+                                </span>
                               )}
                             </Link>
                           </Tooltip>
@@ -178,7 +182,9 @@ const Sidebar = ({ children, Minimize }) => {
                             className="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900"
                           >
                             {link.icon}
-                            <span className="flex-1  text-textDark">{link.label}</span>
+                            <span className="flex-1  text-textDark">
+                              {link.label}
+                            </span>
                           </Link>
                         )
                       ) : (
@@ -290,7 +296,7 @@ const Sidebar = ({ children, Minimize }) => {
         </div>
         <div
           className={`${
-            !isMinimized ? " sm:pl-[240px]" : "sm:pl-12"
+            !isMinimized ? " sm:pl-[240px]" : "sm:pl-12 "
           } h-screen transition-all duration-600 ease-in-out`}
         >
           {children}

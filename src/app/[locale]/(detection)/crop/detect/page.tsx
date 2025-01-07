@@ -28,12 +28,12 @@ const Page = () => {
       </div>
       <div className="flex justify-center items-center ">
         {step === 1 && (
-          <div className="flex space-x-4">
+          <div className="flex flex-col sm:flex-row sm:space-x-4">
             <div
               className="bg-[#14B8A6] w-96 h-96 flex justify-center items-center flex-col p-24 rounded-lg cursor-pointer hover:scale-105 transition-transform"
               onClick={() => handleCropSelection("palm")}
             >
-              <Palmtree className="w-full h-full mx-auto text-gray-300" />
+              <img src="https://cdn-icons-png.flaticon.com/512/661/661764.png" alt=""  className="w-full h-full mx-auto text-gray-300"/>
               <p className="text-center mt-2 text-white font-bold text-white font-bold text-xl">
                 Palm
               </p>
@@ -43,13 +43,15 @@ const Page = () => {
               onClick={() => handleCropSelection("pineapple")}
             >
               <Palmtree className="w-full h-full mx-auto text-gray-300 text-gray-300" />
+              <img src="https://cdn-icons-png.flaticon.com/512/4751/4751091.png" alt=""  className="w-full h-full mx-auto text-gray-300"/>
+
               <p className="text-center mt-2 text-white font-bold text-xl">
                 Pineapple
               </p>
             </div>
           </div>
         )}
-        {step === 2 && (
+        {/* {step === 2 && (
           <div className="flex space-x-4">
             <div
               className="bg-[#14B8A6] w-96 h-96 flex justify-center items-center flex-col p-24 rounded-lg cursor-pointer hover:scale-105 transition-transform"
@@ -70,8 +72,8 @@ const Page = () => {
               </p>
             </div>
           </div>
-        )}
-        {step === 3 && <DetectionComponent fruit={selection.crop} type={selection.detection} />}
+        )} */}
+        {step === 2 && <DetectionComponent fruit={selection.crop} type={selection.detection} />}
       </div>
     </div>
   );
