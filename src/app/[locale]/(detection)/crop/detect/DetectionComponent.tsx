@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 import { Tensor, InferenceSession } from "onnxruntime-web";
 import clsx from "clsx";
 
-import labels from "@/utils/model-labels.json";
+import palmLabels from "@/utils/palm-labels.json";
+import pineappleLabels from "@/utils/pineapple-labels.json";
 import { downloadBuffer } from "@/utils/model-download";
 import { detectImage } from "@/utils/model-detect";
 import ImageComponent from "./ImageComponent";
@@ -16,11 +17,11 @@ interface DetectionResultProps {
   bbox: number[]; // [x, y, width, height]
 }
 
-const MODEL_URL = "/model/best.onnx?v=1";
-const MODEL_URL_2 = "/model/nms-yolov8.onnx?v=1";
 const MODEL_SHAPES = [1, 3, 640, 640];
 
-const Page = () => {
+const DetectionComponent = ({ fruit, type }) => {
+  const MODEL_URL = `/model/${fruit}.onnx?v=1`;
+  const MODEL_URL_2 = "/model/nms-yolov8.onnx?v=1";
   const router = useRouter();
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -220,6 +221,7 @@ const Page = () => {
         ctx.stroke();
 
         // Draw label text
+        const labels = fruit === "palm" ? palmLabels : pineappleLabels;
         const text = `${labels[detection.label]} (${(
           detection.confidence * 100
         ).toFixed(2)}%)`;
@@ -285,7 +287,7 @@ const Page = () => {
   return (
     <div
       ref={containerRef}
-      className="relative  w-full h-screen flex items-center justify-center overflow-hidden"
+      className="relative  w-full flex items-center justify-center overflow-hidden"
     >
       {modalVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -350,9 +352,8 @@ const Page = () => {
       />
 
       {/* Render the image generated from the canvas */}
-
     </div>
   );
 };
 
-export default Page;
+export default DetectionComponent;

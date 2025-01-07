@@ -3,7 +3,7 @@ import FloatingButtons from "./FloatingButtons";
 import DateRangePicker from "./DateRangePicker";
 import BasemapSelector from "./BasemapSelector";
 import MapLayerSelector from "./MapLayerSelector";
-import GeneralMap from "./MapComponent";
+import GeneralMap from "./GeneralMap/MapComponent";
 const DEFAULT_BASEMAP = "http://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}";
 import { TileLayer } from "react-leaflet";
 import WeatherCard from "./WeatherCard";

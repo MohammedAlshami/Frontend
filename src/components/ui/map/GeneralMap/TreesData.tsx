@@ -1,19 +1,14 @@
-import React, { useRef, useEffect, useState } from "react";
-import mapboxgl from "mapbox-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
-
-const DEFAULT_BASEMAP = "http://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}";
-const ZONE_HEIGHT = 6;
-
-mapboxgl.accessToken =
-  "process.env.NEXT_PUBLIC_MAPBOX_TOKEN || """;
-
-const sampleTrees = {
+export const sampleTrees = {
   type: "FeatureCollection",
   features: [
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34247973383174, -21.098858613007547],
@@ -21,7 +16,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34245422579954, -21.09853189674974],
@@ -29,7 +29,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425908287302, -21.098988493012463],
@@ -37,7 +42,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34274838991877, -21.09881262882647],
@@ -45,7 +55,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34256953181335, -21.098828830802603],
@@ -53,7 +68,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34269389486144, -21.098976766615216],
@@ -61,7 +81,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34258677556468, -21.098503163862798],
@@ -69,7 +94,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34244705997546, -21.098716501428775],
@@ -77,7 +107,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34248660697068, -21.098932452366476],
@@ -85,7 +120,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34267044454674, -21.098896530658894],
@@ -93,7 +133,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34260569859123, -21.09893564620425],
@@ -101,7 +146,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3426024221565, -21.098580500857373],
@@ -109,7 +159,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34254645839337, -21.09875814158263],
@@ -117,7 +172,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34262999773824, -21.098744183814198],
@@ -125,7 +185,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34250749021373, -21.098994590637066],
@@ -133,7 +198,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425199843637, -21.098595062762037],
@@ -141,7 +211,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3427684252398, -21.09888478423302],
@@ -149,7 +224,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425305977727, -21.098508237478306],
@@ -157,7 +237,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34268826620328, -21.098560862150833],
@@ -165,7 +250,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34265083837585, -21.098819849783958],
@@ -173,7 +263,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34260579363422, -21.09866079628506],
@@ -181,7 +276,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424634714632, -21.098781134993228],
@@ -189,7 +289,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34245801240763, -21.09866737011304],
@@ -197,7 +302,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34272203523903, -21.09862790688892],
@@ -205,7 +315,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34244394203677, -21.098611585105175],
@@ -213,7 +328,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425469283282, -21.098980649619854],
@@ -221,7 +341,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34266192527028, -21.0984738000741],
@@ -229,7 +354,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34243746609388, -21.098928119446033],
@@ -237,7 +367,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34273114889854, -21.098944498311365],
@@ -245,7 +380,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34277715708862, -21.09897310301509],
@@ -253,7 +393,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34249538533956, -21.098533741067694],
@@ -261,7 +406,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34252060232532, -21.09879398299362],
@@ -269,7 +419,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34305914313964, -21.099512450647666],
@@ -277,7 +432,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34260678721603, -21.09908544806474],
@@ -285,7 +445,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34278774227607, -21.09904487727459],
@@ -293,7 +458,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34288301133017, -21.099475051009456],
@@ -301,7 +471,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34294038066466, -21.099844306615452],
@@ -309,7 +484,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34252817954723, -21.09909824568061],
@@ -317,7 +497,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3426370807183, -21.099245966868263],
@@ -325,7 +510,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430835736536, -21.099595012747],
@@ -333,7 +523,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34295313932367, -21.09946322164686],
@@ -341,7 +536,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34274696063213, -21.099875846150372],
@@ -349,7 +549,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34249645721349, -21.09953916401168],
@@ -357,7 +562,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34289695525013, -21.09963637668786],
@@ -365,7 +575,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34280919295503, -21.099118272555604],
@@ -373,7 +588,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34253596397016, -21.09918226679717],
@@ -381,7 +601,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34256887006273, -21.09935186147652],
@@ -389,7 +614,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424478594656, -21.099551957661653],
@@ -397,7 +627,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34325798062363, -21.099586920180055],
@@ -405,7 +640,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3427151469879, -21.09967665589648],
@@ -413,7 +653,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34261972726702, -21.099706444201043],
@@ -421,7 +666,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34269912896363, -21.099141303861284],
@@ -429,7 +679,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34269708663143, -21.099042682893778],
@@ -437,7 +692,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3429183559496, -21.099284677448427],
@@ -445,7 +705,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34331853581065, -21.09948837892307],
@@ -453,7 +718,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34275911509891, -21.09940144278772],
@@ -461,7 +731,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34252758561948, -21.099494381366174],
@@ -469,7 +744,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34289920487447, -21.099552689753505],
@@ -477,7 +757,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34314787836246, -21.09949091959999],
@@ -485,7 +770,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34300323204164, -21.0997269303006],
@@ -493,7 +783,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34289408711797, -21.09997777420275],
@@ -501,7 +796,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34297248276073, -21.099622899105782],
@@ -509,7 +809,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425489812208, -21.099262633258206],
@@ -517,7 +822,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34257374620609, -21.099435153346196],
@@ -525,7 +835,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34289890845682, -21.099194504106496],
@@ -533,7 +848,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430183912649, -21.09981846249387],
@@ -541,7 +861,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34280323028077, -21.09957308977549],
@@ -549,7 +874,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3432297068763, -21.099475942602023],
@@ -557,7 +887,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34243784653899, -21.09904170034735],
@@ -565,7 +900,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34272859721227, -21.099793969052868],
@@ -573,7 +913,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3428427624369, -21.09929863123389],
@@ -581,7 +926,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34294342181337, -21.099359178912817],
@@ -589,7 +939,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424496518092, -21.09914872289735],
@@ -597,7 +952,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34259218846427, -21.099514779385295],
@@ -605,7 +965,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34274938969108, -21.099145884636],
@@ -613,7 +978,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34336784334275, -21.09946161152729],
@@ -621,7 +991,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34262639247657, -21.099145655786167],
@@ -629,7 +1004,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34272993691815, -21.099226986602858],
@@ -637,7 +1017,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34283425180888, -21.099210935865617],
@@ -645,7 +1030,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34251141355995, -21.0990261939094],
@@ -653,7 +1043,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34273603287107, -21.099308316167757],
@@ -661,7 +1056,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "not checked",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34348580017692, -21.099583307926043],
@@ -669,7 +1069,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34286479097548, -21.099379008073395],
@@ -677,7 +1082,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34277940634877, -21.09948228061567],
@@ -685,7 +1095,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425974616215, -21.09902684967199],
@@ -693,7 +1108,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34250191016955, -21.099337913722408],
@@ -701,7 +1121,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34244570515736, -21.099110627147688],
@@ -709,7 +1134,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34283327989397, -21.09995803416956],
@@ -717,7 +1147,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34282560799323, -21.09977592999639],
@@ -725,7 +1160,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34265410443234, -21.09990117954194],
@@ -733,7 +1173,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34264509018567, -21.099812337375425],
@@ -741,7 +1186,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34291273594, -21.099723931104677],
@@ -749,7 +1199,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424771866063, -21.100190556913144],
@@ -757,7 +1212,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34228956299103, -21.09888961267992],
@@ -765,7 +1225,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34209431467787, -21.098946907209026],
@@ -773,7 +1238,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34181960733724, -21.098850615576584],
@@ -781,7 +1251,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3422787067853, -21.09882097357204],
@@ -789,7 +1264,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34236329170574, -21.098794114636323],
@@ -797,7 +1277,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3423117692346, -21.098964385099773],
@@ -805,7 +1290,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34189286433048, -21.098801730430893],
@@ -813,7 +1303,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342237540941, -21.098672765005933],
@@ -821,7 +1316,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34176721688172, -21.098971054268574],
@@ -829,7 +1329,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34201712883063, -21.098824454911654],
@@ -837,7 +1342,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3421503178146, -21.098683919494828],
@@ -845,7 +1355,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34222941612362, -21.09898540095653],
@@ -853,7 +1368,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34191439484917, -21.098889867407642],
@@ -861,7 +1381,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34218876255215, -21.098761414988672],
@@ -869,7 +1394,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3423700412273, -21.09886487614144],
@@ -877,7 +1407,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34236623762936, -21.098709540024092],
@@ -885,7 +1420,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34237613601385, -21.09856171345854],
@@ -893,7 +1433,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34241456571885, -21.09870973493905],
@@ -901,7 +1446,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34174006075455, -21.098904087004858],
@@ -909,7 +1459,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34160372479096, -21.098960346600155],
@@ -917,7 +1472,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34240666933275, -21.098603325208156],
@@ -925,7 +1485,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3423559587812, -21.098649717609078],
@@ -933,7 +1498,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3423761810731, -21.09896643566707],
@@ -941,7 +1511,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34215577459423, -21.09893041308804],
@@ -949,7 +1524,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3423096539359, -21.09871751205511],
@@ -957,7 +1537,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34210475475177, -21.09879933992316],
@@ -965,7 +1550,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34215303427857, -21.099821626197667],
@@ -973,7 +1563,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34208619596572, -21.099925907067536],
@@ -981,7 +1576,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34206725004327, -21.099828590333527],
@@ -989,7 +1589,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34197957773858, -21.099762946233774],
@@ -997,7 +1602,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3419210559166, -21.099850495916545],
@@ -1005,7 +1615,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3419969879062, -21.099840988418105],
@@ -1013,7 +1628,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34174562290994, -21.09987798875832],
@@ -1021,7 +1641,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34180234483222, -21.100043302682696],
@@ -1029,7 +1654,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3420606784201, -21.099755978092187],
@@ -1037,7 +1667,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34186019224944, -21.099949385808205],
@@ -1045,7 +1680,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34176020837023, -21.099950571411913],
@@ -1053,7 +1693,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34210509291003, -21.09999537126383],
@@ -1061,7 +1706,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3421014807978, -21.09934705219338],
@@ -1069,7 +1719,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34221221141024, -21.099726262664515],
@@ -1077,7 +1732,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34187651588604, -21.099097578533858],
@@ -1085,7 +1745,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3421913875008, -21.099404703368613],
@@ -1093,7 +1758,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34231759022055, -21.09904917222884],
@@ -1101,7 +1771,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34190971297966, -21.099765287762406],
@@ -1109,7 +1784,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34235887732672, -21.099219219250752],
@@ -1117,7 +1797,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34235000930875, -21.09914619401001],
@@ -1125,7 +1810,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34184770533693, -21.099885323423788],
@@ -1133,7 +1823,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34150094560948, -21.0995562529829],
@@ -1141,7 +1836,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3421757379275, -21.099893484179102],
@@ -1149,7 +1849,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34184185577664, -21.099194122151467],
@@ -1157,7 +1862,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34224456747782, -21.099936894317388],
@@ -1165,7 +1875,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34226589519946, -21.099316412285226],
@@ -1173,7 +1888,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34236310183024, -21.09930184157252],
@@ -1181,7 +1901,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34222582561569, -21.099196696046317],
@@ -1189,7 +1914,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34163581457426, -21.099780931281234],
@@ -1197,7 +1927,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34222614697754, -21.09909018572989],
@@ -1205,7 +1940,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3417006217752, -21.099657198767652],
@@ -1213,7 +1953,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34173009211764, -21.100061385255923],
@@ -1221,7 +1966,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3417138052601, -21.09977369878452],
@@ -1229,7 +1979,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34223696864595, -21.09980834658036],
@@ -1237,7 +1992,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34158422012666, -21.09960975008423],
@@ -1245,7 +2005,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34202946175338, -21.099088151531156],
@@ -1253,7 +2018,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3416660568908, -21.099880944983738],
@@ -1261,7 +2031,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34228961067183, -21.100103701649065],
@@ -1269,7 +2044,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34193650841672, -21.09953612184524],
@@ -1277,7 +2057,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34183134751572, -21.099477376196553],
@@ -1285,7 +2070,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34219735197303, -21.099975505778602],
@@ -1293,7 +2083,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34207255285597, -21.099258698133617],
@@ -1301,7 +2096,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34164273245804, -21.09951881092041],
@@ -1309,7 +2109,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34167063079002, -21.099588520467393],
@@ -1317,7 +2122,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34217332532356, -21.099322084642896],
@@ -1325,7 +2135,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34183570520128, -21.09979975466332],
@@ -1333,7 +2148,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3420787907134, -21.10009970457229],
@@ -1341,7 +2161,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34179960565453, -21.09973557511143],
@@ -1349,7 +2174,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34196886482573, -21.099675481490593],
@@ -1357,7 +2187,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34219961070104, -21.099493263632205],
@@ -1365,7 +2200,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34194234646085, -21.099040344594194],
@@ -1373,7 +2213,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34228953990169, -21.099727438026314],
@@ -1381,7 +2226,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34209784879388, -21.099663772572875],
@@ -1389,7 +2239,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34216084544374, -21.09924244981852],
@@ -1397,7 +2252,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34181238784663, -21.09938786247926],
@@ -1405,7 +2265,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34200937381274, -21.099292801605973],
@@ -1413,7 +2278,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34160361408954, -21.099700568985238],
@@ -1421,7 +2291,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34168561462985, -21.099973459581186],
@@ -1429,7 +2304,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34204632619753, -21.099157246614638],
@@ -1437,7 +2317,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34238147009503, -21.100083709983487],
@@ -1445,7 +2330,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34165916299534, -21.100017227048397],
@@ -1453,7 +2343,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3417446556379, -21.099087269292873],
@@ -1461,7 +2356,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3421684327253, -21.099995581291303],
@@ -1469,7 +2369,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34236838640555, -21.099374990672114],
@@ -1477,7 +2382,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34188602674163, -21.09963769347908],
@@ -1485,7 +2395,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34226707585162, -21.09988835421033],
@@ -1493,7 +2408,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3421223547778, -21.099426295048413],
@@ -1501,7 +2421,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3415320215779, -21.099701099743875],
@@ -1509,7 +2434,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34219562290036, -21.099644895272814],
@@ -1517,7 +2447,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34157706304222, -21.09980840746283],
@@ -1525,7 +2460,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34160747361858, -21.09903433840426],
@@ -1533,7 +2473,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34182061980928, -21.1001109593864],
@@ -1541,7 +2486,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34187458671335, -21.09929993384575],
@@ -1549,7 +2499,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34240497936347, -21.099040416051444],
@@ -1557,7 +2512,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34142316792833, -21.09949196655097],
@@ -1565,7 +2525,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34201077706265, -21.09903139093283],
@@ -1573,7 +2538,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34164210161464, -21.0994341272432],
@@ -1581,7 +2551,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34178894285765, -21.09923480495968],
@@ -1589,7 +2564,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34154482671156, -21.099449084075978],
@@ -1597,7 +2577,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34171406635522, -21.09943442092433],
@@ -1605,7 +2590,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34197125414687, -21.099138631518905],
@@ -1613,7 +2603,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3419538534471, -21.099312582083336],
@@ -1621,7 +2616,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34203214694597, -21.099681857376556],
@@ -1629,7 +2629,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34168162874093, -21.099228521683354],
@@ -1637,7 +2642,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34156939969895, -21.09908131588577],
@@ -1645,7 +2655,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34153426628623, -21.09950063393952],
@@ -1653,7 +2668,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34194135483634, -21.099933267952306],
@@ -1661,7 +2681,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34178401564242, -21.09960585906814],
@@ -1669,7 +2694,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34190542867023, -21.09946412120535],
@@ -1677,7 +2707,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34174721032844, -21.099504120377333],
@@ -1685,7 +2720,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34188433581363, -21.099386236473347],
@@ -1693,7 +2733,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34159321643904, -21.099869018300218],
@@ -1701,7 +2746,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34229668090666, -21.099152997302337],
@@ -1709,7 +2759,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34156373571832, -21.099534781975578],
@@ -1717,7 +2772,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34144355856827, -21.099563746420763],
@@ -1725,7 +2785,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34193779978176, -21.099615880209836],
@@ -1733,7 +2798,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34147078556794, -21.099484229947365],
@@ -1741,7 +2811,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34157765460304, -21.099167325236213],
@@ -1749,7 +2824,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34163033255456, -21.099076398493555],
@@ -1757,7 +2837,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34197666049175, -21.099424809060814],
@@ -1765,7 +2850,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3416553903387, -21.10011263113952],
@@ -1773,7 +2863,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34208215315567, -21.099499201801617],
@@ -1781,7 +2876,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424060315477, -21.099887122085576],
@@ -1789,7 +2889,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.341595021801, -21.09994129597244],
@@ -1797,7 +2902,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3416676513192, -21.099309870685133],
@@ -1805,7 +2915,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34170125416625, -21.10010166218855],
@@ -1813,7 +2928,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342364629716, -21.09999102323088],
@@ -1821,7 +2941,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34231904904883, -21.100236715166893],
@@ -1829,7 +2954,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34221883151082, -21.10019641314727],
@@ -1837,7 +2967,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34175715880065, -21.10017109751403],
@@ -1845,7 +2980,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34194667765448, -21.100594140556794],
@@ -1853,7 +2993,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34200017435052, -21.10018583696224],
@@ -1861,7 +3006,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34193114240134, -21.100161185172734],
@@ -1869,7 +3019,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34200526661652, -21.100379706901425],
@@ -1877,7 +3032,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34193081175366, -21.10052427014352],
@@ -1885,7 +3045,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34188262886303, -21.100277167702792],
@@ -1893,7 +3058,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34213707174158, -21.100382179731366],
@@ -1901,7 +3071,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34176555508563, -21.100246015664915],
@@ -1909,7 +3084,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34228957831942, -21.100158772670504],
@@ -1917,7 +3097,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.341939876253, -21.10024399624156],
@@ -1925,7 +3110,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34201102268148, -21.100589630883714],
@@ -1933,7 +3123,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3417050829247, -21.100276056091204],
@@ -1941,7 +3136,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3417118456808, -21.100340944616676],
@@ -1949,7 +3149,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3420007709184, -21.100461409704348],
@@ -1957,7 +3162,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3420194300276, -21.100261566096147],
@@ -1965,7 +3175,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34179973515515, -21.100371029794438],
@@ -1973,7 +3188,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34189556759395, -21.100450108778883],
@@ -1981,7 +3201,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34204133885208, -21.100326289641487],
@@ -1989,7 +3214,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34178798145757, -21.100315217452042],
@@ -1997,7 +3227,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34187971175277, -21.1003893074647],
@@ -2005,7 +3240,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34166997195265, -21.100218559085196],
@@ -2013,7 +3253,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424600170504, -21.09674210127012],
@@ -2021,7 +3266,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34254311085846, -21.096709970071338],
@@ -2029,7 +3279,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34273057527213, -21.096750321383006],
@@ -2037,7 +3292,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34278851609363, -21.096737978923386],
@@ -2045,7 +3305,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342507196072, -21.096633832700512],
@@ -2053,7 +3318,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3427616680825, -21.096603296508793],
@@ -2061,7 +3331,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3427445757035, -21.09665760322187],
@@ -2069,7 +3344,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34273814430068, -21.097328225215993],
@@ -2077,7 +3357,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34278048778162, -21.097435463449276],
@@ -2085,7 +3370,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3426784893366, -21.09716889138459],
@@ -2093,7 +3383,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34276364350225, -21.09715279287452],
@@ -2101,7 +3396,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34262837745527, -21.097678711448918],
@@ -2109,7 +3409,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34261446740118, -21.097274789566136],
@@ -2117,7 +3422,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34260228623774, -21.097585987279196],
@@ -2125,7 +3435,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34284695739314, -21.097018260105635],
@@ -2133,7 +3448,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34245306197786, -21.097326102727713],
@@ -2141,7 +3461,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34252574939583, -21.09700759879894],
@@ -2149,7 +3474,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34262848050957, -21.097871359169563],
@@ -2157,7 +3487,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34264345797675, -21.09740859736698],
@@ -2165,7 +3500,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34278522513847, -21.097225478493467],
@@ -2173,7 +3513,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34265074888611, -21.097759436832064],
@@ -2181,7 +3526,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425797334604, -21.097177623513407],
@@ -2189,7 +3539,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34246343359163, -21.097111961148908],
@@ -2197,7 +3552,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34283402166642, -21.097695598586196],
@@ -2205,7 +3565,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34250088426947, -21.097303822245205],
@@ -2213,7 +3578,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34281583913778, -21.097310085561183],
@@ -2221,7 +3591,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34278926141656, -21.09702616153574],
@@ -2229,7 +3604,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34277296490902, -21.097798071690356],
@@ -2237,7 +3617,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425259247338, -21.097695843208573],
@@ -2245,7 +3630,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3429260815624, -21.09776082581738],
@@ -2253,7 +3643,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3428504626503, -21.097775324813945],
@@ -2261,7 +3656,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34270316401276, -21.09724915173942],
@@ -2269,7 +3669,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34280384196083, -21.097534244503553],
@@ -2277,7 +3682,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34284012317266, -21.097095060674384],
@@ -2285,7 +3695,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34265755037865, -21.09736536202399],
@@ -2293,7 +3708,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34293458408808, -21.09785231048818],
@@ -2301,7 +3721,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3427776189212, -21.097090637898237],
@@ -2309,7 +3734,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34251788704486, -21.09761201056595],
@@ -2317,7 +3747,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34259148465443, -21.097804514535667],
@@ -2325,7 +3760,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34297362933086, -21.097650945762606],
@@ -2333,7 +3773,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34262999792034, -21.096940635723026],
@@ -2341,7 +3786,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424447800357, -21.097623146755957],
@@ -2349,7 +3799,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425990265538, -21.097429179285317],
@@ -2357,7 +3812,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34271670591176, -21.097409902550705],
@@ -2365,7 +3825,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34250303757622, -21.096913118050306],
@@ -2373,7 +3838,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34265050973096, -21.096793690263453],
@@ -2381,7 +3851,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3427326087737, -21.097027048143907],
@@ -2389,7 +3864,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424513122397, -21.097833661468954],
@@ -2397,7 +3877,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34286629928255, -21.09720333051854],
@@ -2405,7 +3890,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3428516329356, -21.09746482541719],
@@ -2413,7 +3903,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34281402002918, -21.097372677798823],
@@ -2421,7 +3916,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34292496972307, -21.0975594485284],
@@ -2429,7 +3929,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34285055623667, -21.097410579017588],
@@ -2437,7 +3942,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34291109444527, -21.097671754596195],
@@ -2445,7 +3955,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34284947607836, -21.09691603158971],
@@ -2453,7 +3968,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34280327061035, -21.097602343748882],
@@ -2461,7 +3981,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34270329974945, -21.097566061526003],
@@ -2469,7 +3994,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34273805408264, -21.09770550683926],
@@ -2477,7 +4007,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430258674353, -21.097803007654562],
@@ -2485,7 +4020,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34254846695072, -21.09709951201409],
@@ -2493,7 +4033,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34292444776034, -21.097349073651635],
@@ -2501,7 +4046,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34248897812986, -21.097497294462507],
@@ -2509,7 +4059,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34245401377348, -21.097541480664592],
@@ -2517,7 +4072,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34257093269636, -21.09749722103938],
@@ -2525,7 +4085,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34293325840193, -21.097391883932524],
@@ -2533,7 +4098,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425792995763, -21.09680535207976],
@@ -2541,7 +4111,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342763194506, -21.096847258403827],
@@ -2549,7 +4124,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34255421987487, -21.097449997723533],
@@ -2557,7 +4137,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34261431618816, -21.097066983929835],
@@ -2565,7 +4150,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342439442424, -21.097028166333075],
@@ -2573,7 +4163,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34293304951677, -21.097304149804305],
@@ -2581,7 +4176,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34252593001395, -21.097176417596568],
@@ -2589,7 +4189,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34244566109533, -21.097391351262075],
@@ -2597,7 +4202,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34302001459764, -21.097667751055635],
@@ -2605,7 +4215,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3426729293206, -21.09700499557808],
@@ -2613,7 +4228,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34282037034055, -21.096841610842965],
@@ -2621,7 +4241,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34292256315035, -21.097233317561713],
@@ -2629,7 +4254,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34278771892497, -21.09785748379162],
@@ -2637,7 +4267,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34271941645824, -21.097642334272138],
@@ -2645,7 +4280,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34268526442827, -21.098230123052158],
@@ -2653,7 +4293,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3426686418249, -21.098155905470797],
@@ -2661,7 +4306,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34290610136443, -21.098288276172102],
@@ -2669,7 +4319,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34293773894245, -21.09798591347355],
@@ -2677,7 +4332,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34285716709692, -21.09803755980452],
@@ -2685,7 +4345,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3427586469165, -21.0981233856256],
@@ -2693,7 +4358,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34289255468602, -21.098196165379093],
@@ -2701,7 +4371,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34281274013486, -21.098201563139728],
@@ -2709,7 +4384,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34246564252226, -21.098301150221083],
@@ -2717,7 +4397,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34272719086707, -21.098042962060212],
@@ -2725,7 +4410,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34264712514386, -21.098058450311665],
@@ -2733,7 +4423,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34297471208373, -21.09794239446374],
@@ -2741,7 +4436,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34245391827528, -21.098088315265557],
@@ -2749,7 +4449,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3429783691457, -21.098282425673453],
@@ -2757,7 +4462,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34268422978866, -21.09835028125232],
@@ -2765,7 +4475,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34285369575122, -21.098099401076738],
@@ -2773,7 +4488,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3429585982427, -21.098156668925668],
@@ -2781,7 +4501,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34298226372414, -21.098218819668624],
@@ -2789,7 +4514,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425887969583, -21.098370588823975],
@@ -2797,7 +4527,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34293096903988, -21.09806846300947],
@@ -2805,7 +4540,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424929641098, -21.09791794465612],
@@ -2813,7 +4553,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34255285904837, -21.098093560518432],
@@ -2821,7 +4566,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430535869472, -21.098249596431476],
@@ -2829,7 +4579,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430488760367, -21.097917325617907],
@@ -2837,7 +4592,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34248926535273, -21.09821484846975],
@@ -2845,7 +4605,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34254241150938, -21.098260801947845],
@@ -2853,7 +4618,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34260683819693, -21.098304265025437],
@@ -2861,7 +4631,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34263686140935, -21.09825602068203],
@@ -2869,7 +4644,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34301568986768, -21.098138301285896],
@@ -2877,7 +4657,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424460243344, -21.098219938881986],
@@ -2885,7 +4670,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34305566851654, -21.09812033872512],
@@ -2893,7 +4683,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425736958624, -21.098281672813275],
@@ -2901,7 +4696,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34307023499554, -21.097992117238505],
@@ -2909,7 +4709,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34257816452248, -21.09801573799181],
@@ -2917,7 +4722,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34252050027243, -21.098340839484198],
@@ -2925,7 +4735,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34229786234403, -21.096727848716714],
@@ -2933,7 +4748,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34189217759013, -21.097095041806508],
@@ -2941,7 +4761,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34208163970493, -21.09726823774688],
@@ -2949,7 +4774,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34194877488224, -21.097078055186127],
@@ -2957,7 +4787,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34216728062464, -21.097003187266132],
@@ -2965,7 +4800,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34238605973238, -21.097534092058385],
@@ -2973,7 +4813,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34221345976013, -21.096904911047066],
@@ -2981,7 +4826,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34199450791183, -21.097036922712462],
@@ -2989,7 +4839,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34218695764537, -21.09709657474758],
@@ -2997,7 +4852,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34183336199055, -21.097084735143074],
@@ -3005,7 +4865,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34138845374264, -21.097671961983526],
@@ -3013,7 +4878,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34143623834478, -21.09740972525183],
@@ -3021,7 +4891,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34226806900102, -21.097628528812322],
@@ -3029,7 +4904,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34223966975867, -21.09698358524271],
@@ -3037,7 +4917,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34236912661476, -21.09714692705852],
@@ -3045,7 +4930,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34231774405094, -21.096963473001374],
@@ -3053,7 +4943,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342246881329, -21.09746284226443],
@@ -3061,7 +4956,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34212705967983, -21.096927970256267],
@@ -3069,7 +4969,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3419747913581, -21.0969577877958],
@@ -3077,7 +4982,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34164942318085, -21.097451989570548],
@@ -3085,7 +4995,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3423756641103, -21.09736250648794],
@@ -3093,7 +5008,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34234464530763, -21.09731171152158],
@@ -3101,7 +5021,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34149940844355, -21.09770980243362],
@@ -3109,7 +5034,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424078179284, -21.09744167855999],
@@ -3117,7 +5047,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34214736219556, -21.09781752567833],
@@ -3125,7 +5060,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34159343957162, -21.097207834638226],
@@ -3133,7 +5073,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3423879929705, -21.09765999059975],
@@ -3141,7 +5086,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34173883293363, -21.096914237809898],
@@ -3149,7 +5099,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34178755308128, -21.097828830290883],
@@ -3157,7 +5112,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34231874844338, -21.097674706633814],
@@ -3165,7 +5125,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34223623541962, -21.097198345393156],
@@ -3173,7 +5138,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3416713913162, -21.0970329910246],
@@ -3181,7 +5151,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34175650433298, -21.097020049140028],
@@ -3189,7 +5164,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34208303960926, -21.09679695032372],
@@ -3197,7 +5177,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34226423264099, -21.097085176865352],
@@ -3205,7 +5190,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3414200888626, -21.097870361925988],
@@ -3213,7 +5203,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3423644775755, -21.097224778583975],
@@ -3221,7 +5216,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34189584930908, -21.097875421248336],
@@ -3229,7 +5229,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3422450629942, -21.096805555003325],
@@ -3237,7 +5242,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34231767650124, -21.09718433923738],
@@ -3245,7 +5255,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34172010540985, -21.097870776336496],
@@ -3253,7 +5268,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34147025372764, -21.097506124492618],
@@ -3261,7 +5281,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3423603074782, -21.09759652115375],
@@ -3269,7 +5294,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34177372182003, -21.097120318822046],
@@ -3277,7 +5307,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3414223647967, -21.097469940865217],
@@ -3285,7 +5320,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34240278056504, -21.09694556256055],
@@ -3293,7 +5333,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342209684213, -21.097274800035642],
@@ -3301,7 +5346,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3415673110287, -21.097499984352705],
@@ -3309,7 +5359,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34163005980662, -21.097859637142196],
@@ -3317,7 +5372,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34225615036655, -21.097771799411348],
@@ -3325,7 +5385,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34220141103322, -21.09767094917225],
@@ -3333,7 +5398,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34164056151275, -21.097155115592173],
@@ -3341,7 +5411,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34215553439216, -21.09723326011597],
@@ -3349,7 +5424,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34195559986242, -21.09714994981085],
@@ -3357,7 +5437,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34204685965375, -21.096944040976616],
@@ -3365,7 +5450,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424070241779, -21.097493643289237],
@@ -3373,7 +5463,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34239475406235, -21.097294067575298],
@@ -3381,7 +5476,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34178740997052, -21.09716934070864],
@@ -3389,7 +5489,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34179548425644, -21.097044090867207],
@@ -3397,7 +5502,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34146026192172, -21.097284283408683],
@@ -3405,7 +5515,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34138426028855, -21.097447619141942],
@@ -3413,7 +5528,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3416235877783, -21.097751864554237],
@@ -3421,7 +5541,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34202083960463, -21.097792531134715],
@@ -3429,7 +5554,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34173588855768, -21.097517611411206],
@@ -3437,7 +5567,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34190678740288, -21.09765039725134],
@@ -3445,7 +5580,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34240451547547, -21.09718530666561],
@@ -3453,7 +5593,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34199419342326, -21.097138764960377],
@@ -3461,7 +5606,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34164781709967, -21.097241992324445],
@@ -3469,7 +5619,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.341721209511, -21.097747338994814],
@@ -3477,7 +5632,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34239938576468, -21.09701986469458],
@@ -3485,7 +5645,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34158619345257, -21.097156191505007],
@@ -3493,7 +5658,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34189131715047, -21.097359272866033],
@@ -3501,7 +5671,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3416403662376, -21.09753569585073],
@@ -3509,7 +5684,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3415010220809, -21.097597237723416],
@@ -3517,7 +5697,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3415392920039, -21.097151599987676],
@@ -3525,7 +5710,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424103292396, -21.09722515079781],
@@ -3533,7 +5723,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34233304937783, -21.097730206871013],
@@ -3541,7 +5736,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34188420217077, -21.09760229203861],
@@ -3549,7 +5749,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3416948581997, -21.097297300377857],
@@ -3557,7 +5762,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3418495533044, -21.09733143152614],
@@ -3565,7 +5775,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34227636193592, -21.097401844851774],
@@ -3573,7 +5788,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34141659930938, -21.097003459541664],
@@ -3581,7 +5801,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3415310478423, -21.0978110614388],
@@ -3589,7 +5814,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34169851626305, -21.09744529668603],
@@ -3597,7 +5827,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34192446981777, -21.097456211195542],
@@ -3605,7 +5840,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34149419263986, -21.09785235100063],
@@ -3613,7 +5853,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.341717683907, -21.097373677591488],
@@ -3621,7 +5866,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34146884528863, -21.097131486989582],
@@ -3629,7 +5879,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34178958685595, -21.09734724203365],
@@ -3637,7 +5892,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34134409660624, -21.097587583924962],
@@ -3645,7 +5905,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3421156060187, -21.09742647983601],
@@ -3653,7 +5918,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34174771859009, -21.098068094869635],
@@ -3661,7 +5931,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34224985867183, -21.098178647044175],
@@ -3669,7 +5944,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3417562782417, -21.098442396369688],
@@ -3677,7 +5957,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34156637525564, -21.09840534359089],
@@ -3685,7 +5970,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34164954435158, -21.09813148379145],
@@ -3693,7 +5983,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34161900377387, -21.098752783196453],
@@ -3701,7 +5996,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34220033123904, -21.098177742683365],
@@ -3709,7 +6009,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34172779966025, -21.09817525175938],
@@ -3717,7 +6022,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34184564493384, -21.098154267493225],
@@ -3725,7 +6035,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3416014339267, -21.098114681639284],
@@ -3733,7 +6048,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34132746307833, -21.097910553076918],
@@ -3741,7 +6061,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34148173763597, -21.09834979364628],
@@ -3749,7 +6074,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3420404000634, -21.098303563158602],
@@ -3757,7 +6087,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34240392204697, -21.098183342505536],
@@ -3765,7 +6100,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34230697406616, -21.098217875774033],
@@ -3773,7 +6113,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34154358924064, -21.098279007515053],
@@ -3781,7 +6126,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34151699604305, -21.098480339876176],
@@ -3789,7 +6139,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3418475543515, -21.0979985103195],
@@ -3797,7 +6152,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3415289823866, -21.098082309163814],
@@ -3805,7 +6165,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34174264334803, -21.098206199926317],
@@ -3813,7 +6178,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34168712248172, -21.098247006820976],
@@ -3821,7 +6191,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34143292804416, -21.09835840413532],
@@ -3829,7 +6204,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3423011886445, -21.098281563668635],
@@ -3837,7 +6217,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34155662661053, -21.09856576907353],
@@ -3845,7 +6230,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342294372256, -21.09816856561176],
@@ -3853,7 +6243,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3417012083289, -21.09832452002195],
@@ -3861,7 +6256,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34167535890663, -21.09806497172381],
@@ -3869,7 +6269,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3419585195672, -21.098564315905563],
@@ -3877,7 +6282,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34175200462914, -21.098232823889813],
@@ -3885,7 +6295,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34168447848356, -21.09820557806019],
@@ -3893,7 +6308,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34176572054605, -21.098008728219696],
@@ -3901,7 +6321,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34194744391596, -21.098114055585352],
@@ -3909,7 +6334,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34173493202812, -21.09871847688872],
@@ -3917,7 +6347,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34204751605589, -21.098545135991152],
@@ -3925,7 +6360,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34179101031623, -21.09828700981661],
@@ -3933,7 +6373,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34185614946216, -21.09846738062587],
@@ -3941,7 +6386,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3415429755578, -21.098021097786244],
@@ -3949,7 +6399,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34167932121687, -21.098119865685355],
@@ -3957,7 +6412,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3414506684043, -21.09821525552884],
@@ -3965,7 +6425,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3415241435686, -21.09790151932309],
@@ -3973,7 +6438,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34208078035772, -21.098487183294033],
@@ -3981,7 +6451,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3414717049543, -21.098522626044304],
@@ -3989,7 +6464,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34213447831462, -21.098496647139168],
@@ -3997,7 +6477,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3415019967269, -21.098301594572117],
@@ -4005,7 +6490,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34146902900198, -21.098028357071243],
@@ -4013,7 +6503,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3419218095239, -21.09859422301631],
@@ -4021,7 +6516,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34217390518603, -21.098451434560967],
@@ -4029,7 +6529,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34224078434053, -21.098294139416243],
@@ -4037,7 +6542,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3416679645788, -21.097952471172075],
@@ -4045,7 +6555,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34220713391502, -21.098092824967086],
@@ -4053,7 +6568,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3415444845021, -21.09877340011937],
@@ -4061,7 +6581,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34144118941185, -21.098461457568963],
@@ -4069,7 +6594,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34126890985414, -21.09726421080924],
@@ -4077,7 +6607,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34121010327297, -21.097658821474145],
@@ -4085,7 +6620,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34108688794433, -21.097399287105006],
@@ -4093,7 +6633,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3411160880196, -21.097451449070714],
@@ -4101,7 +6646,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34096355696403, -21.09737971180728],
@@ -4109,7 +6659,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34106959812806, -21.097457564857645],
@@ -4117,7 +6672,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.341049874132, -21.097572723502704],
@@ -4125,7 +6685,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34125856387305, -21.09719361977506],
@@ -4133,7 +6698,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3412647159477, -21.09738352006872],
@@ -4141,7 +6711,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3411592845434, -21.097691437638833],
@@ -4149,7 +6724,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34101748690688, -21.09751335150422],
@@ -4157,7 +6737,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34117128513424, -21.097808282830893],
@@ -4165,7 +6750,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34113646586871, -21.09725538451174],
@@ -4173,7 +6763,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34113944063978, -21.09776114527399],
@@ -4181,7 +6776,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3411296760176, -21.097517676913924],
@@ -4189,7 +6789,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3412248327885, -21.097586068304096],
@@ -4197,7 +6802,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34127694437663, -21.09767150633225],
@@ -4205,7 +6815,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3410195474921, -21.097443825446774],
@@ -4213,7 +6828,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34112832034606, -21.097628539737027],
@@ -4221,7 +6841,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34118121732212, -21.097242309869227],
@@ -4229,7 +6854,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34103157878536, -21.09724561627699],
@@ -4237,7 +6867,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34114588377508, -21.09741132699579],
@@ -4245,7 +6880,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3411957442084, -21.097516959889056],
@@ -4253,7 +6893,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34111949500186, -21.097339707719183],
@@ -4261,7 +6906,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34116456856822, -21.097168063189464],
@@ -4269,7 +6919,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34127825277986, -21.097832894372523],
@@ -4277,7 +6932,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3412270929447, -21.09785417806665],
@@ -4285,7 +6945,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34127376745428, -21.097523076631898],
@@ -4293,7 +6958,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34120613487462, -21.097934318997947],
@@ -4301,7 +6971,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34128660726032, -21.097949451392747],
@@ -4309,7 +6984,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458576100513, -21.09889638927499],
@@ -4317,7 +6997,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458916937122, -21.098988251940618],
@@ -4325,7 +7010,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34579878862533, -21.098985004389707],
@@ -4333,7 +7023,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3459462114378, -21.098884617449176],
@@ -4341,7 +7036,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34584691825907, -21.09855707209724],
@@ -4349,7 +7049,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34579131482187, -21.098895384566212],
@@ -4357,7 +7062,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34586499309052, -21.09870291227813],
@@ -4365,7 +7075,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34595859488633, -21.098965889067625],
@@ -4373,7 +7088,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458261769433, -21.099072073294376],
@@ -4381,7 +7101,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34585025678135, -21.09913987321415],
@@ -4389,7 +7114,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34588933493407, -21.099022133699773],
@@ -4397,7 +7127,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3459809811563, -21.099111808486782],
@@ -4405,7 +7140,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34544510641666, -21.09785735160268],
@@ -4413,7 +7153,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34526440061688, -21.09883382912868],
@@ -4421,7 +7166,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34523161537638, -21.098555932149694],
@@ -4429,7 +7179,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34494394841178, -21.09829345202465],
@@ -4437,7 +7192,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3450576652319, -21.098082846818663],
@@ -4445,7 +7205,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451902619268, -21.098674617676743],
@@ -4453,7 +7218,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34469437321013, -21.09835593788296],
@@ -4461,7 +7231,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3449981450714, -21.0981849534217],
@@ -4469,7 +7244,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34533323906615, -21.09878554147336],
@@ -4477,7 +7257,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34521382754028, -21.09847243844607],
@@ -4485,7 +7270,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34480281236662, -21.098415866586258],
@@ -4493,7 +7283,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451107223085, -21.09825237686017],
@@ -4501,7 +7296,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34517568352194, -21.098843605830076],
@@ -4509,7 +7309,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34529810182983, -21.098463311901234],
@@ -4517,7 +7322,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34514477346906, -21.098070191798655],
@@ -4525,7 +7335,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34522504784994, -21.098059130294946],
@@ -4533,7 +7348,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34517559831096, -21.098153531919117],
@@ -4541,7 +7361,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34519976267717, -21.098235960600476],
@@ -4549,7 +7374,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34475417783963, -21.09851266471538],
@@ -4557,7 +7387,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34536957822328, -21.097929240201747],
@@ -4565,7 +7400,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34475120783665, -21.098259266343874],
@@ -4573,7 +7413,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34502138224485, -21.098254676146606],
@@ -4581,7 +7426,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34572032187094, -21.098825969075897],
@@ -4589,7 +7439,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34477355450534, -21.09833650346842],
@@ -4597,7 +7452,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34498411564456, -21.098870814265343],
@@ -4605,7 +7465,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451081689836, -21.09854623219435],
@@ -4613,7 +7478,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34505642871687, -21.09879922120802],
@@ -4621,7 +7491,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3453066221533, -21.09891659661248],
@@ -4629,7 +7504,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34494641998523, -21.098979539305578],
@@ -4637,7 +7517,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34500930206454, -21.09801551669539],
@@ -4645,7 +7530,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34558678208018, -21.098908070425747],
@@ -4653,7 +7543,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34470963790017, -21.098435500968435],
@@ -4661,7 +7556,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34487371117348, -21.098579529878613],
@@ -4669,7 +7569,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3453549323142, -21.098121297299784],
@@ -4677,7 +7582,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34492487162316, -21.09872468740195],
@@ -4685,7 +7595,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3448301136528, -21.098244314017535],
@@ -4693,7 +7608,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34498086706722, -21.098638393787244],
@@ -4701,7 +7621,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34507313261665, -21.098609612376407],
@@ -4709,7 +7634,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34483711906904, -21.09849805105492],
@@ -4717,7 +7647,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457588440927, -21.098897487298977],
@@ -4725,7 +7660,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34495145462458, -21.098805323930822],
@@ -4733,7 +7673,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34508371998896, -21.09841980389579],
@@ -4741,7 +7686,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34531389389934, -21.098036278017876],
@@ -4749,7 +7699,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3454925145338, -21.098000358574904],
@@ -4757,7 +7712,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3448529186036, -21.098064482467688],
@@ -4765,7 +7725,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.345220362703, -21.098760383878513],
@@ -4773,7 +7738,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34563302431022, -21.0985731968266],
@@ -4781,7 +7751,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34508148825353, -21.098879252326107],
@@ -4789,7 +7764,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34512974533956, -21.098946506454393],
@@ -4797,7 +7777,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34552201350755, -21.098333538048042],
@@ -4805,7 +7790,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34502521205022, -21.098959660164464],
@@ -4813,7 +7803,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3448546847285, -21.098745000891164],
@@ -4821,7 +7816,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3452386758702, -21.09898946021309],
@@ -4829,7 +7829,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34478264203707, -21.09882541000407],
@@ -4837,7 +7842,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451857263998, -21.098392685589353],
@@ -4845,7 +7855,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34471046442835, -21.098181579121437],
@@ -4853,7 +7868,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34547715942085, -21.09818531609918],
@@ -4861,7 +7881,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34560833792435, -21.09831107835484],
@@ -4869,7 +7894,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34525726556345, -21.098128336747834],
@@ -4877,7 +7907,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3454382314115, -21.098598198562307],
@@ -4885,7 +7920,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34515978370968, -21.09832379798993],
@@ -4893,7 +7933,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34559689203553, -21.098976444154314],
@@ -4901,7 +7946,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34478329723305, -21.098131076527523],
@@ -4909,7 +7959,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34553572004754, -21.098834934435796],
@@ -4917,7 +7972,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3453292784856, -21.09898792565607],
@@ -4925,7 +7985,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34572172212808, -21.09856532434696],
@@ -4933,7 +7998,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34558737568932, -21.098482238681104],
@@ -4941,7 +8011,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34557365239834, -21.098230180998613],
@@ -4949,7 +8024,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34537716774662, -21.098871932773147],
@@ -4957,7 +8037,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455066019742, -21.098505823209337],
@@ -4965,7 +8050,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34540827388253, -21.09802050377812],
@@ -4973,7 +8063,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34564397909799, -21.098383737936572],
@@ -4981,7 +8076,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34547568623148, -21.098416151402446],
@@ -4989,7 +8089,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3450872779568, -21.09816538681822],
@@ -4997,7 +8102,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3454056041208, -21.098518006851048],
@@ -5005,7 +8115,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34525887633308, -21.098394776942218],
@@ -5013,7 +8128,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34502168722, -21.098715687811303],
@@ -5021,7 +8141,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34492162413832, -21.09812105374712],
@@ -5029,7 +8154,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3450892933875, -21.098002567675614],
@@ -5037,7 +8167,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3448192900385, -21.09867118602177],
@@ -5045,7 +8180,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34490363761313, -21.098653346978455],
@@ -5053,7 +8193,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34496379756143, -21.09857079225331],
@@ -5061,7 +8206,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34577180706515, -21.098982573278484],
@@ -5069,7 +8219,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34507864379106, -21.098673508705293],
@@ -5077,7 +8232,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3456797011242, -21.098476869006074],
@@ -5085,7 +8245,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34478107255296, -21.09820653624794],
@@ -5093,7 +8258,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34547413197333, -21.09867227867445],
@@ -5101,7 +8271,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34534032646152, -21.098358989153322],
@@ -5109,7 +8284,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3454051374178, -21.098273541748128],
@@ -5117,7 +8297,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3447548333086, -21.09889950946204],
@@ -5125,7 +8310,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34514915482427, -21.098890785538135],
@@ -5133,7 +8323,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34471886280733, -21.098807727184045],
@@ -5141,7 +8336,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3453695938817, -21.098437817552323],
@@ -5149,7 +8349,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34501086060146, -21.098470545422135],
@@ -5157,7 +8362,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34562694062456, -21.09880528114239],
@@ -5165,7 +8375,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3454759599353, -21.098898431557725],
@@ -5173,7 +8388,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34506205100243, -21.098927062844893],
@@ -5181,7 +8401,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34550747261, -21.09875232654375],
@@ -5189,7 +8414,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34469370135434, -21.09810399060828],
@@ -5197,7 +8427,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3446956976217, -21.098614130197497],
@@ -5205,7 +8440,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34507804781495, -21.09831565967578],
@@ -5213,7 +8453,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34532271746832, -21.098292046640896],
@@ -5221,7 +8466,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34467801233916, -21.098277199510363],
@@ -5229,7 +8479,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34514674438245, -21.097982165286613],
@@ -5237,7 +8492,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34493711196092, -21.098622764402254],
@@ -5245,7 +8505,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455986821601, -21.099230863416828],
@@ -5253,7 +8518,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3452764926093, -21.099083622813808],
@@ -5261,7 +8531,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455265307815, -21.09906935528445],
@@ -5269,7 +8544,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34548851696934, -21.099159124526064],
@@ -5277,7 +8557,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3454978974366, -21.099236822001785],
@@ -5285,7 +8570,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34506292723705, -21.09904334456111],
@@ -5293,7 +8583,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3450948023315, -21.099122012264516],
@@ -5301,7 +8596,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34518550012643, -21.099103270880317],
@@ -5309,7 +8609,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34523411198512, -21.09902704573774],
@@ -5317,7 +8622,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34530468779136, -21.099157490679392],
@@ -5325,7 +8635,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34563450942548, -21.099056579165214],
@@ -5333,7 +8648,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34512014189903, -21.099189651363506],
@@ -5341,7 +8661,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34489707955453, -21.09926141360583],
@@ -5349,7 +8674,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34527765324466, -21.09934870091358],
@@ -5357,7 +8687,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34557526366868, -21.09906896414015],
@@ -5365,7 +8700,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34520797597716, -21.09918381689914],
@@ -5373,7 +8713,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451455987228, -21.099273339856914],
@@ -5381,7 +8726,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34490904058964, -21.099319393387113],
@@ -5389,7 +8739,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451726528881, -21.09934417699286],
@@ -5397,7 +8752,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3456953088658, -21.099206978066572],
@@ -5405,7 +8765,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3450881268347, -21.099470005434032],
@@ -5413,7 +8778,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34470580832243, -21.099386855904168],
@@ -5421,7 +8791,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34494886461155, -21.09911265008743],
@@ -5429,7 +8804,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.343634265316, -21.09881806514221],
@@ -5437,7 +8817,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3437010985762, -21.098801365545715],
@@ -5445,7 +8830,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34367926271818, -21.098736409975547],
@@ -5453,7 +8843,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34462188311278, -21.098447476722093],
@@ -5461,7 +8856,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34414047357313, -21.098870610701653],
@@ -5469,7 +8869,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34373596752545, -21.09890304232985],
@@ -5477,7 +8882,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34362675373197, -21.09847687451394],
@@ -5485,7 +8895,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34403526237395, -21.09889944427796],
@@ -5493,7 +8908,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34370764434482, -21.09898743987081],
@@ -5501,7 +8921,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34360742859343, -21.098733026412056],
@@ -5509,7 +8934,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34368220886938, -21.098885974661812],
@@ -5517,7 +8947,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3441045098996, -21.09878247272347],
@@ -5525,7 +8960,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34362547929996, -21.09890404312395],
@@ -5533,7 +8973,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34376101399823, -21.098705758892336],
@@ -5541,7 +8986,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3441624731163, -21.09879918552065],
@@ -5549,7 +8999,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34356304523826, -21.098713477925376],
@@ -5557,7 +9012,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34381552180076, -21.098792184787026],
@@ -5565,7 +9025,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34376719233995, -21.098809749347105],
@@ -5573,7 +9038,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34394066740603, -21.09892183500896],
@@ -5581,7 +9051,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34357024984425, -21.098308539498703],
@@ -5589,7 +9064,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34413054421884, -21.098534455224822],
@@ -5597,7 +9077,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34384515300624, -21.09866882227957],
@@ -5605,7 +9090,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3438056914041, -21.0988656962227],
@@ -5613,7 +9103,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34357164781397, -21.098562627856424],
@@ -5621,7 +9116,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34420811665623, -21.09888610102424],
@@ -5629,7 +9129,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3445938102878, -21.098367026869134],
@@ -5637,7 +9142,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34390268347687, -21.09895391722865],
@@ -5645,7 +9155,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3438408706086, -21.09896594441946],
@@ -5653,7 +9168,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3443232642878, -21.098874628990565],
@@ -5661,7 +9181,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34427639371216, -21.098929434598546],
@@ -5669,7 +9194,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.343664078141, -21.098935192464797],
@@ -5677,7 +9207,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34455473296575, -21.09830060177809],
@@ -5685,7 +9220,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34387524367727, -21.098498489408744],
@@ -5693,7 +9233,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34367988596, -21.0986232652545],
@@ -5701,7 +9246,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34371602779362, -21.09835858421089],
@@ -5709,7 +9259,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3439955703107, -21.098811662718308],
@@ -5717,7 +9272,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34434828731847, -21.09847938769702],
@@ -5725,7 +9285,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34436270276646, -21.098805928067062],
@@ -5733,7 +9298,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34387301763164, -21.098773801238153],
@@ -5741,7 +9311,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34381313707703, -21.098327803669914],
@@ -5749,7 +9324,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34458248416996, -21.098600979946912],
@@ -5757,7 +9337,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34415996672112, -21.098602290638503],
@@ -5765,7 +9350,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3435730148311, -21.09893008070387],
@@ -5773,7 +9363,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34451918930446, -21.098416978402682],
@@ -5781,7 +9376,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34406642678525, -21.098986817344652],
@@ -5789,7 +9389,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34447501241064, -21.098780502270685],
@@ -5797,7 +9402,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34418796294105, -21.09867803745109],
@@ -5805,7 +9415,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34463797200397, -21.098277486431833],
@@ -5813,7 +9428,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34391596068468, -21.098584119757245],
@@ -5821,7 +9441,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34369504295285, -21.098280450532144],
@@ -5829,7 +9454,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3443149723088, -21.098389518426064],
@@ -5837,7 +9467,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34464597406736, -21.09853510460755],
@@ -5845,7 +9480,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3446077054743, -21.098847879028792],
@@ -5853,7 +9493,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34436875372418, -21.09830949554703],
@@ -5861,7 +9506,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34422291792058, -21.098752368057635],
@@ -5869,7 +9519,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34400066357813, -21.098740245093563],
@@ -5877,7 +9532,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34420198305935, -21.098414335170087],
@@ -5885,7 +9545,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34398733798398, -21.09847351234466],
@@ -5893,7 +9558,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34432829505812, -21.098729539336965],
@@ -5901,7 +9571,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3442620601637, -21.09882513151511],
@@ -5909,7 +9584,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34439296939001, -21.098882591371428],
@@ -5917,7 +9597,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34406357854473, -21.09836657704437],
@@ -5925,7 +9610,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34449461522456, -21.098154804101128],
@@ -5933,7 +9623,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34462080007825, -21.09821122042043],
@@ -5941,7 +9636,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34422795556418, -21.098510161592138],
@@ -5949,7 +9649,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3440853788527, -21.098436915080576],
@@ -5957,7 +9662,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34442625961475, -21.098991746936115],
@@ -5965,7 +9675,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34463848547742, -21.09810712665891],
@@ -5973,7 +9688,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34367098123127, -21.098382525157653],
@@ -5981,7 +9701,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34440855275636, -21.098372843592237],
@@ -5989,7 +9714,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3445598951029, -21.098550932549074],
@@ -5997,7 +9727,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34417360935302, -21.098964076840986],
@@ -6005,7 +9740,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34433672978372, -21.098938643761475],
@@ -6013,7 +9753,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34452038753824, -21.098525532334712],
@@ -6021,7 +9766,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34377321564511, -21.09892671289015],
@@ -6029,7 +9779,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3440646692634, -21.09881513322426],
@@ -6037,7 +9792,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34378900070473, -21.098964749438714],
@@ -6045,7 +9805,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34416293708824, -21.098332031485576],
@@ -6053,7 +9818,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34382758843924, -21.09890285897687],
@@ -6061,7 +9831,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34419455054132, -21.099623909094845],
@@ -6069,7 +9844,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34435231761088, -21.099703550610606],
@@ -6077,7 +9857,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34397131914034, -21.09968576455211],
@@ -6085,7 +9870,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3436156070261, -21.09903683508932],
@@ -6093,7 +9883,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34378861771057, -21.09924074192283],
@@ -6101,7 +9896,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34405202822467, -21.0992765186277],
@@ -6109,7 +9909,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34400318667872, -21.099311162144684],
@@ -6117,7 +9922,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34421176994016, -21.099227530015934],
@@ -6125,7 +9935,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34432751978392, -21.09919589152139],
@@ -6133,7 +9948,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3445533085809, -21.099624723668228],
@@ -6141,7 +9961,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34378517085386, -21.099044835607078],
@@ -6149,7 +9974,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34392005618264, -21.099238359563106],
@@ -6157,7 +9987,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3445210143419, -21.099552181117403],
@@ -6165,7 +10000,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34432771471765, -21.099598018042556],
@@ -6173,7 +10013,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34410058728167, -21.099255884885288],
@@ -6181,7 +10026,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34370028561253, -21.099339935157154],
@@ -6189,7 +10039,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34440413696626, -21.099292946790765],
@@ -6197,7 +10052,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34409392717018, -21.09972658585373],
@@ -6205,7 +10065,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3442771747445, -21.099645352972477],
@@ -6213,7 +10078,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3439147421496, -21.099499058187256],
@@ -6221,7 +10091,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34448831134227, -21.099457543394404],
@@ -6229,7 +10104,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34385783806155, -21.099032249593375],
@@ -6237,7 +10117,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34385585918236, -21.099233830362113],
@@ -6245,7 +10130,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34438120315207, -21.099489848159454],
@@ -6253,7 +10143,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34388244336722, -21.09913439635466],
@@ -6261,7 +10156,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3442129751383, -21.099708645711363],
@@ -6269,7 +10169,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34407717629512, -21.099168766455282],
@@ -6277,7 +10182,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34447161028743, -21.099302049005374],
@@ -6285,7 +10195,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34442748302035, -21.099348217222225],
@@ -6293,7 +10208,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3441684348802, -21.09926322833604],
@@ -6301,7 +10221,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34375024873887, -21.099441540475507],
@@ -6309,7 +10234,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34376765034895, -21.099159340163826],
@@ -6317,7 +10247,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3441813547209, -21.09978644825772],
@@ -6325,7 +10260,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34437273360464, -21.099782217050848],
@@ -6333,7 +10273,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3438520716638, -21.099431597900665],
@@ -6341,7 +10286,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34386766618226, -21.099514704551055],
@@ -6349,7 +10299,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34415953980144, -21.099854473693007],
@@ -6357,7 +10312,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34414495188312, -21.09916620188057],
@@ -6365,7 +10325,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3439909265858, -21.099397556198408],
@@ -6373,7 +10338,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34367567985169, -21.099108218582895],
@@ -6381,7 +10351,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34427309252663, -21.099513338780742],
@@ -6389,7 +10364,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34437972795985, -21.09924459058292],
@@ -6397,7 +10377,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.344311582487, -21.09948473753651],
@@ -6405,7 +10390,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34445746706393, -21.099401574714914],
@@ -6413,7 +10403,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3445827789148, -21.099501360250382],
@@ -6421,7 +10416,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3437187636485, -21.099066205816914],
@@ -6429,7 +10429,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34444657628677, -21.099237887342692],
@@ -6437,7 +10442,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34462557218006, -21.099132038273964],
@@ -6445,7 +10455,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34416342577686, -21.099055988525546],
@@ -6453,7 +10468,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34381786437422, -21.099505512184866],
@@ -6461,7 +10481,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34410287495956, -21.09907830274946],
@@ -6469,7 +10494,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3442530089558, -21.099825930349716],
@@ -6477,7 +10507,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34396402718403, -21.099493597609563],
@@ -6485,7 +10520,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3435832071923, -21.099377944371202],
@@ -6493,7 +10533,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34431321242, -21.099828983258785],
@@ -6501,7 +10546,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3438773818719, -21.09998937979095],
@@ -6509,7 +10559,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34421581263638, -21.099867346547097],
@@ -6517,7 +10572,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34392452575307, -21.09983083353981],
@@ -6525,7 +10585,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3442733395565, -21.099231596009396],
@@ -6533,7 +10598,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34443746524457, -21.099659567289414],
@@ -6541,7 +10611,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.344126253992, -21.099898274662646],
@@ -6549,7 +10624,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34377862071548, -21.09951704020766],
@@ -6557,7 +10637,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34423495893208, -21.099429242169908],
@@ -6565,7 +10650,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34394095025908, -21.099884876603316],
@@ -6573,7 +10663,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34446944829227, -21.099078023463903],
@@ -6581,7 +10676,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3444598426555, -21.09975845126353],
@@ -6589,7 +10689,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34415403468097, -21.099540346429016],
@@ -6597,7 +10702,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34395205240227, -21.099318989468877],
@@ -6605,7 +10715,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34428496680323, -21.09928721013666],
@@ -6613,7 +10728,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3440393023846, -21.09957879019599],
@@ -6621,7 +10741,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34449608561457, -21.099683386061553],
@@ -6629,7 +10754,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3439108604984, -21.099575269436396],
@@ -6637,7 +10767,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34401032664817, -21.099627996163882],
@@ -6645,7 +10780,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34382497275368, -21.09933541692639],
@@ -6653,7 +10793,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34434468924871, -21.099100127745704],
@@ -6661,7 +10806,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34431080247887, -21.099545889169594],
@@ -6669,7 +10819,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34381811481802, -21.099604825135767],
@@ -6677,7 +10832,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34453266852418, -21.09923016061684],
@@ -6685,7 +10845,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34453545877392, -21.099483448193617],
@@ -6693,7 +10858,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34410816814506, -21.099380655018333],
@@ -6701,7 +10871,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34378756195025, -21.09956716130175],
@@ -6709,7 +10884,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34464115242272, -21.099523638047238],
@@ -6717,7 +10897,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34389854787702, -21.09962073728856],
@@ -6725,7 +10910,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34461280197215, -21.09967549177803],
@@ -6733,7 +10923,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3436683325901, -21.099378743900356],
@@ -6741,7 +10936,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34408800828484, -21.099464117290665],
@@ -6749,7 +10949,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3440132614197, -21.099489214025798],
@@ -6757,7 +10962,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34410809240197, -21.099310240349865],
@@ -6765,7 +10975,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34412243178824, -21.099471401019695],
@@ -6773,7 +10988,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34415301761157, -21.099352137097746],
@@ -6781,7 +11001,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34419137242693, -21.099141881231994],
@@ -6789,7 +11014,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34396964546397, -21.099959541961056],
@@ -6797,7 +11027,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34392078866924, -21.09995192716792],
@@ -6805,7 +11040,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34303971585712, -21.098600027494637],
@@ -6813,7 +11053,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3429232120647, -21.098478609129646],
@@ -6821,7 +11066,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3431294170205, -21.098573963831996],
@@ -6829,7 +11079,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34286952095835, -21.098604371430827],
@@ -6837,7 +11092,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34342319204606, -21.098736231720764],
@@ -6845,7 +11105,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34350118806037, -21.09875210786755],
@@ -6853,7 +11118,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3434651408345, -21.09866059215238],
@@ -6861,7 +11131,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34297127687987, -21.0987902762409],
@@ -6869,7 +11144,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34342586560862, -21.098873919795075],
@@ -6877,7 +11157,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34317465831182, -21.098640404706963],
@@ -6885,7 +11170,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34291646118893, -21.098764542731974],
@@ -6893,7 +11183,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34301654789488, -21.098516586775837],
@@ -6901,7 +11196,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34325381687046, -21.09879959246594],
@@ -6909,7 +11209,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34298538539537, -21.098416183630327],
@@ -6917,7 +11222,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34286284423254, -21.098442795849767],
@@ -6925,7 +11235,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34290395229092, -21.098528368479407],
@@ -6933,7 +11248,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34321260600814, -21.098551514380702],
@@ -6941,7 +11261,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3434791111881, -21.09896188552706],
@@ -6949,7 +11274,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34333713997884, -21.098675867895533],
@@ -6957,7 +11287,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34319306804693, -21.09846421082245],
@@ -6965,7 +11300,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3431033349067, -21.098837433826432],
@@ -6973,7 +11313,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34309902811106, -21.09848937966064],
@@ -6981,7 +11326,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34337135254864, -21.098771625036736],
@@ -6989,7 +11339,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34302709061336, -21.098431103637747],
@@ -6997,7 +11352,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34312593374887, -21.098655049707673],
@@ -7005,7 +11365,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34295241757945, -21.098544962743528],
@@ -7013,7 +11378,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34330073973567, -21.098752285576104],
@@ -7021,7 +11391,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3431423654924, -21.098695409372187],
@@ -7029,7 +11404,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34331307921317, -21.09897641930061],
@@ -7037,7 +11417,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3429349572958, -21.09842581457794],
@@ -7045,7 +11430,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3431350127686, -21.09889655287246],
@@ -7053,7 +11443,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3428471254936, -21.098795862225113],
@@ -7061,7 +11456,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3429284378825, -21.098854136154102],
@@ -7069,7 +11469,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430098191867, -21.098752061983788],
@@ -7077,7 +11482,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34342184520514, -21.09896393309007],
@@ -7085,7 +11495,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34325609933651, -21.098727417850114],
@@ -7093,7 +11508,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430498816355, -21.098677874672973],
@@ -7101,7 +11521,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34346606066467, -21.09881479346591],
@@ -7109,7 +11534,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34328624003263, -21.098889362231034],
@@ -7117,7 +11547,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34281003732661, -21.098704275317274],
@@ -7125,7 +11560,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34327366312968, -21.098840490377068],
@@ -7133,7 +11573,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430633357744, -21.09838986155287],
@@ -7141,7 +11586,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34350585875796, -21.098418163687757],
@@ -7149,7 +11599,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34303513758803, -21.098832184323165],
@@ -7157,7 +11612,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3432292829608, -21.098613854758348],
@@ -7165,7 +11625,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34316773637684, -21.0988217818182],
@@ -7173,7 +11638,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34322055074787, -21.098501452097953],
@@ -7181,7 +11651,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34323663081412, -21.09835734166215],
@@ -7189,7 +11664,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34303559923853, -21.098915791097486],
@@ -7197,7 +11677,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34276973265017, -21.098491313606708],
@@ -7205,7 +11690,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34353761150317, -21.098707901227165],
@@ -7213,7 +11703,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34344458084237, -21.09831639936941],
@@ -7221,7 +11716,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3429615206786, -21.09898885452919],
@@ -7229,7 +11729,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3432728068322, -21.098351089179847],
@@ -7237,7 +11742,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34290454366965, -21.098687104205915],
@@ -7245,7 +11755,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3428549948544, -21.098556640207196],
@@ -7253,7 +11768,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34311907963675, -21.098404809919003],
@@ -7261,7 +11781,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34343567135693, -21.099320984980206],
@@ -7269,7 +11794,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34310386324202, -21.099241307048764],
@@ -7277,7 +11807,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34287711866364, -21.09903602249604],
@@ -7285,7 +11820,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34342289714192, -21.099258630992196],
@@ -7293,7 +11833,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430053973198, -21.099183967978718],
@@ -7301,7 +11846,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34298166497143, -21.099099170536626],
@@ -7309,7 +11859,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430446528134, -21.099345821912173],
@@ -7317,7 +11872,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34308381790686, -21.09916751380119],
@@ -7325,7 +11885,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3431664086652, -21.099299020904493],
@@ -7333,7 +11898,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34319443727168, -21.09915754109236],
@@ -7341,7 +11911,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34302816266938, -21.099263289787512],
@@ -7349,7 +11924,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34307803903704, -21.099087459422584],
@@ -7357,7 +11937,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342875344664, -21.099079147195088],
@@ -7365,7 +11950,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34329641803268, -21.09920834618684],
@@ -7373,7 +11963,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34349352472, -21.099266194894412],
@@ -7381,7 +11976,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34331097670523, -21.09916892245098],
@@ -7389,7 +11989,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34468935413815, -21.09785990616308],
@@ -7397,7 +12002,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34473742969573, -21.097063305080642],
@@ -7405,7 +12015,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34468193422882, -21.097223975754652],
@@ -7413,7 +12028,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3446897572516, -21.097057284543496],
@@ -7421,7 +12041,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34470967640894, -21.097953537413414],
@@ -7429,7 +12054,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34428599878004, -21.096273063770234],
@@ -7437,7 +12067,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34408621885441, -21.096338809287673],
@@ -7445,7 +12080,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34462304472112, -21.09674663538723],
@@ -7453,7 +12093,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3438803258154, -21.09632967468586],
@@ -7461,7 +12106,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34423919358056, -21.09629879441142],
@@ -7469,7 +12119,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3439237233042, -21.096414021108302],
@@ -7477,7 +12132,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3445183927503, -21.09611342568577],
@@ -7485,7 +12145,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34440047683182, -21.096222390159138],
@@ -7493,7 +12158,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3439880929568, -21.096331039227152],
@@ -7501,7 +12171,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34380952708136, -21.09633646848735],
@@ -7509,7 +12184,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34439296588508, -21.0971593043634],
@@ -7517,7 +12197,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34405713828843, -21.097230703279592],
@@ -7525,7 +12210,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34457013547495, -21.09752633255842],
@@ -7533,7 +12223,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3442773689158, -21.097350943597128],
@@ -7541,7 +12236,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34418296854022, -21.097598640910853],
@@ -7549,7 +12249,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3444251815958, -21.09727460393717],
@@ -7557,7 +12262,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34420667849344, -21.097641024673017],
@@ -7565,7 +12275,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34414902316507, -21.09691975139517],
@@ -7573,7 +12288,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3443464677319, -21.097442727422795],
@@ -7581,7 +12301,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34461948550725, -21.097728699807828],
@@ -7589,7 +12314,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34449007264217, -21.096917971009507],
@@ -7597,7 +12327,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34425698888177, -21.097306438348113],
@@ -7605,7 +12340,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3442858485911, -21.097844792833886],
@@ -7613,7 +12353,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34396163900084, -21.097512933406616],
@@ -7621,7 +12366,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34429410242544, -21.096803736065397],
@@ -7629,7 +12379,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34460338690639, -21.097677294514565],
@@ -7637,7 +12392,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3441958952087, -21.097080095010796],
@@ -7645,7 +12405,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3440189181173, -21.09699386555598],
@@ -7653,7 +12418,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3444719153764, -21.09736853515034],
@@ -7661,7 +12431,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34418777549513, -21.097022634380643],
@@ -7669,7 +12444,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3439011844101, -21.09730577631094],
@@ -7677,7 +12457,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3442766243212, -21.09692272792234],
@@ -7685,7 +12470,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34412386303214, -21.097432262282847],
@@ -7693,7 +12483,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34429715763943, -21.097391086155877],
@@ -7701,7 +12496,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3441165808169, -21.097099300780346],
@@ -7709,7 +12509,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3444539398383, -21.096803526066374],
@@ -7717,7 +12522,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34446346947595, -21.09731890270924],
@@ -7725,7 +12535,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34391406237359, -21.09691321932005],
@@ -7733,7 +12548,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3440002297851, -21.097202974828324],
@@ -7741,7 +12561,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3446008016615, -21.096800459586774],
@@ -7749,7 +12574,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34364459978656, -21.09749773213354],
@@ -7757,7 +12587,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3436789263351, -21.097875103612513],
@@ -7765,7 +12600,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34457246936574, -21.096885228232022],
@@ -7773,7 +12613,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34451928448405, -21.097390769521486],
@@ -7781,7 +12626,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34356011465445, -21.097532446387998],
@@ -7789,7 +12639,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.344361192707, -21.09754922072769],
@@ -7797,7 +12652,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34384668416365, -21.09718054426767],
@@ -7805,7 +12665,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3441822085148, -21.09697323381074],
@@ -7813,7 +12678,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34424770976185, -21.097257692219305],
@@ -7821,7 +12691,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34365125288818, -21.09767513287942],
@@ -7829,7 +12704,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34372637983438, -21.097373527149188],
@@ -7837,7 +12717,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3439859542615, -21.096834526935055],
@@ -7845,7 +12730,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3444046111116, -21.09687945866724],
@@ -7853,7 +12743,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34401053079944, -21.09811633311342],
@@ -7861,7 +12756,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3437377502191, -21.097935750527032],
@@ -7869,7 +12769,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34388432101287, -21.09799063219543],
@@ -7877,7 +12782,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34434685113578, -21.09798582266193],
@@ -7885,7 +12795,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3444985211827, -21.097973202646504],
@@ -7893,7 +12808,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34448346690272, -21.098026979716185],
@@ -7901,7 +12821,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34414565141427, -21.09800602306905],
@@ -7909,7 +12834,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34443200455038, -21.098056560451337],
@@ -7917,7 +12847,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34435462449767, -21.098050461483904],
@@ -7925,7 +12860,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34376746262993, -21.098065823145323],
@@ -7933,7 +12873,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3435907316125, -21.098194850681782],
@@ -7941,7 +12886,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3440547438692, -21.09812617351951],
@@ -7949,7 +12899,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34391786427594, -21.097914110853914],
@@ -7957,7 +12912,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34391860345386, -21.0980571544367],
@@ -7965,7 +12925,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34385057919732, -21.098142206526862],
@@ -7973,7 +12938,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34402914215957, -21.098011597491286],
@@ -7981,7 +12951,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3436846332854, -21.098182514390068],
@@ -7989,7 +12964,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34290081887588, -21.096582305596776],
@@ -7997,7 +12977,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34286125417393, -21.09666589343495],
@@ -8005,7 +12990,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34338096359082, -21.097778152583036],
@@ -8013,7 +13003,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34318286380528, -21.097562417317235],
@@ -8021,7 +13016,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34353061579594, -21.097634303793946],
@@ -8029,7 +13029,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34313550118415, -21.097849211149114],
@@ -8037,7 +13042,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34347250291378, -21.09764070621784],
@@ -8045,7 +13055,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34337396054156, -21.097701323951448],
@@ -8053,7 +13068,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3431925105569, -21.097870533534916],
@@ -8061,7 +13081,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3431573325358, -21.097610813309217],
@@ -8069,7 +13094,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3431024205729, -21.097804086105118],
@@ -8077,7 +13107,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34300218379187, -21.097364020288026],
@@ -8085,7 +13120,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3434424187533, -21.097596325328396],
@@ -8093,7 +13133,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34352162515495, -21.09684390942527],
@@ -8101,7 +13146,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34292714273948, -21.09688661220734],
@@ -8109,7 +13159,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34351553127595, -21.097578467804112],
@@ -8117,7 +13172,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3432037281354, -21.097624141268348],
@@ -8125,7 +13185,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3433849674596, -21.097837742301806],
@@ -8133,7 +13198,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3431547590347, -21.0974577904073],
@@ -8141,7 +13211,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34315185304237, -21.097505733023993],
@@ -8149,7 +13224,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34330140116765, -21.09740475460168],
@@ -8157,7 +13237,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34309678149097, -21.097461882437972],
@@ -8165,7 +13250,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34349148542614, -21.098203241971152],
@@ -8173,7 +13263,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34316641219286, -21.097961062305323],
@@ -8181,7 +13276,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3435290985388, -21.09820215396148],
@@ -8189,7 +13289,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34343158050476, -21.098189337096507],
@@ -8197,7 +13302,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34321022915907, -21.098087863392408],
@@ -8205,7 +13315,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3431365313174, -21.097925014147116],
@@ -8213,7 +13328,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34345702801707, -21.097950136228135],
@@ -8221,7 +13341,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34322646125767, -21.097926096267688],
@@ -8229,7 +13354,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34348016479333, -21.09812663395034],
@@ -8237,7 +13367,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34352181877153, -21.09792527325895],
@@ -8245,7 +13380,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34352218989102, -21.09814596319183],
@@ -8253,7 +13393,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3432077079248, -21.09815156686041],
@@ -8261,7 +13406,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3434774026002, -21.098057266688055],
@@ -8269,7 +13419,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34332173140425, -21.098103386130646],
@@ -8277,7 +13432,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34338124102717, -21.098206391040385],
@@ -8285,7 +13445,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34329634224406, -21.098148326956792],
@@ -8293,7 +13458,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3433796232363, -21.09790062269848],
@@ -8301,7 +13471,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34617091104386, -21.096579051126888],
@@ -8309,7 +13484,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34617014505545, -21.09674498029429],
@@ -8317,7 +13497,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34633372062748, -21.096523161788078],
@@ -8325,7 +13510,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34649136466007, -21.0967146640533],
@@ -8333,7 +13523,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458070724793, -21.096763005785917],
@@ -8341,7 +13536,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34618990462434, -21.096372348681047],
@@ -8349,7 +13549,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458298463863, -21.096736227055754],
@@ -8357,7 +13562,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34608249673911, -21.096539698970613],
@@ -8365,7 +13575,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34602118225496, -21.096611806126383],
@@ -8373,7 +13588,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34630238533907, -21.09621025968434],
@@ -8381,7 +13601,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34622345594425, -21.096460927015922],
@@ -8389,7 +13614,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346387621757, -21.096392311214082],
@@ -8397,7 +13627,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34609940674747, -21.09641442764392],
@@ -8405,7 +13640,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34611594404885, -21.09582931646381],
@@ -8413,7 +13653,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462706280015, -21.0961242666356],
@@ -8421,7 +13666,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34608293772408, -21.096616664889332],
@@ -8429,7 +13679,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34582493109693, -21.096660205850974],
@@ -8437,7 +13692,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34601015335136, -21.097163760733018],
@@ -8445,7 +13705,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34620492738262, -21.09745432258701],
@@ -8453,7 +13718,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34632144528584, -21.09720993887315],
@@ -8461,7 +13731,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3461698907426, -21.09703680568155],
@@ -8469,7 +13744,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3460318572052, -21.09723892102545],
@@ -8477,7 +13757,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34629761912342, -21.09713524383662],
@@ -8485,7 +13770,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458563279721, -21.09729009858412],
@@ -8493,7 +13783,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34595648372982, -21.09731381411779],
@@ -8501,7 +13796,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34580461483455, -21.097113741466295],
@@ -8509,7 +13809,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34641260687062, -21.097170648077302],
@@ -8517,7 +13822,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34638029015397, -21.0970966096156],
@@ -8525,7 +13835,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34654258310053, -21.09690381461627],
@@ -8533,7 +13848,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34646911622065, -21.096888674180146],
@@ -8541,7 +13861,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34628067292772, -21.097065366959566],
@@ -8549,7 +13874,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3464087177544, -21.097020416551544],
@@ -8557,7 +13887,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34625680124662, -21.096996823397344],
@@ -8565,7 +13900,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34612732198968, -21.096956682272463],
@@ -8573,7 +13913,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34599226906116, -21.097431303412304],
@@ -8581,7 +13926,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34621676711043, -21.096929836924346],
@@ -8589,7 +13939,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34587226524621, -21.09736492967875],
@@ -8597,7 +13952,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34618138093248, -21.097363392345034],
@@ -8605,7 +13965,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34587393614598, -21.097116169300104],
@@ -8613,7 +13978,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34628927409233, -21.09741273236817],
@@ -8621,7 +13991,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3463604896182, -21.097020193937897],
@@ -8629,7 +14004,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3460878169627, -21.09713144763788],
@@ -8637,7 +14017,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34609986384606, -21.097070113653242],
@@ -8645,7 +14030,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458171748045, -21.09706801123911],
@@ -8653,7 +14043,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34628711095357, -21.097519796716547],
@@ -8661,7 +14056,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3459352955116, -21.097261229866675],
@@ -8669,7 +14069,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3459805527344, -21.097371379306484],
@@ -8677,7 +14082,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34644355675232, -21.096838820227834],
@@ -8685,7 +14095,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34611632130768, -21.097544068363263],
@@ -8693,7 +14108,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34592587979012, -21.09718216412844],
@@ -8701,7 +14121,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3461926506299, -21.097527803570067],
@@ -8709,7 +14134,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34593398238866, -21.09740492489053],
@@ -8717,7 +14147,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34590671141785, -21.09745289245196],
@@ -8725,7 +14160,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3460272829418, -21.097503721512517],
@@ -8733,7 +14173,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466672178041, -21.097109624490873],
@@ -8741,7 +14186,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34669953909545, -21.097362665351373],
@@ -8749,7 +14199,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34610494018054, -21.09686180876927],
@@ -8757,7 +14212,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3460950770104, -21.096796759277925],
@@ -8765,7 +14225,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458057847557, -21.096795322818505],
@@ -8773,7 +14238,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458311594182, -21.097565357883905],
@@ -8781,7 +14251,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34581265561874, -21.096863172957775],
@@ -8789,7 +14264,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34611346346276, -21.09722876906041],
@@ -8797,7 +14277,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3459055409505, -21.097393831352395],
@@ -8805,7 +14290,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34653127307357, -21.096811207511593],
@@ -8813,7 +14303,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3460518058587, -21.09701224780754],
@@ -8821,7 +14316,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466511861698, -21.09705971879557],
@@ -8829,7 +14329,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3463221008459, -21.097463408255237],
@@ -8837,7 +14342,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34636834095363, -21.0973722392174],
@@ -8845,7 +14355,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34609108128947, -21.097180009821955],
@@ -8853,7 +14368,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34591830065642, -21.096897040308555],
@@ -8861,7 +14381,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34584728768868, -21.097465564336986],
@@ -8869,7 +14394,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34580813761642, -21.097336333259605],
@@ -8877,7 +14407,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458241456265, -21.097479306114874],
@@ -8885,7 +14420,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34580161424304, -21.097428541828727],
@@ -8893,7 +14433,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34540096030483, -21.09650512965058],
@@ -8901,7 +14446,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34512867410288, -21.09665939104999],
@@ -8909,7 +14459,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34556853198472, -21.09666895144221],
@@ -8917,7 +14472,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34531842305375, -21.096276280458845],
@@ -8925,7 +14485,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34542732586348, -21.096603454188713],
@@ -8933,7 +14498,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34493178026668, -21.096292241181064],
@@ -8941,7 +14511,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34484573684801, -21.09617393517374],
@@ -8949,7 +14524,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34520925359556, -21.09624406231761],
@@ -8957,7 +14537,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34507166891788, -21.09670567939309],
@@ -8965,7 +14550,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34543880385442, -21.096327740330125],
@@ -8973,7 +14563,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3453015602938, -21.096204289241516],
@@ -8981,7 +14576,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34503782177208, -21.096323862423684],
@@ -8989,7 +14589,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34548880007276, -21.096755367504667],
@@ -8997,7 +14602,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34501536085148, -21.096524665027612],
@@ -9005,7 +14615,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34525857231384, -21.09632695020077],
@@ -9013,7 +14628,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34507524386413, -21.096422446742213],
@@ -9021,7 +14641,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34533269712074, -21.09663460498619],
@@ -9029,7 +14654,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34520602641197, -21.09651931465289],
@@ -9037,7 +14667,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3449841319402, -21.09616679642467],
@@ -9045,7 +14680,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34497976078117, -21.096434591760534],
@@ -9053,7 +14693,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34485414141747, -21.09633800268022],
@@ -9061,7 +14706,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3449103464296, -21.096197808114216],
@@ -9069,7 +14719,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34528388438807, -21.096477952441766],
@@ -9077,7 +14732,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34477798256273, -21.096212879838493],
@@ -9085,7 +14745,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3449572490618, -21.096098021941476],
@@ -9093,7 +14758,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34500389870112, -21.096242698550153],
@@ -9101,7 +14771,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34539374582135, -21.096175340227486],
@@ -9109,7 +14784,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34523950613098, -21.09659799110744],
@@ -9117,7 +14797,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34552385856173, -21.09656676183417],
@@ -9125,7 +14810,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455378301799, -21.09635573356895],
@@ -9133,7 +14823,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34527265684105, -21.096552235343758],
@@ -9141,7 +14836,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3450913073615, -21.096205123297295],
@@ -9149,7 +14849,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34538386075673, -21.096107396340575],
@@ -9157,7 +14862,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34476556251724, -21.09667450638205],
@@ -9165,7 +14875,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34549904387012, -21.096466620426405],
@@ -9173,7 +14888,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3447539746442, -21.096375159061644],
@@ -9181,7 +14901,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455750655771, -21.0967338088721],
@@ -9189,7 +14914,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34514564442352, -21.09605131395311],
@@ -9197,7 +14927,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34514732442702, -21.096367942838196],
@@ -9205,7 +14940,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34478152710247, -21.09673020572201],
@@ -9213,7 +14953,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34482264585782, -21.096549945161243],
@@ -9221,7 +14966,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3449538699369, -21.096363640916607],
@@ -9229,7 +14979,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34493057638858, -21.096575069708855],
@@ -9237,7 +14992,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3452507211605, -21.095984409643012],
@@ -9245,7 +15005,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34570866370007, -21.09654075302265],
@@ -9253,7 +15018,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451833351669, -21.096155558452814],
@@ -9261,7 +15031,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3448532684602, -21.096621880161855],
@@ -9269,7 +15044,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34534409144828, -21.096358373797255],
@@ -9277,7 +15057,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34541504760867, -21.09602601269838],
@@ -9285,7 +15070,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34536856943825, -21.096739812726312],
@@ -9293,7 +15083,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3448197853728, -21.09625002611456],
@@ -9301,7 +15096,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34488239977955, -21.096419771919013],
@@ -9309,7 +15109,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34512714062404, -21.09628480227569],
@@ -9317,7 +15122,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3452546081828, -21.09668866470987],
@@ -9325,7 +15135,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34490415425014, -21.096497546265976],
@@ -9333,7 +15148,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34547267332718, -21.096105042385087],
@@ -9341,7 +15161,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3450408481727, -21.096043615096637],
@@ -9349,7 +15174,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34543019322186, -21.096439556197264],
@@ -9357,7 +15187,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34511151369634, -21.096493951491496],
@@ -9365,7 +15200,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34513373350444, -21.096551970055486],
@@ -9373,7 +15213,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34472819104187, -21.09658507537388],
@@ -9381,7 +15226,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34570114726267, -21.09584268816728],
@@ -9389,7 +15239,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3448666288307, -21.096699353077977],
@@ -9397,7 +15252,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34503002214586, -21.096104290992923],
@@ -9405,7 +15265,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34574585080765, -21.096668866320545],
@@ -9413,7 +15278,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34477192375303, -21.096299666339515],
@@ -9421,7 +15291,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3454356316347, -21.096662789361844],
@@ -9429,7 +15304,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34512614135238, -21.09660434810277],
@@ -9437,7 +15317,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34548080421555, -21.096197325788452],
@@ -9445,7 +15330,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34502431492245, -21.096387781557894],
@@ -9453,7 +15343,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3454960852468, -21.09600659933666],
@@ -9461,7 +15356,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3447845433525, -21.09661312746956],
@@ -9469,7 +15369,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3456005634814, -21.096529486646563],
@@ -9477,7 +15382,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455738641968, -21.096429612074743],
@@ -9485,7 +15395,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34494523431457, -21.09664503525811],
@@ -9493,7 +15408,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.344806129404, -21.096755138632076],
@@ -9501,7 +15421,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34528392494525, -21.0973452442691],
@@ -9509,7 +15434,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34491650601765, -21.09686710016196],
@@ -9517,7 +15447,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34514390137662, -21.096936536101953],
@@ -9525,7 +15460,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34499624728377, -21.09710727866064],
@@ -9533,7 +15473,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34520771711237, -21.097111579466993],
@@ -9541,7 +15486,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34532175315502, -21.097431460637022],
@@ -9549,7 +15499,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34494873652199, -21.096945248998733],
@@ -9557,7 +15512,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34566373680062, -21.097623948993522],
@@ -9565,7 +15525,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34542702371053, -21.097082782078775],
@@ -9573,7 +15538,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34480468136366, -21.09679538406656],
@@ -9581,7 +15551,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34541901874954, -21.097195654091855],
@@ -9589,7 +15564,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34551020004392, -21.097435781312694],
@@ -9597,7 +15577,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34573771863052, -21.097240465778867],
@@ -9605,7 +15590,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455028700795, -21.097141404779006],
@@ -9613,7 +15603,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457113436921, -21.09715040550764],
@@ -9621,7 +15616,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34498486706698, -21.09702162425502],
@@ -9629,7 +15629,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455574301375, -21.09690716771577],
@@ -9637,7 +15642,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34526095207605, -21.097260960709235],
@@ -9645,7 +15655,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34548154275615, -21.09706712774904],
@@ -9653,7 +15668,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34533525654518, -21.0972148853979],
@@ -9661,7 +15681,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34558950224246, -21.097398332240193],
@@ -9669,7 +15694,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3453976552275, -21.097386460726433],
@@ -9677,7 +15707,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34492518570204, -21.097141313967384],
@@ -9685,7 +15720,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34538935313194, -21.096818263050828],
@@ -9693,7 +15733,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34536517110445, -21.09758437461052],
@@ -9701,7 +15746,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34556456271014, -21.097597067480084],
@@ -9709,7 +15759,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34548041152587, -21.097347541370592],
@@ -9717,7 +15772,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34540339400675, -21.097667813326456],
@@ -9725,7 +15785,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34545375910847, -21.09726636497917],
@@ -9733,7 +15798,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34567448246418, -21.09705920665446],
@@ -9741,7 +15811,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451805630791, -21.097304860183307],
@@ -9749,7 +15824,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451567658666, -21.09727650283314],
@@ -9757,7 +15837,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34524132305475, -21.096886208431346],
@@ -9765,7 +15850,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34575910769703, -21.097309364439553],
@@ -9773,7 +15863,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34556430336744, -21.097027217613405],
@@ -9781,7 +15876,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3452107619936, -21.09681303764735],
@@ -9789,7 +15889,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457475521452, -21.097587788034883],
@@ -9797,7 +15902,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34545687135733, -21.09755538189766],
@@ -9805,7 +15915,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3456450629206, -21.09697605946885],
@@ -9813,7 +15928,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34521438737457, -21.09717384237027],
@@ -9821,7 +15941,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34572325167952, -21.096906381489724],
@@ -9829,7 +15954,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3448692237597, -21.09698228320553],
@@ -9837,7 +15967,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34514823548346, -21.09766564531857],
@@ -9845,7 +15980,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34482204947204, -21.096847617327352],
@@ -9853,7 +15993,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34567479401676, -21.096998459372053],
@@ -9861,7 +16006,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34520427489863, -21.09782721143155],
@@ -9869,7 +16019,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34539700008847, -21.097730726613896],
@@ -9877,7 +16032,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3456280559119, -21.097206438324257],
@@ -9885,7 +16045,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34504068817452, -21.097194049571193],
@@ -9893,7 +16058,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34570467257646, -21.09764797442468],
@@ -9901,7 +16071,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34574199279777, -21.096955921070816],
@@ -9909,7 +16084,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34508820321503, -21.097061938377173],
@@ -9917,7 +16097,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34519924904436, -21.09757996630961],
@@ -9925,7 +16110,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34520821522338, -21.097383234023503],
@@ -9933,7 +16123,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455345146218, -21.09723218121022],
@@ -9941,7 +16136,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34570327903913, -21.09680284187537],
@@ -9949,7 +16149,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3456454800879, -21.097275464303276],
@@ -9957,7 +16162,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34523030894476, -21.097330555455763],
@@ -9965,7 +16175,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34489962459506, -21.097054257557847],
@@ -9973,7 +16188,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34527122514191, -21.097786208916364],
@@ -9981,7 +16201,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3456467584346, -21.096822670014603],
@@ -9989,7 +16214,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34556775575464, -21.097328463374584],
@@ -9997,7 +16227,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34500519307034, -21.097255661771673],
@@ -10005,7 +16240,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34529577942115, -21.097070490054882],
@@ -10013,7 +16253,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34544713029106, -21.09699408675851],
@@ -10021,7 +16266,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34567843737767, -21.097363385380532],
@@ -10029,7 +16279,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3453679921703, -21.097275638324742],
@@ -10037,7 +16292,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34531338258805, -21.096849682937464],
@@ -10045,7 +16305,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3453424605594, -21.09695523927813],
@@ -10053,7 +16318,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.345029371957, -21.097155392499335],
@@ -10061,7 +16331,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34692759304144, -21.097801819228632],
@@ -10069,7 +16344,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34695977156338, -21.097865273289017],
@@ -10077,7 +16357,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34713646616584, -21.098181623298224],
@@ -10085,7 +16370,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34693047464714, -21.098712324822667],
@@ -10093,7 +16383,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34693366823788, -21.098346281535406],
@@ -10101,7 +16396,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34707670395974, -21.098155620518053],
@@ -10109,7 +16409,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3470800113472, -21.0982272426624],
@@ -10117,7 +16422,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34698005996836, -21.09872243691253],
@@ -10125,7 +16435,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34704856813403, -21.098084047352806],
@@ -10133,7 +16448,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34698846699584, -21.098038753362786],
@@ -10141,7 +16461,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3472227533825, -21.0985663742112],
@@ -10149,7 +16474,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34709489868737, -21.098723218211088],
@@ -10157,7 +16487,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34695632670952, -21.098434107795317],
@@ -10165,7 +16500,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34720069320844, -21.09848480179919],
@@ -10173,7 +16513,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346984483838, -21.098677520985614],
@@ -10181,7 +16526,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34728689562382, -21.098672492252444],
@@ -10189,7 +16539,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34704187807122, -21.09801978013015],
@@ -10197,7 +16552,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34708893774285, -21.09827169815848],
@@ -10205,7 +16565,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34701094184516, -21.098290377493765],
@@ -10213,7 +16578,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3469449964723, -21.098255468961614],
@@ -10221,7 +16591,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3472766302962, -21.098558293980066],
@@ -10229,7 +16604,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458133691696, -21.097830508325714],
@@ -10237,7 +16617,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34631255871903, -21.097757590556764],
@@ -10245,7 +16630,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34589474746957, -21.09781191338378],
@@ -10253,7 +16643,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3463603626211, -21.09785348097938],
@@ -10261,7 +16656,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34624644843203, -21.097687965949373],
@@ -10269,7 +16669,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34682759927472, -21.097607120940697],
@@ -10277,7 +16682,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34681972302783, -21.09784847773719],
@@ -10285,7 +16695,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34662086970326, -21.097716334224245],
@@ -10293,7 +16708,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34600476412146, -21.097857460940787],
@@ -10301,7 +16721,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34593299572572, -21.097875676795415],
@@ -10309,7 +16734,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34597087710125, -21.0977904844821],
@@ -10317,7 +16747,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34614865377384, -21.097735853123176],
@@ -10325,7 +16760,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34641447031444, -21.097875204483962],
@@ -10333,7 +16773,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3465444443139, -21.097868716938393],
@@ -10341,7 +16786,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34637328114172, -21.09778186507122],
@@ -10349,7 +16799,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3465415199207, -21.097756901936133],
@@ -10357,7 +16812,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34666167260443, -21.097551646012395],
@@ -10365,7 +16825,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34676016095597, -21.097733798277037],
@@ -10373,7 +16838,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34584173914342, -21.097877037649617],
@@ -10381,7 +16851,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34624961043278, -21.097868687350655],
@@ -10389,7 +16864,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34689136399973, -21.097796506635195],
@@ -10397,7 +16877,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34678010599075, -21.09765545020094],
@@ -10405,7 +16890,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34644050490678, -21.09775258649522],
@@ -10413,7 +16903,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34606722613162, -21.097855305678387],
@@ -10421,7 +16916,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34643470327762, -21.09763603881932],
@@ -10429,7 +16929,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34677997854982, -21.097832552429225],
@@ -10437,7 +16942,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34628737409707, -21.097835255565627],
@@ -10445,7 +16955,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34579825514632, -21.097763979871015],
@@ -10453,7 +16968,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34659787962804, -21.09777008222966],
@@ -10461,7 +16981,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466990796526, -21.098225005555747],
@@ -10469,7 +16994,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34617042012485, -21.09825370330155],
@@ -10477,7 +17007,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34589729979305, -21.098059895024356],
@@ -10485,7 +17020,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34580749744165, -21.098078090736564],
@@ -10493,7 +17033,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466274504985, -21.098292455520767],
@@ -10501,7 +17046,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34684753771356, -21.098088226234893],
@@ -10509,7 +17059,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34658365811237, -21.098354429590753],
@@ -10517,7 +17072,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34648850526744, -21.09828827539827],
@@ -10525,7 +17085,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34686358308028, -21.098001372384765],
@@ -10533,7 +17098,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34603953657108, -21.098193248368823],
@@ -10541,7 +17111,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34598777727757, -21.098286062234937],
@@ -10549,7 +17124,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462523346804, -21.098161140589877],
@@ -10557,7 +17137,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34631433572287, -21.097919267447395],
@@ -10565,7 +17150,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34590449374767, -21.097950382982816],
@@ -10573,7 +17163,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34617165636675, -21.098844867724644],
@@ -10581,7 +17176,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34584243412263, -21.09791625220012],
@@ -10589,7 +17189,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3459405190535, -21.098213686376916],
@@ -10597,7 +17202,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34649877487388, -21.09812203606026],
@@ -10605,7 +17215,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34580405104015, -21.09801380008554],
@@ -10613,7 +17228,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34630562599614, -21.098302295756163],
@@ -10621,7 +17241,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34632075098935, -21.098610989754228],
@@ -10629,7 +17254,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34656488966726, -21.098062240706653],
@@ -10637,7 +17267,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34606596954293, -21.09825103828782],
@@ -10645,7 +17280,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34597922686623, -21.09803402480867],
@@ -10653,7 +17293,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34664874891746, -21.098359865132657],
@@ -10661,7 +17306,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34663058468735, -21.098217854561895],
@@ -10669,7 +17319,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34610207632713, -21.0983278512379],
@@ -10677,7 +17332,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3459531810763, -21.09796003106998],
@@ -10685,7 +17345,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34671971303226, -21.098438836053553],
@@ -10693,7 +17358,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34645789968909, -21.09851156591756],
@@ -10701,7 +17371,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346256414884, -21.09880871095381],
@@ -10709,7 +17384,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34622111200522, -21.0987284069912],
@@ -10717,7 +17397,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34640691184617, -21.09882960135853],
@@ -10725,7 +17410,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34620985286816, -21.098112988332627],
@@ -10733,7 +17423,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3461302394868, -21.098932641545968],
@@ -10741,7 +17436,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3463636054631, -21.098258282915506],
@@ -10749,7 +17449,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458392132207, -21.098158494535056],
@@ -10757,7 +17462,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462809367085, -21.098883214352785],
@@ -10765,7 +17475,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34602667572258, -21.098366485777554],
@@ -10773,7 +17488,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34617328147476, -21.098435276966445],
@@ -10781,7 +17501,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3463302021699, -21.098817739403895],
@@ -10789,7 +17514,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34644894880435, -21.098074503256605],
@@ -10797,7 +17527,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34627373000865, -21.0982387767393],
@@ -10805,7 +17540,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34633433130608, -21.098055123818366],
@@ -10813,7 +17553,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34653098890044, -21.098376182273405],
@@ -10821,7 +17566,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3464493637527, -21.097984948383893],
@@ -10829,7 +17579,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3463562234253, -21.098685378944495],
@@ -10837,7 +17592,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462110515116, -21.098327980194952],
@@ -10845,7 +17605,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34685870209495, -21.09865861942361],
@@ -10853,7 +17618,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3465784063717, -21.098443242306086],
@@ -10861,7 +17631,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34652079694885, -21.098664462411524],
@@ -10869,7 +17644,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34619920126897, -21.09806215526635],
@@ -10877,7 +17657,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34608519017056, -21.09802938615578],
@@ -10885,7 +17670,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34630358725988, -21.09797908740435],
@@ -10893,7 +17683,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3468181586645, -21.09790744140346],
@@ -10901,7 +17696,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34688796392484, -21.098091059415122],
@@ -10909,7 +17709,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462784366859, -21.098490841522853],
@@ -10917,7 +17722,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34629527846172, -21.098545309876055],
@@ -10925,7 +17735,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3465242816316, -21.09824294189723],
@@ -10933,7 +17748,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34636884976146, -21.098758354978546],
@@ -10941,7 +17761,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462076190388, -21.09893055920598],
@@ -10949,7 +17774,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34658968098506, -21.09821381729131],
@@ -10957,7 +17787,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34679703645972, -21.09840911015637],
@@ -10965,7 +17800,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3463086779783, -21.09897273931342],
@@ -10973,7 +17813,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34593055301116, -21.09790901661234],
@@ -10981,7 +17826,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34624664220502, -21.098442582909048],
@@ -10989,7 +17839,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34614098533248, -21.098178822613303],
@@ -10997,7 +17852,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34679800169192, -21.098010681386416],
@@ -11005,7 +17865,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34586819787881, -21.09834020352975],
@@ -11013,7 +17878,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34661954888773, -21.098519424104044],
@@ -11021,7 +17891,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34613777171356, -21.09876114132479],
@@ -11029,7 +17904,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34610586065932, -21.09809626459367],
@@ -11037,7 +17917,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34603027315507, -21.097926089820973],
@@ -11045,7 +17930,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34688418592398, -21.098163605704244],
@@ -11053,7 +17943,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34657566054818, -21.097937246770766],
@@ -11061,7 +17956,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34637578435064, -21.098519571359972],
@@ -11069,7 +17969,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346517955502, -21.09847641367343],
@@ -11077,7 +17982,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34612356314793, -21.097916528720358],
@@ -11085,7 +17995,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3461982492002, -21.098167965321935],
@@ -11093,7 +18008,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458654199647, -21.09800315900947],
@@ -11101,7 +18021,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34641975485138, -21.09822735190946],
@@ -11109,7 +18034,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34670278016216, -21.097925311572236],
@@ -11117,7 +18047,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3467601100092, -21.098826240554835],
@@ -11125,7 +18060,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34645249043098, -21.098849398564347],
@@ -11133,7 +18073,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34656223415286, -21.098616303940855],
@@ -11141,7 +18086,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34679617944533, -21.098621338773654],
@@ -11149,7 +18099,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3467687793722, -21.09872515452417],
@@ -11157,7 +18112,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34624775905144, -21.098284541880023],
@@ -11165,7 +18125,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34581960668564, -21.0979492958622],
@@ -11173,7 +18138,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34650089781968, -21.098186020150955],
@@ -11181,7 +18151,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34661705435013, -21.098038500182724],
@@ -11189,7 +18164,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34618665249658, -21.098010127799707],
@@ -11197,7 +18177,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34647482658485, -21.098922233942805],
@@ -11205,7 +18190,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34643242643313, -21.09875111481178],
@@ -11213,7 +18203,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34638298358539, -21.09860687992538],
@@ -11221,7 +18216,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3468489637797, -21.098389768192156],
@@ -11229,7 +18229,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462516285946, -21.098651681598085],
@@ -11237,7 +18242,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3468549953095, -21.098765432185115],
@@ -11245,7 +18255,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34688456029954, -21.098436352094062],
@@ -11253,7 +18268,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34579846070875, -21.09817898464035],
@@ -11261,7 +18281,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34676847512534, -21.09794468432762],
@@ -11269,7 +18294,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34619167730392, -21.097917344426037],
@@ -11277,7 +18307,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34666526546232, -21.098281106196573],
@@ -11285,7 +18320,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34674658991366, -21.098332568753513],
@@ -11293,7 +18333,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34605746710827, -21.09844114976971],
@@ -11301,7 +18346,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34666138108003, -21.098842672769152],
@@ -11309,7 +18359,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34684024809007, -21.09813209905724],
@@ -11317,7 +18372,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3465596826942, -21.09790293123322],
@@ -11325,7 +18385,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34618284904653, -21.098687494422766],
@@ -11333,7 +18398,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34679070832735, -21.098233594104332],
@@ -11341,7 +18411,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34663691442427, -21.097909034636682],
@@ -11349,7 +18424,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34656139201172, -21.098810977101977],
@@ -11357,7 +18437,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34684326903414, -21.098457606473573],
@@ -11365,7 +18450,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462087468097, -21.098548925361964],
@@ -11373,7 +18463,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462324381003, -21.098620507403535],
@@ -11381,7 +18476,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346736944448, -21.09798768551775],
@@ -11389,7 +18489,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34607584309128, -21.098602454554616],
@@ -11397,7 +18502,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34606995779876, -21.098866409059763],
@@ -11405,7 +18515,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34614105879965, -21.098572281518322],
@@ -11413,7 +18528,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34676175020664, -21.098516117741795],
@@ -11421,7 +18541,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34647620338842, -21.097938050777913],
@@ -11429,7 +18554,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34687336665817, -21.098050901647138],
@@ -11437,7 +18567,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457138096781, -21.097854518007086],
@@ -11445,7 +18580,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34568905348362, -21.097793770451563],
@@ -11453,7 +18593,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34562552262656, -21.097867715051827],
@@ -11461,7 +18606,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455421885482, -21.097850292694996],
@@ -11469,7 +18619,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34573875673524, -21.097942574483834],
@@ -11477,7 +18632,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3456625309766, -21.09797057079239],
@@ -11485,7 +18645,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34573434655388, -21.098162882306628],
@@ -11493,7 +18658,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34575837013227, -21.09824737489253],
@@ -11501,7 +18671,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34569399860482, -21.098077975947493],
@@ -11509,7 +18684,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457340296955, -21.098039395075453],
@@ -11517,7 +18697,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34710700328844, -21.09891539471275],
@@ -11525,7 +18710,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34691780670684, -21.09890156012038],
@@ -11533,7 +18723,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34723822909723, -21.098973285366643],
@@ -11541,7 +18736,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34718280919134, -21.0988410367034],
@@ -11549,7 +18749,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34702540240218, -21.098873496826876],
@@ -11557,7 +18762,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3472947579293, -21.09886718107231],
@@ -11565,7 +18775,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34703584511612, -21.098943466746015],
@@ -11573,7 +18788,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3473734000557, -21.09883760725614],
@@ -11581,7 +18801,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3471490350575, -21.098987243954415],
@@ -11589,7 +18814,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3472480408085, -21.098883844344158],
@@ -11597,7 +18827,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34727395575496, -21.09879609692421],
@@ -11605,7 +18840,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34744065568378, -21.09874956268419],
@@ -11613,7 +18853,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34692720950102, -21.09997957432116],
@@ -11621,7 +18866,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34701542470702, -21.10007318038777],
@@ -11629,7 +18879,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3469233678153, -21.100032503428825],
@@ -11637,7 +18892,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34724073808698, -21.099781697398996],
@@ -11645,7 +18905,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34693325929803, -21.100111162768005],
@@ -11653,7 +18918,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3469679025656, -21.1000249687502],
@@ -11661,7 +18931,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3470539875883, -21.09979623272021],
@@ -11669,7 +18944,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34698686555754, -21.099741070966815],
@@ -11677,7 +18957,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34714642392376, -21.09968431329597],
@@ -11685,7 +18970,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34703109915625, -21.099534239290815],
@@ -11693,7 +18983,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34750068881706, -21.099508771434316],
@@ -11701,7 +18996,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34714229838352, -21.0994746462491],
@@ -11709,7 +19009,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34714600387738, -21.099630702623212],
@@ -11717,7 +19022,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34707905181335, -21.100066720791247],
@@ -11725,7 +19035,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34692340077083, -21.0997981216929],
@@ -11733,7 +19048,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34702355743892, -21.100011728825987],
@@ -11741,7 +19061,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34702515805787, -21.09913577220473],
@@ -11749,7 +19074,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34711851159474, -21.0998543487872],
@@ -11757,7 +19087,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34713940767412, -21.10009523026795],
@@ -11765,7 +19100,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34699314048993, -21.099953274730396],
@@ -11773,7 +19113,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34758928037155, -21.09995980442711],
@@ -11781,7 +19126,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3470820461233, -21.09989748189315],
@@ -11789,7 +19139,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34722034963198, -21.099624475586367],
@@ -11797,7 +19152,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34691815528893, -21.09963510814743],
@@ -11805,7 +19165,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34705850686518, -21.100104671307754],
@@ -11813,7 +19178,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3470607716927, -21.099593400943196],
@@ -11821,7 +19191,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34722028026152, -21.10009595548634],
@@ -11829,7 +19204,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34766934818867, -21.09988593402381],
@@ -11837,7 +19217,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3471376270743, -21.09956954962454],
@@ -11845,7 +19230,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3474328750844, -21.099661892886186],
@@ -11853,7 +19243,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34692137072867, -21.099861648857768],
@@ -11861,7 +19256,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34721775160767, -21.099457391677547],
@@ -11869,7 +19269,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34732764171767, -21.099488003887014],
@@ -11877,7 +19282,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34699604667574, -21.099846899321278],
@@ -11885,7 +19295,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34739412771592, -21.09952542919829],
@@ -11893,7 +19308,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34722494647266, -21.099728424254135],
@@ -11901,7 +19321,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34704943535596, -21.09972866632741],
@@ -11909,7 +19334,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34718329742475, -21.099917851280438],
@@ -11917,7 +19347,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34719440106997, -21.099843702843373],
@@ -11925,7 +19360,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34743183835093, -21.099252195748665],
@@ -11933,7 +19373,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34759548989362, -21.099670173084952],
@@ -11941,7 +19386,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3476132291613, -21.10009056569164],
@@ -11949,7 +19399,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34750814914705, -21.09992996268253],
@@ -11957,7 +19412,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34712028245357, -21.10002025537688],
@@ -11965,7 +19425,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3472084586956, -21.100012894310034],
@@ -11973,7 +19438,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34763347778286, -21.099456113122802],
@@ -11981,7 +19451,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34729575000893, -21.099849009428226],
@@ -11989,7 +19464,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34755044947627, -21.09933483404781],
@@ -11997,7 +19477,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34767408276883, -21.0996761352432],
@@ -12005,7 +19490,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34714496741697, -21.09917233041299],
@@ -12013,7 +19503,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34734868696174, -21.099828061213604],
@@ -12021,7 +19516,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34752898268368, -21.0997116207819],
@@ -12029,7 +19529,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34771218145065, -21.099924058607296],
@@ -12037,7 +19542,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34703331928446, -21.099467351276736],
@@ -12045,7 +19555,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34729311843736, -21.099114932326774],
@@ -12053,7 +19568,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34692392396255, -21.09992605163781],
@@ -12061,7 +19581,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34751148366362, -21.099414886787706],
@@ -12069,7 +19594,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34758728528772, -21.099475599702817],
@@ -12077,7 +19607,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34768084126898, -21.10011131571389],
@@ -12085,7 +19620,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34767366568116, -21.099766165061816],
@@ -12093,7 +19633,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34709397884583, -21.099101012072197],
@@ -12101,7 +19646,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34762258065592, -21.099547450856306],
@@ -12109,7 +19659,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34763187357942, -21.100015661355965],
@@ -12117,7 +19672,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3473691177036, -21.099898102689565],
@@ -12125,7 +19685,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34757497639882, -21.099374989693445],
@@ -12133,7 +19698,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34691522953008, -21.099527415491902],
@@ -12141,7 +19711,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34700571029197, -21.099894370627947],
@@ -12149,7 +19724,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34756766172868, -21.099541549694333],
@@ -12157,7 +19737,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34722807815797, -21.099684732622595],
@@ -12165,7 +19750,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34730303003937, -21.0997247898776],
@@ -12173,7 +19763,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3471524150017, -21.09973881269355],
@@ -12181,7 +19776,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34719560931785, -21.09932225352064],
@@ -12189,7 +19789,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34771470933063, -21.100011795466695],
@@ -12197,7 +19802,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34704345984545, -21.099954052205298],
@@ -12205,7 +19815,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3469184568047, -21.099737191603747],
@@ -12213,7 +19828,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34703759066653, -21.0992087838408],
@@ -12221,7 +19841,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34762505424354, -21.099790305976214],
@@ -12229,7 +19854,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34741440729024, -21.09979020455853],
@@ -12237,7 +19867,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34726601087866, -21.099047873127674],
@@ -12245,7 +19880,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34733502293614, -21.099202452080405],
@@ -12253,7 +19893,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34751620540754, -21.1000480115951],
@@ -12261,7 +19906,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34698405869355, -21.099627047671817],
@@ -12269,7 +19919,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3469571986654, -21.09948376359898],
@@ -12277,7 +19932,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3474170293939, -21.09916777428715],
@@ -12285,7 +19945,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34709990037123, -21.09972890093547],
@@ -12293,7 +19958,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34748621187333, -21.09964459452477],
@@ -12301,7 +19971,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.347628741473, -21.09937487045483],
@@ -12309,7 +19984,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34719504006122, -21.099964230025478],
@@ -12317,7 +19997,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34691282796442, -21.099582580977902],
@@ -12325,7 +20010,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34741441352622, -21.099084240765247],
@@ -12333,7 +20023,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34740775022848, -21.099466478802405],
@@ -12341,7 +20036,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34708768352107, -21.0995412236829],
@@ -12349,7 +20049,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34747313171587, -21.09971641235791],
@@ -12357,7 +20062,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34769756303479, -21.099819238147994],
@@ -12365,7 +20075,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3469138202717, -21.099688078951058],
@@ -12373,7 +20088,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34734901474178, -21.09978073766358],
@@ -12381,7 +20101,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34744062778086, -21.099931734578785],
@@ -12389,7 +20114,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3477234749315, -21.09986773828884],
@@ -12397,7 +20127,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34723926601282, -21.099867967343506],
@@ -12405,7 +20140,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34756596661293, -21.09941989227174],
@@ -12413,7 +20153,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3470556896229, -21.099641829390663],
@@ -12421,7 +20166,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34763675180517, -21.099602640558743],
@@ -12429,7 +20179,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34706241072942, -21.099030131144957],
@@ -12437,7 +20192,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34695689441855, -21.09967875862925],
@@ -12445,7 +20205,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34760672995833, -21.099329066918322],
@@ -12453,7 +20218,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34711891325162, -21.099798742034118],
@@ -12461,7 +20231,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34745466041673, -21.099573327934078],
@@ -12469,7 +20244,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3472426912026, -21.099225890462243],
@@ -12477,7 +20257,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34727907310173, -21.100592872835712],
@@ -12485,7 +20270,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34731044052634, -21.100937347658174],
@@ -12493,7 +20283,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34731856014884, -21.100670465969113],
@@ -12501,7 +20296,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34717338400196, -21.100470485494824],
@@ -12509,7 +20309,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34762085090048, -21.100593363537087],
@@ -12517,7 +20322,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34725777308964, -21.100514411882365],
@@ -12525,7 +20335,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34761784915963, -21.100189484107027],
@@ -12533,7 +20348,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34744533823613, -21.100455302930307],
@@ -12541,7 +20361,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3478600193479, -21.10103922973574],
@@ -12549,7 +20374,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34729373612583, -21.100720984130742],
@@ -12557,7 +20387,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34705406633566, -21.10021038283472],
@@ -12565,7 +20400,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34720465733943, -21.10087093200106],
@@ -12573,7 +20413,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3470648206705, -21.100590306258137],
@@ -12581,7 +20426,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3472360348464, -21.100238830258238],
@@ -12589,7 +20439,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3470290165855, -21.100288838793716],
@@ -12597,7 +20452,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3471890471626, -21.100627636706545],
@@ -12605,7 +20465,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34692729179878, -21.100409007804785],
@@ -12613,7 +20478,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34723207697422, -21.100322004675952],
@@ -12621,7 +20491,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34726977117697, -21.10110752598993],
@@ -12629,7 +20504,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34723592539672, -21.10114708271133],
@@ -12637,7 +20517,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3471828019994, -21.100701681996185],
@@ -12645,7 +20530,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34705490069308, -21.100750269898835],
@@ -12653,7 +20543,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34736831766725, -21.101224490625444],
@@ -12661,7 +20556,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34744233468592, -21.10113971800292],
@@ -12669,7 +20569,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34718424457745, -21.10075973260598],
@@ -12677,7 +20582,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34741133436953, -21.101105717495912],
@@ -12685,7 +20595,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34723467472543, -21.10067374879772],
@@ -12693,7 +20608,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34720296185955, -21.10092780802289],
@@ -12701,7 +20621,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3474042045052, -21.100183843613085],
@@ -12709,7 +20634,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3472596274297, -21.100938373397018],
@@ -12717,7 +20647,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3474540658517, -21.100301209839646],
@@ -12725,7 +20660,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34730665960802, -21.100866102825854],
@@ -12733,7 +20673,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34774100779475, -21.10066662698194],
@@ -12741,7 +20686,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3472683461236, -21.101227395868904],
@@ -12749,7 +20699,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34779825805236, -21.100243497443387],
@@ -12757,7 +20712,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3472667857887, -21.100283959501418],
@@ -12765,7 +20725,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34715300328511, -21.100396856140605],
@@ -12773,7 +20738,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3469593523363, -21.100783863688147],
@@ -12781,7 +20751,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34708779431355, -21.100695444034628],
@@ -12789,7 +20764,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34780223360283, -21.10061475028761],
@@ -12797,7 +20777,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34789993010287, -21.101142453913432],
@@ -12805,7 +20790,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3469388164919, -21.10064600195653],
@@ -12813,7 +20803,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34781869637305, -21.100341239083026],
@@ -12821,7 +20816,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34703891917482, -21.10035462420909],
@@ -12829,7 +20829,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34721562206164, -21.100979726231103],
@@ -12837,7 +20842,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34752616767182, -21.100602819689403],
@@ -12845,7 +20855,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34718417375038, -21.10081993793193],
@@ -12853,7 +20868,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34740188259724, -21.100259730301733],
@@ -12861,7 +20881,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3475889271466, -21.10042255994799],
@@ -12869,7 +20894,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34714001798866, -21.10032799360542],
@@ -12877,7 +20907,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3473150920349, -21.101229205910595],
@@ -12885,7 +20920,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3479088062032, -21.10083983701063],
@@ -12893,7 +20933,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34705232205977, -21.100479096917017],
@@ -12901,7 +20946,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34777657545573, -21.100398248289533],
@@ -12909,7 +20959,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3478440171642, -21.100513756468292],
@@ -12917,7 +20972,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.347049679154, -21.100985937836803],
@@ -12925,7 +20985,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34750203780874, -21.100362297403883],
@@ -12933,7 +20998,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34776867632573, -21.101015486617197],
@@ -12941,7 +21011,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34755280952885, -21.100295187720697],
@@ -12949,7 +21024,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.347248344805, -21.100376641360665],
@@ -12957,7 +21037,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34769393697107, -21.100772754309183],
@@ -12965,7 +21050,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34713068338144, -21.10017131674215],
@@ -12973,7 +21063,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3470723768628, -21.100936204569773],
@@ -12981,7 +21076,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3473478317567, -21.101177016405515],
@@ -12989,7 +21089,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3469191475962, -21.100155960705255],
@@ -12997,7 +21102,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34728275624593, -21.100810940526223],
@@ -13005,7 +21115,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34713720047327, -21.100929710196272],
@@ -13013,7 +21128,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34693755535125, -21.100587007998385],
@@ -13021,7 +21141,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3473256570121, -21.10112046430122],
@@ -13029,7 +21154,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34731174682142, -21.100243842368215],
@@ -13037,7 +21167,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34748282455507, -21.101238066575405],
@@ -13045,7 +21180,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3469673638975, -21.10086225732937],
@@ -13053,7 +21193,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3470670361558, -21.10040367113147],
@@ -13061,7 +21206,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34728469406724, -21.10016083025635],
@@ -13069,7 +21219,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3477852537973, -21.100312938399075],
@@ -13077,7 +21232,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34761455718024, -21.10014528282373],
@@ -13085,7 +21245,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34705290506298, -21.101217736061862],
@@ -13093,7 +21258,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34723194872532, -21.10056380874811],
@@ -13101,7 +21271,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34703578667015, -21.10063629116753],
@@ -13109,7 +21284,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34735607491695, -21.10088490834149],
@@ -13117,7 +21297,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3469241267938, -21.100230577075358],
@@ -13125,7 +21310,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34772113848032, -21.101114426853538],
@@ -13133,7 +21323,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34703741423613, -21.100157139518007],
@@ -13141,7 +21336,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34771659430476, -21.10031168117026],
@@ -13149,7 +21349,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3476282866048, -21.10038112297091],
@@ -13157,7 +21362,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34786314964495, -21.100708123566946],
@@ -13165,7 +21375,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3478862342398, -21.10148599772335],
@@ -13173,7 +21388,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34716516096105, -21.10154001515932],
@@ -13181,7 +21401,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3472935676157, -21.101482335124654],
@@ -13189,7 +21414,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34699815528316, -21.101605655708546],
@@ -13197,7 +21427,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34761551598578, -21.10140047336726],
@@ -13205,7 +21440,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34727290076844, -21.101399270739215],
@@ -13213,7 +21453,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34714477441779, -21.101290834617622],
@@ -13221,7 +21466,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34796971849005, -21.1014369056569],
@@ -13229,7 +21479,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34736369515403, -21.101281156594197],
@@ -13237,7 +21492,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3478077365384, -21.10132798375574],
@@ -13245,7 +21505,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34779576931842, -21.101384647861035],
@@ -13253,7 +21518,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3473402300913, -21.10141001461848],
@@ -13261,7 +21531,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34725445115896, -21.10157700270852],
@@ -13269,7 +21544,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34715338564206, -21.10138767541568],
@@ -13277,7 +21557,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34716689941047, -21.10146374427949],
@@ -13285,7 +21570,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34699301840885, -21.101493918271693],
@@ -13293,7 +21583,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34731290795753, -21.10126492596489],
@@ -13301,7 +21596,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34767306401525, -21.101311128651467],
@@ -13309,7 +21609,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3477630075656, -21.10129415039105],
@@ -13317,7 +21622,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34748041543332, -21.10126361842838],
@@ -13325,7 +21635,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34729293968545, -21.10153278559863],
@@ -13333,7 +21648,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34728787473068, -21.10161259790396],
@@ -13341,7 +21661,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34731774003873, -21.10155781018518],
@@ -13349,7 +21674,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3469771268355, -21.101546744186408],
@@ -13357,7 +21687,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34708744190792, -21.101591358955595],
@@ -13365,7 +21700,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34718638395552, -21.101623256320156],
@@ -13373,7 +21713,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34728204651861, -21.10130981536525],
@@ -13381,7 +21726,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3472353045219, -21.101515472898534],
@@ -13389,7 +21739,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34686428816468, -21.10008467472606],
@@ -13397,7 +21752,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346866804133, -21.1000187390277],
@@ -13405,7 +21765,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34678409573735, -21.100099714040372],
@@ -13413,7 +21778,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34672014368448, -21.100102291906804],
@@ -13421,7 +21791,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34674009039207, -21.09963061613596],
@@ -13429,7 +21804,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34676004079807, -21.099754704999786],
@@ -13437,7 +21817,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34674975302963, -21.099693782102733],
@@ -13445,7 +21830,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34637929452379, -21.09985265709649],
@@ -13453,7 +21843,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34645891038588, -21.099833053986284],
@@ -13461,7 +21856,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34629755494208, -21.10008528650959],
@@ -13469,7 +21869,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3468257200971, -21.099690872580435],
@@ -13477,7 +21882,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34672015046678, -21.100037617010546],
@@ -13485,7 +21895,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462924606732, -21.09993475316607],
@@ -13493,7 +21908,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34637957277948, -21.09972835192348],
@@ -13501,7 +21921,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34682959652923, -21.099753647442743],
@@ -13509,7 +21934,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34644012309604, -21.09965207690136],
@@ -13517,7 +21947,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34638224891387, -21.099923765734143],
@@ -13525,7 +21960,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34662573535454, -21.09982114141384],
@@ -13533,7 +21973,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34646713806976, -21.100095350894904],
@@ -13541,7 +21986,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466409508617, -21.099968668187255],
@@ -13549,7 +21999,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462171894328, -21.099422764866258],
@@ -13557,7 +22012,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34666398006027, -21.099559308076905],
@@ -13565,7 +22025,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34620800294337, -21.099907279715648],
@@ -13573,7 +22038,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34642874351655, -21.099707880071556],
@@ -13581,7 +22051,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466829561161, -21.09975183935839],
@@ -13589,7 +22064,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3464356237564, -21.09977131046173],
@@ -13597,7 +22077,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34660893368067, -21.099620835474358],
@@ -13605,7 +22090,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34664698779963, -21.10009812613437],
@@ -13613,7 +22103,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34688355327125, -21.09968491552038],
@@ -13621,7 +22116,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3467207560132, -21.09997108618883],
@@ -13629,7 +22129,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34619496093057, -21.099322075766572],
@@ -13637,7 +22142,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3465487132835, -21.100057040682458],
@@ -13645,7 +22155,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34681284084203, -21.09963318121139],
@@ -13653,7 +22168,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34667497751042, -21.09968672201154],
@@ -13661,7 +22181,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462157667919, -21.1000317379711],
@@ -13669,7 +22194,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466067799187, -21.09968049898042],
@@ -13677,7 +22207,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34637584930576, -21.09979336553114],
@@ -13685,7 +22220,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34646017808114, -21.099957511513423],
@@ -13693,7 +22233,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34628595596251, -21.099859505339428],
@@ -13701,7 +22246,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34678149705303, -21.099964179498713],
@@ -13709,7 +22259,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34628177138455, -21.099668321574896],
@@ -13717,7 +22272,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34630416616648, -21.099427610974757],
@@ -13725,7 +22285,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34678617823985, -21.100042059451166],
@@ -13733,7 +22298,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462285451605, -21.09983653204849],
@@ -13741,7 +22311,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3465361041534, -21.09992170487941],
@@ -13749,7 +22324,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34664239209692, -21.10003919244418],
@@ -13757,7 +22337,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34655924890114, -21.09999490687279],
@@ -13765,7 +22350,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346377905066, -21.099992069635626],
@@ -13773,7 +22363,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462559590144, -21.09936521884132],
@@ -13781,7 +22376,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3468070785979, -21.09958443439978],
@@ -13789,7 +22389,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34688414901123, -21.09973516616327],
@@ -13797,7 +22402,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3467949178837, -21.099496480821532],
@@ -13805,7 +22415,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34651512112197, -21.099663328028388],
@@ -13813,7 +22428,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34659020192362, -21.099553839169126],
@@ -13821,7 +22441,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34638306702115, -21.100118005639633],
@@ -13829,7 +22454,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34684441544488, -21.099893730349145],
@@ -13837,7 +22467,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34643836270652, -21.09958795993894],
@@ -13845,7 +22480,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34628535238483, -21.099613959464456],
@@ -13853,7 +22493,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34616094272556, -21.100112617756757],
@@ -13861,7 +22506,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34674591512197, -21.099568791358912],
@@ -13869,7 +22519,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3463640395292, -21.09968256397743],
@@ -13877,7 +22532,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34629412529142, -21.100017061721182],
@@ -13885,7 +22545,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34615267521286, -21.099637947842652],
@@ -13893,7 +22558,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34677282895316, -21.099821695205392],
@@ -13901,7 +22571,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34667505857917, -21.099498793581773],
@@ -13909,7 +22584,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3468193891938, -21.099535731560117],
@@ -13917,7 +22597,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346229177415, -21.099476413502362],
@@ -13925,7 +22610,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34638333517168, -21.100074176083677],
@@ -13933,7 +22623,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34636461807168, -21.09963715675739],
@@ -13941,7 +22636,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346220900753, -21.099638007746456],
@@ -13949,7 +22649,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34688663238674, -21.099635938698196],
@@ -13957,7 +22662,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3468737572824, -21.09958312111358],
@@ -13965,7 +22675,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34660386178427, -21.099048801411882],
@@ -13973,7 +22688,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3461520817858, -21.10003151984114],
@@ -13981,7 +22701,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3464582474518, -21.09988895625266],
@@ -13989,7 +22714,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462220541054, -21.09951535552697],
@@ -13997,7 +22727,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34620128092646, -21.1000898459356],
@@ -14005,7 +22740,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466227219495, -21.099927680147307],
@@ -14013,7 +22753,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34663692020513, -21.09989019620678],
@@ -14021,7 +22766,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34632670246606, -21.099728276861647],
@@ -14029,7 +22779,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3468141182214, -21.099801894995284],
@@ -14037,7 +22792,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34676171253992, -21.099089529540553],
@@ -14045,7 +22805,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34620297267384, -21.09913766219023],
@@ -14053,7 +22818,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3463968078823, -21.100329930777683],
@@ -14061,7 +22831,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34671147357045, -21.100952485294833],
@@ -14069,7 +22844,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34639885913617, -21.100476639131305],
@@ -14077,7 +22857,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34638273728382, -21.100152756577206],
@@ -14085,7 +22870,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466893131414, -21.100426605389345],
@@ -14093,7 +22883,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34645878043003, -21.100340151887018],
@@ -14101,7 +22896,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34672866126553, -21.100173446314425],
@@ -14109,7 +22909,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34667227158408, -21.100248869198097],
@@ -14117,7 +22922,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462973407767, -21.100159950111973],
@@ -14125,7 +22935,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34677803823632, -21.100931014788234],
@@ -14133,7 +22948,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34655210180802, -21.100852336512894],
@@ -14141,7 +22961,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34680167537104, -21.10024234643458],
@@ -14149,7 +22974,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466065262886, -21.100389438652208],
@@ -14157,7 +22987,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3465212141731, -21.101201910897036],
@@ -14165,7 +23000,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34679268402024, -21.10099636810873],
@@ -14173,7 +23013,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3467067015796, -21.100889875532147],
@@ -14181,7 +23026,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34661388964096, -21.1008364807589],
@@ -14189,7 +23039,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3468446919922, -21.100476687814524],
@@ -14197,7 +23052,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34674261438025, -21.10082349337747],
@@ -14205,7 +23065,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34677915310263, -21.10048161007734],
@@ -14213,7 +23078,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466345039369, -21.10091696479708],
@@ -14221,7 +23091,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34662220326413, -21.100657775330014],
@@ -14229,7 +23104,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34654000922387, -21.10080307332686],
@@ -14237,7 +23117,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34664522040026, -21.100163747545437],
@@ -14245,7 +23130,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34654387455657, -21.10092116352572],
@@ -14253,7 +23143,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466175570584, -21.10046937536263],
@@ -14261,7 +23156,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34669512799374, -21.100354710923945],
@@ -14269,7 +23169,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34677520040825, -21.10079273181817],
@@ -14277,7 +23182,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34661131744855, -21.10053521013264],
@@ -14285,7 +23195,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3464664334861, -21.100952425026875],
@@ -14293,7 +23208,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346869156089, -21.100896704383732],
@@ -14301,7 +23221,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34687466778126, -21.101077720752077],
@@ -14309,7 +23234,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346655868358, -21.100803524198575],
@@ -14317,7 +23247,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34653181212855, -21.100420807875523],
@@ -14325,7 +23260,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34686445599203, -21.10082994223137],
@@ -14333,7 +23273,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34682274876977, -21.100364443380283],
@@ -14341,7 +23286,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34652801721327, -21.100582196848944],
@@ -14349,7 +23299,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34668488228462, -21.100833192331383],
@@ -14357,7 +23312,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3464188807561, -21.100936593853465],
@@ -14365,7 +23325,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3464739391981, -21.100282848822985],
@@ -14373,7 +23338,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3467813162073, -21.100839899008335],
@@ -14381,7 +23351,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34656595853696, -21.100182718362685],
@@ -14389,7 +23364,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3461772246216, -21.100163493255835],
@@ -14397,7 +23377,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34682674304415, -21.100557724961465],
@@ -14405,7 +23390,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34637501035098, -21.10060023335632],
@@ -14413,7 +23403,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34685667762312, -21.100689040063063],
@@ -14421,7 +23416,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34680161353674, -21.100164922634118],
@@ -14429,7 +23429,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3468939493421, -21.10058747885321],
@@ -14437,7 +23442,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34667151230968, -21.100657406894303],
@@ -14445,7 +23455,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3464129459848, -21.100429900895165],
@@ -14453,7 +23468,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34641084015405, -21.101025011686197],
@@ -14461,7 +23481,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34669423214058, -21.100497085014297],
@@ -14469,7 +23494,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3465876303912, -21.101156353234682],
@@ -14477,7 +23507,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34625222639147, -21.100221238875722],
@@ -14485,7 +23520,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34678866899935, -21.100311105756898],
@@ -14493,7 +23533,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3467052730838, -21.10056705279401],
@@ -14501,7 +23546,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34678842023976, -21.100667674479155],
@@ -14509,7 +23559,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346518714105, -21.10017946369365],
@@ -14517,7 +23572,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34644003278697, -21.100738968518172],
@@ -14525,7 +23585,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34640844045464, -21.101350401218127],
@@ -14533,7 +23598,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34659703541578, -21.101641712165545],
@@ -14541,7 +23611,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34651557445392, -21.101584813509092],
@@ -14549,7 +23624,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3466178189957, -21.101268618868264],
@@ -14557,7 +23637,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34663887368487, -21.10141741867859],
@@ -14565,7 +23650,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34652060294826, -21.101334970361215],
@@ -14573,7 +23663,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34639531573436, -21.101605715748907],
@@ -14581,7 +23676,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34638961256212, -21.10147559667501],
@@ -14589,7 +23689,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34582760522846, -21.099763402249206],
@@ -14597,7 +23702,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34583982608427, -21.100043734572736],
@@ -14605,7 +23715,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3460343609148, -21.099837038590685],
@@ -14613,7 +23728,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34604633569663, -21.099740803675676],
@@ -14621,7 +23741,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34611393121273, -21.101141807352924],
@@ -14629,7 +23754,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3459304096273, -21.101024880225562],
@@ -14637,7 +23767,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34586477542015, -21.101019048071315],
@@ -14645,7 +23780,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34608277868182, -21.100229404845877],
@@ -14653,7 +23793,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3461025881392, -21.100339144560852],
@@ -14661,7 +23806,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34618178454662, -21.10105970782385],
@@ -14669,7 +23819,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34599117779624, -21.100483836668957],
@@ -14677,7 +23832,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34596501465919, -21.100969410759625],
@@ -14685,7 +23845,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34598500537192, -21.100635498580115],
@@ -14693,7 +23858,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458921394311, -21.10118419411938],
@@ -14701,7 +23871,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34624008414642, -21.100767655248223],
@@ -14709,7 +23884,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34614682547044, -21.100892485899585],
@@ -14717,7 +23897,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34600424793962, -21.10026472851401],
@@ -14725,7 +23910,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3461697339307, -21.10044661146188],
@@ -14733,7 +23923,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34606584746177, -21.100493212615728],
@@ -14741,7 +23936,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3461639179632, -21.100978832863273],
@@ -14749,7 +23949,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3460253968297, -21.10113400383549],
@@ -14757,7 +23962,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34626873119248, -21.10086221162769],
@@ -14765,7 +23975,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34631070579005, -21.101062213405154],
@@ -14773,7 +23988,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458791019702, -21.101097511676183],
@@ -14781,7 +24001,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458708761981, -21.100631289746126],
@@ -14789,7 +24014,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34581626898273, -21.101025423092413],
@@ -14797,7 +24027,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34591270622832, -21.1012228608414],
@@ -14805,7 +24040,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34627611136403, -21.100918363523594],
@@ -14813,7 +24053,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34581135979286, -21.100957568014262],
@@ -14821,7 +24066,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34601309103604, -21.100991375245016],
@@ -14829,7 +24079,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34624403530458, -21.100609227757737],
@@ -14837,7 +24092,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34586841290908, -21.100753727568257],
@@ -14845,7 +24105,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34580198385476, -21.1006945908151],
@@ -14853,7 +24118,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462430607951, -21.10055856079251],
@@ -14861,7 +24131,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34622817937233, -21.10050823615749],
@@ -14869,7 +24144,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.345851620521, -21.10054351883806],
@@ -14877,7 +24157,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3459275172792, -21.100557884735288],
@@ -14885,7 +24170,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462214006392, -21.100985577685666],
@@ -14893,7 +24183,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34617077275806, -21.100766145226267],
@@ -14901,7 +24196,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34585640908634, -21.1008299922119],
@@ -14909,7 +24209,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34618282810794, -21.10117670414101],
@@ -14917,7 +24222,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3460057191034, -21.101047261124332],
@@ -14925,7 +24235,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458821098447, -21.100943259380696],
@@ -14933,7 +24248,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34583191029438, -21.100451328044336],
@@ -14941,7 +24261,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34598823182716, -21.100916695025123],
@@ -14949,7 +24274,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34629225096867, -21.101009728750945],
@@ -14957,7 +24287,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.346198058659, -21.100844072245998],
@@ -14965,7 +24300,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462358715745, -21.101177499641683],
@@ -14973,7 +24313,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3460911920819, -21.100695693026886],
@@ -14981,7 +24326,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34597188051507, -21.100798471977292],
@@ -14989,7 +24339,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34623098095625, -21.100914153232974],
@@ -14997,7 +24352,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34626869728106, -21.10096431784381],
@@ -15005,7 +24365,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34579334158673, -21.10082001622566],
@@ -15013,7 +24378,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34605635718071, -21.100589644630627],
@@ -15021,7 +24391,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34612929704525, -21.100657901100696],
@@ -15029,7 +24404,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3461408128622, -21.100840395172064],
@@ -15037,7 +24417,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34611652787146, -21.100517395590245],
@@ -15045,7 +24430,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34594139765508, -21.100317486809338],
@@ -15053,7 +24443,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34628872968892, -21.1007123922137],
@@ -15061,7 +24456,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34595650120903, -21.10069413753084],
@@ -15069,7 +24469,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462835525761, -21.10119268880654],
@@ -15077,7 +24482,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34625935539088, -21.10100637368272],
@@ -15085,7 +24495,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3461818739453, -21.100558830359628],
@@ -15093,7 +24508,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34606674763924, -21.100269115693823],
@@ -15101,7 +24521,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34581849357178, -21.10122860177436],
@@ -15109,7 +24534,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458009680598, -21.10019591475308],
@@ -15117,7 +24547,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34612751462473, -21.100722574039608],
@@ -15125,7 +24560,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34588620252046, -21.100358668876616],
@@ -15133,7 +24573,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34624780853022, -21.101052020108305],
@@ -15141,7 +24586,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34608744452885, -21.100416975602485],
@@ -15149,7 +24599,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34612654780793, -21.10056981993098],
@@ -15157,7 +24612,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34581831887107, -21.100906749195623],
@@ -15165,7 +24625,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.345981896628, -21.101601017055657],
@@ -15173,7 +24638,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34615235853934, -21.101407987971733],
@@ -15181,7 +24651,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34593157790977, -21.10127658022067],
@@ -15189,7 +24664,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34603319973326, -21.10139682622247],
@@ -15197,7 +24677,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34594624685135, -21.101352740960113],
@@ -15205,7 +24690,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34618598628512, -21.101532819078297],
@@ -15213,7 +24703,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3460973587709, -21.101608503529015],
@@ -15221,7 +24716,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34608785264933, -21.101502773678988],
@@ -15229,7 +24729,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34590414762363, -21.101401397028386],
@@ -15237,7 +24742,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34623190562274, -21.101436510102886],
@@ -15245,7 +24755,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34580723042907, -21.101675187820096],
@@ -15253,7 +24768,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34580785740343, -21.101569239202828],
@@ -15261,7 +24781,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462164724225, -21.101392034441613],
@@ -15269,7 +24794,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3458785684912, -21.101670669816922],
@@ -15277,7 +24807,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3462244778387, -21.101354923613936],
@@ -15285,7 +24820,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34581401944945, -21.10162758833021],
@@ -15293,7 +24833,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3459534226895, -21.10143136310978],
@@ -15301,7 +24846,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34589055701963, -21.10163017930629],
@@ -15309,7 +24859,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34580052224985, -21.101416886235736],
@@ -15317,7 +24872,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34615400972956, -21.101635756630397],
@@ -15325,7 +24885,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34596466980963, -21.101508696508297],
@@ -15333,7 +24898,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34616873962062, -21.101459383705887],
@@ -15341,7 +24911,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34627952526517, -21.10161914726515],
@@ -15349,7 +24924,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34603466798387, -21.101514194116188],
@@ -15357,7 +24937,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34619555981988, -21.10125386197467],
@@ -15365,7 +24950,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34631722310942, -21.101393794195523],
@@ -15373,7 +24963,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34629968858476, -21.101461425379792],
@@ -15381,7 +24976,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34631889819693, -21.10126222001054],
@@ -15389,7 +24989,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34623670606845, -21.10160960055157],
@@ -15397,7 +25002,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34608147220465, -21.101555282663426],
@@ -15405,7 +25015,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34629909119755, -21.10133698837062],
@@ -15413,7 +25028,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34489677212136, -21.100065503961087],
@@ -15421,7 +25041,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34495924569325, -21.100069932199585],
@@ -15429,7 +25054,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34471182798603, -21.099814829756042],
@@ -15437,7 +25067,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3448975660582, -21.099923795868122],
@@ -15445,7 +25080,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457161161951, -21.099804027679955],
@@ -15453,7 +25093,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457305537922, -21.099899454257763],
@@ -15461,7 +25106,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457338833771, -21.10011020357883],
@@ -15469,7 +25119,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34535586653962, -21.099462500889388],
@@ -15477,7 +25132,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34494227623748, -21.09973369842903],
@@ -15485,7 +25145,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34572639327655, -21.09940627189464],
@@ -15493,7 +25158,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3456801528971, -21.10007119600598],
@@ -15501,7 +25171,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34488492825128, -21.099795733005955],
@@ -15509,7 +25184,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34549948717654, -21.100099906861427],
@@ -15517,7 +25197,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34547372997505, -21.100039078645157],
@@ -15525,7 +25210,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34513331955753, -21.099900611821397],
@@ -15533,7 +25223,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3456711484483, -21.0994120037123],
@@ -15541,7 +25236,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34550488246046, -21.10117080006578],
@@ -15549,7 +25249,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34569650674686, -21.101095355412355],
@@ -15557,7 +25262,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3449636961458, -21.100265948337082],
@@ -15565,7 +25275,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34540558331878, -21.100287651619574],
@@ -15573,7 +25288,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34550019651695, -21.10016200597093],
@@ -15581,7 +25301,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457036908011, -21.10121529184099],
@@ -15589,7 +25314,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34559963160012, -21.100752677066744],
@@ -15597,7 +25327,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34505951966298, -21.10074515212931],
@@ -15605,7 +25340,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34501576423804, -21.100323670238403],
@@ -15613,7 +25353,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34545567753884, -21.10112557323994],
@@ -15621,7 +25366,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34555998837845, -21.101190503137044],
@@ -15629,7 +25379,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34563724803428, -21.101016308519238],
@@ -15637,7 +25392,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34543969504193, -21.101061195859838],
@@ -15645,7 +25405,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34524484993324, -21.1008352294704],
@@ -15653,7 +25418,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34529430561724, -21.10065781292921],
@@ -15661,7 +25431,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34560886835354, -21.10108851217657],
@@ -15669,7 +25444,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34561662474835, -21.101165457247316],
@@ -15677,7 +25457,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34536834594152, -21.100705898750586],
@@ -15685,7 +25470,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34551462955793, -21.10080255076176],
@@ -15693,7 +25483,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3453190625002, -21.100266965575138],
@@ -15701,7 +25496,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3447235980248, -21.10020213600894],
@@ -15709,7 +25509,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34479080708726, -21.100602585536542],
@@ -15717,7 +25522,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34479817792752, -21.100345956206027],
@@ -15725,7 +25535,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3450827608193, -21.10021479901764],
@@ -15733,7 +25548,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34523174100804, -21.10069389386438],
@@ -15741,7 +25561,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34534463430407, -21.100951800770968],
@@ -15749,7 +25574,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34554996420874, -21.100279842332537],
@@ -15757,7 +25587,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34518391229824, -21.100443675014734],
@@ -15765,7 +25600,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.344874399598, -21.100405847514967],
@@ -15773,7 +25613,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3452576290302, -21.100779699372332],
@@ -15781,7 +25626,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34483909986002, -21.10068758439152],
@@ -15789,7 +25639,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34503295455045, -21.10054560955365],
@@ -15797,7 +25652,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34475632541105, -21.100508157021654],
@@ -15805,7 +25665,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34517512705602, -21.100356398677206],
@@ -15813,7 +25678,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34506909365297, -21.100879681552506],
@@ -15821,7 +25691,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34489900062493, -21.100270144129702],
@@ -15829,7 +25704,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34550216845452, -21.100221851501367],
@@ -15837,7 +25717,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34494562140543, -21.10116911383742],
@@ -15845,7 +25730,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34547621998354, -21.100962530197766],
@@ -15853,7 +25743,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34535890668687, -21.10064573493851],
@@ -15861,7 +25756,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34515644136388, -21.100948358942375],
@@ -15869,7 +25769,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34486860907546, -21.100506346615806],
@@ -15877,7 +25782,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34522358169318, -21.100231358612888],
@@ -15885,7 +25795,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34502154647623, -21.100223671511852],
@@ -15893,7 +25808,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451851107141, -21.101058420893494],
@@ -15901,7 +25821,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34526587970095, -21.10114379655979],
@@ -15909,7 +25834,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34575937287752, -21.100455779406797],
@@ -15917,7 +25847,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34562089045204, -21.100807903048302],
@@ -15925,7 +25860,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34529227816964, -21.100213648856634],
@@ -15933,7 +25873,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3449685693759, -21.100360252298938],
@@ -15941,7 +25886,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34545539311534, -21.100220710620675],
@@ -15949,7 +25899,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34554897995832, -21.100456491970746],
@@ -15957,7 +25912,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455430140522, -21.100373669840657],
@@ -15965,7 +25925,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34567825027307, -21.101050762674653],
@@ -15973,7 +25938,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34551673063203, -21.100714199251097],
@@ -15981,7 +25951,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34487571417753, -21.10079374412873],
@@ -15989,7 +25964,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34548819867993, -21.100512522579656],
@@ -15997,7 +25977,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34516887852442, -21.100249253830253],
@@ -16005,7 +25990,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34547950429302, -21.100360758659058],
@@ -16013,7 +26003,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34533499959227, -21.100309340142346],
@@ -16021,7 +26016,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34522664987998, -21.100627568108493],
@@ -16029,7 +26029,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3448984843521, -21.10063498880603],
@@ -16037,7 +26042,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34573816465095, -21.10038244137807],
@@ -16045,7 +26055,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34575319151162, -21.100577251371135],
@@ -16053,7 +26068,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451282751772, -21.100676056277692],
@@ -16061,7 +26081,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34566027749457, -21.100760968463334],
@@ -16069,7 +26094,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34535660658236, -21.10103866611195],
@@ -16077,7 +26107,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34521626816095, -21.100543583157265],
@@ -16085,7 +26120,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34567638145808, -21.10114309337289],
@@ -16093,7 +26133,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34475194396475, -21.100246951442788],
@@ -16101,7 +26146,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34514277110225, -21.100286856835847],
@@ -16109,7 +26159,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34537589986925, -21.100855990280788],
@@ -16117,7 +26172,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34470417083335, -21.101142480861043],
@@ -16125,7 +26185,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3448273944578, -21.101139770805663],
@@ -16133,7 +26198,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34513403697753, -21.10022138030515],
@@ -16141,7 +26211,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34552801091252, -21.101113633082615],
@@ -16149,7 +26224,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3456757497612, -21.100843973104286],
@@ -16157,7 +26237,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34535515171422, -21.100374358825448],
@@ -16165,7 +26250,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34478380158004, -21.1009702931117],
@@ -16173,7 +26263,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34510452849037, -21.100608029818208],
@@ -16181,7 +26276,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34572125966392, -21.100721894249784],
@@ -16189,7 +26289,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.345635375555, -21.100150949761716],
@@ -16197,7 +26302,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34562228008048, -21.100878801612964],
@@ -16205,7 +26315,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34538916095207, -21.100226060292684],
@@ -16213,7 +26328,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34536391970488, -21.100506756929555],
@@ -16221,7 +26341,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34526671833717, -21.100906055021603],
@@ -16229,7 +26354,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34546458304138, -21.100730081178874],
@@ -16237,7 +26367,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34562810525415, -21.100588022994604],
@@ -16245,7 +26380,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.345226283227, -21.10039371116813],
@@ -16253,7 +26393,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34522707962182, -21.101025027527022],
@@ -16261,7 +26406,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3449095438442, -21.100850848795552],
@@ -16269,7 +26419,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34520227257732, -21.10048725437216],
@@ -16277,7 +26432,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34511911713696, -21.100516722184548],
@@ -16285,7 +26445,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34542924791262, -21.100683890384293],
@@ -16293,7 +26458,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457180457889, -21.10021076759063],
@@ -16301,7 +26471,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34544918147668, -21.10015793889069],
@@ -16309,7 +26484,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34537617961567, -21.10045308023061],
@@ -16317,7 +26497,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3449432070945, -21.1007051540498],
@@ -16325,7 +26510,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34566133367596, -21.100961966665018],
@@ -16333,7 +26523,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34532495015964, -21.10058879892184],
@@ -16341,7 +26536,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34500571890214, -21.101062354698016],
@@ -16349,7 +26549,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34468991055854, -21.101212786896966],
@@ -16357,7 +26562,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34542401189861, -21.100747525157516],
@@ -16365,7 +26575,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3447214443539, -21.100425113780073],
@@ -16373,7 +26588,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3454202112252, -21.100901324350826],
@@ -16381,7 +26601,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34540557639994, -21.100523914544343],
@@ -16389,7 +26614,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3450469179524, -21.10069131408612],
@@ -16397,7 +26627,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34483382105844, -21.100848734819436],
@@ -16405,7 +26640,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34559383278176, -21.100976347219564],
@@ -16413,7 +26653,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3447322221764, -21.100556494748545],
@@ -16421,7 +26666,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34571021559123, -21.10116687755012],
@@ -16429,7 +26679,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34545364749667, -21.10082601316089],
@@ -16437,7 +26692,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34560506752084, -21.100401129999355],
@@ -16445,7 +26705,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3448403857628, -21.1003539375458],
@@ -16453,7 +26718,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34561942587703, -21.10121800471859],
@@ -16461,7 +26731,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3452842420739, -21.101026128919454],
@@ -16469,7 +26744,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34532885466115, -21.101133155167922],
@@ -16477,7 +26757,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34541390695603, -21.10082514555716],
@@ -16485,7 +26770,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34510642598218, -21.100414269165913],
@@ -16493,7 +26783,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34516581816686, -21.101191818107484],
@@ -16501,7 +26796,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34517906437654, -21.100603670815033],
@@ -16509,7 +26809,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34509229698324, -21.10032610817757],
@@ -16517,7 +26822,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455774941581, -21.101453577588853],
@@ -16525,7 +26835,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34562798848737, -21.101593475890482],
@@ -16533,7 +26848,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3456432891144, -21.101393925018876],
@@ -16541,7 +26861,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455237898513, -21.101461218487486],
@@ -16549,7 +26874,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34571008812185, -21.101574504592435],
@@ -16557,7 +26887,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457465691294, -21.101384136675836],
@@ -16565,7 +26900,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34570584285044, -21.101271652808457],
@@ -16573,7 +26913,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34505429789633, -21.101436193377456],
@@ -16581,7 +26926,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455592464012, -21.10159314514501],
@@ -16589,7 +26939,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34553520081596, -21.10127521873773],
@@ -16597,7 +26952,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.345584346586, -21.101510930701696],
@@ -16605,7 +26965,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34554309557618, -21.101319007556476],
@@ -16613,7 +26978,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34554720315927, -21.101367513896527],
@@ -16621,7 +26991,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34572453972876, -21.10130785352847],
@@ -16629,7 +27004,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34556451748736, -21.101410833743827],
@@ -16637,7 +27017,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34571418974062, -21.10134743502391],
@@ -16645,7 +27030,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457290481039, -21.101458838403747],
@@ -16653,7 +27043,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34480850475092, -21.101434604765895],
@@ -16661,7 +27056,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3447103238667, -21.101519237096998],
@@ -16669,7 +27069,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451496634501, -21.101412346110042],
@@ -16677,7 +27082,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34473345828172, -21.101610049670782],
@@ -16685,7 +27095,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34471628226217, -21.10178500337358],
@@ -16693,7 +27108,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34490765500098, -21.10178669957073],
@@ -16701,7 +27121,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34468598621083, -21.101443245024758],
@@ -16709,7 +27134,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34468479416762, -21.101587813387813],
@@ -16717,7 +27147,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34468877823576, -21.10170618530752],
@@ -16725,7 +27160,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3455996189232, -21.101554871530325],
@@ -16733,7 +27173,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34472105070833, -21.10183301772917],
@@ -16741,7 +27186,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34576561615026, -21.101532804898937],
@@ -16749,7 +27199,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3451660164463, -21.1015097735705],
@@ -16757,7 +27212,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3457487985804, -21.101678436463473],
@@ -16765,7 +27225,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34456380942507, -21.100091625388114],
@@ -16773,7 +27238,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34451647145227, -21.09997342753538],
@@ -16781,7 +27251,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34445735405808, -21.09988969112121],
@@ -16789,7 +27264,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3446049019616, -21.099849702873932],
@@ -16797,7 +27277,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34432849738863, -21.09988847501937],
@@ -16805,7 +27290,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34450409114447, -21.099878918997025],
@@ -16813,7 +27303,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34463842274417, -21.09976125395131],
@@ -16821,7 +27316,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3437966381024, -21.100804288654874],
@@ -16829,7 +27329,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34443435788899, -21.100846467396728],
@@ -16837,7 +27342,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34400457645515, -21.10097084335273],
@@ -16845,7 +27355,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3443690949095, -21.10017707079614],
@@ -16853,7 +27368,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3445668342439, -21.10029997855701],
@@ -16861,7 +27381,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3441042991481, -21.100301485199136],
@@ -16869,7 +27394,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34460386532905, -21.100502089439992],
@@ -16877,7 +27407,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3439862730289, -21.100917999298453],
@@ -16885,7 +27420,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34374834451026, -21.100911201650554],
@@ -16893,7 +27433,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3438611311561, -21.100964473520865],
@@ -16901,7 +27446,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34460477011817, -21.10039643406004],
@@ -16909,7 +27459,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34383502610086, -21.101230329152443],
@@ -16917,7 +27472,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34375480406646, -21.101156733232372],
@@ -16925,7 +27485,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34396405982096, -21.10085915412114],
@@ -16933,7 +27498,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34451617295204, -21.10058913303576],
@@ -16941,7 +27511,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34394265816556, -21.101223379309737],
@@ -16949,7 +27524,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34400688361498, -21.100234638994813],
@@ -16957,7 +27537,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34401662971115, -21.10050931856825],
@@ -16965,7 +27550,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34372635225003, -21.10059033375198],
@@ -16973,7 +27563,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34451054061827, -21.10018209606555],
@@ -16981,7 +27576,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34384708527426, -21.10030209692577],
@@ -16989,7 +27589,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34373374712408, -21.10100614226103],
@@ -16997,7 +27602,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.344537922575, -21.100409317793314],
@@ -17005,7 +27615,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34393019701668, -21.101176875385775],
@@ -17013,7 +27628,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34385386391642, -21.100497378752326],
@@ -17021,7 +27641,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34425842768178, -21.10024555661105],
@@ -17029,7 +27654,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34380314299517, -21.10108830351469],
@@ -17037,7 +27667,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3437263504293, -21.101062314094527],
@@ -17045,7 +27680,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34374407768007, -21.100642647707655],
@@ -17053,7 +27693,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34452354933424, -21.100334909325483],
@@ -17061,7 +27706,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3436712327675, -21.100919414116145],
@@ -17069,7 +27719,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3446290806748, -21.10017715797757],
@@ -17077,7 +27732,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34397599035853, -21.10039918262501],
@@ -17085,7 +27745,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34415350520766, -21.100433941352122],
@@ -17093,7 +27758,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34406771833233, -21.100673812252055],
@@ -17101,7 +27771,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34420779606813, -21.100573183966564],
@@ -17109,7 +27784,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34371385837318, -21.100524938416882],
@@ -17117,7 +27797,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34415911178922, -21.10017923171008],
@@ -17125,7 +27810,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34369027532608, -21.100964003758513],
@@ -17133,7 +27823,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3446330063396, -21.100963141435063],
@@ -17141,7 +27836,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3444947057157, -21.10034827531625],
@@ -17149,7 +27849,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34385524804856, -21.10088865041742],
@@ -17157,7 +27862,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34407341381188, -21.100213465395544],
@@ -17165,7 +27875,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3443568607395, -21.100576754433575],
@@ -17173,7 +27888,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34432816603544, -21.100481744223615],
@@ -17181,7 +27901,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3440500715586, -21.100614193491765],
@@ -17189,7 +27914,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34378242735187, -21.100544171407158],
@@ -17197,7 +27927,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34392692904845, -21.100274897662704],
@@ -17205,7 +27940,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3445021957807, -21.100533881608737],
@@ -17213,7 +27953,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34459372333, -21.101208692408225],
@@ -17221,7 +27966,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34461252465098, -21.100323817608135],
@@ -17229,7 +27979,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3444997159684, -21.10031936643913],
@@ -17237,7 +27992,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34459254604053, -21.100160480088235],
@@ -17245,7 +28005,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34460044413638, -21.101738924375155],
@@ -17253,7 +28018,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34386504995052, -21.101446817744993],
@@ -17261,7 +28031,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34436150767348, -21.101567478595427],
@@ -17269,7 +28044,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34435744196753, -21.101634882039413],
@@ -17277,7 +28057,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3446197622381, -21.10136897712148],
@@ -17285,7 +28070,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34383777861558, -21.10131292347396],
@@ -17293,7 +28083,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34427766369475, -21.101982602216456],
@@ -17301,7 +28096,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34425150875109, -21.1016709490342],
@@ -17309,7 +28109,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3445800534496, -21.10167079932021],
@@ -17317,7 +28122,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34463368416402, -21.101821445688913],
@@ -17325,7 +28135,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34385461178837, -21.10138095129333],
@@ -17333,7 +28148,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3445494506478, -21.101843114296848],
@@ -17341,7 +28161,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3444616133436, -21.101406119733227],
@@ -17349,7 +28174,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34425937254724, -21.10138127663335],
@@ -17357,7 +28187,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3444122904774, -21.101534872354016],
@@ -17365,7 +28200,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34438403876115, -21.101892745053718],
@@ -17373,7 +28213,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3445354217672, -21.101589046969185],
@@ -17381,7 +28226,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3446356969347, -21.101492300095146],
@@ -17389,7 +28239,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34448766775364, -21.101500588601244],
@@ -17397,7 +28252,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34452270836516, -21.10175961585919],
@@ -17405,7 +28265,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34463441864492, -21.101453064924264],
@@ -17413,7 +28278,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3442969754964, -21.101502810663668],
@@ -17421,7 +28291,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3444681461109, -21.101869292441307],
@@ -17429,7 +28304,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3438287995093, -21.10126741690594],
@@ -17437,7 +28317,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3440918768266, -21.101713775702148],
@@ -17445,7 +28330,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34392416501748, -21.101581231161465],
@@ -17453,7 +28343,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3440800644555, -21.101629310257312],
@@ -17461,7 +28356,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3444364890737, -21.101795224391864],
@@ -17469,7 +28369,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34427497965157, -21.10144169856436],
@@ -17477,7 +28382,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3443141277324, -21.101952799026982],
@@ -17485,7 +28395,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34433258321383, -21.101338906879842],
@@ -17493,7 +28408,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3442987512257, -21.101625655408334],
@@ -17501,7 +28421,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3434687272913, -21.10019968559171],
@@ -17509,7 +28434,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34356336842092, -21.099751765980784],
@@ -17517,7 +28447,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34366996689295, -21.100071313446573],
@@ -17525,7 +28460,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34359692506646, -21.100956435486417],
@@ -17533,7 +28473,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34364666442292, -21.10121941700994],
@@ -17541,7 +28486,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3436329770462, -21.101072544717454],
@@ -17549,7 +28499,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34357182460855, -21.10122402323011],
@@ -17557,7 +28512,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34357684022112, -21.10112543267539],
@@ -17565,7 +28525,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34364617992205, -21.101169518961935],
@@ -17573,7 +28538,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34357356888447, -21.1010686310326],
@@ -17581,7 +28551,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34366614842173, -21.101961067982405],
@@ -17589,7 +28564,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34369131897841, -21.102030524440362],
@@ -17597,7 +28577,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34361530724001, -21.102050111709747],
@@ -17605,7 +28590,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34387456353716, -21.102013922050993],
@@ -17613,7 +28603,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3435691111489, -21.101259506352],
@@ -17621,7 +28616,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34371631984146, -21.102106090540104],
@@ -17629,7 +28629,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34394814016258, -21.10208778564912],
@@ -17637,7 +28642,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34368004463812, -21.101917242250096],
@@ -17645,7 +28655,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3435880580272, -21.1013114182088],
@@ -17653,7 +28668,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3437074689158, -21.101369781882546],
@@ -17661,7 +28681,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3435720154229, -21.102011374159215],
@@ -17669,7 +28694,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3436202821589, -21.10138934316308],
@@ -17677,7 +28707,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34372317632057, -21.101320878218907],
@@ -17685,7 +28720,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34384916793607, -21.102112229496512],
@@ -17693,7 +28733,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3434912371559, -21.099687651658495],
@@ -17701,7 +28746,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34274176949953, -21.100053702638565],
@@ -17709,7 +28759,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3428566664825, -21.10009509625822],
@@ -17717,7 +28772,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3428714529988, -21.10109709307787],
@@ -17725,7 +28785,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430721657615, -21.10080700289806],
@@ -17733,7 +28798,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.343084869616, -21.10104902127653],
@@ -17741,7 +28811,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34272667377488, -21.100550060449535],
@@ -17749,7 +28824,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34349027739447, -21.101114172216853],
@@ -17757,7 +28837,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34281544203282, -21.10079358207892],
@@ -17765,7 +28850,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425691099462, -21.10065890503564],
@@ -17773,7 +28863,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34292985192036, -21.10101482030117],
@@ -17781,7 +28876,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34321305887343, -21.10068925505217],
@@ -17789,7 +28889,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3434410897529, -21.100856060836183],
@@ -17797,7 +28902,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34316392136506, -21.100325638773686],
@@ -17805,7 +28915,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34297870525563, -21.100997127466833],
@@ -17813,7 +28928,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34267985617154, -21.10111050588555],
@@ -17821,7 +28941,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342934039366, -21.101108522505193],
@@ -17829,7 +28954,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430276542257, -21.10097482067399],
@@ -17837,7 +28967,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34294727351315, -21.10086776829727],
@@ -17845,7 +28980,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424575505751, -21.100822693871073],
@@ -17853,7 +28993,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3425597521245, -21.100264222279066],
@@ -17861,7 +29006,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342482278144, -21.101186616855],
@@ -17869,7 +29019,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3433115569091, -21.10104527446656],
@@ -17877,7 +29032,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34353152002032, -21.101124349126643],
@@ -17885,7 +29045,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34341327376418, -21.100988501410086],
@@ -17893,7 +29058,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34287867749646, -21.100621250077953],
@@ -17901,7 +29071,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34316828674324, -21.101140638682505],
@@ -17909,7 +29084,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3427346038576, -21.101083471244145],
@@ -17917,7 +29097,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34344844372842, -21.101164843096765],
@@ -17925,7 +29110,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34334823832123, -21.10098710195526],
@@ -17933,7 +29123,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34291890590632, -21.10177712775308],
@@ -17941,7 +29136,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34288121543608, -21.10186737497334],
@@ -17949,7 +29149,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430226541805, -21.10177990221871],
@@ -17957,7 +29162,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34317820735794, -21.101784521457486],
@@ -17965,7 +29175,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34306869741997, -21.10205787307602],
@@ -17973,7 +29188,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342498946175, -21.102242294857277],
@@ -17981,7 +29201,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34314229877344, -21.101289879840998],
@@ -17989,7 +29214,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34290324310987, -21.10194839618842],
@@ -17997,7 +29227,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3431544613539, -21.101822336507638],
@@ -18005,7 +29240,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34307174107212, -21.101362645560233],
@@ -18013,7 +29253,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3430488077132, -21.101842499600064],
@@ -18021,7 +29266,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34324316597682, -21.102098208911023],
@@ -18029,7 +29279,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34288054785907, -21.101427417606715],
@@ -18037,7 +29292,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34254067442546, -21.101339236675095],
@@ -18045,7 +29305,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3428495170452, -21.101327446539017],
@@ -18053,7 +29318,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34244226576578, -21.10199152742807],
@@ -18061,7 +29331,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3426856893907, -21.101577159819445],
@@ -18069,7 +29344,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34329308504098, -21.101797657187316],
@@ -18077,7 +29357,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34335221697265, -21.101870484964],
@@ -18085,7 +29370,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3434512377619, -21.10139169944006],
@@ -18093,7 +29383,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34349575640283, -21.101985182176797],
@@ -18101,7 +29396,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34253473132424, -21.10204478382171],
@@ -18109,7 +29409,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3426497175238, -21.101754320745272],
@@ -18117,7 +29422,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34321032600008, -21.10171991570551],
@@ -18125,7 +29435,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34245251711926, -21.101368852784674],
@@ -18133,7 +29448,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34320203272378, -21.10126182264001],
@@ -18141,7 +29461,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34334974721997, -21.101727087729422],
@@ -18149,7 +29474,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3433674545108, -21.10204174001657],
@@ -18157,7 +29487,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34351636496484, -21.1020827855933],
@@ -18165,7 +29500,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34335929354592, -21.10210417653163],
@@ -18173,7 +29513,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3433346354101, -21.101543691960135],
@@ -18181,7 +29526,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34313126576177, -21.101624436393237],
@@ -18189,7 +29539,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34269348646782, -21.101277358019903],
@@ -18197,7 +29552,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34274180300127, -21.101743530458766],
@@ -18205,7 +29565,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34236517148076, -21.1012182371417],
@@ -18213,7 +29578,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3417568196864, -21.101002905998982],
@@ -18221,7 +29591,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3421887658295, -21.100699606848295],
@@ -18229,7 +29604,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34233290773506, -21.100872442523738],
@@ -18237,7 +29617,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34183496798067, -21.10087964108557],
@@ -18245,7 +29630,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34230446473788, -21.100664608096288],
@@ -18253,7 +29643,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.341850579341, -21.10082015915723],
@@ -18261,7 +29656,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34238068169148, -21.10083459055718],
@@ -18269,7 +29669,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.342211852797, -21.10090942119661],
@@ -18277,7 +29682,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.341730017467, -21.100865667749442],
@@ -18285,7 +29695,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34166120887807, -21.10071737834052],
@@ -18293,7 +29708,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34211614054456, -21.10114584093642],
@@ -18301,7 +29721,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34214397087163, -21.101094760106918],
@@ -18309,7 +29734,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3420184436833, -21.101131974389293],
@@ -18317,7 +29747,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3421724274448, -21.10076202246985],
@@ -18325,7 +29760,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34179111573746, -21.100911390101736],
@@ -18333,7 +29773,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3418657684701, -21.100972378455985],
@@ -18341,7 +29786,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3416521554853, -21.101067170763574],
@@ -18349,7 +29799,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34221173601316, -21.100642162559677],
@@ -18357,7 +29812,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34165302671283, -21.10113067180019],
@@ -18365,7 +29825,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34225238023618, -21.10089241564007],
@@ -18373,7 +29838,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34205720498048, -21.101113117345456],
@@ -18381,7 +29851,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34193756035344, -21.10102507231831],
@@ -18389,7 +29864,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34214978827305, -21.100924476260705],
@@ -18397,7 +29877,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3414676412284, -21.100726493505455],
@@ -18405,7 +29890,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34228492973537, -21.100871452199144],
@@ -18413,7 +29903,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34154389139366, -21.10082148505237],
@@ -18421,7 +29916,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34210236360983, -21.100683524998402],
@@ -18429,7 +29929,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34185906561652, -21.100588830011727],
@@ -18437,7 +29942,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3423967379344, -21.100624918275557],
@@ -18445,7 +29955,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34184473383186, -21.100642649164293],
@@ -18453,7 +29968,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3417764905849, -21.100788348962716],
@@ -18461,7 +29981,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34166083252956, -21.10098317042672],
@@ -18469,7 +29994,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34216002915718, -21.102097769646807],
@@ -18477,7 +30007,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3421238319046, -21.10131569841185],
@@ -18485,7 +30020,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3422492390602, -21.102050257008337],
@@ -18493,7 +30033,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34224695081326, -21.101277882693125],
@@ -18501,7 +30046,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34229888216737, -21.101276594983247],
@@ -18509,7 +30059,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34214329787795, -21.101876465284573],
@@ -18517,7 +30072,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34200890842976, -21.101687374466096],
@@ -18525,7 +30085,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34216390675715, -21.101983355019737],
@@ -18533,7 +30098,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3421772568632, -21.10130065284997],
@@ -18541,7 +30111,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34169579820596, -21.10127512284214],
@@ -18549,7 +30124,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34190844410082, -21.102201646575676],
@@ -18557,7 +30137,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3424143293332, -21.101985514287858],
@@ -18565,7 +30150,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34164717312413, -21.10134175894502],
@@ -18573,7 +30163,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34165638307843, -21.10129746674484],
@@ -18581,7 +30176,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.3422436399209, -21.102209822625582],
@@ -18589,7 +30189,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34216502153245, -21.101720295202483],
@@ -18597,7 +30202,12 @@ const sampleTrees = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        zoneId: "zone-1",
+        treeType: "Oak",
+        height: 6,
+        ripeness: "ripe",
+      },
       geometry: {
         type: "Point",
         coordinates: [-175.34199076359053, -21.102392262847257],
@@ -18605,206 +30215,3 @@ const sampleTrees = {
     },
   ],
 };
-
-const GeneralMap = ({
-  basemap = DEFAULT_BASEMAP,
-  layers,
-  center = [0, 0],
-  zones,
-  showPopup,
-  setShowPopup,
-}) => {
-  const mapRef = useRef(null);
-  const mapContainerRef = useRef(null);
-  const [mapInstance, setMapInstance] = useState(null);
-  const [selectedZone, setSelectedZone] = useState(null);
-  const [zonesVisible, setZonesVisible] = useState(true);
-
-  useEffect(() => {
-    const map = new mapboxgl.Map({
-      container: mapContainerRef.current,
-      style: "mapbox://styles/mapbox/satellite-v9",
-      center,
-      zoom: 15,
-      pitch: 0,
-    });
-
-    map.addControl(
-      new mapboxgl.NavigationControl({ showZoom: false }),
-      "top-right"
-    );
-
-    map.on("load", () => {
-      setMapInstance(map);
-
-      map.addSource("trees", {
-        type: "geojson",
-        data: sampleTrees,
-      });
-
-      map.addLayer({
-        id: "trees",
-        type: "circle",
-        source: "trees",
-        paint: {
-          "circle-radius": 6,
-          "circle-color": "#2ECC71",
-          "circle-stroke-color": "#27AE60",
-          "circle-stroke-width": 2,
-        },
-      });
-    });
-
-    return () => map.remove();
-  }, [basemap, center]);
-
-  const toggleZones = () => {
-    if (!mapInstance) return;
-
-    const visibility = !zonesVisible;
-    setZonesVisible(visibility);
-    mapInstance.setLayoutProperty(
-      "zones-3d",
-      "visibility",
-      visibility ? "visible" : "none"
-    );
-
-    if (visibility) {
-      mapInstance.setFilter("zones-3d", null);
-    }
-
-    if (visibility && !selectedZone) {
-      mapInstance.setFilter("trees", ["==", "zoneId", ""]);
-    }
-  };
-  const handleZoneClick = (zone) => {
-    // toggleZones();
-
-    if (selectedZone) {
-      mapInstance.setLayoutProperty("zones-3d", "visibility", "none");
-      mapInstance.setFilter("trees", ["==", "zoneId", ""]);
-    }
-
-    if (selectedZone === zone) {
-      mapInstance.setFilter("zones-3d", null);
-
-      setSelectedZone(null);
-      mapInstance.setLayoutProperty(
-        "zones-3d",
-        "visibility",
-        zonesVisible ? "visible" : "none"
-      );
-      mapInstance.setFilter("trees", ["==", "zoneId", ""]);
-      if (zonesVisible) {
-        mapInstance.setFilter("zones-3d", null);
-      }
-    } else {
-      setSelectedZone(zone);
-      mapInstance.setLayoutProperty("zones-3d", "visibility", "visible");
-      mapInstance.setFilter("zones-3d", [
-        "==",
-        ["get", "zoneId"],
-        zone.properties.zoneId,
-      ]);
-      mapInstance.setFilter("trees", ["==", "zoneId", zone.properties.zoneId]);
-
-      if (zone.geometry && zone.geometry.coordinates) {
-        const coordinates = zone.geometry.coordinates.flat(2);
-        const lats = coordinates.filter((_, i) => i % 2 !== 0);
-        const lngs = coordinates.filter((_, i) => i % 2 === 0);
-
-        const southwest = [Math.min(...lngs), Math.min(...lats)];
-        const northeast = [Math.max(...lngs), Math.max(...lats)];
-
-        mapInstance.fitBounds([southwest, northeast], { padding: 20 });
-      }
-    }
-  };
-
-  useEffect(() => {
-    if (!mapInstance || !zones) return;
-
-    mapInstance.on("click", "zones-3d", (e) => {
-      const clickedZone = e.features[0];
-      handleZoneClick(clickedZone);
-
-      const coordinates = e.lngLat;
-      new mapboxgl.Popup()
-        .setLngLat(coordinates)
-        .setHTML(`<strong>Zone Height:</strong> ${ZONE_HEIGHT}m`)
-        .addTo(mapInstance);
-    });
-
-    mapInstance.addSource("zones", {
-      type: "geojson",
-      data: zones,
-    });
-
-    mapInstance.addLayer({
-      id: "zones-outline",
-      type: "line",
-      source: "zones",
-      paint: {
-        "line-color": "#FFD700",
-        "line-width": 3,
-        "line-opacity": 0.8,
-      },
-    });
-
-    const treePopup = new mapboxgl.Popup({
-      closeButton: false,
-      closeOnClick: false,
-    });
-
-    mapInstance.on("mouseenter", "trees", (e) => {
-      const coordinates = e.features[0].geometry.coordinates.slice();
-      const { treeType, height } = e.features[0].properties;
-
-      const description = `
-        <strong>Type:</strong> ${treeType}<br>
-        <strong>Height:</strong> ${height}m
-      `;
-
-      treePopup.setLngLat(coordinates).setHTML(description).addTo(mapInstance);
-    });
-
-    mapInstance.on("mouseleave", "trees", () => {
-      treePopup.remove();
-    });
-  }, [mapInstance, zones]);
-
-  const CustomZoomControl = () => (
-    <div className="absolute bottom-4 right-4 bg-white rounded shadow-lg z-50 flex flex-col">
-      <button
-        onClick={() => mapInstance?.zoomIn()}
-        className="text-3xl p-2 bg-gray-200 hover:bg-gray-300 rounded-t"
-      >
-        +
-      </button>
-      <button
-        onClick={() => mapInstance?.zoomOut()}
-        className="text-3xl p-2 bg-gray-200 hover:bg-gray-300 rounded-b"
-      >
-        −
-      </button>
-    </div>
-  );
-
-  return (
-    <div style={{ position: "relative", height: "100%" }}>
-      <button
-        onClick={toggleZones}
-        className="absolute bottom-2 left-2 z-50 px-4 py-2 bg-white rounded shadow-lg hover:bg-gray-100"
-      >
-        {zonesVisible ? "Hide Zones" : "Show Zones"}
-      </button>
-      <div
-        ref={mapContainerRef}
-        style={{ height: "100%", width: "100%", position: "relative" }}
-      />
-      <CustomZoomControl />
-    </div>
-  );
-};
-
-export default GeneralMap;
