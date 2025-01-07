@@ -19,6 +19,7 @@ const DynamicMap = dynamic(
 );
 
 import FarmFieldsTable from "@/components/ui/FarmFieldsTable";
+import DataTable from "@/components/ui/DataTable";
 const MapPage = () => {
   // const [geoJsonData, setGeoJsonData] = useState(null);
 
@@ -4943,6 +4944,31 @@ const MapPage = () => {
   //   console.log(zonesData);
   // }, []);
 
+  const columns = [
+    { key: 'id', header: 'Field ID' },
+    { key: 'field1', header: 'Field 1' },
+    { key: 'field2', header: 'Field 2' },
+    { key: 'numberOfTrees', header: 'Trees' },
+    { 
+      key: 'harvestProgress',
+      header: 'Harvest Progress',
+      render: (_, row) => (
+        <div className="flex items-center gap-3">
+          <div className="w-32 bg-gray-200 rounded-full h-2">
+            <div
+              className="bg-green-500 h-2 rounded-full"
+              style={{
+                width: `${(row.harvestedFruits / row.totalFruits) * 100}%`,
+              }}
+            ></div>
+          </div>
+          <span className="text-sm">
+            {row.harvestedFruits}/{row.totalFruits}
+          </span>
+        </div>
+      )
+    }
+  ];
   const [expandMap, setExpandMap] = useState(false);
   const mapConfigs = {
     palm: {
@@ -4957,6 +4983,73 @@ const MapPage = () => {
     },
   };
   const selectedConfig = mapConfigs[map_id];
+
+  const [fields, setFields] = useState([
+    {
+      id: 'F001',
+      field1: 'North Field',
+      field2: 'Apple Orchard',
+      numberOfTrees: 150,
+      totalFruits: 3000,
+      harvestedFruits: 1500,
+    },
+    {
+      id: 'F002',
+      field1: 'South Field',
+      field2: 'Orange Grove',
+      numberOfTrees: 200,
+      totalFruits: 4000,
+      harvestedFruits: 2800,
+    },
+    {
+      id: 'F003',
+      field1: 'East Field',
+      field2: 'Mango Plantation',
+      numberOfTrees: 100,
+      totalFruits: 2000,
+      harvestedFruits: 800,
+    },
+    {
+      id: 'F004',
+      field1: 'West Field',
+      field2: 'Pear Orchard',
+      numberOfTrees: 175,
+      totalFruits: 3500,
+      harvestedFruits: 2100,
+    },
+    {
+      id: 'F005',
+      field1: 'Central Field',
+      field2: 'Peach Grove',
+      numberOfTrees: 225,
+      totalFruits: 4500,
+      harvestedFruits: 3200,
+    },
+    {
+      id: 'F006',
+      field1: 'Northwest Field',
+      field2: 'Plum Orchard',
+      numberOfTrees: 125,
+      totalFruits: 2500,
+      harvestedFruits: 1200,
+    },
+    {
+      id: 'F007',
+      field1: 'Southeast Field',
+      field2: 'Cherry Orchard',
+      numberOfTrees: 160,
+      totalFruits: 3200,
+      harvestedFruits: 1600,
+    },
+    {
+      id: 'F008',
+      field1: 'Northeast Field',
+      field2: 'Apricot Grove',
+      numberOfTrees: 180,
+      totalFruits: 3600,
+      harvestedFruits: 2400,
+    },
+  ]);
   return (
     <div
       className={` flex flex-col  gap-12 ${
@@ -4990,7 +5083,13 @@ const MapPage = () => {
       {!expandMap && (
         <>
           <h2 className="text-3xl font-semibold">Fields</h2>
-          <FarmFieldsTable />
+          <DataTable
+            data={fields}
+            columns={columns}
+            enableExport
+            exportFileName="farm_fields"
+            searchKeys={["field1", "field2"]}
+          />
         </>
       )}
     </div>
