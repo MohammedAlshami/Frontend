@@ -26,25 +26,7 @@ const GeneralMap = ({
     // Initialize the map
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
-      style: {
-        version: 8,
-        sources: {
-          basemap: {
-            type: "raster",
-            tiles: [basemap],
-            tileSize: 256,
-          },
-        },
-        layers: [
-          {
-            id: "basemap",
-            type: "raster",
-            source: "basemap",
-            minzoom: 0,
-            maxzoom: 22,
-          },
-        ],
-      },
+      style: "mapbox://styles/mapbox/satellite-v9", // Satellite basemap
       center,
       zoom: 17,
     });
