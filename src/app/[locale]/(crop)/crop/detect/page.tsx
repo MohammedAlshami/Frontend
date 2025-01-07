@@ -81,7 +81,6 @@ const Page = () => {
       console.log("Model loaded successfully");
     } catch (error) {
       console.error("Error loading model:", error);
-      alert(`Error loading model: ${error}`);
     }
   }
 
@@ -114,7 +113,6 @@ const Page = () => {
               setImage(img);
             } catch (error) {
               console.error("Error detecting image:", error);
-              alert(`Error detecting image: ${error}`);
             }
           };
         }
@@ -123,7 +121,6 @@ const Page = () => {
       videoRef.current.dataset.intervalId = String(intervalId);
     } catch (error) {
       console.error("Error accessing camera:", error);
-      alert(`Error accessing camera: ${error}`);
       setCameraOpen(false);
     }
   };
@@ -268,7 +265,6 @@ const Page = () => {
           console.log("Results:", results);
         } catch (error) {
           console.error("Error detecting image:", error);
-          alert(`Error detecting image: ${error}`);
         }
       }
     };

@@ -12,7 +12,7 @@ const CTA2 = () => {
       </a>
       <a
         href="javascript:void(0)"
-        className="block py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg"
+        className="block py-2 px-4 text-icon hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg"
       >
         Get access
       </a>
@@ -29,7 +29,7 @@ const CTA3 = () => {
       <input
         type="text"
         placeholder="Enter your email"
-        className="w-full px-3 py-2.5 text-black bg-white focus:bg-blue-50 duration-150 outline-none rounded-lg shadow sm:max-w-sm sm:w-auto"
+        className="w-full px-3 py-2.5 text-black bg-accent focus:bg-blue-50 duration-150 outline-none rounded-lg shadow sm:max-w-sm sm:w-auto"
       />
       <button className="flex items-center justify-center gap-x-2 py-2.5 px-4 mt-3 w-full text-sm text-white font-medium bg-sky-500 hover:bg-sky-400 active:bg-sky-600 duration-150 rounded-lg sm:mt-0 sm:w-auto">
         Get started
@@ -62,7 +62,7 @@ const Hero2: React.FC<Hero2Props> = ({
   subTitle,
 }) => {
   return (
-    <section className="relative overflow-visible bg-white ">
+    <section className="relative overflow-visible bg-accent ">
       {/* SVG Background */}
       <div
         style={{
@@ -121,7 +121,7 @@ const Hero2: React.FC<Hero2Props> = ({
         >
           <CTA3 />
 
-          <div className="mockup-browser bg-white border-base-300/20 border shadow-lg rounded-lg">
+          <div className="mockup-browser bg-accent border-base-300/20 border shadow-lg rounded-lg">
             <div className="mockup-browser-toolbar"></div>
             <div className="border-base-300 flex justify-center border-t p-2">
               <img src="/hero.png" className="w-full h-full rounded" alt="" />

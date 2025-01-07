@@ -10,8 +10,17 @@ import WeatherCard from "./WeatherCard";
 import { MapOptions } from "./Mapoptions";
 import { FaMap, FaSatellite } from "react-icons/fa";
 import MapPopup from "../MapPopup";
+import { Expand } from "lucide-react";
 
-const MapPage = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
+const MapPage = ({
+  basemap = DEFAULT_BASEMAP,
+  layers,
+  center,
+  zones,
+  height,
+  setExpandMap,
+  expandedMap
+}) => {
   const [showDateRangePicker, setShowDateRangePicker] = useState(true);
 
   const handleOpenDateRangePicker = () => {
@@ -64,16 +73,16 @@ const MapPage = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
   };
 
   return (
-    <div className="relative h-screen w-full ">
-      {showDateRangePicker && (
+    <div className={`relative  w-full ${height}`}>
+      {/* {showDateRangePicker && (
         <DateRangePicker onClose={handleCloseDateRangePicker} />
-      )}
+      )} */}
 
       {/* GeneralMap Component */}
       <GeneralMap
         basemap={DEFAULT_BASEMAP} // Ensure the basemap is set
         layers={<TileLayer url={basemapUrls[selectedLayer]} />}
-        center={[1.632294, 103.771028]}
+        center={center}
         zones={zones}
         showPopup={showPopup}
         setShowPopup={setShowPopup}
@@ -87,6 +96,14 @@ const MapPage = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
         )}
       </div>
 
+      <div
+        className="absolute top-3 left-6  flex justify-center items-center mb-8 z-10 transform transition-transform duration-300 text-black hover:-translate-y-2 cursor-pointer"
+        onClick={() => setExpandMap(!expandedMap)}
+      >
+        <div className=" bg-accent p-2 bg-gray-100 rounded-xl flex items-center justify-center hover:bg-black hover:text-white">
+          <Expand className="w-6 h-6" />
+        </div>
+      </div>
       {/* MapOptions positioned at bottom middle */}
       <div className="absolute bottom-0 left-6 sm:left-0 sm:right-0 flex justify-center items-center mb-8 z-10">
         <div className="flex flex-row-reverse sm:flex-col gap-8">

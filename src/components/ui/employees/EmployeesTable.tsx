@@ -202,7 +202,7 @@ const EmployeesTable = () => {
       </div>
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white p-6 rounded shadow-lg w-96">
+          <div className="bg-accent p-6 rounded shadow-lg w-96">
             <h2 className="text-xl font-bold mb-4">
               {editing ? "Edit Client" : "Add Client"}
             </h2>

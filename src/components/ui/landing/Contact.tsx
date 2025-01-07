@@ -86,7 +86,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="first_name"
-                    className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                    className="block mb-2 text-sm text-icon font-medium dark:text-white"
                   >
                     First Name
                   </label>
@@ -103,7 +103,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="last_name"
-                    className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                    className="block mb-2 text-sm text-icon font-medium dark:text-white"
                   >
                     Last Name
                   </label>
@@ -124,7 +124,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                    className="block mb-2 text-sm text-icon font-medium dark:text-white"
                   >
                     Email
                   </label>
@@ -142,7 +142,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="phone_number"
-                    className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                    className="block mb-2 text-sm text-icon font-medium dark:text-white"
                   >
                     Phone Number
                   </label>
@@ -161,7 +161,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="details"
-                  className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                  className="block mb-2 text-sm text-icon font-medium dark:text-white"
                 >
                   Details
                 </label>
@@ -198,7 +198,7 @@ const Contact = () => {
       {/* Success Modal */}
       {modal.is_open && modal.is_success && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-accent p-6 rounded-lg shadow-lg">
             <p className="text-lg font-semibold text-green-600">
               {modal.message}
             </p>
@@ -215,7 +215,7 @@ const Contact = () => {
       {/* Error Modal */}
       {modal.is_open && !modal.is_success && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-accent p-6 rounded-lg shadow-lg">
             <p className="text-lg font-semibold text-red-600">
               {modal.message}
             </p>

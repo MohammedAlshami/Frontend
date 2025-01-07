@@ -27,7 +27,7 @@ const WeatherCard = () => {
   };
 
   return (
-    <div className="w-64 p-4 rounded-lg shadow-lg bg-white text-gray-800">
+    <div className="w-64 p-4 rounded-lg shadow-lg bg-accent text-gray-800">
       <div className="text-3xl font-bold flex items-center mb-4">
         {weatherData.main.temp}°C
       

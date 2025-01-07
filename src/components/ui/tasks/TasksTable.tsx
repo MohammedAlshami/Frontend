@@ -192,7 +192,7 @@ const TasksTable = () => {
       <div className="flex justify-between">
         <BreadCrumbs
           title="Tasks"
-          icon={<ClipboardList className="text-[#60646C] w-8 h-8" />}
+          icon={<ClipboardList className="text-icon w-8 h-8" />}
         />
         <button
           onClick={() => {
@@ -208,7 +208,7 @@ const TasksTable = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <div className=" pr-5 space-x-4 w-full bg-white cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-3 rounded-lg shadow-sm">
+        <div className=" pr-5 space-x-4 w-full bg-accent cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-3 rounded-lg shadow-sm">
           <SearchIcon className="w-5 h-5 text-gray-500" />
           <input
             type="text"
@@ -220,7 +220,7 @@ const TasksTable = () => {
           <FilterIcon className="w-5 h-5 text-gray-500 " />
         </div>
 
-        <div className="w-full bg-white rounded-xl border border-[#E0E1E6] overflow-auto">
+        <div className="w-full bg-accent rounded-xl border border-[#E0E1E6] overflow-auto">
           <table className="w-full text-[#606475] border-separate border-spacing-0">
             <thead>
               <tr>
@@ -293,7 +293,7 @@ const TasksTable = () => {
         <div className="flex justify-center items-center mt-4 space-x-2 gap-4 text-[#1C2024]">
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-            className="w-full sm:w-auto flex items-center justify-center gap-4 px-4 py-2 bg-white border border-[#E0E1E6] rounded-lg p-2 pl-3 focus:border-green-200 focus:ring-green-200 shadow-sm rounded disabled:opacity-50"
+            className="w-full sm:w-auto flex items-center justify-center gap-4 px-4 py-2 bg-accent border border-[#E0E1E6] rounded-lg p-2 pl-3 focus:border-green-200 focus:ring-green-200 shadow-sm rounded disabled:opacity-50"
             disabled={currentPage === 1}
           >
             <ArrowLeftCircle />
@@ -306,7 +306,7 @@ const TasksTable = () => {
             onClick={() =>
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))
             }
-            className="w-full sm:w-auto flex items-center justify-center gap-4 px-4 py-2 bg-white border border-[#E0E1E6] rounded-lg p-2 pl-3 focus:border-green-200 focus:ring-green-200 shadow-sm rounded disabled:opacity-50"
+            className="w-full sm:w-auto flex items-center justify-center gap-4 px-4 py-2 bg-accent border border-[#E0E1E6] rounded-lg p-2 pl-3 focus:border-green-200 focus:ring-green-200 shadow-sm rounded disabled:opacity-50"
             disabled={currentPage === totalPages}
           >
             Next
@@ -317,7 +317,7 @@ const TasksTable = () => {
 
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[100000000]">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+          <div className="bg-accent p-6 rounded-lg shadow-lg w-96">
             <h2 className="text-xl font-bold mb-4">
               {editing ? "Edit Task" : "Add Task"}
             </h2>

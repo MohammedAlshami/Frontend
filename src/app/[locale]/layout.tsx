@@ -25,7 +25,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       suppressHydrationWarning={true}
-      className="bg-white light"
+      className="bg-accent light"
     >
       <body className={` antialiased  light`}>
         <NextIntlClientProvider messages={messages}>

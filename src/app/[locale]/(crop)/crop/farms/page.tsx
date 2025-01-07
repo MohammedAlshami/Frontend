@@ -21,14 +21,14 @@ const Fields = () => {
       id: 1,
       name: "Kulim Pineapple Farm",
       location: "Jalan Sungai Tiram, Johor Darul Ta'zim",
-      image: "/fields/1.png",
+      image: "/farms/pineapple_thumbnail.png",
       href: "pineapple",
     },
     {
       id: 2,
       name: "Palm Oil Farm",
       location: "Jalan Sungai Tiram, Johor Darul Ta'zim",
-      image: "/fields/2.png",
+      image: "/farms/palm_thumbnail.png",
       href: "palm",
     },
   ];
@@ -39,7 +39,7 @@ const Fields = () => {
         <div className="flex justify-between">
           <BreadCrumbs
             title="Fields"
-            icon={<Users className="text-[#60646C] w-8 h-8" />}
+            icon={<Users className="text-icon w-8 h-8" />}
           />
           <button className="bg-teal-500 text-white px-4 py-2 rounded-lg flex items-center gap-2">
             <RiAddLargeFill className="w-4 h-4" />
@@ -50,9 +50,9 @@ const Fields = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {fields.map((field) => (
             <Link
-              href={`http://localhost:3000/en/crop/map/${field.href}`}
+              href={`/en/crop/map?map_id=${field.href}`}
               key={field.id}
-              className="shadow-sm bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 transform transition-transform duration-500 hover:-translate-y-2 cursor-pointer"
+              className="shadow-sm bg-accent rounded-xl overflow-hidden shadow-sm border border-gray-200 transform transition-transform duration-500 hover:-translate-y-2 cursor-pointer"
             >
               <div className="relative">
                 {/* Background Image */}

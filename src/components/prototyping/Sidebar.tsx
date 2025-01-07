@@ -37,17 +37,17 @@ const links = [
   {
     href: "/en/crop/dashboard",
     label: "Dashboard",
-    icon: <LayoutDashboard className="w-5 h-5 text-gray-500 " />,
+    icon: <LayoutDashboard className="w-5 h-5 text-icon " />,
   },
   {
     href: "/en/crop/farms",
     label: "Farm",
-    icon: <TreeDeciduous className="w-5 h-5 text-gray-500 " />,
+    icon: <TreeDeciduous className="w-5 h-5 text-icon " />,
   },
   {
     href: "/en/crop/employees",
     label: "Employees",
-    icon: <Users className="w-5 h-5 text-gray-500 " />,
+    icon: <Users className="w-5 h-5 text-icon " />,
   },
   {
     href: "/en/crop/detect",
@@ -55,35 +55,31 @@ const links = [
     icon: (
       <Icon
         icon="fluent:scan-camera-16-filled"
-        className="w-5 h-5 text-gray-500 "
+        className="w-5 h-5 text-icon "
       />
     ),
   },
   {
     href: "/en/crop/tasks",
     label: "Tasks",
-    icon: <ListTodo className="w-5 h-5 text-gray-500 " />,
+    icon: <ListTodo className="w-5 h-5 text-icon " />,
   },
   {
     href: "/en/crop/schedule",
     label: "Schedule",
-    icon: <Calendar className="w-5 h-5 text-gray-500 " />,
+    icon: <Calendar className="w-5 h-5 text-icon " />,
   },
-  {
-    href: "/en/crop/map",
-    label: "Map",
-    icon: <MapPinPlusInside className="w-5 h-5 text-gray-500 " />,
-  },
+
   {
     href: "/en/crop/billing",
     label: "Billing",
-    icon: <CreditCard className="w-5 h-5 text-gray-500 " />,
+    icon: <CreditCard className="w-5 h-5 text-icon " />,
   },
 
   {
     href: "/en/crop/reports",
     label: "Reports",
-    icon: <ScrollTextIcon className="w-5 h-5 text-gray-500 " />,
+    icon: <ScrollTextIcon className="w-5 h-5 text-icon " />,
   },
 ];
 
@@ -104,7 +100,7 @@ const Sidebar = ({ children, Minimize }) => {
         <div
           className={`w-full sm:block hs-overlay-open hs-overlay ${
             !isMinimized ? "sm:w-[260px]  h-fit " : "sm:w-16"
-          } sm:h-full fixed inset-y-0 start-0 z-[60] bg-white border-r-2 transition-all duration-600 ease-in-out`}
+          } sm:h-full fixed inset-y-0 start-0 z-[60] bg-accent border-r-2 transition-all duration-600 ease-in-out`}
         >
           <div className="relative flex   flex-col h-full">
             <div
@@ -115,7 +111,7 @@ const Sidebar = ({ children, Minimize }) => {
               } justify-between items-center gap-4 py-2`}
             >
               <div
-                className="cursor-pointer hover:bg-black hover:text-white text-gray-500  rounded-full p-2"
+                className="cursor-pointer hover:bg-black hover:text-white text-icon  rounded-full p-2"
                 onClick={() => setIsMinimized(!isMinimized)}
               >
                 <ListCollapse
@@ -149,8 +145,8 @@ const Sidebar = ({ children, Minimize }) => {
             >
               <div className="flex flex-col gap-4 p-3">
                 <div className="hover:bg-[#E0E1E6] cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-2 rounded-lg shadow-sm">
-                  <SearchIcon className="w-5 h-5 text-gray-500" />
-                  {!isMinimized && <h2 className="text-gray-500">Search</h2>}
+                  <SearchIcon className="w-5 h-5 text-icon" />
+                  {!isMinimized && <h2 className="text-icon">Search</h2>}
                 </div>
                 <div className="w-full h-[1px] bg-[#E0E1E6]"></div>
                 <ul className="space-y-1">
@@ -171,7 +167,7 @@ const Sidebar = ({ children, Minimize }) => {
                             >
                               {link.icon}
                               {!isMinimized && (
-                                <span className="flex-1">{link.label}</span>
+                                <span className="flex-1 text-textDark">{link.label}</span>
                               )}
                             </Link>
                           </Tooltip>
@@ -182,7 +178,7 @@ const Sidebar = ({ children, Minimize }) => {
                             className="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900"
                           >
                             {link.icon}
-                            <span className="flex-1">{link.label}</span>
+                            <span className="flex-1  text-textDark">{link.label}</span>
                           </Link>
                         )
                       ) : (
@@ -265,7 +261,7 @@ const Sidebar = ({ children, Minimize }) => {
                   <div className="p-1 border-t-2 border-[#E0E1E6]">
                     <div className="flex justify-between items-center rounded-lg p-2 hover:bg-[#E0E1E6] cursor-pointer">
                       <div className="flex justify-center items-center gap-4 w-11/12">
-                        <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#F0F1F5] text-[#60646C]">
+                        <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#F0F1F5] text-icon">
                           S
                         </div>
                         {!isMinimized && (
@@ -278,7 +274,7 @@ const Sidebar = ({ children, Minimize }) => {
                         )}
                       </div>
                       {!isMinimized && (
-                        <EllipsisVertical className="text-[#60646C] h-12" />
+                        <EllipsisVertical className="text-icon h-12" />
                       )}
                     </div>
                   </div>
@@ -294,7 +290,7 @@ const Sidebar = ({ children, Minimize }) => {
         </div>
         <div
           className={`${
-            !isMinimized ? "pt-12 sm:pl-[240px]" : "sm:pl-12"
+            !isMinimized ? " sm:pl-[240px]" : "sm:pl-12"
           } h-screen transition-all duration-600 ease-in-out`}
         >
           {children}

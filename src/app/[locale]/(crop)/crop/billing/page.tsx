@@ -9,7 +9,7 @@ const page = () => {
     <div className=" px-6 sm:px-12 flex flex-col  gap-12  pb-12 bg-[#FCFCFD]">
       <BreadCrumbs
         title="Billing"
-        icon={<LayoutDashboard className="text-[#60646C] w-8 h-8" />}
+        icon={<LayoutDashboard className="text-icon w-8 h-8" />}
       />
       <CardComponent />
 

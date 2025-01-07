@@ -5,7 +5,7 @@ import { FaUsers } from "react-icons/fa";
 
 const Card = () => {
   return (
-    <div className="relative h-48 w-full lg:h-72 w-full rounded-xl bg-gradient-to-r from-blue-600 to-teal-600">
+    <div className="relative h-48 w-full lg:h-72 w-full rounded-xl bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600 transition duration-300 ease-in-out">
       <div className="py-4 lg:py-12 h-full w-full px-8 flex flex-col justify-between">
         <div className="flex flex-row justify-between">
           <div>
@@ -72,7 +72,7 @@ const CardComponent = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-6 p-6 bg-white rounded-xl border border-[#E0E1E6] shadow-sm">
+    <div className="flex flex-col lg:flex-row gap-6 p-6 bg-accent rounded-xl border border-[#E0E1E6] shadow-sm">
       {/* Left: Credit Card Display */}
 
       <div className="w-full lg:w-1/2 h-full mr-4 bg-transparent">

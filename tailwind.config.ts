@@ -1,4 +1,4 @@
-import {nextui} from '@nextui-org/theme';
+import { nextui } from "@nextui-org/theme";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,10 +8,17 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@tailus/themer/dist/components/**/*.{js,ts}",
     "node_modules/preline/dist/*.js",
-    "./node_modules/@nextui-org/theme/dist/components/(dropdown|popover|menu|divider|button|ripple|spinner).js"
+    "./node_modules/@nextui-org/theme/dist/components/(dropdown|popover|menu|divider|button|ripple|spinner).js",
   ],
   theme: {
     extend: {
+      colors: {
+        bg: "#FCFCFD",
+        icon: "#6B7280",
+        accent: "#FFFFFFFF",
+        textLight: "#FFFFFFFF",
+        textDark: "#171717",
+      },
       keyframes: {
         "logo-cloud": {
           from: { transform: "translateX(0)" },
@@ -23,6 +30,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("preline/plugin"),require("daisyui"),nextui()],
+  plugins: [require("preline/plugin"), require("daisyui"), nextui()],
 };
+
 export default config;

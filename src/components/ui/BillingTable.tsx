@@ -14,7 +14,7 @@ const BillingTable = () => {
       paymentMethod: "Card",
       product: "Subscription: Annual Plan",
       total: "US$198.00",
-      file: "/report-jan.pdf",
+      file: "https://github.com/excid3/receipts/blob/main/examples/invoice.pdf?raw=true",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const BillingTable = () => {
       paymentMethod: "Card",
       product: "1 product",
       total: "US$7.76",
-      file: "/report-feb.pdf",
+      file: "https://github.com/excid3/receipts/blob/main/examples/invoice.pdf?raw=true",
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ const BillingTable = () => {
       paymentMethod: "Card",
       product: "1 product",
       total: "US$9.68",
-      file: "/report-q1.pdf",
+      file: "https://github.com/excid3/receipts/blob/main/examples/invoice.pdf?raw=true",
     },
   ]);
 
@@ -55,7 +55,7 @@ const BillingTable = () => {
 
   return (
     <div className="flex flex-col gap-4">
-      {/* <div className="pr-5 w-full bg-white border border-[#E0E1E6] flex items-center gap-2 p-2 rounded-lg shadow-sm">
+      {/* <div className="pr-5 w-full bg-accent border border-[#E0E1E6] flex items-center gap-2 p-2 rounded-lg shadow-sm">
       <SearchIcon className="w-5 h-5 text-gray-500" />
       <input
         type="text"
@@ -66,7 +66,7 @@ const BillingTable = () => {
       />
     </div> */}
 
-      <div className="bg-white w-full bg-white rounded-xl border border-[#E0E1E6] overflow-auto">
+      <div className="bg-accent w-full bg-accent rounded-xl border border-[#E0E1E6] overflow-auto">
         <table className="w-full text-[#606475] border-separate border-spacing-0">
           <thead>
             <tr>
@@ -125,7 +125,7 @@ const BillingTable = () => {
       {/* <div className="flex justify-center items-center mt-4 space-x-2 gap-4 text-[#1C2024]">
       <button
         onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-        className="flex items-center justify-center gap-4 px-4 py-2 bg-white border border-[#E0E1E6] rounded-lg disabled:opacity-50"
+        className="flex items-center justify-center gap-4 px-4 py-2 bg-accent border border-[#E0E1E6] rounded-lg disabled:opacity-50"
         disabled={currentPage === 1}
       >
         <ArrowLeftCircle />
@@ -136,7 +136,7 @@ const BillingTable = () => {
       </span>
       <button
         onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
-        className="flex items-center justify-center gap-4 px-4 py-2 bg-white border border-[#E0E1E6] rounded-lg disabled:opacity-50"
+        className="flex items-center justify-center gap-4 px-4 py-2 bg-accent border border-[#E0E1E6] rounded-lg disabled:opacity-50"
         disabled={currentPage === totalPages}
       >
         Next

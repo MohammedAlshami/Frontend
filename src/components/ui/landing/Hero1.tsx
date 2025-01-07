@@ -46,7 +46,7 @@ const Hero1 = () => {
               </a>
               <a
                 href="javascript:void(0)"
-                className="flex items-center justify-center gap-x-1 py-2 px-4 text-gray-700 hover:text-gray-900 font-medium duration-150 md:inline-flex"
+                className="flex items-center justify-center gap-x-1 py-2 px-4 text-icon hover:text-gray-900 font-medium duration-150 md:inline-flex"
               >
                 Contact Us
                 <svg
@@ -77,7 +77,7 @@ const Hero1 = () => {
           </div>
         </section>
         {/* <div className="mt-14 px-4 md:px-8">
-          <p className="text-center text-sm text-gray-700 font-semibold">
+          <p className="text-center text-sm text-icon font-semibold">
             Trusted by the best companies
           </p>
           <div className="flex justify-center items-center flex-wrap gap-x-12 gap-y-6 mt-6">

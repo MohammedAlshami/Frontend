@@ -245,7 +245,7 @@ const GeneralMap = ({
 
   const CustomZoomControl = () => {
     return (
-      <div className={`absolute ${!showPopup ? "top-4 right-4" : "top-4 left-4"} bg-[#F9FAFB] rounded shadow-lg z-[10000000000000] flex flex-col rounded-xl`}>
+      <div className={`absolute ${!showPopup ? "top-4 right-4" : "bottom-4 left-4"} bg-[#F9FAFB] rounded shadow-lg z-[10000000000000] flex flex-col rounded-xl`}>
         <button
           onClick={zoomIn}
           className="text-3xl p-2 px-4 bg-[#F9FAFB] text-black hover:cursor-pointer hover:bg-purple-600 rounded-t-xl"
@@ -264,7 +264,7 @@ const GeneralMap = ({
   };
 
   return (
-    <div style={{ position: "relative", height: "100vh" }}>
+    <div style={{ position: "relative", height: "100%" }}>
       <MapContainer
         center={center}
         zoom={17}

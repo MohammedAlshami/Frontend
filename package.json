@@ -45,7 +45,8 @@
     "recharts": "^2.15.0",
     "tailwind-merge": "^2.6.0",
     "tailwind-variants": "^0.3.0",
-    "utf-8-validate": "^6.0.5"
+    "utf-8-validate": "^6.0.5",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.15",

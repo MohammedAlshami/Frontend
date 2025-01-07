@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <div className="relative h-full" suppressHydrationWarning={true}>
       {/* Content */}
-      <div className="relative  bg-[#FCFCFD]">
+      <div className="relative  bg-[#FCFCFD] ">
         {/* <Navbar /> */}
         {/* <HomePage /> */}
 

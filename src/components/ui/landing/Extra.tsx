@@ -39,7 +39,7 @@ const Extra = () => {
 
         <div className="space-y-6 lg:space-y-10">
           <div className="flex gap-x-5 sm:gap-x-8">
-            <span className="shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+            <span className="shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-accent text-gray-800 shadow-sm mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
               <svg
                 className="shrink-0 size-5"
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const Extra = () => {
           </div>
 
           <div className="flex gap-x-5 sm:gap-x-8">
-            <span className="shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+            <span className="shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-accent text-gray-800 shadow-sm mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
               <svg
                 className="shrink-0 size-5"
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ const Extra = () => {
           </div>
 
           <div className="flex gap-x-5 sm:gap-x-8">
-            <span className="shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+            <span className="shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-accent text-gray-800 shadow-sm mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
               <svg
                 className="shrink-0 size-5"
                 xmlns="http://www.w3.org/2000/svg"

@@ -189,7 +189,7 @@ const MapWithZones = () => {
       {/* Modal */}
       {showModal && (
         <div
-          className="absolute bottom-4 right-4 z-[1001] bg-white p-6 border-4 border-teal-600 rounded-lg shadow-lg w-64 h-64 sm:w-96 h-96  transition-all duration-300 ease-in-out transform"
+          className="absolute bottom-4 right-4 z-[1001] bg-accent p-6 border-4 border-teal-600 rounded-lg shadow-lg w-64 h-64 sm:w-96 h-96  transition-all duration-300 ease-in-out transform"
           style={{ transform: "none" }}
         >
           {step === 1 && (

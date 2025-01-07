@@ -192,7 +192,7 @@ const PopupTabs = () => {
 const FertilizerComponent = ({ icon, content }) => {
   return (
     <div className=" h-full flex  flex-row gap-4 items-center  lg:justify-center bg-teal-500 rounded-lg text-white font-bold gap-2 p-4">
-      <div className="bg-white text-teal-500 w-fit rounded-full p-2">
+      <div className="bg-accent text-teal-500 w-fit rounded-full p-2">
         {icon}
       </div>
       <h2> {content}</h2>
@@ -218,7 +218,7 @@ const FertilizersTab = () => {
 const ScheduleItem = ({ icon, content, date }) => {
   return (
     <div className=" flex  items-center  bg-teal-500 rounded-2xl text-white font-bold gap-4 p-4">
-      <div className="bg-white text-teal-500 w-fit rounded-full p-2">
+      <div className="bg-accent text-teal-500 w-fit rounded-full p-2">
         {icon}
       </div>
       <div>
@@ -277,7 +277,7 @@ const MapPopup = ({
   const router = useRouter();
   return (
     <div>
-      <div className="h-[40rem] bg-white pb-8 w-[20rem] lg:w-[27rem] border-4 border-teal-500 rounded-xl px-4 py-2 flex flex-col gap-4 relative">
+      <div className="h-full bg-accent pb-8 w-[20rem] lg:w-[27rem] border-4 border-teal-500 rounded-xl px-4 py-2 flex flex-col gap-4 relative">
         <button
           onClick={closePopup}
           className="absolute top-1 right-1 bg-teal-500 text-sm text-white rounded-lg w-6 h-6 hover:bg-teal-600"

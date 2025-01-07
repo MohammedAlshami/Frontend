@@ -12,7 +12,7 @@ const HomePage = ({}) => {
       <div className="px-6 sm:px-12 flex flex-col  gap-12 ">
         <BreadCrumbs
           title="Dashboard"
-          icon={<LayoutDashboard className="text-[#60646C] w-8 h-8" />}
+          icon={<LayoutDashboard className="text-icon w-8 h-8" />}
         />
         <CardComponent classname="h-64  bg-yellow-300 transform transition-transform duration-300 hover:-translate-y-2 cursor-pointer" />
         <div className="space-y-8">

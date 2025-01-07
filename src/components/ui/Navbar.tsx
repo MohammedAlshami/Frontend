@@ -28,7 +28,7 @@ const Navbar = ({ className }: NavbarProbs) => {
 
   return (
     <div className={`${className}`}>
-      <div className="mb-6 border-2 border-teal-500 bg-white px-8 h-20 rounded-3xl flex items-center justify-between w-fit gap-8 ">
+      <div className="mb-6 border-2 border-teal-500 bg-accent px-8 h-20 rounded-3xl flex items-center justify-between w-fit gap-8 ">
         {navItems.map((item, index) => {
           const Icon = item.icon;
           const isActive = router.pathname === item.href;

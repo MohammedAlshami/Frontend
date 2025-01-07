@@ -17,7 +17,7 @@ const DateRangePicker = ({ onClose }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="bg-white p-6 rounded-lg shadow-xl w-96">
+      <div className="bg-accent p-6 rounded-lg shadow-xl w-96">
         <h3 className="text-xl mb-4">Select Date Range</h3>
         <div>
           <label className="block mb-2">Start Date</label>

@@ -31,7 +31,7 @@ const EventCard = ({ event }: { event: Event }) => (
         </button>
         <div
           id={`dropdown-${event.id}`}
-          className="dropdown-menu rounded-xl shadow-lg bg-white absolute top-full -left-10 w-max mt-2 hidden"
+          className="dropdown-menu rounded-xl shadow-lg bg-accent absolute top-full -left-10 w-max mt-2 hidden"
         >
           <ul className="py-2">
             <li>
@@ -98,7 +98,7 @@ const CalendarUI = () => {
     <div className="flex flex-col gap-8">
       {" "}
       <Calendar />
-      <section className="bg-white flex flex-col border-2 border-black-600/60 p-8 rounded-lg w-full border border-[#E0E1E6] shadow-sm">
+      <section className="bg-accent flex flex-col border-2 border-black-600/60 p-8 rounded-lg w-full border border-[#E0E1E6] shadow-sm">
         <h2 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5">
           Upcoming Events
         </h2>

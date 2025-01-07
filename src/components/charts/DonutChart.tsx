@@ -78,7 +78,7 @@ const ChartTooltip = ({
           // border color
           "border-gray-200 dark:border-gray-800",
           // background color
-          "bg-white dark:bg-gray-950"
+          "bg-accent dark:bg-gray-950"
         )}
       >
         <div className={cx("space-y-1 px-4 py-2")}>
@@ -100,7 +100,7 @@ const ChartTooltip = ({
                     // base
                     "whitespace-nowrap text-right",
                     // text color
-                    "text-gray-700 dark:text-gray-300"
+                    "text-icon dark:text-gray-300"
                   )}
                 >
                   {category}
