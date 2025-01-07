@@ -4,7 +4,7 @@ import DataTable from "@/components/ui/DataTable";
 import { EllipsisVertical, Users } from "lucide-react";
 import { FaUserPlus } from "react-icons/fa";
 import BreadCrumbs from "@/components/ui/BreadCrumbs";
-
+import Image from "next/image";
 const EmployeesPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editing, setEditing] = useState(false);
@@ -77,9 +77,11 @@ const EmployeesPage = () => {
       header: "Name",
       render: (_, row) => (
         <div className="flex items-center gap-4">
-          <img
+          <Image
             src={row.avatar}
             alt={`${row.name}'s avatar`}
+            width={50}
+            height={50}
             className="w-10 h-10 rounded-xl object-cover"
           />
           <div>

@@ -63,7 +63,7 @@ const CardComponent = () => {
     employeesSubscribed: 10,
   });
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: any) => {
     const { name, value } = e.target;
     setDetails((prev) => ({
       ...prev,

@@ -4,7 +4,7 @@ import BreadCrumbs from "@/components/ui/BreadCrumbs";
 import { RiAddLargeFill } from "@remixicon/react";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-
+import Image from "next/image";
 const DetailItem = ({ icon, content }) => {
   return (
     <div className="flex gap-2 items-center text-sm text-white">
@@ -56,7 +56,9 @@ const Fields = () => {
             >
               <div className="relative">
                 {/* Background Image */}
-                <img
+                <Image
+                  width={400}
+                  height={400}
                   src={field.image}
                   alt={field.name}
                   className="w-full h-56 object-cover"

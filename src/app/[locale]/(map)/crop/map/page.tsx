@@ -18,7 +18,6 @@ const DynamicMap = dynamic(
   }
 );
 
-import FarmFieldsTable from "@/components/ui/FarmFieldsTable";
 import DataTable from "@/components/ui/DataTable";
 const MapPage = () => {
   // const [geoJsonData, setGeoJsonData] = useState(null);
@@ -4972,12 +4971,12 @@ const MapPage = () => {
   const [expandMap, setExpandMap] = useState(false);
   const mapConfigs = {
     palm: {
-      center: [-21.09871681897323, -175.34461286299586],
+      center: [-175.34461286299586, -21.09871681897323, ],
       layers: layers,
       data: palm_data,
     },
     pineapple: {
-      center: [1.632294, 103.771028],
+      center: [103.771028, 1.632294],
       layers: layers,
       data: pineapple_data,
     },

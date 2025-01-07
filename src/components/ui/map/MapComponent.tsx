@@ -1,318 +1,154 @@
 import React, { useRef, useEffect, useState } from "react";
-import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
+import mapboxgl from "mapbox-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 const DEFAULT_BASEMAP = "http://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}";
+
+mapboxgl.accessToken = "process.env.NEXT_PUBLIC_MAPBOX_TOKEN || """;
 
 const GeneralMap = ({
   basemap = DEFAULT_BASEMAP,
   layers,
-  center,
+  center = [0, 0], // [lng, lat] format for Mapbox
   zones,
   showPopup,
   setShowPopup,
 }) => {
   const mapRef = useRef(null);
-  const MAXZOOM = 22;
+  const mapContainerRef = useRef(null);
+  const [mapInstance, setMapInstance] = useState(null);
   const [selectedZone, setSelectedZone] = useState(null);
-  const [cutoutStyle, setCutoutStyle] = useState({ display: "none" });
-  const [cutoutPosition, setCutoutPosition] = useState({
-    top: 0,
-    left: 0,
-    width: 0,
-    height: 0,
-  });
 
-  const handleMapClick = (e) => {
-    setShowPopup(true);
+  useEffect(() => {
+    // Initialize the map
+    const map = new mapboxgl.Map({
+      container: mapContainerRef.current,
+      style: {
+        version: 8,
+        sources: {
+          basemap: {
+            type: "raster",
+            tiles: [basemap],
+            tileSize: 256,
+          },
+        },
+        layers: [
+          {
+            id: "basemap",
+            type: "raster",
+            source: "basemap",
+            minzoom: 0,
+            maxzoom: 22,
+          },
+        ],
+      },
+      center,
+      zoom: 17,
+    });
+
+    // Add navigation controls
+    map.addControl(
+      new mapboxgl.NavigationControl({ showZoom: false }),
+      "top-right"
+    );
+
+    map.on("load", () => {
+      setMapInstance(map);
+    });
+
+    return () => {
+      map.remove();
+    };
+  }, [basemap, center]);
+
+  // Handle zone clicks
+  const handleZoneClick = (zone) => {
+    if (selectedZone === zone) {
+      setSelectedZone(null);
+    } else {
+      setSelectedZone(zone);
+      if (mapInstance) {
+        const bounds = zone.geometry.coordinates.flat(2);
+        mapInstance.fitBounds(bounds, { padding: 20 });
+      }
+    }
   };
 
-  // Custom TileLayer with caching
-  const CachedTileLayer = ({ urlTemplate, ...props }) => {
-    const getTileKey = (x, y, z) => `tile_${z}_${x}_${y}`;
+  // Add GeoJSON layers
+  useEffect(() => {
+    if (!mapInstance || !zones) return;
 
-    const loadTileFromCache = async (key) => {
-      try {
-        const cachedData = localStorage.getItem(key);
-        if (!cachedData) return null;
+    mapInstance.on("click", "zones", (e) => {
+      const clickedZone = e.features[0];
+      handleZoneClick(clickedZone);
+      setShowPopup(true);
+    });
 
-        const { timestamp, dataUrl } = JSON.parse(cachedData);
+    mapInstance.addSource("zones", {
+      type: "geojson",
+      data: zones,
+    });
 
-        if (Date.now() - timestamp > 24 * 60 * 60 * 1000) {
-          localStorage.removeItem(key);
-          return null;
-        }
+    mapInstance.addLayer({
+      id: "zones",
+      type: "fill",
+      source: "zones",
+      paint: {
+        "fill-color": [
+          "case",
+          ["boolean", ["feature-state", "selected"], false],
+          "green",
+          "yellow",
+        ],
+        "fill-opacity": 0.5,
+      },
+    });
 
-        const response = await fetch(dataUrl);
-        if (!response.ok) {
-          localStorage.removeItem(key);
-          return null;
-        }
-
-        return dataUrl;
-      } catch (error) {
-        console.error("Error loading from cache:", error);
-        localStorage.removeItem(key);
-        return null;
+    return () => {
+      if (mapInstance.getLayer("zones")) {
+        mapInstance.removeLayer("zones");
+        mapInstance.removeSource("zones");
       }
     };
+  }, [mapInstance, zones]);
 
-    const saveTileToCache = async (key, blob) => {
-      try {
-        return new Promise((resolve) => {
-          const reader = new FileReader();
-          reader.onloadend = () => {
-            const cacheData = {
-              timestamp: Date.now(),
-              dataUrl: reader.result,
-            };
-            try {
-              localStorage.setItem(key, JSON.stringify(cacheData));
-              resolve(reader.result);
-            } catch (error) {
-              if (error.name === "QuotaExceededError") {
-                console.error("LocalStorage quota exceeded. Clearing cache.");
-                localStorage.clear();
-              }
-              resolve(null);
-            }
-          };
-          reader.readAsDataURL(blob);
-        });
-      } catch (error) {
-        console.error("Error saving to cache:", error);
-        return null;
-      }
-    };
-
-    const fetchTile = async (url) => {
-      try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error(`Failed to fetch tile: ${url}`);
-        return await response.blob();
-      } catch (error) {
-        console.error(`Error fetching tile:`, error);
-        return null;
-      }
-    };
-
-    useEffect(() => {
-      const originalCreateTile = L.TileLayer.prototype.createTile;
-
-      L.TileLayer.prototype.createTile = function (coords, done) {
-        const tile = document.createElement("img");
-        const key = getTileKey(coords.x, coords.y, coords.z);
-
-        const handleError = () => {
-          console.error("Tile load error");
-          done(new Error("Tile load error"));
-        };
-
-        const loadTile = async () => {
-          try {
-            const cachedTile = await loadTileFromCache(key);
-            if (cachedTile) {
-              tile.src = cachedTile;
-              done(null, tile);
-              return;
-            }
-
-            const url = urlTemplate
-              .replace("{x}", coords.x)
-              .replace("{y}", coords.y)
-              .replace("{z}", coords.z);
-
-            const tileBlob = await fetchTile(url);
-            if (!tileBlob) {
-              handleError();
-              return;
-            }
-
-            const dataUrl = await saveTileToCache(key, tileBlob);
-            if (dataUrl) {
-              tile.src = dataUrl;
-              done(null, tile);
-            } else {
-              handleError();
-            }
-          } catch (error) {
-            handleError();
-          }
-        };
-
-        loadTile();
-        return tile;
-      };
-
-      return () => {
-        L.TileLayer.prototype.createTile = originalCreateTile;
-      };
-    }, [urlTemplate]);
-
-    return <TileLayer url={urlTemplate} {...props} />;
-  };
-
+  // Custom Zoom Control
   const zoomIn = () => {
-    if (mapRef.current) {
-      mapRef.current.zoomIn();
+    if (mapInstance) {
+      mapInstance.zoomIn();
     }
   };
 
   const zoomOut = () => {
-    if (mapRef.current) {
-      mapRef.current.zoomOut();
+    if (mapInstance) {
+      mapInstance.zoomOut();
     }
   };
 
-  const defaultStyle = {
-    color: "yellow",
-    weight: 2,
-    fillColor: "yellow",
-    fillOpacity: 0.5,
-  };
-
-  const handleZoneClick = (e) => {
-    if (!e.target || !e.target.setStyle) {
-      console.error('Invalid layer clicked');
-      return;
-    }
-
-    const clickedZone = e.target;
-
-    try {
-      if (selectedZone === clickedZone) {
-        setSelectedZone(null);
-        clickedZone.setStyle(defaultStyle);
-        setCutoutStyle({ display: "none" });
-      } else {
-        if (selectedZone && selectedZone.setStyle) {
-          selectedZone.setStyle(defaultStyle);
-        }
-
-        clickedZone.setStyle({
-          ...defaultStyle,
-          fillColor: "green",
-        });
-
-        setSelectedZone(clickedZone);
-
-        const bounds = clickedZone.getBounds();
-        if (mapRef.current) {
-          const map = mapRef.current;
-          map.fitBounds(bounds);
-
-          const zoneCenter = bounds.getCenter();
-          const mapSize = map.getSize();
-          const offsetX = mapSize.x * -0.3;
-          const offsetPoint = map
-            .latLngToContainerPoint(zoneCenter)
-            .subtract([offsetX, 0]);
-          const newCenter = map.containerPointToLatLng(offsetPoint);
-
-          map.setView(newCenter, map.getZoom());
-        }
-
-        const zoneBounds = clickedZone.getBounds();
-        const cutout = {
-          top: zoneBounds.getNorthWest().lat + "%",
-          left: zoneBounds.getNorthWest().lng + "%",
-          width: (zoneBounds.getSouthEast().lng - zoneBounds.getNorthWest().lng) + "%",
-          height: (zoneBounds.getSouthEast().lat - zoneBounds.getNorthWest().lat) + "%",
-        };
-        
-        setCutoutPosition(cutout);
-        setCutoutStyle({
-          display: "block",
-          ...cutout,
-        });
-      }
-    } catch (error) {
-      console.error('Error handling zone click:', error);
-    }
-  };
-
-  const onEachFeature = (feature, layer) => {
-    if (layer) {
-      layer.on({
-        click: (e) => {
-          handleZoneClick(e);
-          handleMapClick(e);
-        },
-      });
-    }
-  };
-
-  const CustomZoomControl = () => {
-    return (
-      <div className={`absolute ${!showPopup ? "top-4 right-4" : "bottom-4 left-4"} bg-[#F9FAFB] rounded shadow-lg z-[10000000000000] flex flex-col rounded-xl`}>
-        <button
-          onClick={zoomIn}
-          className="text-3xl p-2 px-4 bg-[#F9FAFB] text-black hover:cursor-pointer hover:bg-purple-600 rounded-t-xl"
-        >
-          +
-        </button>
-        <hr className="border-t border-gray-500" />
-        <button
-          onClick={zoomOut}
-          className="text-3xl p-2 px-2 bg-[#F9FAFB] text-black hover:cursor-pointer hover:bg-purple-600 rounded-b-xl"
-        >
-          -
-        </button>
-      </div>
-    );
-  };
+  const CustomZoomControl = () => (
+    <div className="absolute top-4 right-4 bg-white rounded shadow-lg z-50 flex flex-col">
+      <button
+        onClick={zoomIn}
+        className="text-3xl p-2 bg-gray-200 hover:bg-gray-300 rounded-t"
+      >
+        +
+      </button>
+      <button
+        onClick={zoomOut}
+        className="text-3xl p-2 bg-gray-200 hover:bg-gray-300 rounded-b"
+      >
+        −
+      </button>
+    </div>
+  );
 
   return (
     <div style={{ position: "relative", height: "100%" }}>
-      <MapContainer
-        center={center}
-        zoom={17}
-        scrollWheelZoom={true}
-        className="h-[100%] w-[100%] z-0 rounded-lg"
-        maxZoom={MAXZOOM}
-        ref={mapRef}
-        zoomControl={false}
-      >
-        <CachedTileLayer
-          urlTemplate={basemap}
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          maxZoom={MAXZOOM}
-        />
-        {layers}
-
-        {zones && (
-          <GeoJSON
-            data={zones}
-            style={defaultStyle}
-            onEachFeature={onEachFeature}
-          />
-        )}
-        <CustomZoomControl />
-      </MapContainer>
-
       <div
-        style={{
-          ...cutoutStyle,
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: "rgba(0, 0, 0, 0.7)",
-          zIndex: 1000,
-          pointerEvents: "none",
-        }}
-      >
-        <div
-          style={{
-            position: "absolute",
-            backgroundColor: "transparent",
-            border: "2px solid white",
-            ...cutoutPosition,
-          }}
-        />
-      </div>
+        ref={mapContainerRef}
+        style={{ height: "100%", width: "100%", position: "relative" }}
+      />
+      <CustomZoomControl />
     </div>
   );
 };
