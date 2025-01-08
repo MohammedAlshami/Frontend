@@ -1,5 +1,5 @@
 import React from "react";
-import Calendar from "./CalendarComponent";
+// import Calendar from "./CalendarComponent";
 
 const EventCard = ({ event }: { event: Event }) => (
   <div className="p-6 rounded-xl border-2 border-black/5 shadow-sm">
@@ -61,43 +61,23 @@ const EventCard = ({ event }: { event: Event }) => (
   </div>
 );
 
-const CalendarUI = () => {
+const CalendarUI = ({
+  calendar,
+  events,
+}: {
+  calendar?: React.ReactNode;
+  events: Event;
+}) => {
   const days = Array.from({ length: 30 }, (_, i) => ({
     day: i + 1,
     isCurrentMonth: i >= 5 && i < 27,
   }));
-
-  const events: Event[] = [
-    {
-      id: 1,
-      date: "Jan 10, 2020 - 10:00 - 11:00",
-      title: "Meeting with friends",
-      description: "Meet-Up for Travel Destination Discussion",
-      color: "bg-purple-600",
-      time: "10:00 - 11:00",
-    },
-    {
-      id: 2,
-      date: "Jan 10, 2020 - 05:40 - 13:00",
-      title: "Visiting online course",
-      description: "Check updates for design course",
-      color: "bg-sky-400",
-      time: "05:40 - 13:00",
-    },
-    {
-      id: 3,
-      date: "Jan 14, 2020 - 10:00 - 11:00",
-      title: "Development meet",
-      description: "Discussion with developers for upcoming project",
-      color: "bg-emerald-600",
-      time: "10:00 - 11:00",
-    },
-  ];
+  
 
   return (
     <div className="flex flex-col gap-8">
       {" "}
-      <Calendar />
+      {calendar}
       <section className="bg-accent flex flex-col border-2 border-black-600/60 p-8 rounded-lg w-full border border-[#E0E1E6] shadow-sm">
         <h2 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5">
           Upcoming Events

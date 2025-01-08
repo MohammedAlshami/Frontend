@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "date": "2025-01-01",
+      "orderNumber": "482521350-857",
+      "status": "PAID",
+      "paymentMethod": "Card",
+      "product": "Subscription: Annual Plan",
+      "total": "US$198.00",
+      "file": "https://github.com/excid3/receipts/blob/main/examples/invoice.pdf?raw=true"
+    },
+    {
+      "id": 2,
+      "date": "2025-02-01",
+      "orderNumber": "482475520-431",
+      "status": "PAID",
+      "paymentMethod": "Card",
+      "product": "1 product",
+      "total": "US$7.76",
+      "file": "https://github.com/excid3/receipts/blob/main/examples/invoice.pdf?raw=true"
+    },
+    {
+      "id": 3,
+      "date": "2025-03-31",
+      "orderNumber": "482475527-936",
+      "status": "PAID",
+      "paymentMethod": "Card",
+      "product": "1 product",
+      "total": "US$9.68",
+      "file": "https://github.com/excid3/receipts/blob/main/examples/invoice.pdf?raw=true"
+    }
+  ]
+  

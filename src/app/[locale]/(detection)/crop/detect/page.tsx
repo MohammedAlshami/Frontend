@@ -28,7 +28,7 @@ const Page = () => {
       </div>
       <div className="flex justify-center items-center ">
         {step === 1 && (
-          <div className="flex flex-col sm:flex-row sm:space-x-4">
+          <div className="flex flex-col sm:flex-row gap-8">
             <div
               className="bg-[#14B8A6] w-96 h-96 flex justify-center items-center flex-col p-24 rounded-lg cursor-pointer hover:scale-105 transition-transform"
               onClick={() => handleCropSelection("palm")}

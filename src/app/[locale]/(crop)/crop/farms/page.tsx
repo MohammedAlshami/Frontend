@@ -5,6 +5,7 @@ import { RiAddLargeFill } from "@remixicon/react";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 const DetailItem = ({ icon, content }) => {
   return (
     <div className="flex gap-2 items-center text-sm text-white">
@@ -16,23 +17,22 @@ const DetailItem = ({ icon, content }) => {
 
 const Fields = () => {
   // Fields data array
-  const fields = [
-    {
-      id: 1,
-      name: "Kulim Pineapple Farm",
-      location: "Jalan Sungai Tiram, Johor Darul Ta'zim",
-      image: "/farms/pineapple_thumbnail.png",
-      href: "pineapple",
-    },
-    {
-      id: 2,
-      name: "Palm Oil Farm",
-      location: "Jalan Sungai Tiram, Johor Darul Ta'zim",
-      image: "/farms/palm_thumbnail.png",
-      href: "palm",
-    },
-  ];
 
+  const [farmsData, setFarmsData] = useState([]);
+
+  useEffect(() => {
+    const fetchFarmsData = async () => {
+      try {
+        const response = await fetch("/data/farmData.json");
+        const data = await response.json();
+        setFarmsData(data);
+      } catch (error) {
+        console.error("Error fetching billing data:", error);
+      }
+    };
+
+    fetchFarmsData();
+  }, []);
   return (
     <div>
       <div className="px-6 sm:px-12 flex flex-col gap-12 pb-12">
@@ -48,7 +48,7 @@ const Fields = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {fields.map((field) => (
+          {farmsData.map((field) => (
             <Link
               href={`/en/crop/map?map_id=${field.href}`}
               key={field.id}

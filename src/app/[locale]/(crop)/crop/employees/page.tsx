@@ -19,7 +19,7 @@ const EmployeesPage = () => {
 
   const fetchClients = async () => {
     try {
-      const response = await fetch("http://localhost:5000/v1/get-all", {
+      const response = await fetch("https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/get-all", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ table: "employee" }),
@@ -43,7 +43,7 @@ const EmployeesPage = () => {
   const handleAddClient = async () => {
     if (!formData.name || !formData.email) return;
     try {
-      const response = await fetch("http://127.0.0.1:5000/v1/employee/create", {
+      const response = await fetch("https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/employee/create", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -59,7 +59,7 @@ const EmployeesPage = () => {
 
   const handleUpdateClient = async () => {
     try {
-      await fetch("http://127.0.0.1:5000/v1/employee/update", {
+      await fetch("https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/employee/update", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

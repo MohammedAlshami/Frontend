@@ -3,36 +3,24 @@ import DataTable from "@/components/ui/DataTable";
 import BreadCrumbs from "@/components/ui/BreadCrumbs";
 import { Download, LayoutDashboard } from "lucide-react";
 import CardComponent from "@/components/ui/CardComponent";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Page = () => {
-  const [reports, setReports] = useState([
-    {
-      id: 1,
-      date: "2025-01-01",
-      report_id: "4825",
-      description:
-        "Detailed report on the crops harvested in 2024, including yield and quality analysis.",
-      file: "https://raw.githubusercontent.com/py-pdf/sample-files/refs/heads/main/025-attachment/with-attachment.pdf",
-    },
-    {
-      id: 2,
-      date: "2025-02-01",
-      report_id: "48247",
-      description:
-        "Summary of the single crop harvested in early 2025, including yield and quality analysis.",
-      file: "https://raw.githubusercontent.com/py-pdf/sample-files/refs/heads/main/025-attachment/with-attachment.pdf",
-    },
-    {
-      id: 3,
-      date: "2025-03-31",
-      report_id: "48247",
-      description:
-        "Report on the crop harvested at the end of the first quarter of 2025, including yield and quality analysis.",
-      file: "https://raw.githubusercontent.com/py-pdf/sample-files/refs/heads/main/025-attachment/with-attachment.pdf",
-    },
-  ]);
+  const [reports, setReports] = useState([]);
 
+  useEffect(() => {
+    const fetchReports = async () => {
+      try {
+        const response = await fetch("/data/reports.json");
+        const data = await response.json();
+        setReports(data);
+      } catch (error) {
+        console.error("Error fetching reports:", error);
+      }
+    };
+
+    fetchReports();
+  }, []);
   const columns = [
     { key: "date", header: "Date" },
     { key: "report_id", header: "Report ID" },
@@ -64,6 +52,7 @@ const Page = () => {
         columns={columns}
         enableExport
         exportFileName="reports_history"
+        isLoading={reports.length == 0}
       />
     </div>
   );

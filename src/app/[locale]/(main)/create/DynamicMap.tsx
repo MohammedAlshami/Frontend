@@ -67,7 +67,7 @@ const MapWithZones = () => {
   const [showModal, setShowModal] = useState(true);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/v1/field/get-all-field")
+    fetch("https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/field/get-all-field")
       .then((response) => response.json())
       .then((data) => {
         setGeojsonData(data);
@@ -147,7 +147,7 @@ const MapWithZones = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/v1/field/create", {
+      const response = await fetch("https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/field/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -164,7 +164,7 @@ const MapWithZones = () => {
 
       // Refresh the zones data
       const updatedZones = await fetch(
-        "http://127.0.0.1:5000/v1/field/get-all-field"
+        "https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/field/get-all-field"
       ).then((response) => response.json());
       setGeojsonData(updatedZones);
 

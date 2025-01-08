@@ -1,44 +1,27 @@
 // Billing page.tsx
-'use client';
+"use client";
 import DataTable from "@/components/ui/DataTable";
 import BreadCrumbs from "@/components/ui/BreadCrumbs";
 import { Download, LayoutDashboard } from "lucide-react";
 import CardComponent from "@/components/ui/CardComponent";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Page = () => {
-  const [billingData, setReports] = useState([
-    {
-      id: 1,
-      date: "2025-01-01",
-      orderNumber: "482521350-857",
-      status: "PAID",
-      paymentMethod: "Card",
-      product: "Subscription: Annual Plan",
-      total: "US$198.00",
-      file: "https://github.com/excid3/receipts/blob/main/examples/invoice.pdf?raw=true",
-    },
-    {
-      id: 2,
-      date: "2025-02-01",
-      orderNumber: "482475520-431",
-      status: "PAID",
-      paymentMethod: "Card",
-      product: "1 product",
-      total: "US$7.76",
-      file: "https://github.com/excid3/receipts/blob/main/examples/invoice.pdf?raw=true",
-    },
-    {
-      id: 3,
-      date: "2025-03-31",
-      orderNumber: "482475527-936",
-      status: "PAID",
-      paymentMethod: "Card",
-      product: "1 product",
-      total: "US$9.68",
-      file: "https://github.com/excid3/receipts/blob/main/examples/invoice.pdf?raw=true",
-    },
-  ]);
+  const [billingData, setBillingData] = useState([]);
+
+  useEffect(() => {
+    const fetchBillingData = async () => {
+      try {
+        const response = await fetch("/data/billingData.json");
+        const data = await response.json();
+        setBillingData(data);
+      } catch (error) {
+        console.error("Error fetching billing data:", error);
+      }
+    };
+
+    fetchBillingData();
+  }, []);
 
   const columns = [
     { key: "date", header: "Date" },
@@ -82,6 +65,7 @@ const Page = () => {
         columns={columns}
         enableExport
         exportFileName="billing_history"
+        isLoading={billingData.length == 0}
       />
     </div>
   );

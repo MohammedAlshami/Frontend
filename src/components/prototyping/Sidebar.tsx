@@ -8,6 +8,7 @@ import {
   ChevronRight,
   CreditCard,
   EllipsisVertical,
+  Home,
   LayoutDashboard,
   List,
   ListCollapse,
@@ -34,6 +35,11 @@ import {
 } from "@nextui-org/react";
 import { Icon } from "@iconify/react";
 const links = [
+  {
+    href: "/en/crop",
+    label: "Home",
+    icon: <Home className="w-5 h-5 text-icon " />,
+  },
   {
     href: "/en/crop/dashboard",
     label: "Dashboard",
@@ -64,11 +70,11 @@ const links = [
     label: "Tasks",
     icon: <ListTodo className="w-5 h-5 text-icon " />,
   },
-  {
-    href: "/en/crop/schedule",
-    label: "Schedule",
-    icon: <Calendar className="w-5 h-5 text-icon " />,
-  },
+  // {
+  //   href: "/en/crop/schedule",
+  //   label: "Schedule",
+  //   icon: <Calendar className="w-5 h-5 text-icon " />,
+  // },
 
   {
     href: "/en/crop/billing",
@@ -286,7 +292,7 @@ const Sidebar = ({ children, Minimize }) => {
                   </div>
                 </DropdownTrigger>
                 <DropdownMenu aria-label="Link Actions">
-                  <DropdownItem key="home" href="/en/logout">
+                  <DropdownItem key="home" href="/en">
                     Logout
                   </DropdownItem>
                 </DropdownMenu>

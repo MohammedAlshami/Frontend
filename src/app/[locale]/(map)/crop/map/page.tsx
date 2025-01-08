@@ -4937,7 +4937,7 @@ const MapPage = () => {
   //     .catch((error) => console.error("Error fetching geojson data:", error));
   // }, []);
   // useEffect(() => {
-  //   fetch("http://127.0.0.1:5000/v1/field/get-all-field")
+  //   fetch("https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/field/get-all-field")
   //     .then((response) => response.json())
   //     .then((data) => setZonesData(data))
   //     .catch((error) => console.error("Error fetching geojson data:", error));
