@@ -13,8 +13,7 @@ import {
 } from "lucide-react";
 import { IconDetails } from "@tabler/icons-react";
 import { RiTodoLine } from "@remixicon/react";
-import 'mapbox-gl/dist/mapbox-gl.css';
-
+import "mapbox-gl/dist/mapbox-gl.css";
 
 // Set Mapbox access token
 mapboxgl.accessToken =
@@ -111,7 +110,14 @@ const TaskDetails = () => {
         </div>
 
         {/* Map View */}
-        <div className="px-6 mb-6">
+        <div
+          className="px-6 mb-6"
+          onClick={() => {
+            router.push(
+              "/en/mobile/map/view?map_id=pineapple"
+            );
+          }}
+        >
           <div className="h-40 rounded-xl overflow-hidden">
             <div
               ref={mapContainerRef}

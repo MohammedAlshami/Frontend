@@ -84,8 +84,21 @@ const MapPage = ({
         <DateRangePicker onClose={handleCloseDateRangePicker} />
       )} */}
 
-      <div className="rounded-full bg-gray-50 m-4 absolute top-0 left-0 z-10  p-2 transform transition-transform duration-300 text-black hover:-translate-y-2 cursor-pointer" onClick={()=> {router.back()}}>
+      <div
+        className="sm:hidden rounded-full bg-gray-50 m-4 absolute top-0 left-0 z-10  p-2 transform transition-transform duration-300 text-black hover:-translate-y-2 cursor-pointer"
+        onClick={() => {
+          router.back();
+        }}
+      >
         <ArrowLeft />
+      </div>
+      <div
+        className="hidden sm:block rounded-lg ml-5 bg-gray-50 m-4 absolute top-0 left-0 z-10  p-2 transform transition-transform duration-300 text-black hover:-translate-y-2 cursor-pointer"
+        onClick={() => {
+          setExpandMap(!expandedMap);
+        }}
+      >
+        <Expand />
       </div>
 
       <GeneralMap

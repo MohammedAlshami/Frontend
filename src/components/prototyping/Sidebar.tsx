@@ -55,16 +55,16 @@ const links = [
     label: "Employees",
     icon: <Users className="w-5 h-5 text-icon " />,
   },
-  {
-    href: "/en/crop/detect",
-    label: "Detect",
-    icon: (
-      <Icon
-        icon="fluent:scan-camera-16-filled"
-        className="w-5 h-5 text-icon "
-      />
-    ),
-  },
+  // {
+  //   href: "/en/crop/detect",
+  //   label: "Detect",
+  //   icon: (
+  //     <Icon
+  //       icon="fluent:scan-camera-16-filled"
+  //       className="w-5 h-5 text-icon "
+  //     />
+  //   ),
+  // },
   {
     href: "/en/crop/tasks",
     label: "Tasks",
