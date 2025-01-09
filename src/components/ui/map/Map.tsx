@@ -10,8 +10,10 @@ import WeatherCard from "./WeatherCard";
 import { MapOptions } from "./Mapoptions";
 import { FaMap, FaSatellite } from "react-icons/fa";
 import MapPopup from "../MapPopup";
-import { Expand } from "lucide-react";
+import { ArrowLeft, Expand } from "lucide-react";
 import { Skeleton } from "@nextui-org/react";
+
+import { useRouter } from "next/navigation";
 
 const MapPage = ({
   basemap = DEFAULT_BASEMAP,
@@ -22,10 +24,11 @@ const MapPage = ({
   setExpandMap,
   expandedMap,
   setLoading,
-  loading
+  loading,
 }) => {
   const [showDateRangePicker, setShowDateRangePicker] = useState(true);
 
+  const router = useRouter();
   const handleOpenDateRangePicker = () => {
     setShowDateRangePicker(true);
   };
@@ -81,7 +84,10 @@ const MapPage = ({
         <DateRangePicker onClose={handleCloseDateRangePicker} />
       )} */}
 
-   
+      <div className="rounded-full bg-gray-50 m-4 absolute top-0 left-0 z-10  p-2 transform transition-transform duration-300 text-black hover:-translate-y-2 cursor-pointer" onClick={()=> {router.back()}}>
+        <ArrowLeft />
+      </div>
+
       <GeneralMap
         basemap={DEFAULT_BASEMAP} // Ensure the basemap is set
         layers={<TileLayer url={basemapUrls[selectedLayer]} />}
@@ -94,23 +100,23 @@ const MapPage = ({
       />
 
       {/* Overlay Controls */}
-      <div className="absolute top-0 right-0 z-10 p-4">
-        <div className="flex flex-col gap-12">{/* <WeatherCard /> */}</div>
+      {/* <div className="absolute top-0 right-0 z-10 p-4">
+        <div className="flex flex-col gap-12"><WeatherCard /></div>
         {showPopup && (
           <MapPopup showPopup={showPopup} setShowPopup={setShowPopup} />
         )}
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         className="absolute top-3 left-6  flex justify-center items-center mb-8 z-10 transform transition-transform duration-300 text-black hover:-translate-y-2 cursor-pointer"
         onClick={() => setExpandMap(!expandedMap)}
       >
         <div className=" bg-accent p-2 bg-gray-100 rounded-xl flex items-center justify-center hover:bg-black hover:text-white">
           <Expand className="w-6 h-6" />
         </div>
-      </div>
+      </div> */}
       {/* MapOptions positioned at bottom middle */}
-      <div className="absolute bottom-0 left-6 sm:left-0 sm:right-0 flex justify-center items-center mb-8 z-10">
+      {/* <div className="absolute bottom-0 left-6 sm:left-0 sm:right-0 flex justify-center items-center mb-8 z-10">
         <div className="flex flex-row-reverse sm:flex-col gap-8">
           {selectedLayer == "Layers" && (
             <MapLayerSelector
@@ -131,7 +137,7 @@ const MapPage = ({
             selectedOption={selectedLayer}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

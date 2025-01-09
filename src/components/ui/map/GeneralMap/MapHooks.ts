@@ -17,9 +17,51 @@ export const useInitializeMap = ({
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
-      style: "mapbox://styles/mapbox/satellite-v9",
+      style: {
+        version: 8,
+        sources: {
+          "google-satellite": {
+            type: "raster",
+            tiles: [
+              // 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
+              "https://zappa-drangue-deployments-test.s3.ap-southeast-1.amazonaws.com/MyHackathonMaps/myhackatho/{z}/{x}/{y}.png", // Satellite
+              // For regular roadmap, use: 'https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}'
+              // For terrain, use: 'https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}'
+              // For hybrid, use: 'https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}'
+            ],
+            tileSize: 256,
+          },
+          "default-map": {
+            type: "raster",
+            tiles: [
+              "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+              // "https://zappa-drangue-deployments-test.s3.ap-southeast-1.amazonaws.com/MyHackathonMaps/myhackatho/{z}/{x}/{y}.png", // Satellite
+              // For regular roadmap, use: 'https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}'
+              // For terrain, use: 'https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}'
+              // For hybrid, use: 'https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}'
+            ],
+            tileSize: 256,
+          },
+        },
+        layers: [
+          {
+            id: "default-satellite-layer",
+            type: "raster",
+            source: "default-map",
+            minzoom: 0,
+            maxzoom: 22,
+          },
+          {
+            id: "google-satellite-layer",
+            type: "raster",
+            source: "google-satellite",
+            minzoom: 0,
+            maxzoom: 22,
+          },
+        ],
+      },
       center,
-      zoom: 15,
+      zoom: 19,
       pitch: 0,
     });
 
@@ -30,21 +72,6 @@ export const useInitializeMap = ({
 
     map.on("load", () => {
       setMapInstance(map);
-      map.addSource("custom-xyz", {
-        type: "raster",
-        tiles: [
-          "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", // Replace with your XYZ style URL
-        ],
-        tileSize: 256,
-      });
-
-      // Add a layer to use the custom XYZ source
-      map.addLayer({
-        id: "custom-xyz-layer",
-        type: "raster",
-        source: "custom-xyz",
-        paint: {},
-      });
 
       map.addSource("trees", { type: "geojson", data: sampleTrees });
 

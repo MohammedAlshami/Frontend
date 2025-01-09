@@ -15,17 +15,22 @@ const ImageComponent = ({ imageURL }: ImageProps) => {
   return (
     <>
       <div className="">
-        {!isModalOpen && (
+        {/* {!isModalOpen && (
           <img
             src={imageURL}
             alt="Rendered Output"
-       
             className="border-4 h-[30rem] border-gray-300 object-cover rounded-xl"
             onClick={handleImageClick}
           />
-        )}
+        )} */}
+        <img
+          src={imageURL}
+          alt="Rendered Output"
+          className="border-4 w-full h-[30rem] border-gray-300 object-cover rounded-xl"
+          onClick={handleImageClick}
+        />
       </div>
-      {isModalOpen &&
+      {/* {isModalOpen &&
         ReactDOM.createPortal(
           <div
             className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-64 z-[1000000000000]"
@@ -41,7 +46,7 @@ const ImageComponent = ({ imageURL }: ImageProps) => {
             </div>
           </div>,
           document.body
-        )}
+        )} */}
     </>
   );
 };

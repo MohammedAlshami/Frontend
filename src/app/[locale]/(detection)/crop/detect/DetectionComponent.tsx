@@ -271,17 +271,27 @@ const DetectionComponent = ({ fruit, type }) => {
       }
     };
   };
-  const handleSendClick = () => {
-    setModalVisible(true);
-    setModalMessage("Adding detected images to the tree...");
-    // Simulate a delay for processing
-    setTimeout(() => {
-      setModalMessage("Successfully added!");
-      setTimeout(() => {
-        setModalVisible(false);
-        router.push("/");
-      }, 1500);
-    }, 3000);
+  const handleSendClick = async () => {
+    if (!renderedImage) {
+      console.error("No image to validate.");
+      return;
+    }
+
+    try {
+      // Fetch the blob from the rendered image URL
+      const response = await fetch(renderedImage);
+      const blob = await response.blob();
+
+      // Create a URL for the blob
+      const blobUrl = URL.createObjectURL(blob);
+
+      // Pass the blob URL as a query parameter (or you can use it directly in the UI)
+      router.push(
+        `/en/mobile/map/detection?image=${encodeURIComponent(blobUrl)}`
+      );
+    } catch (error) {
+      console.error("Error sending image:", error);
+    }
   };
 
   return (
@@ -303,21 +313,21 @@ const DetectionComponent = ({ fruit, type }) => {
       )}
       <div
         className={` ${
-          renderedImage ? "w-9/12" : "5/12"
+          renderedImage ? "w-11/12" : "5/12"
         } text-white flex flex-col items-center justify-center gap-12`}
       >
         {!renderedImage && (
           <>
-            <img src="/undraw_the_search_s0xf.svg" alt="" className="h-96 " />
-            <h2 className="font-bold text-3xl text-center">
+            <img src="/undraw_the_search_s0xf.svg" alt="" className="h-80 " />
+            <h2 className="font-bold text-2xl sm:text-3xl text-center text-black">
               Start detecting by clicking the button
             </h2>
           </>
         )}
 
         {renderedImage && <ImageComponent imageURL={renderedImage} />}
-        <div className="flex w-full gap-4">
-          <label className="text-xl bg-teal-500 text-white rounded-xl py-2 px-4 flex flex-row-reverse justify-center font-boold items-center gap-2 cursor-pointer z-50 w-full">
+        <div className="flex w-full gap-4 ">
+          <label className=" w-full text-xl bg-teal-500 text-white rounded-xl py-2 px-4 flex flex-row-reverse justify-center font-boold items-center gap-2 cursor-pointer z-50 w-full">
             <Upload size={24} />
             <span className="font-bold">Upload</span>
             <input
@@ -330,10 +340,10 @@ const DetectionComponent = ({ fruit, type }) => {
           {renderedImage && (
             <a
               onClick={handleSendClick}
-              className="text-xl bg-teal-500 text-white rounded-xl py-2 px-4 flex flex-row-reverse justify-center font-boold items-center gap-2 cursor-pointer z-50 w-full"
+              className="w-full text-xl bg-teal-500 text-white rounded-xl py-2 px-4 flex flex-row-reverse justify-center font-bold items-center gap-2 cursor-pointer z-50 w-full"
             >
               <Send size={24} />
-              <span className="font-bold">Send</span>
+              <span className="font-bold">Validate</span>
             </a>
           )}
         </div>
