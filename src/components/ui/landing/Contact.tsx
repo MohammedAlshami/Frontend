@@ -75,7 +75,7 @@ const Contact = () => {
       <div className="mt-12 max-w-lg mx-auto">
         {/* <!-- Card --> */}
         <div className="flex flex-col bg-gradient-to-b from-transparent to-teal-500/20  border rounded-xl p-4 sm:p-6 lg:p-8 border-2 border-blue-800/10">
-          <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-neutral-200">
+          <h2 className="mb-8 text-xl font-semibold text-violet-700 ">
             Fill in the form
           </h2>
 
@@ -86,7 +86,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="first_name"
-                    className="block mb-2 text-sm text-icon font-medium dark:text-white"
+                    className="block mb-2 text-sm text-gray-700 font-medium "
                   >
                     First Name
                   </label>
@@ -96,14 +96,14 @@ const Contact = () => {
                     id="first_name"
                     value={form_data.first_name}
                     onChange={handle_change}
-                    className="border border-gray-400 py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                    className="border border-gray-400 py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="last_name"
-                    className="block mb-2 text-sm text-icon font-medium dark:text-white"
+                    className="block mb-2 text-sm text-gray-700 font-medium "
                   >
                     Last Name
                   </label>
@@ -113,7 +113,7 @@ const Contact = () => {
                     id="last_name"
                     value={form_data.last_name}
                     onChange={handle_change}
-                    className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                    className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
                   />
                 </div>
               </div>
@@ -124,7 +124,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block mb-2 text-sm text-icon font-medium dark:text-white"
+                    className="block mb-2 text-sm text-gray-700 font-medium "
                   >
                     Email
                   </label>
@@ -135,14 +135,14 @@ const Contact = () => {
                     autoComplete="email"
                     value={form_data.email}
                     onChange={handle_change}
-                    className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                    className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="phone_number"
-                    className="block mb-2 text-sm text-icon font-medium dark:text-white"
+                    className="block mb-2 text-sm text-gray-700 font-medium "
                   >
                     Phone Number
                   </label>
@@ -152,7 +152,7 @@ const Contact = () => {
                     id="phone_number"
                     value={form_data.phone_number}
                     onChange={handle_change}
-                    className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                    className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
                   />
                 </div>
               </div>
@@ -161,7 +161,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="details"
-                  className="block mb-2 text-sm text-icon font-medium dark:text-white"
+                  className="block mb-2 text-sm text-gray-700 font-medium "
                 >
                   Details
                 </label>
@@ -179,14 +179,14 @@ const Contact = () => {
             <div className="mt-6 grid">
               <button
                 type="submit"
-                className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-violet-700 disabled:opacity-50 disabled:pointer-events-none"
+                className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-violet-600 text-white hover:bg-violet-700 disabled:opacity-50 disabled:pointer-events-none"
               >
                 Send inquiry
               </button>
             </div>
 
             <div className="mt-3 text-center">
-              <p className="text-sm text-gray-500 dark:text-neutral-500">
+              <p className="text-sm text-gray-500 ">
                 We'll get back to you in 1-2 business days.
               </p>
             </div>
@@ -198,7 +198,7 @@ const Contact = () => {
       {/* Success Modal */}
       {modal.is_open && modal.is_success && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
-          <div className="bg-accent p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <p className="text-lg font-semibold text-green-600">
               {modal.message}
             </p>
@@ -215,7 +215,7 @@ const Contact = () => {
       {/* Error Modal */}
       {modal.is_open && !modal.is_success && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
-          <div className="bg-accent p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <p className="text-lg font-semibold text-red-600">
               {modal.message}
             </p>

@@ -30,10 +30,13 @@ const Stats = () => {
           variants={itemVariants}
         >
           <div className="mb-8">
-            <h2 className="mb-2 text-3xl text-gray-800 font-bold lg:text-4xl dark:text-neutral-200">
+          <h3 className="text-violet-700 font-semibold">
+            Statistics
+          </h3>
+            <h2 className="mb-2 text-3xl text-gray-800 font-bold lg:text-4xl ">
               Impact and Results
             </h2>
-            <p className="text-gray-600 dark:text-neutral-400">
+            <p className="text-gray-600 ">
               Discover the transformative effects of AI and precision
               agriculture on farming practices and outcomes.
             </p>
@@ -46,7 +49,7 @@ const Stats = () => {
         >
           <div className="space-y-6 sm:space-y-8">
             <motion.ul
-              className="grid grid-cols-2 divide-y divide-y-2 divide-x divide-x-2 divide-gray-200 overflow-hidden dark:divide-neutral-700"
+              className="grid grid-cols-2 divide-y divide-y-2 divide-x divide-x-2 divide-gray-200 overflow-hidden "
               variants={containerVariants}
             >
               {[
@@ -73,10 +76,10 @@ const Stats = () => {
                   className="flex flex-col -m-0.5 p-4 sm:p-8"
                   variants={itemVariants}
                 >
-                  <div className="flex items-end gap-x-2 text-3xl sm:text-5xl font-bold text-gray-800 mb-2 dark:text-neutral-200">
+                  <div className="flex items-end gap-x-2 text-3xl sm:text-5xl font-bold text-teal-500 mb-2 ">
                     {stat.value}
                   </div>
-                  <p className="text-sm sm:text-base text-gray-600 dark:text-neutral-400">
+                  <p className="text-sm sm:text-base text-gray-600 ">
                     {stat.description}
                   </p>
                 </motion.li>
