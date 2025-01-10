@@ -2,25 +2,25 @@
   {
     "id": 1,
     "date": "Jan 10, 2020 - 10:00 - 11:00",
-    "title": "Meeting with friends",
-    "description": "Meet-Up for Travel Destination Discussion",
-    "color": "bg-purple-600",
+    "title": "Palm Harvesting Preparation",
+    "description": "Prepare tools and equipment for palm harvesting",
+    "color": "bg-green-600",
     "time": "10:00 - 11:00"
   },
   {
     "id": 2,
     "date": "Jan 10, 2020 - 05:40 - 13:00",
-    "title": "Visiting online course",
-    "description": "Check updates for design course",
-    "color": "bg-sky-400",
+    "title": "Palm Harvesting",
+    "description": "Harvest palms in the designated area",
+    "color": "bg-yellow-400",
     "time": "05:40 - 13:00"
   },
   {
     "id": 3,
     "date": "Jan 14, 2020 - 10:00 - 11:00",
-    "title": "Development meet",
-    "description": "Discussion with developers for upcoming project",
-    "color": "bg-emerald-600",
+    "title": "Post-Harvest Meeting",
+    "description": "Discuss the results and plan for the next harvest",
+    "color": "bg-orange-600",
     "time": "10:00 - 11:00"
   }
 ]

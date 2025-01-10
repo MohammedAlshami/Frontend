@@ -4984,72 +4984,33 @@ const MapPage = () => {
   };
   const selectedConfig = mapConfigs[map_id];
 
-  const [fields, setFields] = useState([
-    {
-      id: "F001",
-      field1: "North Field",
-      field2: "Apple Orchard",
-      numberOfTrees: 150,
-      totalFruits: 3000,
-      harvestedFruits: 1500,
-    },
-    {
-      id: "F002",
-      field1: "South Field",
-      field2: "Orange Grove",
-      numberOfTrees: 200,
-      totalFruits: 4000,
-      harvestedFruits: 2800,
-    },
-    {
-      id: "F003",
-      field1: "East Field",
-      field2: "Mango Plantation",
-      numberOfTrees: 100,
-      totalFruits: 2000,
-      harvestedFruits: 800,
-    },
-    {
-      id: "F004",
-      field1: "West Field",
-      field2: "Pear Orchard",
-      numberOfTrees: 175,
-      totalFruits: 3500,
-      harvestedFruits: 2100,
-    },
-    {
-      id: "F005",
-      field1: "Central Field",
-      field2: "Peach Grove",
-      numberOfTrees: 225,
-      totalFruits: 4500,
-      harvestedFruits: 3200,
-    },
-    {
-      id: "F006",
-      field1: "Northwest Field",
-      field2: "Plum Orchard",
-      numberOfTrees: 125,
-      totalFruits: 2500,
-      harvestedFruits: 1200,
-    },
-    {
-      id: "F007",
-      field1: "Southeast Field",
-      field2: "Cherry Orchard",
-      numberOfTrees: 160,
-      totalFruits: 3200,
-      harvestedFruits: 1600,
-    },
-    {
-      id: "F008",
-      field1: "Northeast Field",
-      field2: "Apricot Grove",
-      numberOfTrees: 180,
-      totalFruits: 3600,
-      harvestedFruits: 2400,
-    },
-  ]);
+  const [fields, setFields] = useState([]);
+
+  useEffect(() => {
+    const fetchReports = async () => {
+      try {
+        const response = await fetch(
+          "https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/get-all",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              table: "field",
+            }),
+          }
+        );
+
+        const data = await response.json();
+        setFields(data);
+      } catch (error) {
+        console.error("Error fetching reports:", error);
+      }
+    };
+
+    fetchReports();
+  }, []);
   return (
     <div
       className={` flex flex-col  gap-12 ${

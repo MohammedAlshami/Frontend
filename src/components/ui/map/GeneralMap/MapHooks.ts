@@ -185,7 +185,7 @@ export const useTreeInteractions = ({ mapInstance }) => {
       treePopup
         .setLngLat(coordinates)
         .setHTML(
-          `<strong>Type:</strong> ${treeType}<br><strong>Height:</strong> ${height}m`
+          `<strong>Type:</strong><br><strong>Height:</strong>`
         )
         .addTo(mapInstance);
     });

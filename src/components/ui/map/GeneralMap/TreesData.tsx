@@ -5,7 +5,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18,7 +18,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -31,7 +31,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -44,7 +44,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -57,7 +57,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -70,7 +70,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -83,7 +83,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -96,7 +96,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -109,7 +109,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -122,7 +122,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -135,7 +135,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -148,7 +148,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -161,7 +161,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -174,7 +174,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -187,7 +187,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -200,7 +200,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -213,7 +213,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -226,7 +226,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -239,7 +239,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -252,7 +252,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -265,7 +265,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -278,7 +278,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -291,7 +291,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -304,7 +304,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -317,7 +317,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -330,7 +330,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -343,7 +343,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -356,7 +356,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -369,7 +369,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -382,7 +382,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -395,7 +395,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -408,7 +408,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -421,7 +421,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -434,7 +434,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -447,7 +447,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -460,7 +460,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -473,7 +473,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -486,7 +486,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -499,7 +499,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -512,7 +512,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -525,7 +525,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -538,7 +538,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -551,7 +551,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -564,7 +564,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -577,7 +577,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -590,7 +590,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -603,7 +603,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -616,7 +616,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -629,7 +629,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -642,7 +642,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -655,7 +655,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -668,7 +668,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -681,7 +681,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -694,7 +694,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -707,7 +707,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -720,7 +720,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -733,7 +733,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -746,7 +746,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -759,7 +759,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -772,7 +772,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -785,7 +785,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -798,7 +798,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -811,7 +811,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -824,7 +824,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -837,7 +837,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -850,7 +850,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -863,7 +863,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -876,7 +876,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -889,7 +889,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -902,7 +902,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -915,7 +915,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -928,7 +928,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -941,7 +941,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -954,7 +954,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -967,7 +967,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -980,7 +980,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -993,7 +993,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -1006,7 +1006,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -1019,7 +1019,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -1032,7 +1032,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -1045,7 +1045,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -1058,7 +1058,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "not checked",
       },
@@ -1071,7 +1071,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1084,7 +1084,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1097,7 +1097,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1110,7 +1110,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1123,7 +1123,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1136,7 +1136,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1149,7 +1149,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1162,7 +1162,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1175,7 +1175,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1188,7 +1188,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1201,7 +1201,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1214,7 +1214,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1227,7 +1227,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1240,7 +1240,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1253,7 +1253,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1266,7 +1266,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1279,7 +1279,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1292,7 +1292,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1305,7 +1305,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1318,7 +1318,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1331,7 +1331,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1344,7 +1344,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1357,7 +1357,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1370,7 +1370,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1383,7 +1383,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1396,7 +1396,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1409,7 +1409,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1422,7 +1422,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1435,7 +1435,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1448,7 +1448,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1461,7 +1461,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1474,7 +1474,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1487,7 +1487,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1500,7 +1500,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1513,7 +1513,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1526,7 +1526,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1539,7 +1539,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1552,7 +1552,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1565,7 +1565,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1578,7 +1578,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1591,7 +1591,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1604,7 +1604,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1617,7 +1617,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1630,7 +1630,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1643,7 +1643,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1656,7 +1656,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1669,7 +1669,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1682,7 +1682,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1695,7 +1695,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1708,7 +1708,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1721,7 +1721,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1734,7 +1734,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1747,7 +1747,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1760,7 +1760,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1773,7 +1773,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1786,7 +1786,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1799,7 +1799,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1812,7 +1812,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1825,7 +1825,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1838,7 +1838,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1851,7 +1851,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1864,7 +1864,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1877,7 +1877,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1890,7 +1890,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1903,7 +1903,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1916,7 +1916,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1929,7 +1929,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1942,7 +1942,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1955,7 +1955,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1968,7 +1968,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1981,7 +1981,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -1994,7 +1994,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2007,7 +2007,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2020,7 +2020,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2033,7 +2033,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2046,7 +2046,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2059,7 +2059,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2072,7 +2072,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2085,7 +2085,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2098,7 +2098,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2111,7 +2111,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2124,7 +2124,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2137,7 +2137,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2150,7 +2150,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2163,7 +2163,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2176,7 +2176,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2189,7 +2189,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2202,7 +2202,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2215,7 +2215,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2228,7 +2228,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2241,7 +2241,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2254,7 +2254,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2267,7 +2267,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2280,7 +2280,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2293,7 +2293,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2306,7 +2306,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2319,7 +2319,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2332,7 +2332,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2345,7 +2345,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2358,7 +2358,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2371,7 +2371,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2384,7 +2384,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2397,7 +2397,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2410,7 +2410,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2423,7 +2423,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2436,7 +2436,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2449,7 +2449,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2462,7 +2462,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2475,7 +2475,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2488,7 +2488,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2501,7 +2501,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2514,7 +2514,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2527,7 +2527,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2540,7 +2540,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2553,7 +2553,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2566,7 +2566,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2579,7 +2579,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2592,7 +2592,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2605,7 +2605,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2618,7 +2618,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2631,7 +2631,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2644,7 +2644,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2657,7 +2657,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2670,7 +2670,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2683,7 +2683,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2696,7 +2696,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2709,7 +2709,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2722,7 +2722,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2735,7 +2735,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2748,7 +2748,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2761,7 +2761,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2774,7 +2774,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2787,7 +2787,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2800,7 +2800,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2813,7 +2813,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2826,7 +2826,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2839,7 +2839,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2852,7 +2852,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2865,7 +2865,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2878,7 +2878,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2891,7 +2891,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2904,7 +2904,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2917,7 +2917,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2930,7 +2930,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2943,7 +2943,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2956,7 +2956,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2969,7 +2969,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2982,7 +2982,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -2995,7 +2995,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3008,7 +3008,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3021,7 +3021,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3034,7 +3034,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3047,7 +3047,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3060,7 +3060,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3073,7 +3073,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3086,7 +3086,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3099,7 +3099,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3112,7 +3112,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3125,7 +3125,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3138,7 +3138,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3151,7 +3151,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3164,7 +3164,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3177,7 +3177,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3190,7 +3190,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3203,7 +3203,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3216,7 +3216,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3229,7 +3229,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3242,7 +3242,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3255,7 +3255,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3268,7 +3268,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3281,7 +3281,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3294,7 +3294,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3307,7 +3307,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3320,7 +3320,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3333,7 +3333,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3346,7 +3346,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3359,7 +3359,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3372,7 +3372,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3385,7 +3385,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3398,7 +3398,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3411,7 +3411,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3424,7 +3424,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3437,7 +3437,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3450,7 +3450,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3463,7 +3463,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3476,7 +3476,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3489,7 +3489,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3502,7 +3502,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3515,7 +3515,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3528,7 +3528,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3541,7 +3541,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3554,7 +3554,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3567,7 +3567,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3580,7 +3580,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3593,7 +3593,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3606,7 +3606,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3619,7 +3619,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3632,7 +3632,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3645,7 +3645,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3658,7 +3658,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3671,7 +3671,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3684,7 +3684,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3697,7 +3697,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3710,7 +3710,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3723,7 +3723,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3736,7 +3736,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3749,7 +3749,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3762,7 +3762,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3775,7 +3775,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3788,7 +3788,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3801,7 +3801,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3814,7 +3814,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3827,7 +3827,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3840,7 +3840,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3853,7 +3853,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3866,7 +3866,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3879,7 +3879,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3892,7 +3892,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3905,7 +3905,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3918,7 +3918,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3931,7 +3931,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3944,7 +3944,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3957,7 +3957,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3970,7 +3970,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3983,7 +3983,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -3996,7 +3996,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4009,7 +4009,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4022,7 +4022,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4035,7 +4035,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4048,7 +4048,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4061,7 +4061,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4074,7 +4074,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4087,7 +4087,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4100,7 +4100,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4113,7 +4113,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4126,7 +4126,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4139,7 +4139,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4152,7 +4152,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4165,7 +4165,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4178,7 +4178,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4191,7 +4191,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4204,7 +4204,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4217,7 +4217,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4230,7 +4230,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4243,7 +4243,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4256,7 +4256,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4269,7 +4269,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4282,7 +4282,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4295,7 +4295,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4308,7 +4308,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4321,7 +4321,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4334,7 +4334,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4347,7 +4347,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4360,7 +4360,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4373,7 +4373,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4386,7 +4386,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4399,7 +4399,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4412,7 +4412,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4425,7 +4425,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4438,7 +4438,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4451,7 +4451,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4464,7 +4464,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4477,7 +4477,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4490,7 +4490,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4503,7 +4503,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4516,7 +4516,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4529,7 +4529,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4542,7 +4542,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4555,7 +4555,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4568,7 +4568,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4581,7 +4581,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4594,7 +4594,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4607,7 +4607,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4620,7 +4620,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4633,7 +4633,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4646,7 +4646,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4659,7 +4659,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4672,7 +4672,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4685,7 +4685,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4698,7 +4698,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4711,7 +4711,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4724,7 +4724,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4737,7 +4737,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4750,7 +4750,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4763,7 +4763,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4776,7 +4776,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4789,7 +4789,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4802,7 +4802,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4815,7 +4815,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4828,7 +4828,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4841,7 +4841,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4854,7 +4854,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4867,7 +4867,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4880,7 +4880,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4893,7 +4893,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4906,7 +4906,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4919,7 +4919,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4932,7 +4932,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4945,7 +4945,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4958,7 +4958,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4971,7 +4971,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4984,7 +4984,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -4997,7 +4997,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5010,7 +5010,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5023,7 +5023,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5036,7 +5036,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5049,7 +5049,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5062,7 +5062,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5075,7 +5075,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5088,7 +5088,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5101,7 +5101,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5114,7 +5114,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5127,7 +5127,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5140,7 +5140,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5153,7 +5153,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5166,7 +5166,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5179,7 +5179,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5192,7 +5192,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5205,7 +5205,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5218,7 +5218,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5231,7 +5231,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5244,7 +5244,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5257,7 +5257,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5270,7 +5270,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5283,7 +5283,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5296,7 +5296,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5309,7 +5309,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5322,7 +5322,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5335,7 +5335,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5348,7 +5348,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5361,7 +5361,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5374,7 +5374,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5387,7 +5387,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5400,7 +5400,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5413,7 +5413,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5426,7 +5426,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5439,7 +5439,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5452,7 +5452,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5465,7 +5465,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5478,7 +5478,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5491,7 +5491,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5504,7 +5504,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5517,7 +5517,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5530,7 +5530,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5543,7 +5543,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5556,7 +5556,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5569,7 +5569,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5582,7 +5582,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5595,7 +5595,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5608,7 +5608,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5621,7 +5621,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5634,7 +5634,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5647,7 +5647,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5660,7 +5660,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5673,7 +5673,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5686,7 +5686,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5699,7 +5699,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5712,7 +5712,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5725,7 +5725,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5738,7 +5738,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5751,7 +5751,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5764,7 +5764,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5777,7 +5777,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5790,7 +5790,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5803,7 +5803,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5816,7 +5816,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5829,7 +5829,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5842,7 +5842,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5855,7 +5855,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5868,7 +5868,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5881,7 +5881,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5894,7 +5894,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5907,7 +5907,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5920,7 +5920,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5933,7 +5933,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5946,7 +5946,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5959,7 +5959,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5972,7 +5972,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5985,7 +5985,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -5998,7 +5998,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6011,7 +6011,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6024,7 +6024,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6037,7 +6037,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6050,7 +6050,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6063,7 +6063,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6076,7 +6076,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6089,7 +6089,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6102,7 +6102,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6115,7 +6115,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6128,7 +6128,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6141,7 +6141,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6154,7 +6154,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6167,7 +6167,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6180,7 +6180,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6193,7 +6193,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6206,7 +6206,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6219,7 +6219,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6232,7 +6232,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6245,7 +6245,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6258,7 +6258,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6271,7 +6271,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6284,7 +6284,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6297,7 +6297,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6310,7 +6310,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6323,7 +6323,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6336,7 +6336,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6349,7 +6349,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6362,7 +6362,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6375,7 +6375,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6388,7 +6388,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6401,7 +6401,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6414,7 +6414,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6427,7 +6427,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6440,7 +6440,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6453,7 +6453,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6466,7 +6466,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6479,7 +6479,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6492,7 +6492,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6505,7 +6505,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6518,7 +6518,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6531,7 +6531,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6544,7 +6544,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6557,7 +6557,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6570,7 +6570,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6583,7 +6583,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6596,7 +6596,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6609,7 +6609,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6622,7 +6622,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6635,7 +6635,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6648,7 +6648,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6661,7 +6661,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6674,7 +6674,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6687,7 +6687,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6700,7 +6700,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6713,7 +6713,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6726,7 +6726,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6739,7 +6739,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6752,7 +6752,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6765,7 +6765,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6778,7 +6778,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6791,7 +6791,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6804,7 +6804,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6817,7 +6817,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6830,7 +6830,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6843,7 +6843,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6856,7 +6856,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6869,7 +6869,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6882,7 +6882,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6895,7 +6895,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6908,7 +6908,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6921,7 +6921,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6934,7 +6934,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6947,7 +6947,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6960,7 +6960,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6973,7 +6973,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6986,7 +6986,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -6999,7 +6999,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7012,7 +7012,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7025,7 +7025,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7038,7 +7038,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7051,7 +7051,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7064,7 +7064,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7077,7 +7077,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7090,7 +7090,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7103,7 +7103,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7116,7 +7116,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7129,7 +7129,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7142,7 +7142,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7155,7 +7155,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7168,7 +7168,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7181,7 +7181,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7194,7 +7194,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7207,7 +7207,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7220,7 +7220,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7233,7 +7233,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7246,7 +7246,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7259,7 +7259,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7272,7 +7272,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7285,7 +7285,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7298,7 +7298,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7311,7 +7311,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7324,7 +7324,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7337,7 +7337,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7350,7 +7350,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7363,7 +7363,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7376,7 +7376,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7389,7 +7389,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7402,7 +7402,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7415,7 +7415,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7428,7 +7428,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7441,7 +7441,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7454,7 +7454,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7467,7 +7467,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7480,7 +7480,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7493,7 +7493,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7506,7 +7506,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7519,7 +7519,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7532,7 +7532,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7545,7 +7545,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7558,7 +7558,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7571,7 +7571,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7584,7 +7584,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7597,7 +7597,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7610,7 +7610,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7623,7 +7623,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7636,7 +7636,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7649,7 +7649,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7662,7 +7662,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7675,7 +7675,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7688,7 +7688,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7701,7 +7701,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7714,7 +7714,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7727,7 +7727,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7740,7 +7740,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7753,7 +7753,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7766,7 +7766,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7779,7 +7779,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7792,7 +7792,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7805,7 +7805,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7818,7 +7818,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7831,7 +7831,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7844,7 +7844,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7857,7 +7857,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7870,7 +7870,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7883,7 +7883,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7896,7 +7896,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7909,7 +7909,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7922,7 +7922,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7935,7 +7935,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7948,7 +7948,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7961,7 +7961,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7974,7 +7974,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -7987,7 +7987,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8000,7 +8000,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8013,7 +8013,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8026,7 +8026,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8039,7 +8039,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8052,7 +8052,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8065,7 +8065,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8078,7 +8078,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8091,7 +8091,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8104,7 +8104,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8117,7 +8117,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8130,7 +8130,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8143,7 +8143,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8156,7 +8156,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8169,7 +8169,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8182,7 +8182,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8195,7 +8195,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8208,7 +8208,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8221,7 +8221,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8234,7 +8234,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8247,7 +8247,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8260,7 +8260,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8273,7 +8273,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8286,7 +8286,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8299,7 +8299,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8312,7 +8312,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8325,7 +8325,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8338,7 +8338,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8351,7 +8351,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8364,7 +8364,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8377,7 +8377,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8390,7 +8390,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8403,7 +8403,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8416,7 +8416,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8429,7 +8429,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8442,7 +8442,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8455,7 +8455,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8468,7 +8468,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8481,7 +8481,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8494,7 +8494,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8507,7 +8507,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8520,7 +8520,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8533,7 +8533,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8546,7 +8546,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8559,7 +8559,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8572,7 +8572,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8585,7 +8585,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8598,7 +8598,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8611,7 +8611,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8624,7 +8624,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8637,7 +8637,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8650,7 +8650,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8663,7 +8663,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8676,7 +8676,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8689,7 +8689,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8702,7 +8702,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8715,7 +8715,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8728,7 +8728,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8741,7 +8741,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8754,7 +8754,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8767,7 +8767,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8780,7 +8780,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8793,7 +8793,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8806,7 +8806,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8819,7 +8819,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8832,7 +8832,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8845,7 +8845,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8858,7 +8858,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8871,7 +8871,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8884,7 +8884,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8897,7 +8897,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8910,7 +8910,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8923,7 +8923,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8936,7 +8936,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8949,7 +8949,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8962,7 +8962,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8975,7 +8975,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -8988,7 +8988,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9001,7 +9001,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9014,7 +9014,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9027,7 +9027,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9040,7 +9040,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9053,7 +9053,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9066,7 +9066,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9079,7 +9079,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9092,7 +9092,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9105,7 +9105,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9118,7 +9118,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9131,7 +9131,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9144,7 +9144,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9157,7 +9157,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9170,7 +9170,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9183,7 +9183,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9196,7 +9196,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9209,7 +9209,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9222,7 +9222,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9235,7 +9235,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9248,7 +9248,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9261,7 +9261,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9274,7 +9274,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9287,7 +9287,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9300,7 +9300,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9313,7 +9313,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9326,7 +9326,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9339,7 +9339,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9352,7 +9352,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9365,7 +9365,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9378,7 +9378,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9391,7 +9391,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9404,7 +9404,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9417,7 +9417,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9430,7 +9430,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9443,7 +9443,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9456,7 +9456,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9469,7 +9469,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9482,7 +9482,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9495,7 +9495,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9508,7 +9508,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9521,7 +9521,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9534,7 +9534,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9547,7 +9547,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9560,7 +9560,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9573,7 +9573,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9586,7 +9586,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9599,7 +9599,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9612,7 +9612,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9625,7 +9625,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9638,7 +9638,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9651,7 +9651,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9664,7 +9664,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9677,7 +9677,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9690,7 +9690,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9703,7 +9703,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9716,7 +9716,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9729,7 +9729,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9742,7 +9742,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9755,7 +9755,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9768,7 +9768,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9781,7 +9781,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9794,7 +9794,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9807,7 +9807,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9820,7 +9820,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9833,7 +9833,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9846,7 +9846,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9859,7 +9859,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9872,7 +9872,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9885,7 +9885,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9898,7 +9898,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9911,7 +9911,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9924,7 +9924,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9937,7 +9937,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9950,7 +9950,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9963,7 +9963,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9976,7 +9976,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -9989,7 +9989,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10002,7 +10002,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10015,7 +10015,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10028,7 +10028,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10041,7 +10041,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10054,7 +10054,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10067,7 +10067,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10080,7 +10080,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10093,7 +10093,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10106,7 +10106,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10119,7 +10119,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10132,7 +10132,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10145,7 +10145,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10158,7 +10158,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10171,7 +10171,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10184,7 +10184,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10197,7 +10197,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10210,7 +10210,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10223,7 +10223,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10236,7 +10236,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10249,7 +10249,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10262,7 +10262,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10275,7 +10275,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10288,7 +10288,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10301,7 +10301,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10314,7 +10314,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10327,7 +10327,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10340,7 +10340,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10353,7 +10353,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10366,7 +10366,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10379,7 +10379,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10392,7 +10392,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10405,7 +10405,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10418,7 +10418,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10431,7 +10431,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10444,7 +10444,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10457,7 +10457,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10470,7 +10470,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10483,7 +10483,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10496,7 +10496,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10509,7 +10509,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10522,7 +10522,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10535,7 +10535,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10548,7 +10548,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10561,7 +10561,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10574,7 +10574,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10587,7 +10587,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10600,7 +10600,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10613,7 +10613,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10626,7 +10626,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10639,7 +10639,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10652,7 +10652,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10665,7 +10665,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10678,7 +10678,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10691,7 +10691,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10704,7 +10704,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10717,7 +10717,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10730,7 +10730,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10743,7 +10743,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10756,7 +10756,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10769,7 +10769,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10782,7 +10782,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10795,7 +10795,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10808,7 +10808,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10821,7 +10821,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10834,7 +10834,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10847,7 +10847,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10860,7 +10860,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10873,7 +10873,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10886,7 +10886,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10899,7 +10899,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10912,7 +10912,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10925,7 +10925,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10938,7 +10938,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10951,7 +10951,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10964,7 +10964,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10977,7 +10977,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -10990,7 +10990,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11003,7 +11003,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11016,7 +11016,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11029,7 +11029,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11042,7 +11042,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11055,7 +11055,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11068,7 +11068,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11081,7 +11081,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11094,7 +11094,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11107,7 +11107,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11120,7 +11120,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11133,7 +11133,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11146,7 +11146,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11159,7 +11159,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11172,7 +11172,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11185,7 +11185,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11198,7 +11198,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11211,7 +11211,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11224,7 +11224,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11237,7 +11237,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11250,7 +11250,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11263,7 +11263,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11276,7 +11276,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11289,7 +11289,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11302,7 +11302,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11315,7 +11315,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11328,7 +11328,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11341,7 +11341,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11354,7 +11354,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11367,7 +11367,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11380,7 +11380,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11393,7 +11393,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11406,7 +11406,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11419,7 +11419,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11432,7 +11432,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11445,7 +11445,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11458,7 +11458,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11471,7 +11471,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11484,7 +11484,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11497,7 +11497,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11510,7 +11510,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11523,7 +11523,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11536,7 +11536,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11549,7 +11549,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11562,7 +11562,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11575,7 +11575,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11588,7 +11588,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11601,7 +11601,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11614,7 +11614,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11627,7 +11627,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11640,7 +11640,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11653,7 +11653,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11666,7 +11666,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11679,7 +11679,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11692,7 +11692,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11705,7 +11705,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11718,7 +11718,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11731,7 +11731,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11744,7 +11744,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11757,7 +11757,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11770,7 +11770,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11783,7 +11783,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11796,7 +11796,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11809,7 +11809,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11822,7 +11822,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11835,7 +11835,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11848,7 +11848,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11861,7 +11861,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11874,7 +11874,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11887,7 +11887,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11900,7 +11900,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11913,7 +11913,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11926,7 +11926,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11939,7 +11939,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11952,7 +11952,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11965,7 +11965,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11978,7 +11978,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -11991,7 +11991,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12004,7 +12004,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12017,7 +12017,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12030,7 +12030,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12043,7 +12043,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12056,7 +12056,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12069,7 +12069,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12082,7 +12082,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12095,7 +12095,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12108,7 +12108,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12121,7 +12121,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12134,7 +12134,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12147,7 +12147,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12160,7 +12160,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12173,7 +12173,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12186,7 +12186,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12199,7 +12199,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12212,7 +12212,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12225,7 +12225,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12238,7 +12238,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12251,7 +12251,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12264,7 +12264,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12277,7 +12277,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12290,7 +12290,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12303,7 +12303,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12316,7 +12316,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12329,7 +12329,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12342,7 +12342,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12355,7 +12355,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12368,7 +12368,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12381,7 +12381,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12394,7 +12394,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12407,7 +12407,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12420,7 +12420,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12433,7 +12433,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12446,7 +12446,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12459,7 +12459,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12472,7 +12472,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12485,7 +12485,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12498,7 +12498,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12511,7 +12511,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12524,7 +12524,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12537,7 +12537,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12550,7 +12550,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12563,7 +12563,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12576,7 +12576,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12589,7 +12589,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12602,7 +12602,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12615,7 +12615,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12628,7 +12628,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12641,7 +12641,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12654,7 +12654,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12667,7 +12667,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12680,7 +12680,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12693,7 +12693,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12706,7 +12706,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12719,7 +12719,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12732,7 +12732,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12745,7 +12745,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12758,7 +12758,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12771,7 +12771,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12784,7 +12784,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12797,7 +12797,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12810,7 +12810,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12823,7 +12823,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12836,7 +12836,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12849,7 +12849,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12862,7 +12862,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12875,7 +12875,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12888,7 +12888,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12901,7 +12901,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12914,7 +12914,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12927,7 +12927,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12940,7 +12940,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12953,7 +12953,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12966,7 +12966,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12979,7 +12979,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -12992,7 +12992,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13005,7 +13005,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13018,7 +13018,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13031,7 +13031,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13044,7 +13044,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13057,7 +13057,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13070,7 +13070,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13083,7 +13083,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13096,7 +13096,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13109,7 +13109,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13122,7 +13122,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13135,7 +13135,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13148,7 +13148,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13161,7 +13161,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13174,7 +13174,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13187,7 +13187,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13200,7 +13200,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13213,7 +13213,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13226,7 +13226,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13239,7 +13239,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13252,7 +13252,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13265,7 +13265,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13278,7 +13278,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13291,7 +13291,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13304,7 +13304,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13317,7 +13317,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13330,7 +13330,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13343,7 +13343,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13356,7 +13356,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13369,7 +13369,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13382,7 +13382,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13395,7 +13395,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13408,7 +13408,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13421,7 +13421,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13434,7 +13434,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13447,7 +13447,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13460,7 +13460,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13473,7 +13473,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13486,7 +13486,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13499,7 +13499,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13512,7 +13512,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13525,7 +13525,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13538,7 +13538,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13551,7 +13551,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13564,7 +13564,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13577,7 +13577,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13590,7 +13590,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13603,7 +13603,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13616,7 +13616,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13629,7 +13629,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13642,7 +13642,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13655,7 +13655,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13668,7 +13668,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13681,7 +13681,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13694,7 +13694,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13707,7 +13707,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13720,7 +13720,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13733,7 +13733,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13746,7 +13746,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13759,7 +13759,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13772,7 +13772,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13785,7 +13785,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13798,7 +13798,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13811,7 +13811,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13824,7 +13824,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13837,7 +13837,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13850,7 +13850,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13863,7 +13863,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13876,7 +13876,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13889,7 +13889,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13902,7 +13902,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13915,7 +13915,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13928,7 +13928,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13941,7 +13941,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13954,7 +13954,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13967,7 +13967,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13980,7 +13980,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -13993,7 +13993,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14006,7 +14006,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14019,7 +14019,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14032,7 +14032,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14045,7 +14045,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14058,7 +14058,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14071,7 +14071,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14084,7 +14084,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14097,7 +14097,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14110,7 +14110,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14123,7 +14123,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14136,7 +14136,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14149,7 +14149,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14162,7 +14162,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14175,7 +14175,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14188,7 +14188,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14201,7 +14201,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14214,7 +14214,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14227,7 +14227,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14240,7 +14240,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14253,7 +14253,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14266,7 +14266,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14279,7 +14279,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14292,7 +14292,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14305,7 +14305,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14318,7 +14318,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14331,7 +14331,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14344,7 +14344,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14357,7 +14357,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14370,7 +14370,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14383,7 +14383,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14396,7 +14396,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14409,7 +14409,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14422,7 +14422,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14435,7 +14435,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14448,7 +14448,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14461,7 +14461,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14474,7 +14474,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14487,7 +14487,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14500,7 +14500,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14513,7 +14513,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14526,7 +14526,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14539,7 +14539,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14552,7 +14552,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14565,7 +14565,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14578,7 +14578,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14591,7 +14591,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14604,7 +14604,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14617,7 +14617,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14630,7 +14630,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14643,7 +14643,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14656,7 +14656,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14669,7 +14669,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14682,7 +14682,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14695,7 +14695,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14708,7 +14708,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14721,7 +14721,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14734,7 +14734,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14747,7 +14747,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14760,7 +14760,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14773,7 +14773,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14786,7 +14786,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14799,7 +14799,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14812,7 +14812,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14825,7 +14825,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14838,7 +14838,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14851,7 +14851,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14864,7 +14864,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14877,7 +14877,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14890,7 +14890,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14903,7 +14903,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14916,7 +14916,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14929,7 +14929,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14942,7 +14942,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14955,7 +14955,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14968,7 +14968,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14981,7 +14981,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -14994,7 +14994,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15007,7 +15007,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15020,7 +15020,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15033,7 +15033,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15046,7 +15046,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15059,7 +15059,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15072,7 +15072,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15085,7 +15085,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15098,7 +15098,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15111,7 +15111,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15124,7 +15124,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15137,7 +15137,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15150,7 +15150,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15163,7 +15163,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15176,7 +15176,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15189,7 +15189,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15202,7 +15202,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15215,7 +15215,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15228,7 +15228,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15241,7 +15241,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15254,7 +15254,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15267,7 +15267,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15280,7 +15280,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15293,7 +15293,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15306,7 +15306,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15319,7 +15319,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15332,7 +15332,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15345,7 +15345,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15358,7 +15358,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15371,7 +15371,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15384,7 +15384,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15397,7 +15397,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15410,7 +15410,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15423,7 +15423,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15436,7 +15436,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15449,7 +15449,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15462,7 +15462,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15475,7 +15475,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15488,7 +15488,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15501,7 +15501,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15514,7 +15514,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15527,7 +15527,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15540,7 +15540,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15553,7 +15553,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15566,7 +15566,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15579,7 +15579,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15592,7 +15592,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15605,7 +15605,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15618,7 +15618,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15631,7 +15631,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15644,7 +15644,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15657,7 +15657,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15670,7 +15670,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15683,7 +15683,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15696,7 +15696,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15709,7 +15709,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15722,7 +15722,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15735,7 +15735,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15748,7 +15748,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15761,7 +15761,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15774,7 +15774,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15787,7 +15787,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15800,7 +15800,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15813,7 +15813,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15826,7 +15826,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15839,7 +15839,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15852,7 +15852,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15865,7 +15865,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15878,7 +15878,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15891,7 +15891,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15904,7 +15904,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15917,7 +15917,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15930,7 +15930,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15943,7 +15943,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15956,7 +15956,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15969,7 +15969,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15982,7 +15982,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -15995,7 +15995,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16008,7 +16008,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16021,7 +16021,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16034,7 +16034,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16047,7 +16047,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16060,7 +16060,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16073,7 +16073,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16086,7 +16086,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16099,7 +16099,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16112,7 +16112,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16125,7 +16125,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16138,7 +16138,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16151,7 +16151,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16164,7 +16164,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16177,7 +16177,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16190,7 +16190,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16203,7 +16203,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16216,7 +16216,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16229,7 +16229,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16242,7 +16242,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16255,7 +16255,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16268,7 +16268,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16281,7 +16281,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16294,7 +16294,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16307,7 +16307,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16320,7 +16320,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16333,7 +16333,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16346,7 +16346,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16359,7 +16359,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16372,7 +16372,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16385,7 +16385,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16398,7 +16398,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16411,7 +16411,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16424,7 +16424,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16437,7 +16437,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16450,7 +16450,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16463,7 +16463,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16476,7 +16476,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16489,7 +16489,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16502,7 +16502,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16515,7 +16515,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16528,7 +16528,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16541,7 +16541,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16554,7 +16554,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16567,7 +16567,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16580,7 +16580,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16593,7 +16593,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16606,7 +16606,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16619,7 +16619,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16632,7 +16632,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16645,7 +16645,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16658,7 +16658,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16671,7 +16671,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16684,7 +16684,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16697,7 +16697,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16710,7 +16710,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16723,7 +16723,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16736,7 +16736,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16749,7 +16749,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16762,7 +16762,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16775,7 +16775,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16788,7 +16788,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16801,7 +16801,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16814,7 +16814,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16827,7 +16827,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16840,7 +16840,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16853,7 +16853,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16866,7 +16866,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16879,7 +16879,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16892,7 +16892,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16905,7 +16905,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16918,7 +16918,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16931,7 +16931,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16944,7 +16944,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16957,7 +16957,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16970,7 +16970,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16983,7 +16983,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -16996,7 +16996,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17009,7 +17009,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17022,7 +17022,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17035,7 +17035,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17048,7 +17048,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17061,7 +17061,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17074,7 +17074,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17087,7 +17087,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17100,7 +17100,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17113,7 +17113,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17126,7 +17126,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17139,7 +17139,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17152,7 +17152,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17165,7 +17165,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17178,7 +17178,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17191,7 +17191,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17204,7 +17204,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17217,7 +17217,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17230,7 +17230,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17243,7 +17243,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17256,7 +17256,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17269,7 +17269,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17282,7 +17282,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17295,7 +17295,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17308,7 +17308,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17321,7 +17321,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17334,7 +17334,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17347,7 +17347,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17360,7 +17360,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17373,7 +17373,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17386,7 +17386,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17399,7 +17399,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17412,7 +17412,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17425,7 +17425,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17438,7 +17438,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17451,7 +17451,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17464,7 +17464,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17477,7 +17477,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17490,7 +17490,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17503,7 +17503,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17516,7 +17516,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17529,7 +17529,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17542,7 +17542,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17555,7 +17555,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17568,7 +17568,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17581,7 +17581,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17594,7 +17594,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17607,7 +17607,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17620,7 +17620,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17633,7 +17633,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17646,7 +17646,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17659,7 +17659,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17672,7 +17672,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17685,7 +17685,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17698,7 +17698,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17711,7 +17711,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17724,7 +17724,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17737,7 +17737,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17750,7 +17750,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17763,7 +17763,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17776,7 +17776,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17789,7 +17789,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17802,7 +17802,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17815,7 +17815,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17828,7 +17828,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17841,7 +17841,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17854,7 +17854,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17867,7 +17867,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17880,7 +17880,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17893,7 +17893,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17906,7 +17906,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17919,7 +17919,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17932,7 +17932,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17945,7 +17945,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17958,7 +17958,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17971,7 +17971,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17984,7 +17984,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -17997,7 +17997,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18010,7 +18010,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18023,7 +18023,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18036,7 +18036,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18049,7 +18049,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18062,7 +18062,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18075,7 +18075,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18088,7 +18088,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18101,7 +18101,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18114,7 +18114,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18127,7 +18127,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18140,7 +18140,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18153,7 +18153,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18166,7 +18166,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18179,7 +18179,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18192,7 +18192,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18205,7 +18205,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18218,7 +18218,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18231,7 +18231,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18244,7 +18244,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18257,7 +18257,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18270,7 +18270,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18283,7 +18283,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18296,7 +18296,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18309,7 +18309,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18322,7 +18322,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18335,7 +18335,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18348,7 +18348,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18361,7 +18361,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18374,7 +18374,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18387,7 +18387,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18400,7 +18400,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18413,7 +18413,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18426,7 +18426,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18439,7 +18439,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18452,7 +18452,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18465,7 +18465,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18478,7 +18478,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18491,7 +18491,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18504,7 +18504,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18517,7 +18517,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18530,7 +18530,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18543,7 +18543,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18556,7 +18556,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18569,7 +18569,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18582,7 +18582,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18595,7 +18595,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18608,7 +18608,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18621,7 +18621,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18634,7 +18634,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18647,7 +18647,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18660,7 +18660,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18673,7 +18673,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18686,7 +18686,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18699,7 +18699,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18712,7 +18712,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18725,7 +18725,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18738,7 +18738,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18751,7 +18751,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18764,7 +18764,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18777,7 +18777,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18790,7 +18790,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18803,7 +18803,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18816,7 +18816,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18829,7 +18829,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18842,7 +18842,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18855,7 +18855,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18868,7 +18868,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18881,7 +18881,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18894,7 +18894,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18907,7 +18907,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18920,7 +18920,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18933,7 +18933,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18946,7 +18946,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18959,7 +18959,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18972,7 +18972,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18985,7 +18985,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -18998,7 +18998,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19011,7 +19011,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19024,7 +19024,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19037,7 +19037,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19050,7 +19050,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19063,7 +19063,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19076,7 +19076,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19089,7 +19089,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19102,7 +19102,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19115,7 +19115,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19128,7 +19128,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19141,7 +19141,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19154,7 +19154,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19167,7 +19167,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19180,7 +19180,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19193,7 +19193,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19206,7 +19206,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19219,7 +19219,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19232,7 +19232,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19245,7 +19245,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19258,7 +19258,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19271,7 +19271,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19284,7 +19284,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19297,7 +19297,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19310,7 +19310,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19323,7 +19323,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19336,7 +19336,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19349,7 +19349,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19362,7 +19362,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19375,7 +19375,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19388,7 +19388,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19401,7 +19401,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19414,7 +19414,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19427,7 +19427,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19440,7 +19440,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19453,7 +19453,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19466,7 +19466,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19479,7 +19479,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19492,7 +19492,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19505,7 +19505,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19518,7 +19518,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19531,7 +19531,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19544,7 +19544,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19557,7 +19557,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19570,7 +19570,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19583,7 +19583,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19596,7 +19596,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19609,7 +19609,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19622,7 +19622,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19635,7 +19635,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19648,7 +19648,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19661,7 +19661,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19674,7 +19674,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19687,7 +19687,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19700,7 +19700,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19713,7 +19713,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19726,7 +19726,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19739,7 +19739,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19752,7 +19752,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19765,7 +19765,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19778,7 +19778,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19791,7 +19791,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19804,7 +19804,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19817,7 +19817,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19830,7 +19830,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19843,7 +19843,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19856,7 +19856,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19869,7 +19869,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19882,7 +19882,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19895,7 +19895,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19908,7 +19908,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19921,7 +19921,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19934,7 +19934,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19947,7 +19947,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19960,7 +19960,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19973,7 +19973,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19986,7 +19986,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -19999,7 +19999,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20012,7 +20012,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20025,7 +20025,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20038,7 +20038,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20051,7 +20051,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20064,7 +20064,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20077,7 +20077,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20090,7 +20090,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20103,7 +20103,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20116,7 +20116,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20129,7 +20129,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20142,7 +20142,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20155,7 +20155,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20168,7 +20168,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20181,7 +20181,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20194,7 +20194,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20207,7 +20207,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20220,7 +20220,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20233,7 +20233,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20246,7 +20246,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20259,7 +20259,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20272,7 +20272,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20285,7 +20285,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20298,7 +20298,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20311,7 +20311,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20324,7 +20324,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20337,7 +20337,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20350,7 +20350,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20363,7 +20363,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20376,7 +20376,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20389,7 +20389,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20402,7 +20402,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20415,7 +20415,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20428,7 +20428,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20441,7 +20441,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20454,7 +20454,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20467,7 +20467,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20480,7 +20480,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20493,7 +20493,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20506,7 +20506,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20519,7 +20519,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20532,7 +20532,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20545,7 +20545,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20558,7 +20558,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20571,7 +20571,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20584,7 +20584,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20597,7 +20597,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20610,7 +20610,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20623,7 +20623,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20636,7 +20636,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20649,7 +20649,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20662,7 +20662,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20675,7 +20675,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20688,7 +20688,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20701,7 +20701,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20714,7 +20714,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20727,7 +20727,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20740,7 +20740,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20753,7 +20753,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20766,7 +20766,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20779,7 +20779,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20792,7 +20792,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20805,7 +20805,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20818,7 +20818,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20831,7 +20831,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20844,7 +20844,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20857,7 +20857,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20870,7 +20870,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20883,7 +20883,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20896,7 +20896,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20909,7 +20909,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20922,7 +20922,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20935,7 +20935,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20948,7 +20948,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20961,7 +20961,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20974,7 +20974,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -20987,7 +20987,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21000,7 +21000,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21013,7 +21013,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21026,7 +21026,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21039,7 +21039,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21052,7 +21052,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21065,7 +21065,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21078,7 +21078,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21091,7 +21091,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21104,7 +21104,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21117,7 +21117,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21130,7 +21130,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21143,7 +21143,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21156,7 +21156,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21169,7 +21169,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21182,7 +21182,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21195,7 +21195,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21208,7 +21208,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21221,7 +21221,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21234,7 +21234,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21247,7 +21247,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21260,7 +21260,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21273,7 +21273,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21286,7 +21286,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21299,7 +21299,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21312,7 +21312,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21325,7 +21325,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21338,7 +21338,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21351,7 +21351,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21364,7 +21364,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21377,7 +21377,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21390,7 +21390,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21403,7 +21403,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21416,7 +21416,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21429,7 +21429,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21442,7 +21442,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21455,7 +21455,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21468,7 +21468,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21481,7 +21481,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21494,7 +21494,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21507,7 +21507,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21520,7 +21520,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21533,7 +21533,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21546,7 +21546,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21559,7 +21559,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21572,7 +21572,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21585,7 +21585,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21598,7 +21598,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21611,7 +21611,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21624,7 +21624,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21637,7 +21637,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21650,7 +21650,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21663,7 +21663,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21676,7 +21676,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21689,7 +21689,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21702,7 +21702,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21715,7 +21715,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21728,7 +21728,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21741,7 +21741,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21754,7 +21754,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21767,7 +21767,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21780,7 +21780,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21793,7 +21793,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21806,7 +21806,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21819,7 +21819,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21832,7 +21832,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21845,7 +21845,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21858,7 +21858,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21871,7 +21871,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21884,7 +21884,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21897,7 +21897,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21910,7 +21910,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21923,7 +21923,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21936,7 +21936,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21949,7 +21949,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21962,7 +21962,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21975,7 +21975,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -21988,7 +21988,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22001,7 +22001,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22014,7 +22014,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22027,7 +22027,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22040,7 +22040,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22053,7 +22053,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22066,7 +22066,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22079,7 +22079,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22092,7 +22092,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22105,7 +22105,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22118,7 +22118,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22131,7 +22131,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22144,7 +22144,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22157,7 +22157,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22170,7 +22170,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22183,7 +22183,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22196,7 +22196,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22209,7 +22209,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22222,7 +22222,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22235,7 +22235,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22248,7 +22248,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22261,7 +22261,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22274,7 +22274,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22287,7 +22287,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22300,7 +22300,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22313,7 +22313,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22326,7 +22326,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22339,7 +22339,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22352,7 +22352,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22365,7 +22365,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22378,7 +22378,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22391,7 +22391,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22404,7 +22404,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22417,7 +22417,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22430,7 +22430,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22443,7 +22443,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22456,7 +22456,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22469,7 +22469,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22482,7 +22482,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22495,7 +22495,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22508,7 +22508,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22521,7 +22521,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22534,7 +22534,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22547,7 +22547,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22560,7 +22560,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22573,7 +22573,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22586,7 +22586,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22599,7 +22599,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22612,7 +22612,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22625,7 +22625,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22638,7 +22638,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22651,7 +22651,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22664,7 +22664,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22677,7 +22677,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22690,7 +22690,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22703,7 +22703,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22716,7 +22716,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22729,7 +22729,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22742,7 +22742,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22755,7 +22755,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22768,7 +22768,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22781,7 +22781,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22794,7 +22794,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22807,7 +22807,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22820,7 +22820,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22833,7 +22833,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22846,7 +22846,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22859,7 +22859,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22872,7 +22872,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22885,7 +22885,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22898,7 +22898,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22911,7 +22911,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22924,7 +22924,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22937,7 +22937,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22950,7 +22950,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22963,7 +22963,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22976,7 +22976,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -22989,7 +22989,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23002,7 +23002,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23015,7 +23015,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23028,7 +23028,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23041,7 +23041,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23054,7 +23054,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23067,7 +23067,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23080,7 +23080,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23093,7 +23093,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23106,7 +23106,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23119,7 +23119,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23132,7 +23132,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23145,7 +23145,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23158,7 +23158,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23171,7 +23171,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23184,7 +23184,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23197,7 +23197,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23210,7 +23210,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23223,7 +23223,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23236,7 +23236,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23249,7 +23249,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23262,7 +23262,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23275,7 +23275,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23288,7 +23288,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23301,7 +23301,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23314,7 +23314,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23327,7 +23327,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23340,7 +23340,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23353,7 +23353,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23366,7 +23366,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23379,7 +23379,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23392,7 +23392,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23405,7 +23405,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23418,7 +23418,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23431,7 +23431,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23444,7 +23444,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23457,7 +23457,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23470,7 +23470,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23483,7 +23483,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23496,7 +23496,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23509,7 +23509,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23522,7 +23522,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23535,7 +23535,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23548,7 +23548,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23561,7 +23561,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23574,7 +23574,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23587,7 +23587,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23600,7 +23600,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23613,7 +23613,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23626,7 +23626,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23639,7 +23639,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23652,7 +23652,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23665,7 +23665,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23678,7 +23678,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23691,7 +23691,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23704,7 +23704,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23717,7 +23717,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23730,7 +23730,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23743,7 +23743,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23756,7 +23756,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23769,7 +23769,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23782,7 +23782,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23795,7 +23795,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23808,7 +23808,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23821,7 +23821,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23834,7 +23834,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23847,7 +23847,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23860,7 +23860,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23873,7 +23873,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23886,7 +23886,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23899,7 +23899,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23912,7 +23912,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23925,7 +23925,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23938,7 +23938,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23951,7 +23951,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23964,7 +23964,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23977,7 +23977,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -23990,7 +23990,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24003,7 +24003,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24016,7 +24016,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24029,7 +24029,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24042,7 +24042,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24055,7 +24055,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24068,7 +24068,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24081,7 +24081,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24094,7 +24094,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24107,7 +24107,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24120,7 +24120,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24133,7 +24133,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24146,7 +24146,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24159,7 +24159,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24172,7 +24172,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24185,7 +24185,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24198,7 +24198,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24211,7 +24211,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24224,7 +24224,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24237,7 +24237,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24250,7 +24250,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24263,7 +24263,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24276,7 +24276,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24289,7 +24289,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24302,7 +24302,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24315,7 +24315,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24328,7 +24328,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24341,7 +24341,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24354,7 +24354,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24367,7 +24367,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24380,7 +24380,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24393,7 +24393,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24406,7 +24406,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24419,7 +24419,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24432,7 +24432,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24445,7 +24445,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24458,7 +24458,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24471,7 +24471,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24484,7 +24484,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24497,7 +24497,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24510,7 +24510,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24523,7 +24523,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24536,7 +24536,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24549,7 +24549,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24562,7 +24562,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24575,7 +24575,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24588,7 +24588,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24601,7 +24601,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24614,7 +24614,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24627,7 +24627,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24640,7 +24640,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24653,7 +24653,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24666,7 +24666,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24679,7 +24679,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24692,7 +24692,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24705,7 +24705,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24718,7 +24718,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24731,7 +24731,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24744,7 +24744,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24757,7 +24757,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24770,7 +24770,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24783,7 +24783,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24796,7 +24796,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24809,7 +24809,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24822,7 +24822,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24835,7 +24835,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24848,7 +24848,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24861,7 +24861,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24874,7 +24874,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24887,7 +24887,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24900,7 +24900,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24913,7 +24913,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24926,7 +24926,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24939,7 +24939,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24952,7 +24952,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24965,7 +24965,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24978,7 +24978,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -24991,7 +24991,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25004,7 +25004,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25017,7 +25017,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25030,7 +25030,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25043,7 +25043,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25056,7 +25056,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25069,7 +25069,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25082,7 +25082,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25095,7 +25095,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25108,7 +25108,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25121,7 +25121,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25134,7 +25134,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25147,7 +25147,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25160,7 +25160,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25173,7 +25173,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25186,7 +25186,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25199,7 +25199,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25212,7 +25212,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25225,7 +25225,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25238,7 +25238,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25251,7 +25251,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25264,7 +25264,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25277,7 +25277,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25290,7 +25290,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25303,7 +25303,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25316,7 +25316,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25329,7 +25329,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25342,7 +25342,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25355,7 +25355,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25368,7 +25368,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25381,7 +25381,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25394,7 +25394,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25407,7 +25407,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25420,7 +25420,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25433,7 +25433,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25446,7 +25446,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25459,7 +25459,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25472,7 +25472,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25485,7 +25485,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25498,7 +25498,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25511,7 +25511,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25524,7 +25524,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25537,7 +25537,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25550,7 +25550,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25563,7 +25563,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25576,7 +25576,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25589,7 +25589,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25602,7 +25602,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25615,7 +25615,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25628,7 +25628,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25641,7 +25641,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25654,7 +25654,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25667,7 +25667,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25680,7 +25680,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25693,7 +25693,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25706,7 +25706,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25719,7 +25719,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25732,7 +25732,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25745,7 +25745,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25758,7 +25758,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25771,7 +25771,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25784,7 +25784,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25797,7 +25797,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25810,7 +25810,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25823,7 +25823,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25836,7 +25836,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25849,7 +25849,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25862,7 +25862,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25875,7 +25875,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25888,7 +25888,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25901,7 +25901,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25914,7 +25914,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25927,7 +25927,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25940,7 +25940,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25953,7 +25953,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25966,7 +25966,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25979,7 +25979,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -25992,7 +25992,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26005,7 +26005,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26018,7 +26018,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26031,7 +26031,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26044,7 +26044,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26057,7 +26057,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26070,7 +26070,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26083,7 +26083,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26096,7 +26096,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26109,7 +26109,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26122,7 +26122,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26135,7 +26135,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26148,7 +26148,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26161,7 +26161,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26174,7 +26174,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26187,7 +26187,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26200,7 +26200,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26213,7 +26213,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26226,7 +26226,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26239,7 +26239,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26252,7 +26252,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26265,7 +26265,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26278,7 +26278,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26291,7 +26291,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26304,7 +26304,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26317,7 +26317,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26330,7 +26330,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26343,7 +26343,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26356,7 +26356,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26369,7 +26369,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26382,7 +26382,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26395,7 +26395,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26408,7 +26408,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26421,7 +26421,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26434,7 +26434,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26447,7 +26447,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26460,7 +26460,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26473,7 +26473,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26486,7 +26486,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26499,7 +26499,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26512,7 +26512,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26525,7 +26525,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26538,7 +26538,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26551,7 +26551,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26564,7 +26564,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26577,7 +26577,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26590,7 +26590,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26603,7 +26603,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26616,7 +26616,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26629,7 +26629,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26642,7 +26642,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26655,7 +26655,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26668,7 +26668,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26681,7 +26681,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26694,7 +26694,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26707,7 +26707,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26720,7 +26720,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26733,7 +26733,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26746,7 +26746,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26759,7 +26759,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26772,7 +26772,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26785,7 +26785,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26798,7 +26798,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26811,7 +26811,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26824,7 +26824,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26837,7 +26837,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26850,7 +26850,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26863,7 +26863,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26876,7 +26876,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26889,7 +26889,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26902,7 +26902,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26915,7 +26915,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26928,7 +26928,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26941,7 +26941,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26954,7 +26954,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26967,7 +26967,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26980,7 +26980,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -26993,7 +26993,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27006,7 +27006,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27019,7 +27019,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27032,7 +27032,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27045,7 +27045,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27058,7 +27058,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27071,7 +27071,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27084,7 +27084,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27097,7 +27097,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27110,7 +27110,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27123,7 +27123,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27136,7 +27136,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27149,7 +27149,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27162,7 +27162,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27175,7 +27175,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27188,7 +27188,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27201,7 +27201,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27214,7 +27214,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27227,7 +27227,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27240,7 +27240,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27253,7 +27253,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27266,7 +27266,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27279,7 +27279,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27292,7 +27292,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27305,7 +27305,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27318,7 +27318,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27331,7 +27331,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27344,7 +27344,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27357,7 +27357,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27370,7 +27370,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27383,7 +27383,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27396,7 +27396,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27409,7 +27409,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27422,7 +27422,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27435,7 +27435,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27448,7 +27448,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27461,7 +27461,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27474,7 +27474,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27487,7 +27487,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27500,7 +27500,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27513,7 +27513,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27526,7 +27526,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27539,7 +27539,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27552,7 +27552,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27565,7 +27565,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27578,7 +27578,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27591,7 +27591,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27604,7 +27604,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27617,7 +27617,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27630,7 +27630,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27643,7 +27643,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27656,7 +27656,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27669,7 +27669,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27682,7 +27682,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27695,7 +27695,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27708,7 +27708,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27721,7 +27721,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27734,7 +27734,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27747,7 +27747,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27760,7 +27760,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27773,7 +27773,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27786,7 +27786,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27799,7 +27799,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27812,7 +27812,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27825,7 +27825,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27838,7 +27838,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27851,7 +27851,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27864,7 +27864,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27877,7 +27877,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27890,7 +27890,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27903,7 +27903,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27916,7 +27916,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27929,7 +27929,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27942,7 +27942,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27955,7 +27955,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27968,7 +27968,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27981,7 +27981,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -27994,7 +27994,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28007,7 +28007,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28020,7 +28020,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28033,7 +28033,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28046,7 +28046,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28059,7 +28059,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28072,7 +28072,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28085,7 +28085,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28098,7 +28098,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28111,7 +28111,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28124,7 +28124,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28137,7 +28137,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28150,7 +28150,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28163,7 +28163,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28176,7 +28176,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28189,7 +28189,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28202,7 +28202,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28215,7 +28215,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28228,7 +28228,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28241,7 +28241,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28254,7 +28254,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28267,7 +28267,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28280,7 +28280,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28293,7 +28293,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28306,7 +28306,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28319,7 +28319,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28332,7 +28332,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28345,7 +28345,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28358,7 +28358,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28371,7 +28371,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28384,7 +28384,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28397,7 +28397,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28410,7 +28410,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28423,7 +28423,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28436,7 +28436,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28449,7 +28449,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28462,7 +28462,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28475,7 +28475,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28488,7 +28488,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28501,7 +28501,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28514,7 +28514,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28527,7 +28527,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28540,7 +28540,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28553,7 +28553,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28566,7 +28566,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28579,7 +28579,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28592,7 +28592,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28605,7 +28605,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28618,7 +28618,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28631,7 +28631,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28644,7 +28644,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28657,7 +28657,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28670,7 +28670,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28683,7 +28683,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28696,7 +28696,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28709,7 +28709,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28722,7 +28722,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28735,7 +28735,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28748,7 +28748,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28761,7 +28761,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28774,7 +28774,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28787,7 +28787,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28800,7 +28800,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28813,7 +28813,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28826,7 +28826,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28839,7 +28839,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28852,7 +28852,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28865,7 +28865,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28878,7 +28878,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28891,7 +28891,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28904,7 +28904,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28917,7 +28917,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28930,7 +28930,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28943,7 +28943,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28956,7 +28956,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28969,7 +28969,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28982,7 +28982,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -28995,7 +28995,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29008,7 +29008,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29021,7 +29021,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29034,7 +29034,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29047,7 +29047,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29060,7 +29060,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29073,7 +29073,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29086,7 +29086,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29099,7 +29099,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29112,7 +29112,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29125,7 +29125,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29138,7 +29138,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29151,7 +29151,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29164,7 +29164,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29177,7 +29177,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29190,7 +29190,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29203,7 +29203,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29216,7 +29216,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29229,7 +29229,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29242,7 +29242,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29255,7 +29255,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29268,7 +29268,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29281,7 +29281,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29294,7 +29294,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29307,7 +29307,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29320,7 +29320,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29333,7 +29333,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29346,7 +29346,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29359,7 +29359,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29372,7 +29372,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29385,7 +29385,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29398,7 +29398,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29411,7 +29411,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29424,7 +29424,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29437,7 +29437,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29450,7 +29450,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29463,7 +29463,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29476,7 +29476,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29489,7 +29489,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29502,7 +29502,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29515,7 +29515,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29528,7 +29528,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29541,7 +29541,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29554,7 +29554,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29567,7 +29567,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29580,7 +29580,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29593,7 +29593,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29606,7 +29606,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29619,7 +29619,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29632,7 +29632,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29645,7 +29645,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29658,7 +29658,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29671,7 +29671,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29684,7 +29684,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29697,7 +29697,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29710,7 +29710,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29723,7 +29723,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29736,7 +29736,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29749,7 +29749,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29762,7 +29762,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29775,7 +29775,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29788,7 +29788,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29801,7 +29801,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29814,7 +29814,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29827,7 +29827,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29840,7 +29840,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29853,7 +29853,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29866,7 +29866,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29879,7 +29879,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29892,7 +29892,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29905,7 +29905,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29918,7 +29918,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29931,7 +29931,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29944,7 +29944,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29957,7 +29957,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29970,7 +29970,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29983,7 +29983,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -29996,7 +29996,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30009,7 +30009,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30022,7 +30022,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30035,7 +30035,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30048,7 +30048,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30061,7 +30061,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30074,7 +30074,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30087,7 +30087,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30100,7 +30100,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30113,7 +30113,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30126,7 +30126,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30139,7 +30139,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30152,7 +30152,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30165,7 +30165,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30178,7 +30178,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30191,7 +30191,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },
@@ -30204,7 +30204,7 @@ export const sampleTrees = {
       type: "Feature",
       properties: {
         zoneId: "zone-1",
-        treeType: "Oak",
+        treeType: "Palm",
         height: 6,
         ripeness: "ripe",
       },

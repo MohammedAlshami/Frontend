@@ -11,7 +11,16 @@ const Page = () => {
   useEffect(() => {
     const fetchReports = async () => {
       try {
-        const response = await fetch("/data/reports.json");
+        const response = await fetch("https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/get-all", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            table: "reports"
+          })
+        });
+
         const data = await response.json();
         setReports(data);
       } catch (error) {

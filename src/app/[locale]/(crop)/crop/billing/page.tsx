@@ -12,7 +12,18 @@ const Page = () => {
   useEffect(() => {
     const fetchBillingData = async () => {
       try {
-        const response = await fetch("/data/billingData.json");
+        const response = await fetch(
+          "https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/get-all",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              table: "transactions",
+            }),
+          }
+        );
         const data = await response.json();
         setBillingData(data);
       } catch (error) {

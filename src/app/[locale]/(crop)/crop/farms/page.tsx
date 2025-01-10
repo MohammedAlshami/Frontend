@@ -23,7 +23,15 @@ const Fields = () => {
   useEffect(() => {
     const fetchFarmsData = async () => {
       try {
-        const response = await fetch("/data/farmData.json");
+        const response = await fetch("https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/get-all", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            table: "farms"
+          })
+        });
         const data = await response.json();
         setFarmsData(data);
       } catch (error) {
@@ -47,7 +55,7 @@ const Fields = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {farmsData.map((field) => (
             <Link
               href={`/en/crop/map?map_id=${field.href}`}

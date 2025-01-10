@@ -71,7 +71,7 @@ const HomePage = ({}) => {
         </div>
         <div className="space-y-8">
           <h1 className="font-medium text-3xl">Farms</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2  gap-12">
             {farmsData.map((field) => (
               <Link
                 href={`/en/crop/map?map_id=${field.href}`}
