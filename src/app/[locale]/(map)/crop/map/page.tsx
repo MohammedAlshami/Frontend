@@ -3,9 +3,10 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import { useEffect, useState } from "react";
-import MiniSideBar from "@/components/prototyping/MiniSideBar";
 import BreadCrumbs from "@/components/ui/BreadCrumbs";
 import { LayoutDashboard, MapIcon } from "lucide-react";
+import { useSearchParams } from "next/navigation";
+import { Skeleton } from "@nextui-org/react";
 const layers = {
   Imagery:
     "https://zappa-drangue-deployments-test.s3.ap-southeast-1.amazonaws.com/MyHackathonMaps/myhackatho/{z}/{x}/{y}.png",
@@ -17,9 +18,15 @@ const DynamicMap = dynamic(
   }
 );
 
+import DataTable from "@/components/ui/DataTable";
 const MapPage = () => {
   // const [geoJsonData, setGeoJsonData] = useState(null);
-  const zonesData = {
+
+  const searchParams = useSearchParams();
+  const map_id = searchParams.get("map_id")?.replace(/"/g, ""); // Remove quotes if present
+  const [loading, setLoading] = useState(true);
+
+  const pineapple_data = {
     type: "FeatureCollection",
     name: "Zones",
     crs: {
@@ -4684,6 +4691,244 @@ const MapPage = () => {
       },
     ],
   };
+  const palm_data = {
+    type: "FeatureCollection",
+    name: "Zones",
+    crs: {
+      type: "name",
+      properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" },
+    },
+    features: [
+      {
+        type: "Feature",
+        properties: { zoneId: "zone-1" },
+        geometry: {
+          type: "MultiPolygon",
+          coordinates: [
+            [
+              [
+                [-175.342721259573693, -21.098427476743115],
+                [-175.342288009339825, -21.098506249512909],
+                [-175.341426432170238, -21.099003502622221],
+                [-175.341559361219254, -21.099412136365519],
+                [-175.34140181567966, -21.099471215942863],
+                [-175.341687366970177, -21.100362332901135],
+                [-175.341825219317286, -21.100416489180368],
+                [-175.341943378471996, -21.100672500682194],
+                [-175.342091077415347, -21.100593727912401],
+                [-175.34201230464555, -21.100495261950162],
+                [-175.342228929762484, -21.100431259074703],
+                [-175.342199389973814, -21.100278636833231],
+                [-175.342401245196413, -21.100283560131345],
+                [-175.342721259573693, -21.0999783156484],
+                [-175.342908344901929, -21.100071858312528],
+                [-175.343070813739644, -21.099894619580496],
+                [-175.343105276826435, -21.099746920637134],
+                [-175.343351441732011, -21.09966322456923],
+                [-175.343548373656517, -21.099589375097551],
+                [-175.343356365030132, -21.099417059663629],
+                [-175.343056043845309, -21.099471215942863],
+                [-175.342928038094385, -21.099121661776909],
+                [-175.342854188622709, -21.099121661776909],
+                [-175.342721259573693, -21.098427476743115],
+              ],
+            ],
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        properties: { id: null },
+        geometry: {
+          type: "MultiPolygon",
+          coordinates: [
+            [
+              [
+                [-175.341582064443656, -21.098886489737186],
+                [-175.342242282809025, -21.098449580524818],
+                [-175.342785992051063, -21.098362198682345],
+                [-175.34316464670178, -21.098245689559047],
+                [-175.343019010297667, -21.097575762100082],
+                [-175.342766573863855, -21.096488343615967],
+                [-175.340766500580571, -21.097216525636579],
+                [-175.341582064443656, -21.098886489737186],
+              ],
+            ],
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        properties: { id: null },
+        geometry: {
+          type: "MultiPolygon",
+          coordinates: [
+            [
+              [
+                [-175.342751214808288, -21.098439543206489],
+                [-175.342860811364176, -21.0991011816736],
+                [-175.342958230524999, -21.0991011816736],
+                [-175.343062243981365, -21.099451100008061],
+                [-175.343371652989248, -21.099403713042889],
+                [-175.343664098866469, -21.099454134745855],
+                [-175.343865785678332, -21.100039026500248],
+                [-175.346033918905817, -21.099121351506287],
+                [-175.345973412862264, -21.098697809201379],
+                [-175.345459111492005, -21.09782047156979],
+                [-175.345129840335773, -21.097959112056635],
+                [-175.34470236550132, -21.098028432300058],
+                [-175.34439042440593, -21.098149742726051],
+                [-175.343304407258955, -21.098311489960707],
+                [-175.342751214808288, -21.098439543206489],
+              ],
+            ],
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        properties: { id: null },
+        geometry: {
+          type: "MultiPolygon",
+          coordinates: [
+            [
+              [
+                [-175.343202574914613, -21.098277117307067],
+                [-175.344189963730628, -21.098124072040584],
+                [-175.345132920049934, -21.097926594277379],
+                [-175.344540486760309, -21.096090051079585],
+                [-175.34279280855597, -21.096534376046794],
+                [-175.343202574914613, -21.098277117307067],
+              ],
+            ],
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        properties: { id: null },
+        geometry: {
+          type: "MultiPolygon",
+          coordinates: [
+            [
+              [
+                [-175.344572179129159, -21.096180972495421],
+                [-175.345149480100162, -21.097902921943298],
+                [-175.345438130585649, -21.097813340758147],
+                [-175.34681170875794, -21.097425155622496],
+                [-175.346105012741759, -21.095653438849528],
+                [-175.344572179129159, -21.096180972495421],
+              ],
+            ],
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        properties: { id: null },
+        geometry: {
+          type: "MultiPolygon",
+          coordinates: [
+            [
+              [
+                [-175.346805545049392, -21.097477514881223],
+                [-175.345494870706176, -21.097824995986173],
+                [-175.346013044283723, -21.098696746828416],
+                [-175.346043525082393, -21.099086901051518],
+                [-175.347445641821679, -21.098666266029735],
+                [-175.346805545049392, -21.097477514881223],
+              ],
+            ],
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        properties: { id: null },
+        geometry: {
+          type: "MultiPolygon",
+          coordinates: [
+            [
+              [
+                [-175.347457893631145, -21.098711202304628],
+                [-175.34608930573458, -21.099133854449157],
+                [-175.346129558319774, -21.09952631715479],
+                [-175.346079242588303, -21.099979158738211],
+                [-175.346391200123549, -21.100784210442075],
+                [-175.346371073830937, -21.101669767316324],
+                [-175.347186188681093, -21.101649641023727],
+                [-175.348021429823859, -21.101549009560745],
+                [-175.347981177238665, -21.101045852245829],
+                [-175.34761890397192, -21.099274738497332],
+                [-175.347457893631145, -21.098711202304628],
+              ],
+            ],
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        properties: { id: null },
+        geometry: {
+          type: "MultiPolygon",
+          coordinates: [
+            [
+              [
+                [-175.346320541119752, -21.101657806604607],
+                [-175.346364588835769, -21.100804382106567],
+                [-175.346028725001048, -21.099950957608527],
+                [-175.346111314468601, -21.099526998341759],
+                [-175.346023219036539, -21.099163604684531],
+                [-175.343875892880192, -21.100061076898598],
+                [-175.343440921684419, -21.10019322004668],
+                [-175.343997024099281, -21.102081765871375],
+                [-175.345037651390442, -21.101806467646202],
+                [-175.34564881345031, -21.10170736028514],
+                [-175.346320541119752, -21.101657806604607],
+              ],
+            ],
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        properties: { id: null },
+        geometry: {
+          type: "MultiPolygon",
+          coordinates: [
+            [
+              [
+                [-175.341716246720551, -21.100411861506469],
+                [-175.341355420724199, -21.100510531455225],
+                [-175.341962250898604, -21.102420021068347],
+                [-175.342486946173295, -21.102297428714447],
+                [-175.343188174437614, -21.102115992030672],
+                [-175.343668736464906, -21.102169932666389],
+                [-175.343972765502599, -21.102101280948204],
+                [-175.343393670593713, -21.100180406389349],
+                [-175.343703465682182, -21.100110264105162],
+                [-175.343560258518636, -21.099613422925511],
+                [-175.343118946647309, -21.09975955268423],
+                [-175.343086798100387, -21.099911527633303],
+                [-175.342920210175436, -21.100060579987197],
+                [-175.342952748514989, -21.10012155238951],
+                [-175.342737704724669, -21.100003278304822],
+                [-175.342420515133909, -21.100315091800816],
+                [-175.342232351817358, -21.100293587421785],
+                [-175.342296864954449, -21.100427989790745],
+                [-175.342081821164129, -21.100514007306881],
+                [-175.342157086490744, -21.100594648728261],
+                [-175.34195279488992, -21.100696794528673],
+                [-175.341915162226599, -21.10066991405488],
+                [-175.341813016426187, -21.100454870264539],
+                [-175.341716246720551, -21.100411861506469],
+              ],
+            ],
+          ],
+        },
+      },
+    ],
+  };
 
   // useEffect(() => {
   //   fetch("/data/combined_zones.geojson")
@@ -4692,24 +4937,131 @@ const MapPage = () => {
   //     .catch((error) => console.error("Error fetching geojson data:", error));
   // }, []);
   // useEffect(() => {
-  //   fetch("http://127.0.0.1:5000/v1/field/get-all-field")
+  //   fetch("https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/field/get-all-field")
   //     .then((response) => response.json())
   //     .then((data) => setZonesData(data))
   //     .catch((error) => console.error("Error fetching geojson data:", error));
   //   console.log(zonesData);
   // }, []);
-  return (
-    <div className=" flex flex-col  gap-12 pl-2 bg-[#FCFCFD]">
-      {/* <BreadCrumbs
-        title="Reports"
-        icon={<MapIcon className="text-[#60646C] w-8 h-8" />}
-      /> */}
 
-      <DynamicMap
-        center={[1.632294, 103.771028]}
-        layers={layers}
-        zones={zonesData}
-      />
+  const columns = [
+    { key: "id", header: "Field ID" },
+    { key: "field1", header: "Field 1" },
+    { key: "field2", header: "Field 2" },
+    { key: "numberOfTrees", header: "Trees" },
+    {
+      key: "harvestProgress",
+      header: "Harvest Progress",
+      render: (_, row) => (
+        <div className="flex items-center gap-3">
+          <div className="w-32 bg-gray-200 rounded-full h-2">
+            <div
+              className="bg-green-500 h-2 rounded-full"
+              style={{
+                width: `${(row.harvestedFruits / row.totalFruits) * 100}%`,
+              }}
+            ></div>
+          </div>
+          <span className="text-sm">
+            {row.harvestedFruits}/{row.totalFruits}
+          </span>
+        </div>
+      ),
+    },
+  ];
+  const [expandMap, setExpandMap] = useState(false);
+  const mapConfigs = {
+    palm: {
+      center: [-175.34461286299586, -21.09871681897323],
+      layers: layers,
+      data: palm_data,
+    },
+    pineapple: {
+      center: [103.771028, 1.632294],
+      layers: layers,
+      data: pineapple_data,
+    },
+  };
+  const selectedConfig = mapConfigs[map_id];
+
+  const [fields, setFields] = useState([]);
+
+  useEffect(() => {
+    const fetchReports = async () => {
+      try {
+        const response = await fetch(
+          "https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/get-all",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              table: "field",
+            }),
+          }
+        );
+
+        const data = await response.json();
+        setFields(data);
+      } catch (error) {
+        console.error("Error fetching reports:", error);
+      }
+    };
+
+    fetchReports();
+  }, []);
+  return (
+    <div
+      className={` flex flex-col  gap-12 ${
+        !expandMap ? "pb-12 pl-2 px-6 sm:px-12 py-8" : ""
+      } flex flex-col gap-12  bg-[#FCFCFD]`}
+    >
+      {!expandMap && (
+        <BreadCrumbs
+          title="Farm"
+          icon={<MapIcon className="text-icon w-8 h-8" />}
+        />
+      )}
+
+      {/* GeneralMap Component */}
+      {/* {loading && (
+        <Skeleton className="rounded-lg">
+          <div className="h-[30rem] w-full rounded-lg bg-black" />
+        </Skeleton>
+      )} */}
+      <div className="">
+        {selectedConfig ? (
+          <DynamicMap
+            center={selectedConfig.center}
+            layers={selectedConfig.layers}
+            zones={selectedConfig.data}
+            height={expandMap ? "h-[100vh]" : "h-[60vh]"}
+            setExpandMap={setExpandMap}
+            expandedMap={expandMap}
+            // setLoading={setLoading}
+            // loading={loading}
+          />
+        ) : (
+          <div className="h-full flex items-center justify-center">
+            <p>Map not found for ID: {map_id}</p>
+          </div>
+        )}
+      </div>
+
+      {!expandMap && (
+        <>
+          <h2 className="text-3xl font-semibold">Fields</h2>
+          <DataTable
+            isLoading={fields.length == 0}
+            data={fields}
+            columns={columns}
+            enableExport
+            exportFileName="farm_fields"
+            searchKeys={["field1", "field2"]}
+          />
+        </>
+      )}
     </div>
   );
 };

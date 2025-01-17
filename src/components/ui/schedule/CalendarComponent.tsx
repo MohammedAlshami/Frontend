@@ -74,11 +74,11 @@ const Calendar = () => {
   };
 
   return (
-    <section className="bg-white flex flex-col bg-stone-50 border-2 border-black-600/60 p-8 rounded-lg w-full border border-[#E0E1E6] shadow-sm">
+    <section className="bg-accent flex flex-col bg-stone-50 border-2 border-black-600/60 p-8 rounded-lg w-full border border-[#E0E1E6] shadow-sm">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-5">
           <button
-            className="flex items-center justify-center bg-white w-10 h-10 rounded-full border border-indigo-200"
+            className="flex items-center justify-center bg-accent w-10 h-10 rounded-full border border-indigo-200"
             aria-label="Previous Month"
             onClick={() => navigateMonth("prev")}
           >
@@ -106,7 +106,7 @@ const Calendar = () => {
             </p>
           </div>
           <button
-            className="flex items-center justify-center bg-white w-10 h-10 rounded-full border border-indigo-200"
+            className="flex items-center justify-center bg-accent w-10 h-10 rounded-full border border-indigo-200"
             aria-label="Next Month"
             onClick={() => navigateMonth("next")}
           >
@@ -155,7 +155,7 @@ const DayItem = ({
   <div
     className={`flex xl:aspect-square max-xl:min-h-[60px] p-3.5 ${
       isCurrentMonth
-        ? "bg-white cursor-pointer hover:bg-indigo-50"
+        ? "bg-accent cursor-pointer hover:bg-indigo-50"
         : "bg-gray-50"
     } border-r border-b border-indigo-200 transition-all duration-300`}
   >

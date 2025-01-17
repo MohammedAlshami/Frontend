@@ -54,7 +54,7 @@ const nextConfig = {
         const subdomain = hostname.split(".")[0];
         return subdomain === "localhost" ? "" : subdomain;
       } catch (error) {
-        return "";
+        return "palm";
       }
     })(),
   },

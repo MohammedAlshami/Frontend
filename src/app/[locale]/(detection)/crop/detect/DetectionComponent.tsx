@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 import { Tensor, InferenceSession } from "onnxruntime-web";
 import clsx from "clsx";
 
-import labels from "@/utils/model-labels.json";
+import palmLabels from "@/utils/palm-labels.json";
+import pineappleLabels from "@/utils/pineapple-labels.json";
 import { downloadBuffer } from "@/utils/model-download";
 import { detectImage } from "@/utils/model-detect";
 import ImageComponent from "./ImageComponent";
@@ -16,11 +17,11 @@ interface DetectionResultProps {
   bbox: number[]; // [x, y, width, height]
 }
 
-const MODEL_URL = "/model/best.onnx?v=1";
-const MODEL_URL_2 = "/model/nms-yolov8.onnx?v=1";
 const MODEL_SHAPES = [1, 3, 640, 640];
 
-const Page = () => {
+const DetectionComponent = ({ fruit, type }) => {
+  const MODEL_URL = `/model/${fruit}.onnx?v=1`;
+  const MODEL_URL_2 = "/model/nms-yolov8.onnx?v=1";
   const router = useRouter();
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -81,7 +82,6 @@ const Page = () => {
       console.log("Model loaded successfully");
     } catch (error) {
       console.error("Error loading model:", error);
-      alert(`Error loading model: ${error}`);
     }
   }
 
@@ -114,7 +114,6 @@ const Page = () => {
               setImage(img);
             } catch (error) {
               console.error("Error detecting image:", error);
-              alert(`Error detecting image: ${error}`);
             }
           };
         }
@@ -123,7 +122,6 @@ const Page = () => {
       videoRef.current.dataset.intervalId = String(intervalId);
     } catch (error) {
       console.error("Error accessing camera:", error);
-      alert(`Error accessing camera: ${error}`);
       setCameraOpen(false);
     }
   };
@@ -223,6 +221,7 @@ const Page = () => {
         ctx.stroke();
 
         // Draw label text
+        const labels = fruit === "palm" ? palmLabels : pineappleLabels;
         const text = `${labels[detection.label]} (${(
           detection.confidence * 100
         ).toFixed(2)}%)`;
@@ -268,29 +267,37 @@ const Page = () => {
           console.log("Results:", results);
         } catch (error) {
           console.error("Error detecting image:", error);
-          alert(`Error detecting image: ${error}`);
         }
       }
     };
   };
-  const handleSendClick = () => {
-    setModalVisible(true);
-    setModalMessage("Adding detected images to the tree...");
-    // Simulate a delay for processing
-    setTimeout(() => {
-      setModalMessage("Successfully added!");
-      setTimeout(() => {
-        setModalVisible(false);
-        router.push("/");
-      }, 1500);
-    }, 3000);
+  const handleSendClick = async () => {
+    if (!renderedImage) {
+      console.error("No image to validate.");
+      return;
+    }
+
+    try {
+      // Fetch the blob from the rendered image URL
+      const response = await fetch(renderedImage);
+      const blob = await response.blob();
+
+      // Create a URL for the blob
+      const blobUrl = URL.createObjectURL(blob);
+
+      // Pass the blob URL as a query parameter (or you can use it directly in the UI)
+      router.push(
+        `/en/mobile/map/detection?image=${encodeURIComponent(blobUrl)}`
+      );
+    } catch (error) {
+      console.error("Error sending image:", error);
+    }
   };
 
   return (
     <div
       ref={containerRef}
-      className="relative bg-teal-700 w-full h-screen flex items-center justify-center overflow-hidden"
-      style={{ backgroundImage: "url('/loginbg.svg')" }}
+      className="relative  w-full flex items-center justify-center overflow-hidden"
     >
       {modalVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -306,21 +313,21 @@ const Page = () => {
       )}
       <div
         className={` ${
-          renderedImage ? "w-9/12" : "5/12"
+          renderedImage ? "w-11/12" : "5/12"
         } text-white flex flex-col items-center justify-center gap-12`}
       >
         {!renderedImage && (
           <>
-            <img src="/undraw_the_search_s0xf.svg" alt="" className="h-96 " />
-            <h2 className="font-bold text-3xl text-center">
+            <img src="/undraw_the_search_s0xf.svg" alt="" className="h-80 " />
+            <h2 className="font-bold text-2xl sm:text-3xl text-center text-black">
               Start detecting by clicking the button
             </h2>
           </>
         )}
 
         {renderedImage && <ImageComponent imageURL={renderedImage} />}
-        <div className="flex w-full gap-4">
-          <label className="text-xl bg-teal-500 text-white rounded-xl py-2 px-4 flex flex-row-reverse justify-center font-boold items-center gap-2 cursor-pointer z-50 w-full">
+        <div className="flex w-full gap-4 ">
+          <label className=" w-full text-xl bg-teal-500 text-white rounded-xl py-2 px-4 flex flex-row-reverse justify-center font-boold items-center gap-2 cursor-pointer z-50 w-full">
             <Upload size={24} />
             <span className="font-bold">Upload</span>
             <input
@@ -333,10 +340,10 @@ const Page = () => {
           {renderedImage && (
             <a
               onClick={handleSendClick}
-              className="text-xl bg-teal-500 text-white rounded-xl py-2 px-4 flex flex-row-reverse justify-center font-boold items-center gap-2 cursor-pointer z-50 w-full"
+              className="w-full text-xl bg-teal-500 text-white rounded-xl py-2 px-4 flex flex-row-reverse justify-center font-bold items-center gap-2 cursor-pointer z-50 w-full"
             >
               <Send size={24} />
-              <span className="font-bold">Send</span>
+              <span className="font-bold">Validate</span>
             </a>
           )}
         </div>
@@ -355,15 +362,8 @@ const Page = () => {
       />
 
       {/* Render the image generated from the canvas */}
-
-      <div
-        className="absolute top-4 left-4 z-50 bg-teal-500 p-2 rounded-full flex items-center justify-center cursor-pointer"
-        onClick={() => router.back()}
-      >
-        <ArrowLeft size={24} className="text-white" />
-      </div>
     </div>
   );
 };
 
-export default Page;
+export default DetectionComponent;

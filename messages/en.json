@@ -15,9 +15,9 @@
       },
       "navLinks": {
         "home": "Home",
-        "about": "About Palm",
-        "features": "Palm Features",
-        "FAQ": "Palm FAQ",
+        "about": "About",
+        "features": "Features",
+        "FAQ": "FAQ",
         "contact": "Contact Us"
       }
     }
@@ -38,9 +38,9 @@
       },
       "navLinks": {
         "home": "Home",
-        "about": "About Pineapple",
-        "features": "Pineapple Features",
-        "FAQ": "Pineapple FAQ",
+        "about": "About",
+        "features": "Features",
+        "FAQ": "FAQ",
         "contact": "Contact Us"
       }
     }

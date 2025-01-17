@@ -3,17 +3,32 @@ import FloatingButtons from "./FloatingButtons";
 import DateRangePicker from "./DateRangePicker";
 import BasemapSelector from "./BasemapSelector";
 import MapLayerSelector from "./MapLayerSelector";
-import GeneralMap from "./MapComponent";
+import GeneralMap from "./GeneralMap/MapComponent";
 const DEFAULT_BASEMAP = "http://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}";
 import { TileLayer } from "react-leaflet";
 import WeatherCard from "./WeatherCard";
 import { MapOptions } from "./Mapoptions";
 import { FaMap, FaSatellite } from "react-icons/fa";
 import MapPopup from "../MapPopup";
+import { ArrowLeft, Expand } from "lucide-react";
+import { Skeleton } from "@nextui-org/react";
 
-const MapPage = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
+import { useRouter } from "next/navigation";
+
+const MapPage = ({
+  basemap = DEFAULT_BASEMAP,
+  layers,
+  center,
+  zones,
+  height,
+  setExpandMap,
+  expandedMap,
+  setLoading,
+  loading,
+}) => {
   const [showDateRangePicker, setShowDateRangePicker] = useState(true);
 
+  const router = useRouter();
   const handleOpenDateRangePicker = () => {
     setShowDateRangePicker(true);
   };
@@ -64,31 +79,57 @@ const MapPage = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
   };
 
   return (
-    <div className="relative h-screen w-full ">
-      {showDateRangePicker && (
+    <div className={`relative  w-full ${height}`}>
+      {/* {showDateRangePicker && (
         <DateRangePicker onClose={handleCloseDateRangePicker} />
-      )}
+      )} */}
 
-      {/* GeneralMap Component */}
+      <div
+        className="sm:hidden rounded-full bg-gray-50 m-4 absolute top-0 left-0 z-10  p-2 transform transition-transform duration-300 text-black hover:-translate-y-2 cursor-pointer"
+        onClick={() => {
+          router.back();
+        }}
+      >
+        <ArrowLeft />
+      </div>
+      <div
+        className="hidden sm:block rounded-lg ml-5 bg-gray-50 m-4 absolute top-0 left-0 z-10  p-2 transform transition-transform duration-300 text-black hover:-translate-y-2 cursor-pointer"
+        onClick={() => {
+          setExpandMap(!expandedMap);
+        }}
+      >
+        <Expand />
+      </div>
+
       <GeneralMap
         basemap={DEFAULT_BASEMAP} // Ensure the basemap is set
         layers={<TileLayer url={basemapUrls[selectedLayer]} />}
-        center={[1.632294, 103.771028]}
+        center={center}
         zones={zones}
         showPopup={showPopup}
         setShowPopup={setShowPopup}
+        // setLoading={setLoading}
+        // loading={loading}
       />
 
       {/* Overlay Controls */}
-      <div className="absolute top-0 right-0 z-10 p-4">
-        <div className="flex flex-col gap-12">{/* <WeatherCard /> */}</div>
+      {/* <div className="absolute top-0 right-0 z-10 p-4">
+        <div className="flex flex-col gap-12"><WeatherCard /></div>
         {showPopup && (
           <MapPopup showPopup={showPopup} setShowPopup={setShowPopup} />
         )}
-      </div>
+      </div> */}
 
+      {/* <div
+        className="absolute top-3 left-6  flex justify-center items-center mb-8 z-10 transform transition-transform duration-300 text-black hover:-translate-y-2 cursor-pointer"
+        onClick={() => setExpandMap(!expandedMap)}
+      >
+        <div className=" bg-accent p-2 bg-gray-100 rounded-xl flex items-center justify-center hover:bg-black hover:text-white">
+          <Expand className="w-6 h-6" />
+        </div>
+      </div> */}
       {/* MapOptions positioned at bottom middle */}
-      <div className="absolute bottom-0 left-6 sm:left-0 sm:right-0 flex justify-center items-center mb-8 z-10">
+      {/* <div className="absolute bottom-0 left-6 sm:left-0 sm:right-0 flex justify-center items-center mb-8 z-10">
         <div className="flex flex-row-reverse sm:flex-col gap-8">
           {selectedLayer == "Layers" && (
             <MapLayerSelector
@@ -109,7 +150,7 @@ const MapPage = ({ basemap = DEFAULT_BASEMAP, layers, center, zones }) => {
             selectedOption={selectedLayer}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,19 +1,70 @@
-import React from "react";
-import CalendarUI from "@/components/ui/schedule/CalendarUI";
+"use client";
+import DataTable from "@/components/ui/DataTable";
 import BreadCrumbs from "@/components/ui/BreadCrumbs";
-import { LayoutDashboard } from "lucide-react";
-import ReportsTable from "@/components/ui/ReportTable";
+import { Download, LayoutDashboard } from "lucide-react";
+import CardComponent from "@/components/ui/CardComponent";
+import { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
+  const [reports, setReports] = useState([]);
+
+  useEffect(() => {
+    const fetchReports = async () => {
+      try {
+        const response = await fetch("https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/get-all", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            table: "reports"
+          })
+        });
+
+        const data = await response.json();
+        setReports(data);
+      } catch (error) {
+        console.error("Error fetching reports:", error);
+      }
+    };
+
+    fetchReports();
+  }, []);
+  const columns = [
+    { key: "date", header: "Date" },
+    { key: "report_id", header: "Report ID" },
+    { key: "description", header: "Description" },
+    {
+      key: "file",
+      header: "Download Report",
+      render: (file) => (
+        <a
+          href={file}
+          download
+          className="bg-gray-100 p-2 rounded-full text-neutral-700 hover:text-blue-700 flex justify-center items-center gap-2"
+        >
+          <Download /> Download
+        </a>
+      ),
+    },
+  ];
+
   return (
-    <div className=" px-6 sm:px-12 flex flex-col  gap-12  pb-12 bg-[#FCFCFD]">
+    <div className="px-6 sm:px-12 flex flex-col gap-12 pb-12 bg-[#FCFCFD]">
       <BreadCrumbs
         title="Reports"
-        icon={<LayoutDashboard className="text-[#60646C] w-8 h-8" />}
+        icon={<LayoutDashboard className="text-icon w-8 h-8" />}
       />
-      <ReportsTable />
+
+      <DataTable
+        data={reports}
+        columns={columns}
+        enableExport
+        exportFileName="reports_history"
+        isLoading={reports.length == 0}
+      />
     </div>
   );
 };
 
-export default page;
+export default Page;

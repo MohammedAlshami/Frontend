@@ -22,7 +22,7 @@ const YieldedBlocks = () => {
     return (
         <div className="w-full flex flex-col gap-4">
             <div>
-                <h2 className="font-bold">Most Yielded Block</h2>
+                <h2 className="font-bold m">Most Yielded Block</h2>
                 <p className="text-gray-500">Adipiscing elit, sed do eiusmod tempor </p>
             </div>
 

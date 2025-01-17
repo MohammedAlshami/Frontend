@@ -16,13 +16,13 @@ export default function RootLayout({
   return (
     <div className="relative h-full" suppressHydrationWarning={true}>
       {/* Content */}
-      <div className="relative  bg-[#FCFCFD] ">
+      <div className="relative  ">
         {/* <Navbar /> */}
         {/* <HomePage /> */}
 
         {/* <Dashboard /> */}
         <Sidebar Minimize={false}>
-          <div className="py-8">{children}</div>
+          <div className="py-8 bg-bg">{children}</div>
         </Sidebar>
       </div>
 

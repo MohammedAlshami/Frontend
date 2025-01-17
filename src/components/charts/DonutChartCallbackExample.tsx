@@ -59,7 +59,7 @@ export function DonutChartCallbackExample() {
 
   return (
     <div className="w-full h-full">
-      <p className="text-center text-sm text-gray-700 dark:text-gray-300">
+      <p className="text-center text-sm text-icon dark:text-gray-300">
         Costs by category
       </p>
       <p className="mt-2 w-full text-center text-xl font-semibold text-gray-900 dark:text-gray-50">

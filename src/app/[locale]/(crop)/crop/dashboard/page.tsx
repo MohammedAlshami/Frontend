@@ -13,24 +13,24 @@ const Page = () => {
     <div className=" px-6 sm:px-12 flex flex-col  gap-12  pb-12">
       <BreadCrumbs
         title="Dashboard"
-        icon={<LayoutDashboard className="text-[#60646C] w-8 h-8" />}
+        icon={<LayoutDashboard className="text-icon w-8 h-8" />}
       />
       <div className="flex flex-col gap-12 ">
         <div className="flex flex-col  md:flex-row justify-between gap-12">
           <div className="w-full">
-            <div className="border-2 border-black-600/60 p-4 rounded-lg space-x-4 w-full bg-white cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-3 rounded-lg shadow-sm pl-8 pr-8 pt-8 pb-8">
+            <div className="border-2 border-black-600/60 p-4 rounded-lg space-x-4 w-full bg-accent cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-3 rounded-lg shadow-sm pl-8 pr-8 pt-8 pb-8">
               <LineChartCallbackExample />
             </div>
           </div>
         </div>
         <div className="flex flex-col  md:flex-row justify-between gap-6 ">
           <div className="w-full">
-            <div className="border-2 border-black-600/60 p-4 rounded-lg space-x-4 w-full bg-white cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-3 rounded-lg shadow-sm pl-8 pr-8 pt-8 pb-8">
+            <div className="border-2 border-black-600/60 p-4 rounded-lg space-x-4 w-full bg-accent cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-3 rounded-lg shadow-sm pl-8 pr-8 pt-8 pb-8">
               <YieldedBlocks />
             </div>
           </div>
           <div className="w-full sm:w-4/12">
-            <div className="border-2 border-black-600/60 p-4 rounded-lg h-full w-full space-x-4 w-full bg-white cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-3 rounded-lg shadow-sm pl-8 pr-8 pt-8 pb-8">
+            <div className="border-2 border-black-600/60 p-4 rounded-lg h-full w-full space-x-4 w-full bg-accent cursor-pointer w-full border border-[#E0E1E6] flex items-center gap-2 p-2 pl-3 rounded-lg shadow-sm pl-8 pr-8 pt-8 pb-8">
               <DonutChartCallbackExample />
             </div>
           </div>

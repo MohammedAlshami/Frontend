@@ -45,7 +45,7 @@ function Page({ lang }: { lang: any }) {
     { label: navLinks("contact"), href: "#contact" },
   ];
   return (
-    <div className="space-y-32 scroll-smooth bg-white ">
+    <div className="space-y-32 scroll-smooth bg-accent ">
       <Navbar navLinks={navLinksArray} />
       <h1></h1>
 

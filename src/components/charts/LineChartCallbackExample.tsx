@@ -75,7 +75,7 @@ export function LineChartCallbackExample() {
 
   return (
     <div className="w-full h-full">
-      <p className="text-sm text-gray-700 dark:text-gray-300">
+      <p className="text-sm text-icon dark:text-gray-300">
         Revenue by month
       </p>
       <p className="mt-2 text-xl font-semibold text-gray-900 dark:text-gray-50">
