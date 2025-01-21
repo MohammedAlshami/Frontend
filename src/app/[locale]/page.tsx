@@ -57,7 +57,7 @@ function Page({ lang }: { lang: any }) {
         />
         <LogoCloud title={logoCloud("title")} />
         <div id="about">
-          <About title={about("title")} description={about("description")} />
+          <About title={about("title")} description={about("description")} title2={about("title2")} description2={about("description2")} />
         </div>
         <div id="features">
           <Features1 />

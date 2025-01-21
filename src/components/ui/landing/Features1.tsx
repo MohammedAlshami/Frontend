@@ -20,7 +20,7 @@ const Features1 = () => {
         </svg>
       ),
       title: "AI-Powered Fruit Detection",
-      desc: "Drangue uses AI to detect fruit ripeness accurately, reducing manual labor and guesswork.",
+      desc: "Drangue uses AI to detect various factors affecting fruit quality, reducing manual labor and guesswork.",
     },
     {
       icon: (
@@ -115,13 +115,12 @@ const Features1 = () => {
       </div>
       <div className="relative max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8 sm:py-24 pt-32 sm:pt-64">
         <motion.div className="max-w-xl space-y-3" variants={itemVariants}>
-          <h3 className="text-indigo-600 font-semibold">Features</h3>
+          <h3 className="text-indigo-600 font-semibold">Our Technology</h3>
           <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             Do more with less complexity
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            congue, nisl eget molestie varius
+          Save more time by allowing our technology to breakdown complex resources
           </p>
         </motion.div>
         <motion.div className="mt-12" variants={sectionVariants}>

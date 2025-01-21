@@ -23,7 +23,7 @@ const Feature1 = ({ features }) => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2 }}
           >
-            Our Technology
+            Desktop Features
           </motion.h3>
           <motion.p
             className="text-white text-3xl font-semibold sm:text-4xl"
@@ -31,7 +31,7 @@ const Feature1 = ({ features }) => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.4 }}
           >
-            Cutting-edge AI for agriculture
+            Oversee crop growth with our AI
           </motion.p>
           <motion.p
             className="text-neutral-200"
@@ -39,8 +39,7 @@ const Feature1 = ({ features }) => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.6 }}
           >
-            Our advanced AI solutions empower farmers and agricultural
-            businesses
+            Collect insights from workers to make informed decisions
           </motion.p>
         </div>
         <motion.div
@@ -137,7 +136,7 @@ const Feature2 = ({ features }) => {
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
           >
-            Our Technology
+            App Features
           </motion.h3>
           <motion.p
             className="text-white text-3xl font-semibold sm:text-4xl"
@@ -145,7 +144,7 @@ const Feature2 = ({ features }) => {
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
           >
-            Cutting-edge AI for agriculture
+            Inspect and report back conveniently 
           </motion.p>
           <motion.p
             className="text-neutral-200"
@@ -153,8 +152,7 @@ const Feature2 = ({ features }) => {
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
           >
-            Our advanced AI solutions empower farmers and agricultural
-            businesses
+            Send your daily feedback and reports from your preferred location without having to travel far
           </motion.p>
         </div>
         <motion.div
@@ -171,9 +169,9 @@ const Feature2 = ({ features }) => {
                 </div>
                 <div>
                   <h4 className="text-lg text-white font-semibold">
-                    {item.title}
+                    {item.title2} {/* Now correctly renders title2 */}
                   </h4>
-                  <p className="mt-3 text-white">{item.desc}</p>
+                  <p className="mt-3 text-white">{item.desc2}</p> {/* Now correctly renders desc2 */}
                 </div>
               </li>
             ))}
@@ -184,7 +182,8 @@ const Feature2 = ({ features }) => {
   );
 };
 
-const About = ({title, description}) => {
+
+const About = ({title, description, title2, description2}) => {
   const features = [
     {
       icon: (
@@ -205,6 +204,8 @@ const About = ({title, description}) => {
       ),
       title: title,
       desc: description,
+      title2: title2,
+      desc2: description2,
     },
   ];
 
