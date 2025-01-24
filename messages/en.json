@@ -1,6 +1,9 @@
 {
   "palm": {
     "landing": {
+      "page": {
+        "title": "Crop Monitoring - Palm Oil"
+      },
       "hero": {
         "title": "Managing large palm farms",
         "coloredTitle": " doesn’t have to be complicated",
@@ -26,6 +29,9 @@
   },
   "pineapple": {
     "landing": {
+      "page": {
+        "title": "Crop Monitoring - Pineapple"
+      },
       "hero": {
         "title": "Managing large pineapple farms",
         "coloredTitle": " doesn’t have to be complicated",

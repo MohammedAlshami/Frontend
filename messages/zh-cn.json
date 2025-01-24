@@ -1,6 +1,9 @@
 {
   "palm": {
     "landing": {
+      "page": {
+        "title": "作物监控 - 棕榈油"
+      },
       "hero": {
         "title": "管理大型农场",
         "coloredTitle": "不必复杂",
@@ -26,6 +29,9 @@
   },
   "pineapple": {
     "landing": {
+      "page": {
+        "title": "作物监控 - 菠萝"
+      },
       "hero": {
         "title": "管理大型农场",
         "coloredTitle": "不必复杂",

@@ -1,6 +1,9 @@
 {
   "palm": {
     "landing": {
+      "page": {
+        "title": "Pemantauan Tanaman - Minyak Sawit"
+      },
       "hero": {
         "title": "Mengurus ladang besar",
         "coloredTitle": "tidak perlu rumit",
@@ -26,6 +29,9 @@
   },
   "pineapple": {
     "landing": {
+      "page": {
+        "title": "Pemantauan Tanaman - Nanas"
+      },
       "hero": {
         "title": "Mengurus ladang besar",
         "coloredTitle": "tidak perlu rumit",

@@ -1,7 +1,5 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-// import { notFound } from "next/navigation";
-// import { routing } from "@/i18n/routing";
 import "./globals.css";
 import PrelineScript from "@/app/components/PrelineScript";
 
@@ -12,14 +10,15 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Ensure that the incoming `locale` is valid
-  // if (!routing.locales.includes(locale as any)) {
-  //   notFound();
-  // }
-
-  // Providing all messages to the client
-  // side is the easiest way to get started
+  // Load messages for the current locale
   const messages = await getMessages();
+
+  // Determine which crop data to use (either "palm" or "pineapple")
+  const cropData = messages[locale]?.palm || messages[locale]?.pineapple; // Adjust based on the locale structure
+
+  // Set the page title dynamically based on the locale and crop
+  const cropName = cropData?.landing?.page?.title || "Crop Monitoring";
+  const pageTitle = `${cropName} - Palm Oil`;  // Here we are appending "Palm Oil"
 
   return (
     <html
@@ -27,9 +26,13 @@ export default async function LocaleLayout({
       suppressHydrationWarning={true}
       className="bg-accent light"
     >
-      <body className={` antialiased  light`}>
+      <head>
+        <link rel="icon" href="DrangueMiniLogo.svg" />
+        <title>{pageTitle}</title> {/* Set the dynamic title here */}
+      </head>
+      <body className="antialiased light">
         <NextIntlClientProvider messages={messages}>
-          <div className="relative h-svh	">
+          <div className="relative h-svh">
             {/* Content */}
             {children}
           </div>
