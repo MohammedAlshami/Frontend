@@ -114,13 +114,13 @@ const Feature2 = ({ features }) => {
             key={i}
             className="mx-auto max-w-full w-64 sm:w-60 lg:w-72 h-auto"
           >
-            <div className="p-2 bg-gray-800 shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(45_55_75_/_20%),_0_2rem_4rem_-2rem_rgb(45_55_75_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(45_55_75_/_20%)] dark:bg-neutral-600 dark:shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(0_0_0_/_20%),_0_2rem_4rem_-2rem_rgb(0_0_0_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(0_0_0_/_20%)] rounded-3xl">
+            <div className="p-2  shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(45_55_75_/_20%),_0_2rem_4rem_-2rem_rgb(45_55_75_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(45_55_75_/_20%)]  rounded-3xl">
               <img
                 className=" lg:max-w-full rounded-[1.25rem] h-[400px] lg:h-[580px] object-cover"
                 src={
                   i === 0
-                    ? "https://images.unsplash.com/photo-1578301978162-7aae4d755744?q=80&w=1877&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    : "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    ? "mobile-detection.png"
+                    : "mobile-task.png"
                 }
                 alt="Mobile Placeholder"
               />

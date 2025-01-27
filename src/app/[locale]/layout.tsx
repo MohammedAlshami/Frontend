@@ -1,8 +1,11 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 import "./globals.css";
 import PrelineScript from "@/app/components/PrelineScript";
 
+// Server-side logic to fetch page title based on subdomain
 export default async function LocaleLayout({
   children,
   params: { locale },
@@ -13,27 +16,21 @@ export default async function LocaleLayout({
   // Load messages for the current locale
   const messages = await getMessages();
 
-  // Determine which crop data to use (either "palm" or "pineapple")
-  const cropData = messages[locale]?.palm || messages[locale]?.pineapple; // Adjust based on the locale structure
+  const subdomain = "palm"; 
 
-  // Set the page title dynamically based on the locale and crop
-  const cropName = cropData?.landing?.page?.title || "Crop Monitoring";
-  const pageTitle = `${cropName} - Palm Oil`;  // Here we are appending "Palm Oil"
+  // Dynamically get the page title based on the subdomain (palm or pineapple)
+  const pageTitle =
+    messages[subdomain]?.landing?.page?.title || "Crop Monitoring"; // Default to "Crop Monitoring"
 
   return (
-    <html
-      lang={locale}
-      suppressHydrationWarning={true}
-      className="bg-accent light"
-    >
+    <html lang={locale} suppressHydrationWarning={true} className="bg-accent light">
       <head>
         <link rel="icon" href="DrangueMiniLogo.svg" />
-        <title>{pageTitle}</title> {/* Set the dynamic title here */}
+        <title>{pageTitle}</title> 
       </head>
       <body className="antialiased light">
         <NextIntlClientProvider messages={messages}>
           <div className="relative h-svh">
-            {/* Content */}
             {children}
           </div>
         </NextIntlClientProvider>
