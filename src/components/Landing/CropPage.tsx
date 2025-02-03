@@ -14,23 +14,11 @@ import LogoCloud from "@/components/ui/landing/LogoCloud";
 import Stats from "@/components/ui/landing/Stats";
 import { useTranslations } from "next-intl";
 
-function Page({ lang }: { lang: any }) {
-  const [subdomain, setSubdomain] = useState<string | null>(null);
+interface CropPageProps {
+  subdomain: string;
+}
 
-  useEffect(() => {
-    const hostname = window.location.hostname; // e.g., sub.example.com
-    const parts = hostname.split(".");
-
-    // Assuming the structure is subdomain.domain.tld
-    if (parts.length > 2) {
-      setSubdomain(parts[0]); // First part is the subdomain
-    } else {
-      setSubdomain("palm"); // No subdomain found
-    }
-  }, []);
-  console.log("Solution Type");
-  // const solution = process.env.solutionType;
-  // const solution = process.env.SUBDOMAIN_NAME;
+function CropPage({ subdomain }: CropPageProps) {
   const hero = useTranslations(subdomain + "." + "landing.hero");
   const logoCloud = useTranslations(subdomain + "." + "landing.logoCloud");
   const about = useTranslations(subdomain + "." + "landing.about");
@@ -57,7 +45,12 @@ function Page({ lang }: { lang: any }) {
         />
         <LogoCloud title={logoCloud("title")} />
         <div id="about">
-          <About title={about("title")} description={about("description")} title2={about("title2")} description2={about("description2")} />
+          <About
+            title={about("title")}
+            description={about("description")}
+            title2={about("title2")}
+            description2={about("description2")}
+          />
         </div>
         <div id="features">
           <Features1 />
@@ -78,4 +71,4 @@ function Page({ lang }: { lang: any }) {
   );
 }
 
-export default Page;
+export default CropPage;
