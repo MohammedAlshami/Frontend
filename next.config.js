@@ -2,12 +2,12 @@ const CopyPlugin = require("copy-webpack-plugin");
 const createNextIntlPlugin = require("next-intl/plugin");
 
 const withNextIntl = createNextIntlPlugin();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: (config) => {
     config.resolve.fallback = {
       ...config.resolve.fallback,
-
       fs: false,
     };
 
@@ -32,18 +32,22 @@ const nextConfig = {
 
     return config;
   },
+
+  // ESLint and TypeScript configuration
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // Ignore ESLint errors during build
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: true, // Ignore TypeScript errors during build
   },
+
   output: "standalone",
+
+  // Environment variables
   env: {
     solutionType: "pineapple",
     SUBDOMAIN_NAME: (() => {
       try {
-        // In Node.js environment, we can use require('os').hostname()
         const os = require("os");
         const hostname =
           process.env.NEXT_PUBLIC_VERCEL_URL ||
@@ -54,12 +58,13 @@ const nextConfig = {
         const subdomain = hostname.split(".")[0];
         return subdomain === "localhost" ? "" : subdomain;
       } catch (error) {
-        return "palm";
+        return "palm"; 
       }
     })(),
   },
+
   images: {
-    domains: ["assets.aceternity.com"],
+    domains: ["assets.aceternity.com"], 
   },
 };
 

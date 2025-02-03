@@ -11,7 +11,7 @@ const layers = {
   Imagery:
     "https://zappa-drangue-deployments-test.s3.ap-southeast-1.amazonaws.com/MyHackathonMaps/myhackatho/{z}/{x}/{y}.png",
 };
-const DynamicMap = dynamic(() => import("../../../../../../components/ui/map/Map"), {
+const DynamicMap = dynamic(() => import("../../../../../components/ui/map/Map"), {
   ssr: false, // Disable SSR for this component
 });
 
