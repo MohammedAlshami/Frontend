@@ -25,25 +25,21 @@ const DetailItem = ({ icon, content }) => {
 const HomePage = ({}) => {
   const [farmsData, setFarmsData] = useState([]);
 
-  const [eventsData, setEventsData] = useState([]);
-
-  useEffect(() => {
-    const fetchEventsData = async () => {
-      try {
-        const response = await fetch("/data/eventsData.json");
-        const data = await response.json();
-        setEventsData(data);
-      } catch (error) {
-        console.error("Error fetching billing data:", error);
-      }
-    };
-
-    fetchEventsData();
-  }, []);
   useEffect(() => {
     const fetchFarmsData = async () => {
       try {
-        const response = await fetch("/data/farmData.json");
+        const response = await fetch(
+          "https://duk8eezkki.execute-api.ap-southeast-1.amazonaws.com/main/v1/get-all",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              table: "farms",
+            }),
+          }
+        );
         const data = await response.json();
         setFarmsData(data);
       } catch (error) {
@@ -71,7 +67,7 @@ const HomePage = ({}) => {
         </div>
         <div className="space-y-8">
           <h1 className="font-medium text-3xl">Farms</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2  gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {farmsData.map((field) => (
               <Link
                 href={`/en/crop/map?map_id=${field.href}`}
@@ -123,10 +119,6 @@ const HomePage = ({}) => {
               </Link>
             ))}
           </div>
-        </div>
-        <div className="space-y-8">
-            <h1 className="font-medium text-3xl">Schedule</h1>
-            <CalendarUI events={eventsData.slice(0, 2)} />{" "}
         </div>
       </div>
     </div>

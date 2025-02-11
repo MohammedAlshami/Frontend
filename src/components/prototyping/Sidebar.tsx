@@ -8,6 +8,7 @@ import {
   ChevronRight,
   CreditCard,
   EllipsisVertical,
+  Fullscreen,
   Home,
   LayoutDashboard,
   List,
@@ -36,7 +37,7 @@ import {
 import { Icon } from "@iconify/react";
 const links = [
   {
-    href: "/en/crop",
+    href: "/en/crop/home",
     label: "Home",
     icon: <Home className="w-5 h-5 text-icon " />,
   },
@@ -44,6 +45,11 @@ const links = [
     href: "/en/crop/dashboard",
     label: "Dashboard",
     icon: <LayoutDashboard className="w-5 h-5 text-icon " />,
+  },
+  {
+    href: "/en/crop/detect",
+    label: "Detection",
+    icon: <Fullscreen className="w-5 h-5 text-icon " />,
   },
   {
     href: "/en/crop/farms",
