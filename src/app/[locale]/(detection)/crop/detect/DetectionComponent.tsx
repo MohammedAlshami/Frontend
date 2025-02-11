@@ -22,21 +22,21 @@ const DetectionComponent = ({ fruit }) => {
 
   const handleFileUpload = async (event) => {
     try {
+      setDetectionResult(null);
+      setImage(null);
       setLoading(true);
       setError("");
       const file = event.target.files?.[0];
       if (!file) return;
 
       const base64Image = await convertToBase64(file);
-      const response = await fetch("http://127.0.0.1:5000/detect", {
+      const response = await fetch("/api/detect", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Accept": "application/json",
-
         },
         body: JSON.stringify({
-          image: "https://cdn.britannica.com/54/119354-050-FA32210A/pineapple.jpg",
+          image: base64Image,
           fruit_type: fruit,
         }),
       });
@@ -87,18 +87,21 @@ const DetectionComponent = ({ fruit }) => {
           </div>
         )}
 
-     
         {detectionResult && (
           <div className="w-full space-y-4">
-            <div className={`p-4 rounded-lg text-white text-center text-lg font-semibold ${getRipenessColor(detectionResult.ripeness)}`}>
+            <div
+              className={`p-4 rounded-lg text-white text-center text-lg font-semibold ${getRipenessColor(
+                detectionResult.ripeness
+              )}`}
+            >
               Ripeness: {detectionResult.ripeness}
               <div className="text-sm mt-1">
                 Confidence: {(detectionResult.confidence * 100).toFixed(1)}%
               </div>
             </div>
-            <img 
-              src={image} 
-              alt="Detection Result" 
+            <img
+              src={image}
+              alt="Detection Result"
               className="w-full rounded-lg shadow-lg"
             />
           </div>
@@ -116,7 +119,6 @@ const DetectionComponent = ({ fruit }) => {
               disabled={loading}
             />
           </label>
-
         </div>
       </div>
     </div>
