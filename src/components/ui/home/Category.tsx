@@ -27,7 +27,7 @@ export function Category() {
     >
       <div className="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
         <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
-          Our Services
+          Our Products
         </h2>
         <p className="mt-1 text-gray-600 dark:text-neutral-400">
           Solutions we have tailored to suit the area of interest
@@ -64,7 +64,7 @@ export function Category() {
                 Agriculture
               </p>
               <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
-                Palm Oil Detection
+                Palm Oil Pollination Solution
               </h3>
             </div>
             <svg
@@ -105,7 +105,7 @@ export function Category() {
                 Agriculture
               </p>
               <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
-                Pineapple Detection
+                Pineapple Solution
               </h3>
             </div>
             <svg

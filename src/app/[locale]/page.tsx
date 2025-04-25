@@ -21,7 +21,7 @@ function Page({ lang }: { lang: any }) {
 
   return (
     <>
-      {subdomain === "main" || subdomain === "www" && <MainPage />}
+      {(subdomain === "main" || subdomain === "www") && <MainPage />}
       {subdomain !== "main" && subdomain && <CropPage subdomain={subdomain} />}
     </>
   );

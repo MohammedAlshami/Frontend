@@ -5,6 +5,7 @@ import { Category } from "@/components/ui/home/Category";
 import { TypedOut } from "@/components/ui/home/TypedOut";
 import About from "@/components/ui/home/AboutandBenefits";
 import Contact from "@/components/ui/home/Contact";
+import LogoCloud2 from "../ui/landing/LogoCloud2";
 import Navbar from "./Navbar";
 export default function MainPage() {
   return (
@@ -23,12 +24,12 @@ export default function MainPage() {
                 <HeroScroll />
               </div>
 
-              <div className="z-60">
-                <About />
+              <div>
+                <LogoCloud2 />
               </div>
 
-              <div id="services_s" className="mx-4 sm:mx-0">
-                <Category />
+              <div className="z-60">
+                <About />
               </div>
 
               <div className="z-60">

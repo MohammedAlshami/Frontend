@@ -96,127 +96,133 @@ const Contact = () => {
             <p className="mt-3 text-gray-600 dark:text-neutral-400">
               Want our solution tailored to your needs? Tell us how
             </p>
-            <img className="w-[100rem]" src="contact.svg" alt="Contact Us" />
+            <img className="w-[100rem] mt-6" src="contact.svg" alt="Contact Us" />
           </div>
 
           <div className="mt-12 max-w-lg mx-auto">
-            <div className="relative flex flex-col bg-stone-950 rounded-xl p-4 sm:p-6 lg:p-8">
-              <div className="absolute inset-0 -z-[1] border-4 border-transparent rounded-xl bg-gradient-to-br from-blue-600 via-transparent to-violet-600"></div>
-              <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-neutral-200">
-                Fill in the form
-              </h2>
+            <div className="bg-gradient-to-br from-blue-600 to-violet-600 via-transparent p-[0.07rem] rounded-xl">
+              <div className="relative flex flex-col bg-stone-950 rounded-xl p-4 sm:p-6 lg:p-10 m-">
+                <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-neutral-200">
+                  Fill in the form
+                </h2>
 
-              <form onSubmit={handle_submit}>
-                <div className="grid gap-4 lg:gap-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
-                    <div>
-                      <label
-                        htmlFor="name"
-                        className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
-                      >
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        value={form_data.name}
-                        onChange={handle_change}
-                        className="border border-gray-400 py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                      />
+                <form onSubmit={handle_submit}>
+                  <div className="grid gap-4 lg:gap-6">
+                    {/* Name & Company Name Section */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                      <div>
+                        <label
+                          htmlFor="name"
+                          className="block mb-2 text-sm text-gray-500 font-medium"
+                        >
+                          Name
+                        </label>
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          value={form_data.name}
+                          onChange={handle_change}
+                          className="py-3 px-4 block w-full rounded-lg text-sm bg-stone-950 text-gray-400 border border-gray-700"
+                        />
+                      </div>
+
+                      <div>
+                        <label
+                          htmlFor="company_name"
+                          className="block mb-2 text-sm text-gray-500 font-medium"
+                        >
+                          Company Name
+                        </label>
+                        <input
+                          type="text"
+                          name="company_name"
+                          id="company_name"
+                          value={form_data.company_name}
+                          onChange={handle_change}
+                          className="py-3 px-4 block w-full rounded-lg text-sm bg-stone-950 text-gray-400 border border-gray-700"
+                        />
+                      </div>
                     </div>
 
+                    {/* Email & Phone Number Section */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="block mb-2 text-sm text-gray-500 font-medium"
+                        >
+                          Email
+                        </label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          autoComplete="email"
+                          value={form_data.email}
+                          onChange={handle_change}
+                          className="py-3 px-4 block w-full rounded-lg text-sm bg-stone-950 text-gray-400 border border-gray-700"
+                        />
+                      </div>
+
+                      <div>
+                        <label
+                          htmlFor="phone_number"
+                          className="block mb-2 text-sm text-gray-500 font-medium"
+                        >
+                          Phone Number
+                        </label>
+                        <input
+                          type="text"
+                          name="phone_number"
+                          id="phone_number"
+                          value={form_data.phone_number}
+                          onChange={handle_change}
+                          className="py-3 px-4 block w-full rounded-lg text-sm bg-stone-950 text-gray-400 border border-gray-700"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Details Section */}
                     <div>
                       <label
-                        htmlFor="company_name"
-                        className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                        htmlFor="details"
+                        className="block mb-2 text-sm text-gray-500 font-medium"
                       >
-                        Company Name
+                        Details
                       </label>
-                      <input
-                        type="text"
-                        name="company_name"
-                        id="company_name"
-                        value={form_data.company_name}
+                      <textarea
+                        id="details"
+                        name="details"
+                        value={form_data.details}
                         onChange={handle_change}
-                        className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                      />
+                        className="py-3 px-4 block w-full rounded-lg text-sm bg-stone-950 text-gray-400 border border-gray-700"
+                      ></textarea>
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
-                    <div>
-                      <label
-                        htmlFor="email"
-                        className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
-                      >
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        autoComplete="email"
-                        value={form_data.email}
-                        onChange={handle_change}
-                        className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                      />
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="phone_number"
-                        className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
-                      >
-                        Phone Number
-                      </label>
-                      <input
-                        type="text"
-                        name="phone_number"
-                        id="phone_number"
-                        value={form_data.phone_number}
-                        onChange={handle_change}
-                        className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="details"
-                      className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                  <div className="mt-6 grid">
+                    <button
+                      type="submit"
+                      className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-violet-600 text-white hover:bg-violet-700 disabled:opacity-50 disabled:pointer-events-none"
                     >
-                      Details
-                    </label>
-                    <textarea
-                      id="details"
-                      name="details"
-                      value={form_data.details}
-                      onChange={handle_change}
-                      className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                    ></textarea>
+                      Send inquiry
+                    </button>
                   </div>
-                </div>
 
-                <div className="mt-6 grid">
-                  <button
-                    type="submit"
-                    className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-violet-600 text-white hover:bg-violet-700 disabled:opacity-50 disabled:pointer-events-none"
-                  >
-                    Send inquiry
-                  </button>
-                </div>
-
-                <div className="mt-3 text-center">
-                  <p className="text-sm text-gray-500 dark:text-neutral-500">
-                    We'll get back to you in 1-2 business days.
-                  </p>
-                </div>
-              </form>
+                  <div className="mt-3 text-center">
+                    <p className="text-sm text-gray-500 dark:text-neutral-500">
+                      We'll get back to you in 1-2 business days.
+                    </p>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </motion.div>
+
+
 
       {/* Success Modal */}
       {modal.is_open && modal.is_success && (

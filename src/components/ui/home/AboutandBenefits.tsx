@@ -1,280 +1,164 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion"; // Import Framer Motion
+import React, { useRef } from "react";
 
-const About = () => {
-  // Fade-in animation variants
-  const fadeInVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
+const projectCards = [
+  {
+    title: "Palm Oil Solution",
+    description: "An AI system using a camera to observe flower readiness for pollination in mother palms, while also detecting fruit ripeness and estimating fruit weight for optimized harvesting decisions.",
+    image: "/pollination.png",
+    link: "palm.drangue.ai/en",
+    tags: ["Image Processing", "AI Agents", "Web Apps/Mobile Apps", "Big Data Analytics"],
+  },
+  {
+    title: "Pocket",
+    description: "Designed a mobile application for IntelliLabs aimed at making Islamic finance more accessible, understandable, and convenient for Muslims globally. ",
+    image: "pocket.png",
+    link: "",
+    tags: ["Web Apps/Mobile Apps", "UI/UX", "Consultation"],
+  },
+  {
+    title: "Pineapple Solution",
+    description: "An AI system using a camera to detect pineapple ripeness, estimate fruit grade, and assess internal translucency levels that influence sweetness and market quality.",
+    image: "/pineapple.png",
+    link: "https://pineapple.drangue.ai/en",
+    tags: ["Image Processing", "AI Agents", "Web Apps/Mobile Apps", "Big Data Analytics", "Consultation"],
+  },
+  {
+    title: "Disaster Management System",
+    description: "Developed a landslide disaster management system for a UNITEN researcher, commissioned by an insurance company, integrating real-time data analysis for improved risk management.",
+    image: "/disaster.png",
+    link: "",
+    tags: ["Image Processing", "Web Apps/Mobile Apps", "AI Agents", "Consultation"],
+  }
+];
 
-  // Typing effect animation for benefits
-  const typingVariants = {
-    hidden: { opacity: 0, width: 0 },
-    visible: {
-      opacity: 1,
-      width: "100%",
-      transition: {
-        duration: 2,
-        ease: "easeInOut",
-        delay: 0.5, // Delay before typing starts
-        type: "spring",
-      },
-    },
-  };
+export default function About() {
+  const scrollRef = useRef(null);
+
+  // Group cards in pairs for desktop view
+  const cardPairs = [];
+  for (let i = 0; i < projectCards.length; i += 2) {
+    cardPairs.push(projectCards.slice(i, i + 2));
+  }
 
   return (
-    <motion.section
-      className=""
-      variants={fadeInVariants}
-      initial="hidden"
-      animate="visible"
-      exit="hidden"
-      transition={{ duration: 1 }} // Duration for the fade-in effect
-    >
-      <div className="max-w-6xl px-6 py-10 mx-auto">
-        <motion.h2
-          className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
-          variants={fadeInVariants}
-          initial="hidden"
-          animate="visible"
-          exit="hidden"
-          transition={{ duration: 0.6 }} // Customize duration for each element
-        >
-          Introduction
-        </motion.h2>
-        <motion.p
-          className="mt-1 text-gray-600 dark:text-neutral-400"
-          variants={fadeInVariants}
-          initial="hidden"
-          animate="visible"
-          exit="hidden"
-          transition={{ duration: 0.6, delay: 0.2 }} // Delay to stagger the appearance
-        >
-          We are dedicated to solving problems with our technology
-        </motion.p>
-
-        <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
-          {/* Container with gradient border and stone-950 fill */}
-          <motion.div
-            className="relative w-full md:flex md:items-center rounded-2xl before:absolute before:-inset-px before:-z-[1] before:bg-gradient-to-br before:from-blue-600 before:via-transparent before:to-violet-600 before:rounded-2xl bg-stone-950 p-8"
-            variants={fadeInVariants}
-            initial="hidden"
-            animate="visible"
-            exit="hidden"
-            transition={{ duration: 1, delay: 0.4 }} // Delay for the container's fade-in
+    <div className="md:mx-96 py-12">
+      {/* Mobile View (One card at a time) */}
+      <div
+        className="md:hidden overflow-x-auto snap-x snap-mandatory flex gap-6 px-12 py-6 scroll-smooth"
+      >
+        {projectCards.map((card, index) => (
+          <div
+            key={index}
+            className="snap-center shrink-0 w-[85vw] flex-none bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-700 rounded-2xl overflow-hidden transition group hover:shadow-xl"
           >
-            <div className="mt-2 md:mx-6">
-              <div className="mx-auto px-4 py-12">
-                <img
-                  src="/drangue_light_logo.svg"
-                  alt="Drangue Logo"
-                  className="w-full flex w-7/12 mx-auto mb-12"
-                />
-                <motion.p
-                  className="mt-4 text-lg leading-relaxed text-white md:text-xl"
-                  variants={fadeInVariants}
-                  initial="hidden"
-                  animate="visible"
-                  exit="hidden"
-                  transition={{ duration: 0.6, delay: 0.6 }} // Delay the text for better visual flow
-                >
-                  Drangue is a platform designed to enhance community safety and decision-making. We provide real-time updates and insights through advanced GIS technology, empowering you to take informed actions for the well-being of your community.
-                </motion.p>
+            <div className="w-full h-56 overflow-hidden bg-gray-100 dark:bg-neutral-800">
+              <img
+                src={card.image}
+                alt={card.title}
+                className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+              />
+            </div>
+            <div className="p-6 flex flex-col justify-between">
+              <div>
+                <h3 className="relative inline-block font-semibold text-xl text-black dark:text-white">
+                  <span className="relative z-10">{card.title}</span>
+                  <span className="absolute bottom-0.5 left-0 w-full h-1 bg-violet-600 transform origin-left scale-x-0 transition-transform group-hover:scale-x-100"></span>
+                </h3>
+                <p className="mt-3 text-gray-600 dark:text-neutral-400 text-sm">
+                  {card.description}{" "}
+                  {card.link && (
+                    <a 
+                      href={card.link} 
+                      className="text-violet-600 hover:text-violet-800 dark:text-violet-400 dark:hover:text-violet-300 font-medium inline-flex items-center"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Learn more
+                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                      </svg>
+                    </a>
+                  )}
+                </p>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {card.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="py-1.5 px-3 bg-white dark:bg-neutral-800 text-gray-600 dark:text-neutral-400 border border-gray-200 dark:border-neutral-700 text-xs rounded-xl"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
-          </motion.div>
-        </main>
-
-        <motion.div
-          className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
-          variants={fadeInVariants}
-          initial="hidden"
-          animate="visible"
-          exit="hidden"
-          transition={{ duration: 1, delay: 0.6 }} // Adding a delay to the grid section
-        >
-          <motion.div
-            className="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12"
-            variants={fadeInVariants}
-            initial="hidden"
-            animate="visible"
-            exit="hidden"
-            transition={{ duration: 1, delay: 0.8 }} // Stagger the grid items' appearance
-          >
-            {/* Benefits with typing effect */}
-            <motion.div
-              className="relative"
-              variants={fadeInVariants}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              transition={{ duration: 0.6, delay: 1 }}
-            >
-              <div className="relative flex justify-center items-center size-12 bg-white rounded-xl before:absolute before:-inset-px before:-z-[1] before:bg-gradient-to-br before:from-blue-600 before:via-transparent before:to-violet-600 before:rounded-xl dark:bg-neutral-900">
-                <svg
-                  className="shrink-0 size-6 text-blue-600 dark:text-blue-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <rect width="10" height="14" x="3" y="8" rx="2" />
-                  <path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4" />
-                  <path d="M8 18h.01" />
-                </svg>
-              </div>
-              <motion.div
-                className="mt-5"
-                variants={typingVariants} // Apply typing effect
-                initial="hidden"
-                animate="visible"
-                exit="hidden"
-              >
-                <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-                  Accurate Decision-Making
-                </h3>
-                <p className="mt-1 text-gray-600 dark:text-neutral-400">
-                  AI-powered GIS delivers precise, real-time data
-                </p>
-              </motion.div>
-            </motion.div>
-
-            <motion.div
-              className="relative"
-              variants={fadeInVariants}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              transition={{ duration: 0.6, delay: 1.2 }}
-            >
-              <div className="relative flex justify-center items-center size-12 bg-white rounded-xl before:absolute before:-inset-px before:-z-[1] before:bg-gradient-to-br before:from-blue-600 before:via-transparent before:to-violet-600 before:rounded-xl dark:bg-neutral-900">
-                <svg
-                  className="shrink-0 size-6 text-blue-600 dark:text-blue-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M20 7h-9" />
-                  <path d="M14 17H5" />
-                  <circle cx="17" cy="17" r="3" />
-                  <circle cx="7" cy="7" r="3" />
-                </svg>
-              </div>
-              <motion.div
-                className="mt-5"
-                variants={typingVariants}
-                initial="hidden"
-                animate="visible"
-                exit="hidden"
-              >
-                <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-                  Easy Access
-                </h3>
-                <p className="mt-1 text-gray-600 dark:text-neutral-400">
-                  Compatible with existing communicating applications
-                </p>
-              </motion.div>
-            </motion.div>
-
-            <motion.div
-              className="relative"
-              variants={fadeInVariants}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              transition={{ duration: 0.6, delay: 1.4 }}
-            >
-              <div className="relative flex justify-center items-center size-12 bg-white rounded-xl before:absolute before:-inset-px before:-z-[1] before:bg-gradient-to-br before:from-blue-600 before:via-transparent before:to-violet-600 before:rounded-xl dark:bg-neutral-900">
-                <svg
-                  className="shrink-0 size-6 text-blue-600 dark:text-blue-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-                </svg>
-              </div>
-              <motion.div
-                className="mt-5"
-                variants={typingVariants}
-                initial="hidden"
-                animate="visible"
-                exit="hidden"
-              >
-                <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-                  Increase Efficiency
-                </h3>
-                <p className="mt-1 text-gray-600 dark:text-neutral-400">
-                  Cuts development costs and improves response times
-                </p>
-              </motion.div>
-            </motion.div>
-
-            <motion.div
-              className="relative"
-              variants={fadeInVariants}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              transition={{ duration: 0.6, delay: 1.6 }}
-            >
-              <div className="relative flex justify-center items-center size-12 bg-white rounded-xl before:absolute before:-inset-px before:-z-[1] before:bg-gradient-to-br before:from-blue-600 before:via-transparent before:to-violet-600 before:rounded-xl dark:bg-neutral-900">
-                <svg
-                  className="shrink-0 size-6 text-blue-600 dark:text-blue-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z" />
-                  <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
-                </svg>
-              </div>
-              <motion.div
-                className="mt-5"
-                variants={typingVariants}
-                initial="hidden"
-                animate="visible"
-                exit="hidden"
-              >
-                <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-                  Better Collaboration
-                </h3>
-                <p className="mt-1 text-gray-600 dark:text-neutral-400">
-                  WhatsApp streamlines communication and data
-                </p>
-              </motion.div>
-            </motion.div>
-          </motion.div>
-        </motion.div>
+          </div>
+        ))}
       </div>
-    </motion.section>
-  );
-};
 
-export default About;
+      {/* Desktop View (Two cards per container) */}
+      <div
+        ref={scrollRef}
+        className="hidden md:flex overflow-x-auto snap-x snap-mandatory gap-6 px-6 py-4 scroll-smooth"
+      >
+        {cardPairs.map((pair, pairIndex) => (
+          <div
+            key={pairIndex}
+            className="snap-center shrink-0 w-[85vw] max-w-5xl flex gap-6 flex-none"
+          >
+            {pair.map((card, index) => (
+              <div
+                key={index}
+                className="w-1/2 bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-700 rounded-2xl overflow-hidden transition group hover:shadow-xl"
+              >
+                <div className="w-full h-80 overflow-hidden bg-gray-100 dark:bg-neutral-800">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                  />
+                </div>
+                <div className="p-6 flex flex-col justify-between">
+                  <div>
+                    <h3 className="relative inline-block font-semibold text-xl text-black dark:text-white">
+                      <span className="relative z-10">{card.title}</span>
+                      <span className="absolute bottom-0.5 left-0 w-full h-1 bg-violet-600 transform origin-left scale-x-0 transition-transform group-hover:scale-x-100"></span>
+                    </h3>
+                    <p className="mt-3 text-gray-600 dark:text-neutral-400 text-sm">
+                      {card.description}{" "}
+                      {card.link && (
+                        <a 
+                          href={card.link} 
+                          className="text-violet-600 hover:text-violet-800 dark:text-violet-400 dark:hover:text-violet-300 font-medium inline-flex items-center"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Learn more
+                          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                          </svg>
+                        </a>
+                      )}
+                    </p>
+                  </div>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {card.tags.map((tag) => (
+                      <div key={tag} className="bg-gradient-to-br from-blue-600 to-violet-600 via-transparent p-[0.07rem] rounded-xl">
+                        <span
+                          className="py-1.5 px-3 bg-white dark:bg-neutral-800 text-blue-400 text-xs rounded-xl"
+                        >
+                          {tag}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
