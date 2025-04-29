@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
 
 const Contact = () => {
   // State variables for form data
@@ -25,44 +25,62 @@ const Contact = () => {
   };
 
   // Handle form submission
-  const handle_submit = async (e) => {
+  const handle_submit = (e) => {
     e.preventDefault();
 
-    try {
-      const response = await fetch(
-        "https://ugs5b5uxm6.execute-api.ap-southeast-1.amazonaws.com/main/send-enquiry",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(form_data),
-        }
-      );
-
-      if (response.ok) {
-        set_modal({
-          is_open: true,
-          message: "Your inquiry was sent successfully!",
-          is_success: true,
-        });
-        set_form_data({
-          name: "",
-          company_name: "",
-          email: "",
-          phone_number: "",
-          details: "",
-        });
-      } else {
-        throw new Error("Failed to send inquiry");
-      }
-    } catch (error) {
+    // Check if required fields are filled
+    if (!form_data.name || !form_data.email) {
       set_modal({
         is_open: true,
-        message: "Something went wrong. Please try again.",
+        message: "Please fill out the required fields (Name and Email).",
         is_success: false,
       });
+      return;
     }
+
+    // Show the notification modal first
+    set_modal({
+      is_open: true,
+      message:
+        "Opening your email client. Please send the email to complete your inquiry.",
+      is_success: true,
+    });
+
+    // Prepare email content with proper formatting
+    const subject = `Contact Form Inquiry from ${form_data.name}`;
+    const body = `Hi,
+
+${form_data.details}
+
+Best regards,
+${form_data.name}
+${form_data.company_name ? form_data.company_name : ""}
+${form_data.email}
+${form_data.phone_number ? form_data.phone_number : ""}
+    `;
+
+    // Create mailto URL
+    const mailtoUrl = `mailto:drangue.official@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Set timeout to close modal after 5 seconds and open email client
+    setTimeout(() => {
+      // Close the modal
+      set_modal((prev) => ({ ...prev, is_open: false }));
+
+      // Open the email client
+      window.location.href = mailtoUrl;
+
+      // Reset form
+      set_form_data({
+        name: "",
+        company_name: "",
+        email: "",
+        phone_number: "",
+        details: "",
+      });
+    }, 5000);
   };
 
   // Close the modal
@@ -86,14 +104,14 @@ const Contact = () => {
         initial="hidden"
         animate="visible"
         exit="exit"
-        transition={{ duration: 1 }} // You can adjust the duration as needed
+        transition={{ duration: 1 }}
       >
         <div className="grid md:grid-cols-2 gap-8">
           <div className="mt-12 max-w-2xl">
-            <h2 className="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white">
+            <h2 className="text-2xl font-bold md:text-3xl md:leading-tight text-white">
               Contact Us
             </h2>
-            <p className="mt-3 text-gray-600 dark:text-neutral-400">
+            <p className="mt-3 text-white">
               Want our solution tailored to your needs? Tell us how
             </p>
             <img className="w-[100rem]" src="contact.svg" alt="Contact Us" />
@@ -102,7 +120,7 @@ const Contact = () => {
           <div className="mt-12 max-w-lg mx-auto">
             <div className="relative flex flex-col bg-stone-950 rounded-xl p-4 sm:p-6 lg:p-8">
               <div className="absolute inset-0 -z-[1] border-4 border-transparent rounded-xl bg-gradient-to-br from-blue-600 via-transparent to-violet-600"></div>
-              <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-neutral-200">
+              <h2 className="mb-8 text-xl font-semibold text-neutral-200">
                 Fill in the form
               </h2>
 
@@ -112,9 +130,9 @@ const Contact = () => {
                     <div>
                       <label
                         htmlFor="name"
-                        className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white"
                       >
-                        Name
+                        Name <span className="text-red-500">*</span>
                       </label>
                       <input
                         type="text"
@@ -122,14 +140,15 @@ const Contact = () => {
                         id="name"
                         value={form_data.name}
                         onChange={handle_change}
-                        className="border border-gray-400 py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                        required
+                        className="border border-gray-400 py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-violet-900 border-violet-700 text-white placeholder-neutral-500 focus:ring-neutral-600"
                       />
                     </div>
 
                     <div>
                       <label
                         htmlFor="company_name"
-                        className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white"
                       >
                         Company Name
                       </label>
@@ -139,7 +158,7 @@ const Contact = () => {
                         id="company_name"
                         value={form_data.company_name}
                         onChange={handle_change}
-                        className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                        className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-violet-900 border-violet-700 text-white placeholder-neutral-500 focus:ring-neutral-600"
                       />
                     </div>
                   </div>
@@ -148,9 +167,9 @@ const Contact = () => {
                     <div>
                       <label
                         htmlFor="email"
-                        className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white"
                       >
-                        Email
+                        Email <span className="text-red-500">*</span>
                       </label>
                       <input
                         type="email"
@@ -159,14 +178,15 @@ const Contact = () => {
                         autoComplete="email"
                         value={form_data.email}
                         onChange={handle_change}
-                        className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                        required
+                        className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-violet-900 border-violet-700 text-white placeholder-neutral-500 focus:ring-neutral-600"
                       />
                     </div>
 
                     <div>
                       <label
                         htmlFor="phone_number"
-                        className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white"
                       >
                         Phone Number
                       </label>
@@ -176,7 +196,7 @@ const Contact = () => {
                         id="phone_number"
                         value={form_data.phone_number}
                         onChange={handle_change}
-                        className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                        className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-violet-900 border-violet-700 text-white placeholder-neutral-500 focus:ring-neutral-600"
                       />
                     </div>
                   </div>
@@ -184,7 +204,7 @@ const Contact = () => {
                   <div>
                     <label
                       htmlFor="details"
-                      className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                      className="block mb-2 text-sm font-medium text-white"
                     >
                       Details
                     </label>
@@ -193,7 +213,8 @@ const Contact = () => {
                       name="details"
                       value={form_data.details}
                       onChange={handle_change}
-                      className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                      className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-violet-900 border-violet-700 text-white placeholder-neutral-500 focus:ring-neutral-600"
+                      rows="4"
                     ></textarea>
                   </div>
                 </div>
@@ -208,7 +229,7 @@ const Contact = () => {
                 </div>
 
                 <div className="mt-3 text-center">
-                  <p className="text-sm text-gray-500 dark:text-neutral-500">
+                  <p className="text-sm text-neutral-500">
                     We'll get back to you in 1-2 business days.
                   </p>
                 </div>
@@ -221,20 +242,20 @@ const Contact = () => {
       {/* Success Modal */}
       {modal.is_open && modal.is_success && (
         <motion.div
-          className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50"
+          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50"
           variants={fadeInOutVariants}
           initial="hidden"
           animate="visible"
           exit="exit"
           transition={{ duration: 0.5 }}
         >
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <p className="text-lg font-semibold text-green-600">
+          <div className="bg-stone-900 p-6 rounded-lg shadow-lg border border-violet-600">
+            <p className="text-lg font-semibold text-violet-400">
               {modal.message}
             </p>
             <button
               onClick={close_modal}
-              className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
+              className="mt-4  w-full bg-violet-600 text-white px-4 py-2 rounded hover:bg-violet-700"
             >
               Close
             </button>
@@ -245,20 +266,20 @@ const Contact = () => {
       {/* Error Modal */}
       {modal.is_open && !modal.is_success && (
         <motion.div
-          className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50"
+          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50"
           variants={fadeInOutVariants}
           initial="hidden"
           animate="visible"
           exit="exit"
           transition={{ duration: 0.5 }}
         >
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <p className="text-lg font-semibold text-red-600">
+          <div className="bg-stone-900 p-6 rounded-lg shadow-lg border border-red-600">
+            <p className="text-lg font-semibold text-red-500">
               {modal.message}
             </p>
             <button
               onClick={close_modal}
-              className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
+              className="mt-4 bg-violet-600 text-white px-4 py-2 rounded hover:bg-violet-700"
             >
               Close
             </button>

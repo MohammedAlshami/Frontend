@@ -62,11 +62,7 @@ function CropPage({ subdomain }: CropPageProps) {
       <div id="contact">
         <CTA1 />
       </div>
-      {/* 
-  
-
-   
-       */}
+    
     </div>
   );
 }

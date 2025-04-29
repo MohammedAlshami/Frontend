@@ -24,45 +24,61 @@ const Contact = () => {
   };
 
   // Handle form submission
-  const handle_submit = async (e) => {
+  const handle_submit = (e) => {
     e.preventDefault();
 
-    try {
-      // Replace with your API endpoint
-      const response = await fetch(
-        "https://ugs5b5uxm6.execute-api.ap-southeast-1.amazonaws.com/main/send-enquiry",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(form_data),
-        }
-      );
-
-      if (response.ok) {
-        set_modal({
-          is_open: true,
-          message: "Your inquiry was sent successfully!",
-          is_success: true,
-        });
-        set_form_data({
-          first_name: "",
-          last_name: "",
-          email: "",
-          phone_number: "",
-          details: "",
-        });
-      } else {
-        throw new Error("Failed to send inquiry");
-      }
-    } catch (error) {
+    // Check if required fields are filled
+    if (!form_data.first_name || !form_data.email) {
       set_modal({
         is_open: true,
-        message: "Something went wrong. Please try again.",
+        message: "Please fill out the required fields (First Name and Email).",
         is_success: false,
       });
+      return;
     }
+
+    // Show the notification modal first
+    set_modal({
+      is_open: true,
+      message:
+        "Opening your email client. Please send the email to complete your inquiry.",
+      is_success: true,
+    });
+
+    // Prepare email content with proper formatting
+    const subject = `Contact Form Inquiry from ${form_data.first_name} ${form_data.last_name}`;
+    const body = `Hi,
+
+${form_data.details}
+
+Best regards,
+${form_data.first_name} ${form_data.last_name}
+${form_data.email}
+${form_data.phone_number ? form_data.phone_number : ""}
+    `;
+
+    // Create mailto URL
+    const mailtoUrl = `mailto:drangue.official@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Set timeout to close modal after 5 seconds and open email client
+    setTimeout(() => {
+      // Close the modal
+      set_modal((prev) => ({ ...prev, is_open: false }));
+
+      // Open the email client
+      window.location.href = mailtoUrl;
+
+      // Reset form
+      set_form_data({
+        first_name: "",
+        last_name: "",
+        email: "",
+        phone_number: "",
+        details: "",
+      });
+    }, 5000);
   };
 
   // Close the modal
@@ -74,8 +90,8 @@ const Contact = () => {
     <>
       <div className="mt-12 max-w-lg mx-auto">
         {/* <!-- Card --> */}
-        <div className="flex flex-col bg-gradient-to-b from-transparent to-teal-500/20  border rounded-xl p-4 sm:p-6 lg:p-8 border-2 border-blue-800/10">
-          <h2 className="mb-8 text-xl font-semibold text-violet-700 ">
+        <div className="flex flex-col bg-gradient-to-b from-transparent to-teal-500/20 border rounded-xl p-4 sm:p-6 lg:p-8 border-2 border-blue-800/10">
+          <h2 className="mb-8 text-xl font-semibold text-violet-700">
             Fill in the form
           </h2>
 
@@ -86,7 +102,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="first_name"
-                    className="block mb-2 text-sm text-gray-700 font-medium "
+                    className="block mb-2 text-sm text-gray-700 font-medium"
                   >
                     First Name
                   </label>
@@ -96,14 +112,14 @@ const Contact = () => {
                     id="first_name"
                     value={form_data.first_name}
                     onChange={handle_change}
-                    className="border border-gray-400 py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
+                    className="border border-gray-400 py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="last_name"
-                    className="block mb-2 text-sm text-gray-700 font-medium "
+                    className="block mb-2 text-sm text-gray-700 font-medium"
                   >
                     Last Name
                   </label>
@@ -113,7 +129,7 @@ const Contact = () => {
                     id="last_name"
                     value={form_data.last_name}
                     onChange={handle_change}
-                    className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
+                    className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                   />
                 </div>
               </div>
@@ -124,7 +140,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block mb-2 text-sm text-gray-700 font-medium "
+                    className="block mb-2 text-sm text-gray-700 font-medium"
                   >
                     Email
                   </label>
@@ -135,14 +151,14 @@ const Contact = () => {
                     autoComplete="email"
                     value={form_data.email}
                     onChange={handle_change}
-                    className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
+                    className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="phone_number"
-                    className="block mb-2 text-sm text-gray-700 font-medium "
+                    className="block mb-2 text-sm text-gray-700 font-medium"
                   >
                     Phone Number
                   </label>
@@ -152,7 +168,7 @@ const Contact = () => {
                     id="phone_number"
                     value={form_data.phone_number}
                     onChange={handle_change}
-                    className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
+                    className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                   />
                 </div>
               </div>
@@ -161,7 +177,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="details"
-                  className="block mb-2 text-sm text-gray-700 font-medium "
+                  className="block mb-2 text-sm text-gray-700 font-medium"
                 >
                   Details
                 </label>
@@ -170,7 +186,8 @@ const Contact = () => {
                   name="details"
                   value={form_data.details}
                   onChange={handle_change}
-                  className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-violet-900 dark:border-violet-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                  className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                  rows="4"
                 ></textarea>
               </div>
             </div>
@@ -186,7 +203,7 @@ const Contact = () => {
             </div>
 
             <div className="mt-3 text-center">
-              <p className="text-sm text-gray-500 ">
+              <p className="text-sm text-gray-500">
                 We'll get back to you in 1-2 business days.
               </p>
             </div>
@@ -199,7 +216,7 @@ const Contact = () => {
       {modal.is_open && modal.is_success && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <p className="text-lg font-semibold text-green-600">
+            <p className="text-lg font-semibold text-black">
               {modal.message}
             </p>
             <button
