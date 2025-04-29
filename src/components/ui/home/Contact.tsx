@@ -114,10 +114,11 @@ ${form_data.phone_number ? form_data.phone_number : ""}
             <p className="mt-3 text-white">
               Want our solution tailored to your needs? Tell us how
             </p>
-            <img className="w-[100rem]" src="contact.svg" alt="Contact Us" />
+            <img className="w-[100rem] mt-6" src="contact.svg" alt="Contact Us" />
           </div>
 
           <div className="mt-12 max-w-lg mx-auto">
+<<<<<<< HEAD
             <div className="relative flex flex-col bg-stone-950 rounded-xl p-4 sm:p-6 lg:p-8">
               <div className="absolute inset-0 -z-[1] border-4 border-transparent rounded-xl bg-gradient-to-br from-blue-600 via-transparent to-violet-600"></div>
               <h2 className="mb-8 text-xl font-semibold text-neutral-200">
@@ -143,21 +144,110 @@ ${form_data.phone_number ? form_data.phone_number : ""}
                         required
                         className="border border-gray-400 py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-violet-900 border-violet-700 text-white placeholder-neutral-500 focus:ring-neutral-600"
                       />
+=======
+            <div className="bg-gradient-to-br from-blue-600 to-violet-600 via-transparent p-[0.07rem] rounded-xl">
+              <div className="relative flex flex-col bg-stone-950 rounded-xl p-4 sm:p-6 lg:p-10 m-">
+                <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-neutral-200">
+                  Fill in the form
+                </h2>
+
+                <form onSubmit={handle_submit}>
+                  <div className="grid gap-4 lg:gap-6">
+                    {/* Name & Company Name Section */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                      <div>
+                        <label
+                          htmlFor="name"
+                          className="block mb-2 text-sm text-gray-500 font-medium"
+                        >
+                          Name
+                        </label>
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          value={form_data.name}
+                          onChange={handle_change}
+                          className="py-3 px-4 block w-full rounded-lg text-sm bg-stone-950 text-gray-400 border border-gray-700"
+                        />
+                      </div>
+
+                      <div>
+                        <label
+                          htmlFor="company_name"
+                          className="block mb-2 text-sm text-gray-500 font-medium"
+                        >
+                          Company Name
+                        </label>
+                        <input
+                          type="text"
+                          name="company_name"
+                          id="company_name"
+                          value={form_data.company_name}
+                          onChange={handle_change}
+                          className="py-3 px-4 block w-full rounded-lg text-sm bg-stone-950 text-gray-400 border border-gray-700"
+                        />
+                      </div>
+>>>>>>> cea4db42748f5df69859e592327ae7fc1b16dcec
                     </div>
 
+                    {/* Email & Phone Number Section */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="block mb-2 text-sm text-gray-500 font-medium"
+                        >
+                          Email
+                        </label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          autoComplete="email"
+                          value={form_data.email}
+                          onChange={handle_change}
+                          className="py-3 px-4 block w-full rounded-lg text-sm bg-stone-950 text-gray-400 border border-gray-700"
+                        />
+                      </div>
+
+                      <div>
+                        <label
+                          htmlFor="phone_number"
+                          className="block mb-2 text-sm text-gray-500 font-medium"
+                        >
+                          Phone Number
+                        </label>
+                        <input
+                          type="text"
+                          name="phone_number"
+                          id="phone_number"
+                          value={form_data.phone_number}
+                          onChange={handle_change}
+                          className="py-3 px-4 block w-full rounded-lg text-sm bg-stone-950 text-gray-400 border border-gray-700"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Details Section */}
                     <div>
                       <label
+<<<<<<< HEAD
                         htmlFor="company_name"
                         className="block mb-2 text-sm font-medium text-white"
+=======
+                        htmlFor="details"
+                        className="block mb-2 text-sm text-gray-500 font-medium"
+>>>>>>> cea4db42748f5df69859e592327ae7fc1b16dcec
                       >
-                        Company Name
+                        Details
                       </label>
-                      <input
-                        type="text"
-                        name="company_name"
-                        id="company_name"
-                        value={form_data.company_name}
+                      <textarea
+                        id="details"
+                        name="details"
+                        value={form_data.details}
                         onChange={handle_change}
+<<<<<<< HEAD
                         className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-violet-900 border-violet-700 text-white placeholder-neutral-500 focus:ring-neutral-600"
                       />
                     </div>
@@ -216,9 +306,23 @@ ${form_data.phone_number ? form_data.phone_number : ""}
                       className="border py-3 px-4 block w-full border-gray-400 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-violet-900 border-violet-700 text-white placeholder-neutral-500 focus:ring-neutral-600"
                       rows="4"
                     ></textarea>
+=======
+                        className="py-3 px-4 block w-full rounded-lg text-sm bg-stone-950 text-gray-400 border border-gray-700"
+                      ></textarea>
+                    </div>
                   </div>
-                </div>
 
+                  <div className="mt-6 grid">
+                    <button
+                      type="submit"
+                      className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-violet-600 text-white hover:bg-violet-700 disabled:opacity-50 disabled:pointer-events-none"
+                    >
+                      Send inquiry
+                    </button>
+>>>>>>> cea4db42748f5df69859e592327ae7fc1b16dcec
+                  </div>
+
+<<<<<<< HEAD
                 <div className="mt-6 grid">
                   <button
                     type="submit"
@@ -234,10 +338,21 @@ ${form_data.phone_number ? form_data.phone_number : ""}
                   </p>
                 </div>
               </form>
+=======
+                  <div className="mt-3 text-center">
+                    <p className="text-sm text-gray-500 dark:text-neutral-500">
+                      We'll get back to you in 1-2 business days.
+                    </p>
+                  </div>
+                </form>
+              </div>
+>>>>>>> cea4db42748f5df69859e592327ae7fc1b16dcec
             </div>
           </div>
         </div>
       </motion.div>
+
+
 
       {/* Success Modal */}
       {modal.is_open && modal.is_success && (

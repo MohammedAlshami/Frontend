@@ -16,7 +16,7 @@ export function TypedOut() {
     },
     {
       text: "Drangue.",
-      className: "text-blue-500 dark:text-main",
+      className: "text-violet-600 dark:text-main",
     },
   ];
   return (
