@@ -44,7 +44,7 @@ const logos = [
 
 const LogoCloud2 = () => {
   return (
-    <div className="w-full  py-12">
+    <div className="w-full  pb-12">
       <h2 className="text-center font-bold text-3xl text-white">Trusted By</h2>
       <div className="mx-auto w-full px-4 md:px-8">
         <div

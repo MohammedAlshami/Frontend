@@ -3,13 +3,13 @@ import { TypewriterEffectSmooth } from "./typewriter-effect";
 export function TypedOut() {
   const words = [
     {
-      text: "Protect",
+      text: "Transform",
     },
     {
       text: "Your",
     },
     {
-      text: "Community",
+      text: "Business",
     },
     {
       text: "with",
@@ -22,10 +22,9 @@ export function TypedOut() {
   return (
     <div className="flex flex-col items-center justify-center h-[20rem]  ">
       <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">
-        The road to freedom starts from here
+        Where technology meets innovation
       </p>
       <TypewriterEffectSmooth words={words} />
-   
     </div>
   );
 }

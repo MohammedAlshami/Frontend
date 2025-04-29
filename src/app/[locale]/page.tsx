@@ -21,13 +21,8 @@ function Page({ lang }: { lang: any }) {
 
   return (
     <>
-<<<<<<< HEAD
-      {subdomain === "main" || (subdomain === "www" && <MainPage />)}
-=======
       {(subdomain === "main" || subdomain === "www") && <MainPage />}
->>>>>>> cea4db42748f5df69859e592327ae7fc1b16dcec
       {subdomain !== "main" && subdomain && <CropPage subdomain={subdomain} />}
-      <MainPage />
     </>
   );
 }

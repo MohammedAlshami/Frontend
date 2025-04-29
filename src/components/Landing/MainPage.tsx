@@ -7,6 +7,7 @@ import About from "@/components/ui/home/AboutandBenefits";
 import Contact from "@/components/ui/home/Contact";
 import LogoCloud2 from "../ui/landing/LogoCloud2";
 import Navbar from "./Navbar";
+import AboutDrangue from "../ui/home/Drangue";
 export default function MainPage() {
   return (
     <div lang="en" className="dark  bg-neutral-950" suppressHydrationWarning>
@@ -28,6 +29,9 @@ export default function MainPage() {
                 <LogoCloud2 />
               </div>
 
+              <div>
+                <AboutDrangue />
+              </div>
               <div className="z-60">
                 <About />
               </div>

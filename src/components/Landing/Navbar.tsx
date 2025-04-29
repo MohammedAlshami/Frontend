@@ -1,8 +1,5 @@
-"use client";
-import { checkSessionAuthCookie } from "../../app/lib/Controllers/Cookies";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
   return (
@@ -12,25 +9,25 @@ const Navbar = () => {
         style={{ zIndex: 1000000000000000 }}
       >
         <nav
-          className="mt-6 relative max-w-[55rem] w-full border border-purple-600 rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-neutral-800/80 dark:border-neutral-700"
+          className="bg-black/60 md:mt-6 relative max-w-3xl w-full md:border border-purple-600 rounded-lg md:rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 mx-auto dark:bg-neutral-800/80 dark:border-neutral-700"
           aria-label="Global"
         >
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center w-full md:w-auto">
             <Link
-              className="inline-flex items-center gap-x-2 text-xl font-semibold dark:text-white"
+              className="inline-flex items-center justify-center gap-x-2 text-xl font-semibold dark:text-white"
               href="/"
             >
               <img
-                className="mr-3"
+                className="mx-auto"
                 src="/drangue_light_logo.svg"
                 width="120"
                 alt="Drangue Logo"
               />
             </Link>
-            <div className="md:hidden">
+            <div className="md:hidden absolute right-4">
               <button
                 type="button"
-                className="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700"
+                className="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full border border-gray-200 text-gray-800 bg-gray-50 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700"
                 data-hs-collapse="#navbar-collapse-with-animation"
                 aria-controls="navbar-collapse-with-animation"
                 aria-label="Toggle navigation"
@@ -75,10 +72,22 @@ const Navbar = () => {
           >
             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
               <Link
-                href="/"
-                className="font-medium text-gray-500 hover:text-gray-400 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500"
+                href="#about"
+                className="font-medium text-gray-50 hover:text-gray-400 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500"
               >
-                Home
+                About Us
+              </Link>
+              <Link
+                href="#projects"
+                className="font-medium text-gray-50 hover:text-gray-400 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500"
+              >
+                Projects
+              </Link>
+              <Link
+                href="#contact"
+                className="font-medium text-gray-50 hover:text-gray-400 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500"
+              >
+                Contact
               </Link>
             </div>
           </div>
