@@ -13,6 +13,7 @@ import CTA1 from "@/components/ui/landing/CTA1";
 import LogoCloud from "@/components/ui/landing/LogoCloud";
 import Stats from "@/components/ui/landing/Stats";
 import { useTranslations } from "next-intl";
+import LogoCloud2 from "../ui/landing/LogoCloud2";
 
 interface CropPageProps {
   subdomain: string;
@@ -33,7 +34,7 @@ function CropPage({ subdomain }: CropPageProps) {
     { label: navLinks("contact"), href: "#contact" },
   ];
   return (
-    <div className="space-y-32 scroll-smooth bg-accent ">
+    <div className="space-y-32 scroll-smooth bg-accent  ">
       <Navbar navLinks={navLinksArray} />
       <h1></h1>
 
@@ -43,7 +44,7 @@ function CropPage({ subdomain }: CropPageProps) {
           mainTitleColored={hero("coloredTitle")}
           subTitle={hero("subTitle")}
         />
-        <LogoCloud title={logoCloud("title")} />
+        <LogoCloud />
         <div id="about">
           <About
             title={about("title")}

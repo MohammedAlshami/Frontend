@@ -7,7 +7,7 @@ const projectCards = [
     description:
       "An AI system using a camera to observe flower readiness for pollination in mother palms, while also detecting fruit ripeness and estimating fruit weight for optimized harvesting decisions.",
     image: "/pollination.png",
-    link: "palm.drangue.ai/en",
+    link: "https://palm.drangue.ai/en",
     showLearnMore: true,
     tags: [
       "Image Processing",

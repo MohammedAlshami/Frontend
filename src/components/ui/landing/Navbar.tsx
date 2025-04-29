@@ -30,7 +30,7 @@ const Navbar = ({
       >
         <nav
         
-          className="mt-6 relative max-w-[55rem] bg-accent w-full border border-neutral-600/20 rounded-[36px] mx-2 py-3 px-4 pb-8 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto"
+          className="mt-6 relative max-w-[55rem] bg-accent w-full border border-neutral-600/20 rounded-[36px] mx-2 py-3 px-4 pb-8 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 mx-auto"
           aria-label="Global"
         >
           <div className="flex items-center justify-between">
